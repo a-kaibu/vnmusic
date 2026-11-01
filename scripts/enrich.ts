@@ -194,6 +194,106 @@ async function pool<T>(items: T[], n: number, fn: (t: T) => Promise<void>) {
   );
 }
 
+// ---------- vndb: VNDB API (批評空間に繋がらないときの代替) ----------
+type VndbRel = {
+  id: string;
+  title: string;
+  alttitle?: string | null;
+  released: string;
+  extlinks: { name: string; url: string }[];
+  vns: { id: string; alttitle?: string | null; title: string; image?: { url: string; sexual: number } | null }[];
+};
+
+async function vndbReleases(q: string): Promise<VndbRel[]> {
+  const r = await get("https://api.vndb.org/kana/release", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      filters: ["search", "=", q],
+      fields:
+        "title,alttitle,released,extlinks.url,extlinks.name,vns.id,vns.title,vns.alttitle,vns.image.url,vns.image.sexual",
+      results: 50,
+    }),
+  });
+  if (!r.ok) throw new Error(`VNDB HTTP ${r.status}`);
+  return ((await r.json()) as { results: VndbRel[] }).results;
+}
+
+async function stageVndb() {
+  const out = load<Record<string, GameOut & { vndb?: string }>>("games.json", {});
+  const titles = [...new Map(songs.map((s) => [s.game, s])).values()].filter(
+    (s) => out[s.game]?.vndb === undefined,
+  );
+  console.log(`VNDB 照合: ${titles.length} 作品 (1.6 秒間隔)`);
+  for (const [i, s] of titles.entries()) {
+    const day = s.release.replace(/\//g, "-");
+    const n = norm(s.game);
+    try {
+      let rels = await vndbReleases(s.game);
+      if (!rels.length) {
+        const short = s.game.split(/[\s　\-－～~〜]/)[0];
+        if (short && short !== s.game && short.length >= 2) {
+          await sleep(1600);
+          rels = await vndbReleases(short);
+        }
+      }
+      const score = (r: VndbRel) => {
+        const names = [r.alttitle, r.title, ...r.vns.flatMap((v) => [v.alttitle, v.title])]
+          .filter(Boolean)
+          .map((x) => norm(x!));
+        return (
+          (r.released === day ? 10 : r.released.slice(0, 7) === day.slice(0, 7) ? 4 : 0) +
+          (names.some((x) => x === n) ? 8 : names.some((x) => x.startsWith(n) || n.startsWith(x)) ? 4 : 0)
+        );
+      };
+      const best = rels.map((r) => [score(r), r] as const).sort((a, b) => b[0] - a[0])[0];
+      if (best && best[0] >= 12) {
+        const vn = best[1].vns[0];
+        // 同じ作品の全リリースから公式サイトを探す（発売日が近いものを優先、アーカイブは除外）
+        const sameVn = rels
+          .filter((r) => r.vns.some((v) => v.id === vn.id))
+          .sort((a, b) => Number(b.released === day) - Number(a.released === day));
+        const site = sameVn
+          .flatMap((r) => r.extlinks)
+          .find((l) => l.name === "website" && !l.url.includes("web.archive.org"))?.url;
+        const egs = sameVn.flatMap((r) => r.extlinks).find((l) => l.name === "egs")?.url;
+        out[s.game] = {
+          vndb: vn.id,
+          egs: egs?.match(/game=(\d+)/)?.[1] ?? "",
+          official: site,
+          cover: vn.image && vn.image.sexual < 2 ? vn.image.url : undefined,
+        };
+      } else out[s.game] = { vndb: "", egs: "" };
+    } catch (e) {
+      console.warn(`  ! ${s.game}: ${(e as Error).message}`);
+    }
+    if (i % 25 === 24) {
+      save("games.json", out);
+      console.log(`  ${i + 1}/${titles.length}`);
+    }
+    await sleep(1600);
+  }
+  save("games.json", out);
+  console.log(`  matched ${Object.values(out).filter((g) => g.vndb).length}/${Object.keys(out).length}`);
+  await checkAlive(out);
+}
+
+async function checkAlive(out: Record<string, GameOut>) {
+  console.log("公式サイト・ジャケットの生存確認中…");
+  const entries = Object.entries(out).filter(([, g]) => g.official && g.officialAlive === undefined);
+  let done = 0;
+  await pool(entries, 8, async ([, g]) => {
+    g.officialAlive = await alive(g.official!);
+    if (g.cover && !(await alive(g.cover, true))) g.cover = undefined;
+    if (++done % 50 === 0) {
+      save("games.json", out);
+      console.log(`  ${done}/${entries.length}`);
+    }
+  });
+  save("games.json", out);
+  console.log(`  生きている公式サイト: ${Object.values(out).filter((g) => g.officialAlive).length}`);
+}
+
 // ---------- apple: iTunes Search API ----------
 type AppleOut = {
   track?: string;
@@ -377,7 +477,9 @@ function stageWrite() {
 
 const stage = process.argv[2] ?? "all";
 const allSongs = process.argv.includes("--all-songs");
-if (stage === "games" || stage === "all") await stageGames();
+if (stage === "games") await stageGames();
+if (stage === "vndb" || stage === "all") await stageVndb();
+if (stage === "alive") await checkAlive(load("games.json", {}));
 if (stage === "apple" || stage === "all") await stageApple(allSongs);
 if (stage === "odesli" || stage === "all") await stageOdesli();
 if (stage === "spotify" || stage === "all") await stageSpotify();
