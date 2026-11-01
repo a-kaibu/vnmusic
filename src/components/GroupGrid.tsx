@@ -50,9 +50,7 @@ export function GroupGrid({ groups, kind, onOpen }: Props) {
               )}
               <p className="mt-2 line-clamp-2 text-sm font-semibold">{g.name}</p>
               <p className="truncate text-xs text-muted">{sub}</p>
-              <p className="text-xs text-muted">
-                {g.songs.length}曲 ・ 最高{g.best}位
-              </p>
+              <p className="text-xs text-muted">{g.songs.length}曲</p>
             </button>
           );
         })}

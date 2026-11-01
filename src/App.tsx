@@ -1,15 +1,27 @@
 import { useDeferredValue, useMemo, useRef, useState } from "react";
-import { Disc3, Gamepad2, Building2, Mic2, Search, X, Trophy, Music2 } from "lucide-react";
+import {
+  Disc3,
+  Gamepad2,
+  Building2,
+  Mic2,
+  Search,
+  X,
+  ListMusic,
+  Music2,
+  Play,
+  Headphones,
+} from "lucide-react";
 import { songs, categoryGroups, categoryGroup, groupBy, streamCount, type Song } from "./lib/songs";
 import { normalize } from "./lib/search";
 import { TrackList } from "./components/TrackList";
 import { GroupGrid } from "./components/GroupGrid";
 import { SongDetail } from "./components/SongDetail";
-import { NowBar } from "./components/NowBar";
+import { NowBar, VideoBox } from "./components/NowBar";
+import { usePlayer, playable } from "./lib/player";
 
 export type View = "tracks" | "games" | "brands" | "artists";
 export type Scope = { kind: "game" | "brand" | "artist"; name: string } | null;
-type Sort = "rank" | "new" | "old";
+type Sort = "new" | "old" | "title";
 
 const index = songs.map((s) =>
   normalize(
@@ -18,7 +30,7 @@ const index = songs.map((s) =>
 );
 
 const nav: { key: View; label: string; icon: typeof Disc3 }[] = [
-  { key: "tracks", label: "ランキング", icon: Trophy },
+  { key: "tracks", label: "全曲", icon: ListMusic },
   { key: "games", label: "ゲーム", icon: Gamepad2 },
   { key: "brands", label: "ブランド", icon: Building2 },
   { key: "artists", label: "アーティスト", icon: Mic2 },
@@ -33,7 +45,9 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [cats, setCats] = useState<string[]>([]);
   const [onlyStream, setOnlyStream] = useState(false);
-  const [sort, setSort] = useState<Sort>("rank");
+  const [onlyPlayable, setOnlyPlayable] = useState(false);
+  const player = usePlayer();
+  const [sort, setSort] = useState<Sort>("new");
   const [selected, setSelected] = useState<Song | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -58,13 +72,16 @@ export default function App() {
     }
     if (cats.length) list = list.filter((s) => cats.includes(categoryGroup(s.category)));
     if (onlyStream) list = list.filter((s) => streamCount(s) > 0);
-    if (sort !== "rank") {
-      list = [...list].sort((a, b) =>
-        sort === "new" ? b.release.localeCompare(a.release) : a.release.localeCompare(b.release),
-      );
-    }
+    if (onlyPlayable) list = list.filter(playable);
+    list = [...list].sort((a, b) =>
+      sort === "title"
+        ? a.title.localeCompare(b.title, "ja")
+        : sort === "new"
+          ? b.release.localeCompare(a.release) || a.game.localeCompare(b.game, "ja")
+          : a.release.localeCompare(b.release) || a.game.localeCompare(b.game, "ja"),
+    );
     return list;
-  }, [searched, scope, cats, onlyStream, sort]);
+  }, [searched, scope, cats, onlyStream, onlyPlayable, sort]);
 
   const groups = useMemo(() => {
     if (view === "games") return groupBy(searched, (s) => s.game);
@@ -96,7 +113,7 @@ export default function App() {
         title: scope.name,
       }
     : view === "tracks"
-      ? { label: "プレイリスト", title: "ギャルゲソング 総合ランキング" }
+      ? { label: "プレイリスト", title: "ギャルゲソング 全曲" }
       : { label: "ライブラリ", title: nav.find((n) => n.key === view)!.label };
 
   return (
@@ -145,7 +162,7 @@ export default function App() {
               </dd>
             </dl>
             <p className="mt-4 text-xs leading-relaxed">
-              投票結果CSVをもとに作成。配信状況は2023年7月時点の調査値です。配信リンクは各サービスの検索結果を開きます。
+              投票結果CSVをもとに作成。配信状況は2023年7月時点の調査値です。見つかった曲は配信ページへ直接、それ以外は各サービスの検索結果を開きます。
             </p>
           </div>
         </aside>
@@ -188,6 +205,15 @@ export default function App() {
               {view === "tracks"
                 ? `${tracks.length.toLocaleString()} 曲`
                 : `${groups.length.toLocaleString()} 件`}
+              {view === "tracks" && tracks.some(playable) && (
+                <button
+                  onClick={() => player.play(tracks.find(playable)!, tracks)}
+                  className="ml-3 inline-flex items-center gap-1 rounded-full bg-accent px-4 py-1 text-xs font-bold text-black hover:brightness-110"
+                >
+                  <Play className="size-3.5" />
+                  まとめて再生
+                </button>
+              )}
               {scope && (
                 <button
                   onClick={() => setScope(null)}
@@ -223,6 +249,15 @@ export default function App() {
                   <Music2 className="size-3" />
                   配信あり
                 </button>
+                <button
+                  onClick={() => setOnlyPlayable(!onlyPlayable)}
+                  className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold transition ${
+                    onlyPlayable ? "bg-accent text-black" : "bg-elev text-white hover:bg-line"
+                  }`}
+                >
+                  <Headphones className="size-3" />
+                  ここで聴ける
+                </button>
                 <select
                   value={scope?.kind === "brand" ? scope.name : ""}
                   onChange={(e) =>
@@ -245,9 +280,9 @@ export default function App() {
                   onChange={(e) => setSort(e.target.value as Sort)}
                   className="rounded-full bg-elev px-3 py-1 text-xs font-semibold outline-none"
                 >
-                  <option value="rank">順位順</option>
                   <option value="new">発売日が新しい順</option>
                   <option value="old">発売日が古い順</option>
+                  <option value="title">曲名順</option>
                 </select>
               </div>
               <TrackList
@@ -255,6 +290,8 @@ export default function App() {
                 scrollRef={scrollRef}
                 selectedId={selected?.id}
                 onSelect={select}
+                onPlay={(s) => player.play(s, tracks)}
+                playingId={player.current?.id}
                 onScope={openScope}
               />
             </>
@@ -271,11 +308,23 @@ export default function App() {
 
         {/* Detail */}
         {selected && detailOpen && (
-          <SongDetail song={selected} onClose={() => setDetailOpen(false)} onScope={openScope} />
+          <SongDetail
+            song={selected}
+            onClose={() => setDetailOpen(false)}
+            onScope={openScope}
+            onPlay={(s) => player.play(s, tracks.includes(s) ? tracks : [s])}
+          />
         )}
       </div>
 
-      <NowBar song={selected} onOpen={() => setDetailOpen(true)} />
+      <VideoBox />
+      <NowBar
+        song={selected}
+        onOpen={() => {
+          if (player.current) setSelected(player.current);
+          setDetailOpen(true);
+        }}
+      />
 
       {/* Mobile nav */}
       <nav className="grid grid-cols-4 border-t border-line bg-bg md:hidden">

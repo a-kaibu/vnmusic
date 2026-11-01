@@ -201,7 +201,12 @@ type VndbRel = {
   alttitle?: string | null;
   released: string;
   extlinks: { name: string; url: string }[];
-  vns: { id: string; alttitle?: string | null; title: string; image?: { url: string; sexual: number } | null }[];
+  vns: {
+    id: string;
+    alttitle?: string | null;
+    title: string;
+    image?: { url: string; sexual: number } | null;
+  }[];
 };
 
 async function vndbReleases(q: string): Promise<VndbRel[]> {
@@ -221,18 +226,24 @@ async function vndbReleases(q: string): Promise<VndbRel[]> {
 
 async function stageVndb() {
   const out = load<Record<string, GameOut & { vndb?: string }>>("games.json", {});
+  const retry = process.argv.includes("--retry-null");
   const titles = [...new Map(songs.map((s) => [s.game, s])).values()].filter(
-    (s) => out[s.game]?.vndb === undefined,
+    (s) => out[s.game]?.vndb === undefined || (retry && out[s.game]?.vndb === ""),
   );
   console.log(`VNDB 照合: ${titles.length} 作品 (1.6 秒間隔)`);
   for (const [i, s] of titles.entries()) {
     const day = s.release.replace(/\//g, "-");
-    const n = norm(s.game);
+    // 「(非18禁)」「(NS)」「TVアニメ「…」」などの付記を外して探す
+    const q = s.game
+      .replace(/\s*[(（][^)）]*[)）]\s*$/, "")
+      .replace(/^TVアニメ「(.*)」$/, "$1")
+      .trim();
+    const n = norm(q);
     try {
-      let rels = await vndbReleases(s.game);
+      let rels = await vndbReleases(q);
       if (!rels.length) {
-        const short = s.game.split(/[\s　\-－～~〜]/)[0];
-        if (short && short !== s.game && short.length >= 2) {
+        const short = q.split(/[\s　\-－～~〜]/)[0];
+        if (short && short !== q && short.length >= 2) {
           await sleep(1600);
           rels = await vndbReleases(short);
         }
@@ -243,7 +254,11 @@ async function stageVndb() {
           .map((x) => norm(x!));
         return (
           (r.released === day ? 10 : r.released.slice(0, 7) === day.slice(0, 7) ? 4 : 0) +
-          (names.some((x) => x === n) ? 8 : names.some((x) => x.startsWith(n) || n.startsWith(x)) ? 4 : 0)
+          (names.some((x) => x === n)
+            ? 8
+            : names.some((x) => x.startsWith(n) || n.startsWith(x))
+              ? 4
+              : 0)
         );
       };
       const best = rels.map((r) => [score(r), r] as const).sort((a, b) => b[0] - a[0])[0];
@@ -274,13 +289,17 @@ async function stageVndb() {
     await sleep(1600);
   }
   save("games.json", out);
-  console.log(`  matched ${Object.values(out).filter((g) => g.vndb).length}/${Object.keys(out).length}`);
+  console.log(
+    `  matched ${Object.values(out).filter((g) => g.vndb).length}/${Object.keys(out).length}`,
+  );
   await checkAlive(out);
 }
 
 async function checkAlive(out: Record<string, GameOut>) {
   console.log("公式サイト・ジャケットの生存確認中…");
-  const entries = Object.entries(out).filter(([, g]) => g.official && g.officialAlive === undefined);
+  const entries = Object.entries(out).filter(
+    ([, g]) => g.official && g.officialAlive === undefined,
+  );
   let done = 0;
   await pool(entries, 8, async ([, g]) => {
     g.officialAlive = await alive(g.official!);
@@ -291,7 +310,9 @@ async function checkAlive(out: Record<string, GameOut>) {
     }
   });
   save("games.json", out);
-  console.log(`  生きている公式サイト: ${Object.values(out).filter((g) => g.officialAlive).length}`);
+  console.log(
+    `  生きている公式サイト: ${Object.values(out).filter((g) => g.officialAlive).length}`,
+  );
 }
 
 // ---------- apple: iTunes Search API ----------
@@ -306,7 +327,10 @@ type AppleOut = {
 
 async function stageApple(allSongs: boolean) {
   const out = load<Record<number, AppleOut>>("apple.json", {});
-  const targets = songs.filter((s) => (allSongs || hasFlag(s)) && !(s.id in out));
+  const retry = process.argv.includes("--retry-null");
+  const targets = songs.filter(
+    (s) => (allSongs || hasFlag(s)) && (!(s.id in out) || (retry && out[s.id] === null)),
+  );
   console.log(`Apple Music 検索: ${targets.length} 曲 (約20件/分の制限があるため 3 秒間隔)`);
   for (const [i, s] of targets.entries()) {
     const search = async (term: string) => {
@@ -323,9 +347,17 @@ async function stageApple(allSongs: boolean) {
       const t = norm(s.title);
       const a = norm(firstArtist(s));
       const g = norm(s.game);
+      const b = norm(s.brand);
+      // "(feat. 〇〇)" "(Game Size)" などの括弧書きを外して比べる
+      const bare = (x: string) => norm(x.replace(/\s*[(（\[［][^)）\]］]*[)）\]］]\s*$/, ""));
       const score = (r: any) =>
-        (norm(r.trackName) === t ? 10 : norm(r.trackName).startsWith(t) ? 5 : 0) +
-        (a && norm(r.artistName ?? "").includes(a) ? 4 : 0) +
+        (norm(r.trackName) === t || bare(r.trackName) === t
+          ? 10
+          : norm(r.trackName).startsWith(t)
+            ? 5
+            : 0) +
+        (a && (norm(r.artistName ?? "").includes(a) || norm(r.trackName).includes(a)) ? 4 : 0) +
+        (b.length >= 2 && norm(r.artistName ?? "").includes(b) ? 2 : 0) +
         (g && norm(r.collectionName ?? "").includes(g.slice(0, 6)) ? 2 : 0) +
         (/(off ?vocal|instrumental|karaoke|カラオケ)/i.test(r.trackName) ? -8 : 0);
       const best = res.map((r) => [score(r), r] as const).sort((x, y) => y[0] - x[0])[0];
@@ -393,6 +425,96 @@ async function stageOdesli() {
   save("odesli.json", out);
 }
 
+// ---------- youtube: サイト内再生用に YouTube の動画を探す ----------
+type YtOut = { id: string; title: string; channel: string; length?: string } | null;
+
+async function ytSearch(q: string) {
+  const r = await get(
+    `https://www.youtube.com/results?${new URLSearchParams({ search_query: q, hl: "ja", gl: "JP" })}`,
+    {
+      headers: { "user-agent": "Mozilla/5.0", "accept-language": "ja" },
+    },
+  );
+  const html = await r.text();
+  const json = html.match(/var ytInitialData = (\{[\s\S]*?\});<\/script>/)?.[1];
+  if (!json) throw new Error("ytInitialData not found");
+  const found: { id: string; title: string; channel: string; length?: string }[] = [];
+  const walk = (o: any) => {
+    if (!o || typeof o !== "object") return;
+    if (o.videoRenderer?.videoId) {
+      const v = o.videoRenderer;
+      found.push({
+        id: v.videoId,
+        title: v.title?.runs?.map((x: any) => x.text).join("") ?? "",
+        channel: v.ownerText?.runs?.[0]?.text ?? "",
+        length: v.lengthText?.simpleText,
+      });
+      return;
+    }
+    for (const k in o) walk(o[k]);
+  };
+  walk(JSON.parse(json));
+  return found;
+}
+
+async function stageYoutube() {
+  const out = load<Record<number, YtOut>>("youtube.json", {});
+  const targets = songs.filter((s) => !(s.id in out));
+  console.log(`YouTube 検索: ${targets.length} 曲 (2 秒間隔)`);
+  for (const [i, s] of targets.entries()) {
+    try {
+      const t = norm(s.title);
+      const a = norm(firstArtist(s));
+      const g = norm(s.game).slice(0, 6);
+      const b = norm(s.brand);
+      const secs = (l?: string) => (l ?? "").split(":").reduce((x, y) => x * 60 + Number(y), 0);
+      const score = (v: { title: string; channel: string; length?: string }) => {
+        const nt = norm(v.title);
+        const nc = norm(v.channel);
+        const len = secs(v.length);
+        return (
+          (nt.includes(t) ? 10 : 0) +
+          (a && (nt.includes(a) || nc.includes(a)) ? 3 : 0) +
+          (g && nt.includes(g) ? 2 : 0) +
+          (/topic|トピック/i.test(v.channel) ? 3 : 0) +
+          (b.length >= 2 && nc.includes(b) ? 3 : 0) +
+          (/(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|叩いてみた|打ってみた|踊ってみた|ヲタ芸|dtx|太鼓|piano|ピアノ|mad|amv|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley)/i.test(
+            v.title,
+          )
+            ? -8
+            : 0) +
+          (/short ?ver|ショート|tv ?size|game ?size/i.test(v.title) ? -2 : 0) +
+          (len && (len < 90 || len > 900) ? -6 : 0)
+        );
+      };
+      const pick = (res: Awaited<ReturnType<typeof ytSearch>>) =>
+        res
+          .slice(0, 12)
+          .map((v) => [score(v), v] as const)
+          .sort((x, y) => y[0] - x[0])[0];
+      let best = pick(await ytSearch(`${s.title} ${firstArtist(s)}`.trim()));
+      if (!best || best[0] < 13) {
+        await sleep(2000);
+        const short = s.game.split(/[\s　\-－～~〜(（]/)[0];
+        const alt = pick(await ytSearch(`${s.title} ${short}`.trim()));
+        if (alt && (!best || alt[0] > best[0])) best = alt;
+      }
+      out[s.id] = best && best[0] >= 10 ? best[1] : null;
+    } catch (e) {
+      console.warn(`  ! ${s.title}: ${(e as Error).message}`);
+    }
+    if (i % 25 === 24) {
+      save("youtube.json", out);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
+    }
+    await sleep(2000);
+  }
+  save("youtube.json", out);
+  console.log(`  見つかった曲: ${Object.values(out).filter(Boolean).length}`);
+}
+
 // ---------- spotify (任意) ----------
 async function stageSpotify() {
   const id = process.env.SPOTIFY_CLIENT_ID;
@@ -444,6 +566,7 @@ function stageWrite() {
     {},
   );
   const games = load<Record<string, GameOut>>("games.json", {});
+  const yt = load<Record<number, YtOut>>("youtube.json", {});
   const links: Record<number, Record<string, string>> = {};
   for (const s of songs) {
     const l: Record<string, string> = {};
@@ -456,6 +579,11 @@ function stageWrite() {
     const sp = spotify[s.id];
     if (sp && !l.spotify) l.spotify = sp.url;
     if (sp?.artwork && !l.artwork) l.artwork = sp.artwork;
+    const y = yt[s.id];
+    if (y) {
+      l.yt = y.id; // サイト内再生用の動画ID
+      l.youtube ??= `https://www.youtube.com/watch?v=${y.id}`;
+    }
     if (Object.keys(l).length) links[s.id] = l;
   }
   const gameOut: Record<string, { official?: string; officialAlive?: boolean; cover?: string }> =
@@ -483,4 +611,5 @@ if (stage === "alive") await checkAlive(load("games.json", {}));
 if (stage === "apple" || stage === "all") await stageApple(allSongs);
 if (stage === "odesli" || stage === "all") await stageOdesli();
 if (stage === "spotify" || stage === "all") await stageSpotify();
+if (stage === "youtube" || stage === "all") await stageYoutube();
 stageWrite();

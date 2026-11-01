@@ -1,1 +1,5240 @@
-{}
+{
+  "サクラノ詩 -櫻の森の上を舞う-": {
+    "official": "http://www.makura-soft.com/sakuranouta/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/79663.jpg"
+  },
+  "サクラノ刻 -櫻の森の下を歩む-": {
+    "official": "https://www.makura-soft.com/sakuranotoki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/79666.jpg"
+  },
+  "さくら、もゆ。 -as the Night's, Reincarnation-": {
+    "official": "http://www.favo-soft.jp/soft/product/sakura/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/79671.jpg"
+  },
+  "ちいさな彼女の小夜曲": {
+    "official": "http://www.feng.jp/hoshi/chiisana/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/93758.jpg"
+  },
+  "素晴らしき日々 ～不連続存在～": {
+    "official": "http://www.keroq.co.jp/suba/index0.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/90017.jpg"
+  },
+  "アオイトリ": {
+    "official": "http://www.purplesoftware.jp/products/aoitori/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/22/79722.jpg"
+  },
+  "夢と色でできている": {
+    "official": "http://www.feng.jp/feng8th/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/37/89237.jpg"
+  },
+  "ハミダシクリエイティブ凸": {
+    "official": "https://madosoft.net/totsu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/81091.jpg"
+  },
+  "はつゆきさくら": {
+    "official": "http://sagaplanets.product.co.jp/works/hatuyuki/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/89943.jpg"
+  },
+  "Re:LieF ～親愛なるあなたへ～": {
+    "official": "http://rask-soft.com/product/first/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/79875.jpg"
+  },
+  "9-nine- ゆきいろゆきはなゆきのあと": {
+    "official": "http://palette.clearrave.co.jp/product/yukiiro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/30/95130.jpg"
+  },
+  "向日葵の教会と長い夏休み": {
+    "official": "http://www.makura-soft.com/himanatsu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/40/90640.jpg"
+  },
+  "アインシュタインより愛を込めて": {
+    "official": "https://glovety.product.co.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/49/90349.jpg"
+  },
+  "Summer Pockets(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/08/75908.jpg"
+  },
+  "抜きゲーみたいな島に住んでる貧乳はどうすりゃいいですか? 2": {
+    "official": "https://qruppo.com/products/nukitashi2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/78380.jpg"
+  },
+  "BALDR SKY Dive2 ”RECORDARE”": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/11/81711.jpg"
+  },
+  "ハピメア -Fragmentation Dream-": {
+    "official": "http://www.purplesoftware.jp/products/hapymaher-fd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/89366.jpg"
+  },
+  "彼女のセイイキ": {
+    "official": "http://www.feng.jp/seiiki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/89562.jpg"
+  },
+  "殻ノ少女": {
+    "official": "http://www.gungnir.co.jp/innocentgrey/products/pro_shell/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/94153.jpg"
+  },
+  "白昼夢の青写真": {
+    "official": "https://laplacian.jp/yonagi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/85317.jpg"
+  },
+  "さくらの雲＊スカアレットの恋": {
+    "official": "http://cabbage-soft.com/products/scarlet/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/90878.jpg"
+  },
+  "蒼の彼方のフォーリズム": {
+    "official": "http://aokana.net/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/79855.jpg"
+  },
+  "Dreamin'Her -僕は、彼女の夢を見る。-(非18禁)": {
+    "official": "https://life0.info/dreaminher/index",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/84401.jpg"
+  },
+  "ラズベリーキューブ": {
+    "official": "http://www.madosoft.net/raspberry/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/88817.jpg"
+  },
+  "月に寄りそう乙女の作法": {
+    "official": "http://project-navel.com/tsukiniyorisou/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/79894.jpg"
+  },
+  "こなたよりかなたまで": {
+    "official": "http://fandc.co.jp/product/konakana/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/119732.jpg"
+  },
+  "ましろ色シンフォニー SANA EDITION": {
+    "official": "https://palette.clearrave.co.jp/product/mashiro-project/sana/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/16/90216.jpg"
+  },
+  "終のステラ(非18禁)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/15/75915.jpg" },
+  "AIR": { "officialAlive": false, "cover": "https://t.vndb.org/cv/04/103904.jpg" },
+  "G線上の魔王": {
+    "official": "http://www.akabeesoft2.com/g_sen/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/88067.jpg"
+  },
+  "9-nine- はるいろはるこいはるのかぜ": {
+    "official": "http://palette.clearrave.co.jp/product/haruiro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/95131.jpg"
+  },
+  "穢翼のユースティア": {
+    "official": "http://august-soft.com/eustia/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/79678.jpg"
+  },
+  "マブラヴ オルタネイティヴ": {
+    "official": "http://www.muvluv.com/alternative/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/75660.jpg"
+  },
+  "Summer Pockets REFLECTION BLUE(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/08/75908.jpg"
+  },
+  "WHITE ALBUM2 ～introductory chapter～": {
+    "official": "http://leaf.aquaplus.jp/product/wa2ic/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/88962.jpg"
+  },
+  "創作彼女の恋愛公式": {
+    "official": "http://ainolinks.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/97718.jpg"
+  },
+  "千恋＊万花": {
+    "official": "http://www.yuzu-soft.com/products/senren/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/80746.jpg"
+  },
+  "初恋1/1": {
+    "official": "http://toneworks.product.co.jp/hatsukoi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/90143.jpg"
+  },
+  "パルフェ ～ショコラ second brew～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/91/89091.jpg"
+  },
+  "ヘンタイ・プリズン": {
+    "official": "https://qruppo.com/products/henpri/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/10/94410.jpg"
+  },
+  "ドーナドーナ いっしょにわるいことをしよう": {
+    "official": "https://www.alicesoft.com/dohnadohna/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/95782.jpg"
+  },
+  "できない私が、くり返す。": {
+    "official": "http://www.akabeesoft3.com/products/timeleap/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/142313.jpg"
+  },
+  "アメイジング・グレイス -What color is your attribute?-": {
+    "official": "http://cabbage-soft.com/products/amagra/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/77946.jpg"
+  },
+  "花咲ワークスプリング!": {
+    "official": "http://sagaplanets.product.co.jp/works/hanasaki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/40/89940.jpg"
+  },
+  "アストラエアの白き永遠 Finale -白き星の夢-": {
+    "official": "http://www.favo-soft.jp/soft/product/AstralAirFinale/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/97957.jpg"
+  },
+  "グリザイアの迷宮 -LE LABYRINTHE DE LA GRISAIA-": {
+    "official": "http://frontwing.jp/product/grisaia2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/90356.jpg"
+  },
+  "ハミダシクリエイティブ": {
+    "official": "http://madosoft.net/hamidashi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/81627.jpg"
+  },
+  "ハピメア REGRET END": {
+    "official": "https://www.purplesoftware.jp/products/hapymaher-re/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/76/88076.jpg"
+  },
+  "アマツツミ": {
+    "official": "http://www.purplesoftware.jp/products/amatsutsumi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/79031.jpg"
+  },
+  "ソラコイ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/13/120013.jpg" },
+  "Making＊Lovers": {
+    "official": "http://www.hook-net.jp/smee/makinglovers/main/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/94598.jpg"
+  },
+  "恋×シンアイ彼女": { "officialAlive": false, "cover": "https://t.vndb.org/cv/80/81680.jpg" },
+  "家族計画": {
+    "official": "https://www.gungho.jp/cgame/game/kazoku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/49/101349.jpg"
+  },
+  "リトルバスターズ!(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/12/75612.jpg"
+  },
+  "Clover Day's": {
+    "official": "http://www.alcot.biz/product/cld/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/50/94750.jpg"
+  },
+  "ATRI -My Dear Moments-(非18禁)": {
+    "official": "https://atri-mdm.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/76012.jpg"
+  },
+  "ジュエリー・ハーツ・アカデミア -We will wing wonder world-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/41/76841.jpg"
+  },
+  "D.C.III ～ダ・カーポIII～(非18禁)": {
+    "official": "http://circus-co.jp/product/dc3/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/91646.jpg"
+  },
+  "千の刃濤、桃花染の皇姫": {
+    "official": "https://august-soft.com/hatou/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/37/89937.jpg"
+  },
+  "9-nine- ここのつここのかここのいろ": {
+    "official": "http://palette.clearrave.co.jp/product/kokoiro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/95133.jpg"
+  },
+  "ワガママハイスペックOC": {
+    "official": "http://wagahigh.com/oc/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/93335.jpg"
+  },
+  "いますぐお兄ちゃんに妹だっていいたい!(非18禁)": {
+    "official": "http://imaimo.com/special/download.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/87535.jpg"
+  },
+  "月の彼方で逢いましょう": {
+    "official": "http://toneworks.product.co.jp/tsukikana/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/100854.jpg"
+  },
+  "夜巡る、ボクらの迷子教室": {
+    "official": "http://www.n43project.com/n43/npg297/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/08/89208.jpg"
+  },
+  "サノバウィッチ": {
+    "official": "http://www.yuzu-soft.com/products/sothewitch/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/52/79952.jpg"
+  },
+  "カノジョ＊ステップ": {
+    "official": "http://www.hook-net.jp/smee/kanojostep/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/94601.jpg"
+  },
+  "金色ラブリッチェ": {
+    "official": "http://sagaplanets.product.co.jp/works/kinkoi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/93841.jpg"
+  },
+  "フレラバ ～Friend to Lover～": {
+    "official": "http://www.hook-net.jp/smee/friendlover/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/81481.jpg"
+  },
+  "銀色、遥か": {
+    "official": "http://toneworks.product.co.jp/ginharu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/100853.jpg"
+  },
+  "アメサラサ ～雨と、不思議な君に、恋をする～": {
+    "official": "http://www.cuffs.co.jp/products/amesarasa/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/63082.jpg"
+  },
+  "終わる世界とバースデイ": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/92/96092.jpg"
+  },
+  "Rewrite(非18禁)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/05/75905.jpg" },
+  "Summer Pockets(NS)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/08/75908.jpg" },
+  "うたてめぐり": { "officialAlive": false, "cover": "https://t.vndb.org/cv/66/91266.jpg" },
+  "ノラと皇女と野良猫ハート": {
+    "official": "http://harukaze-soft.com/2nd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/38/89938.jpg"
+  },
+  "白詰草話 -Episode of the Clovers-": {
+    "official": "http://www.littlewitch.jp/home/special/sirotsumesouwa/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/23135.jpg"
+  },
+  "抜きゲーみたいな島に住んでる貧乳はどうすりゃいいですか?": {
+    "official": "http://qruppo.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/78282.jpg"
+  },
+  "ノラと皇女と野良猫ハート2": {
+    "official": "http://harukaze-soft.com/nora2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/79711.jpg"
+  },
+  "D.C.5 ～ダ・カーポ5～(非18禁)": {
+    "official": "https://circus-co.jp/product/dc5/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/86612.jpg"
+  },
+  "BALDR FORCE": { "officialAlive": false, "cover": "https://t.vndb.org/cv/74/87174.jpg" },
+  "ピリオド": {
+    "official": "http://www.littlewitch.jp/home/special/period.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/62561.jpg"
+  },
+  "闘神都市III": {
+    "official": "http://www.alicesoft.com/toushin3/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/95818.jpg"
+  },
+  "ナツユメナギサ": {
+    "official": "http://sagaplanets.product.co.jp/works/natuyume/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/89639.jpg"
+  },
+  "この青空に約束を―": { "officialAlive": false, "cover": "https://t.vndb.org/cv/26/90926.jpg" },
+  "Monkeys!¡": {
+    "official": "https://harukaze-soft.com/monkeys/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/99/81099.jpg"
+  },
+  "妹のセイイキ": {
+    "official": "http://www.feng.jp/seiiki/imouto/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/72/71472.jpg"
+  },
+  "はるとゆき、": {
+    "official": "http://www.akabeesoft3.com/products/harutoyuki/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/35194.jpg"
+  },
+  "Nursery Rhyme -ナーサリィ☆ライム-": {
+    "official": "http://www.lumpofsugar.co.jp/product/nursery_rhyme/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/27742.jpg"
+  },
+  "BALDR SKY Dive1 ”Lost Memory”": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/55/76855.jpg"
+  },
+  "枯れない世界と終わる花": {
+    "official": "http://sweet.clearrave.co.jp/karehana/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/97082.jpg"
+  },
+  "花の野に咲くうたかたの": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/34/82634.jpg"
+  },
+  "ef - the first tale.": { "officialAlive": false, "cover": "https://t.vndb.org/cv/16/77716.jpg" },
+  "9-nine- そらいろそらうたそらのおと": {
+    "official": "http://palette.clearrave.co.jp/product/sorairo/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/95132.jpg"
+  },
+  "LAMUNATION! -ラムネーション!-": {
+    "official": "http://whitepowder.jp/lamune/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/85/83685.jpg"
+  },
+  "見上げてごらん、夜空の星を": {
+    "official": "http://www.pulltop.com/full-of-stars/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/14/76414.jpg"
+  },
+  "euphoria": { "officialAlive": false, "cover": "https://t.vndb.org/cv/77/88077.jpg" },
+  "オトメ＊ドメイン": {
+    "official": "http://qualia.clearrave.co.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/79754.jpg"
+  },
+  "星織ユメミライ": {
+    "official": "http://toneworks.product.co.jp/hoshiori/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/115491.jpg"
+  },
+  "アオナツライン": { "officialAlive": false, "cover": "https://t.vndb.org/cv/45/81645.jpg" },
+  "ティンクル☆くるせいだーす - Passion Star Stream -": {
+    "official": "http://www.lillian.jp/kurukuru2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/1817.jpg"
+  },
+  "ハッピーライヴ ショウアップ!": {
+    "official": "http://www.favo-soft.jp/soft/product/happylive_showup/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/92102.jpg"
+  },
+  "ふゆから、くるる。": {
+    "official": "http://www.silkysplus.jp/game/fuyukuru/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/89046.jpg"
+  },
+  "Clover Heart’s": {
+    "official": "http://www.alcot.biz/product/cloverhearts/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/94089.jpg"
+  },
+  "まいてつ": {
+    "official": "http://www.lose.jp/maitetsu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/76798.jpg"
+  },
+  "星空へ架かる橋AA": {
+    "official": "http://www.feng.jp/hoshi/aa.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/93762.jpg"
+  },
+  "蒼の彼方のフォーリズム EXTRA2": {
+    "official": "https://products.sprite.net/aokana/extra2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/79932.jpg"
+  },
+  "RIDDLE JOKER": {
+    "official": "http://www.yuzu-soft.com/products/riddle/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/79873.jpg"
+  },
+  "装甲悪鬼村正": {
+    "official": "http://www.fmd-muramasa.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/77925.jpg"
+  },
+  "9-nine-(非18禁)": {
+    "official": "https://9-nine-project.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/95133.jpg"
+  },
+  "いろとりどりのセカイ": {
+    "official": "http://www.favo-soft.jp/soft/product/world/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/88277.jpg"
+  },
+  "DRACU-RIOT!": {
+    "official": "http://www.yuzu-soft.com/ja/dracuriot.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/116468.jpg"
+  },
+  "あの晴れわたる空より高く": {
+    "official": "http://www.chuable.net/byakko/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/94424.jpg"
+  },
+  "漆黒のシャルノス ～What a beautiful tomorrow～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/49/94849.jpg"
+  },
+  "すきま桜とうその都会": {
+    "official": "http://www.propeller-game.com/product/sukima/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/103892.jpg"
+  },
+  "スワローテイル -あの日、青を超えて-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/03/103303.jpg"
+  },
+  "CLANNAD(非18禁)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/95/75895.jpg" },
+  "PRIMAL×HEARTS": {
+    "official": "http://www.web-marmalade.com/products/primal/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/50/22250.jpg"
+  },
+  "冥契のルペルカリア": {
+    "official": "http://kagura.rdy.jp/lupercalia/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/90194.jpg"
+  },
+  "うたわれるもの -散りゆく者への子守唄-(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/65/77965.jpg"
+  },
+  "すみれ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/41/95641.jpg" },
+  "TrymenT ―今を変えたいと願うあなたへ― AlphA編(非18禁)": {
+    "official": "http://www.hikarifield.co.jp/tryment/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/59/79859.jpg"
+  },
+  "俺の彼女のウラオモテ": {
+    "official": "http://www.aries-soft.jp/nonoura/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/07/69707.jpg"
+  },
+  "CROSS†CHANNEL": { "officialAlive": false, "cover": "https://t.vndb.org/cv/79/86579.jpg" },
+  "智代アフター ～It’s a Wonderful Life～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/57/97057.jpg"
+  },
+  "宿星のガールフレンド -the destiny star of girlfriend-": {
+    "official": "http://www.mirai-soft.net/syukugar/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/95453.jpg"
+  },
+  "D.S. i.F. -Dal Segno- in Future": {
+    "official": "http://circus-co.jp/product/dsif/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/111024.jpg"
+  },
+  "Magical Charming!": {
+    "official": "http://www.lumpofsugar.co.jp/product/magicha/index.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/81694.jpg"
+  },
+  "アマカノ2": {
+    "official": "http://azarashi-soft.nexton-net.jp/amakano2-pe/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/96618.jpg"
+  },
+  "水葬銀貨のイストリア": {
+    "official": "http://kagura.rdy.jp/ginka/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/116698.jpg"
+  },
+  "D.S. -Dal Segno-": {
+    "official": "http://circus-co.jp/product/ds/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/77743.jpg"
+  },
+  "アマカノ2+": {
+    "official": "http://azarashi-soft.nexton-net.jp/amakano2-plus/limited.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/96618.jpg"
+  },
+  "消えた世界と月と少女": { "cover": "https://t.vndb.org/cv/03/98803.jpg" },
+  "2045、月より。": {
+    "official": "http://mellow-soft.com/2045/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/89941.jpg"
+  },
+  "ゴールデンアワー": { "officialAlive": false, "cover": "https://t.vndb.org/cv/02/103302.jpg" },
+  "俺たちに翼はない": { "officialAlive": false, "cover": "https://t.vndb.org/cv/72/79672.jpg" },
+  "学☆王 -THE ROYAL SEVEN STARS-": {
+    "official": "http://www.lumpofsugar.co.jp/product/gackoh/index.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/84/28384.jpg"
+  },
+  "月姫 -A piece of blue glass moon-(NS)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/82/92482.jpg"
+  },
+  "少女神域∽少女天獄 -The Garden of Fifth Zoa-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/04/97604.jpg"
+  },
+  "さくらの雲＊スカアレットの恋(NS)": {
+    "official": "http://www.entergram.co.jp/scarlet/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/90878.jpg"
+  },
+  "景の海のアペイリア": {
+    "official": "http://www.silkysplus.jp/game/apeiria/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/37/89537.jpg"
+  },
+  "D.C. ～ダ・カーポ～": {
+    "official": "https://circus-co.jp/product/dchp/dc/dc.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/88156.jpg"
+  },
+  "DEAD DAYS": {
+    "official": "http://clockup.net/dd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/94857.jpg"
+  },
+  "FLIP＊FLOP ～RAMBLING OVERRUN～": {
+    "official": "https://fanzagames-digination.com/flipflop_ran/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/88873.jpg"
+  },
+  "カルマルカ＊サークル": {
+    "official": "http://sagaplanets.product.co.jp/works/karumaruka/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/89192.jpg"
+  },
+  "魔女こいにっき": { "officialAlive": false, "cover": "https://t.vndb.org/cv/84/79784.jpg" },
+  "学校のセイイキ": {
+    "official": "http://www.feng.jp/seiiki/gakkou/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/90/77390.jpg"
+  },
+  "燐月 -リンゲツ-": { "officialAlive": false, "cover": "https://t.vndb.org/cv/73/110273.jpg" },
+  "きまぐれテンプテーション": {
+    "official": "http://www.silkysplus.jp/game/kimagure/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/76994.jpg"
+  },
+  "空に刻んだパラレログラム": {
+    "official": "http://kagura.rdy.jp/sora/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/92771.jpg"
+  },
+  "恋と選挙とチョコレート": {
+    "official": "http://sprite.org/koichoco/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/88032.jpg"
+  },
+  "D.C.III R ～ダ・カーポIII アール～(非18禁)": {
+    "official": "http://circus.nandemo.gr.jp/sakuhin/dc3r/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/91646.jpg"
+  },
+  "ニュートンと林檎の樹": { "officialAlive": false, "cover": "https://t.vndb.org/cv/73/81773.jpg" },
+  "さくらむすび": {
+    "official": "http://www.cuffs.co.jp/products/sakuramusubi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/1806.jpg"
+  },
+  "マルコと銀河竜 ～MARCO&GALAXY DRAGON～(非18禁)": {
+    "official": "https://uyragnigotocr.am/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/08/78908.jpg"
+  },
+  "タユタマ -kiss on my deity-": {
+    "official": "http://www.lumpofsugar.co.jp/product/tayutama/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/102489.jpg"
+  },
+  "君が望む永遠": {
+    "official": "http://www.age-soft.com/former/Product/Kimibo/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/90575.jpg"
+  },
+  "Garden": {
+    "official": "https://www.cuffs.co.jp/products/garden/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/34/72634.jpg"
+  },
+  "そして明日の世界より――": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/21/97021.jpg"
+  },
+  "魔法使いの夜 -WITCH ON THE HOLY NIGHT-(非18禁)": {
+    "official": "http://www.typemoon.com/products/mahoyo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/85324.jpg"
+  },
+  "秋色恋華": {
+    "official": "http://www.purplesoftware.jp/products/akiiro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/111500.jpg"
+  },
+  "それは舞い散る桜のように": {
+    "official": "https://project-navel.com/sorechiru/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/95617.jpg"
+  },
+  "アサガオは夜を識らない。": {
+    "official": "http://mellow-soft.com/asaai/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/103298.jpg"
+  },
+  "戦国ランス": {
+    "official": "http://www.alicesoft.com/rance7/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/95775.jpg"
+  },
+  "愛しい対象の護り方": { "officialAlive": false, "cover": "https://t.vndb.org/cv/93/113293.jpg" },
+  "かけぬけ★青春スパーキング!": {
+    "official": "http://sagaplanets.product.co.jp/works/kakenuke/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/65/95965.jpg"
+  },
+  "Summer Pockets": { "officialAlive": false, "cover": "https://t.vndb.org/cv/08/75908.jpg" },
+  "クナド国記": {
+    "official": "https://www.purplesoftware.jp/products/kunado_kokuki/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/79760.jpg"
+  },
+  "生命のスペア I was born for you": {
+    "official": "http://www.akabeesoft3.com/products/inochinospare/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/15/116715.jpg"
+  },
+  "WHITE ALBUM2 ～closing chapter～": {
+    "official": "http://leaf.aquaplus.jp/product/wa2cc/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/88962.jpg"
+  },
+  "PARQUET(非18禁)": {
+    "official": "http://www.yuzusoft-sour.com/products/parquet/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/79891.jpg"
+  },
+  "AMBITIOUS MISSION": {
+    "official": "http://sagaplanets.product.co.jp/works/ambitious/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/90196.jpg"
+  },
+  "最終試験くじら": {
+    "official": "http://circus.nandemo.gr.jp/sakuhin/kujira/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/98700.jpg"
+  },
+  "Purely ～その狭い青空を見上げて～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/62/128462.jpg"
+  },
+  "IMMORAL": { "officialAlive": false, "cover": "https://t.vndb.org/cv/83/28683.jpg" },
+  "ゆめいろアルエット!": {
+    "official": "http://mana.product.co.jp/yumearu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/69562.jpg"
+  },
+  "CARNIVAL": {
+    "official": "http://bbs.sumisora.net/read.php?tid=11017826",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/14/127714.jpg"
+  },
+  "カルタグラ ～ツキ狂イノ病～": {
+    "official": "http://www.gungnir.co.jp/innocentgrey/products/pro_cartagra/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/77274.jpg"
+  },
+  "縁りて此の葉は紅に": {
+    "official": "http://www.lumpofsugar.co.jp/product/yorikure/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/98657.jpg"
+  },
+  "恋がさくころ桜どき": {
+    "official": "http://palette.clearrave.co.jp/product/sakusaku/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/76551.jpg"
+  },
+  "ピュアガール": {
+    "official": "http://frontwing.jp/product/pure/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/26231.jpg"
+  },
+  "彼女たちの流儀": { "officialAlive": false, "cover": "https://t.vndb.org/cv/83/93783.jpg" },
+  "未来ノスタルジア": {
+    "official": "http://www.purplesoftware.jp/products/miranosu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/111461.jpg"
+  },
+  "日向千尋は仕事が続かない": {
+    "official": "http://s-mi-le.com/product/05_hi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/79762.jpg"
+  },
+  "Dies irae ～Also sprach Zarathustra～": {
+    "official": "http://www.light.gr.jp/light/products/diesirae/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/105527.jpg"
+  },
+  "月影のシミュラクル -解放の羽-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/29/82629.jpg"
+  },
+  "アインシュタインより愛を込めて APOLLOCRISIS": {
+    "official": "https://glovety.product.co.jp/apollocrisis/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/49/90349.jpg"
+  },
+  "しゅぷれ～むキャンディ ～王道には王道たる理由があるんです!～": {
+    "official": "http://www.makura-soft.com/candy/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/107841.jpg"
+  },
+  "猫撫ディストーション": { "officialAlive": false, "cover": "https://t.vndb.org/cv/62/98662.jpg" },
+  "SNOW": { "officialAlive": false, "cover": "https://t.vndb.org/cv/29/90129.jpg" },
+  "沙耶の唄": {
+    "official": "http://www.nitroplus.co.jp/pc/lineup/into_06/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/93368.jpg"
+  },
+  "D.C.4 ～ダ・カーポ4～(非18禁)": {
+    "official": "https://circus-co.jp/product/dc4/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/88/39688.jpg"
+  },
+  "グリザイアの楽園 -LE EDEN DE LA GRISAIA-": {
+    "official": "http://frontwing.jp/product/grisaia3/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/79012.jpg"
+  },
+  "sense off ～a sacred story in the wind～": {
+    "official": "http://arcadiastudio.net/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/95989.jpg"
+  },
+  "つよきす": {
+    "official": "http://www.candysoft.jp/ohp/01_products/tuyokiss/tuyokiss_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/72/75672.jpg"
+  },
+  "祝福のカンパネラ -la campanella della benedizione-": {
+    "official": "http://windmill.suki.jp/product/campanella/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/03/99903.jpg"
+  },
+  "七つのふしぎの終わるとき": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/22/97022.jpg"
+  },
+  "さよならを教えて ～comment te dire adieu～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/33/76933.jpg"
+  },
+  "天ノ少女《PREMIUM EDITION》": {
+    "official": "http://www.gungnir.co.jp/innocentgrey/products/pro_shell3/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/72/101372.jpg"
+  },
+  "Aster": { "officialAlive": false, "cover": "https://t.vndb.org/cv/26/119626.jpg" },
+  "グリザイアの果実 -LE FRUIT DE LA GRISAIA-": {
+    "official": "http://frontwing.jp/product/grisaia/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/90355.jpg"
+  },
+  "Golden Marriage": {
+    "official": "http://www.ensemble-game.com/08.goldenmarriage/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/89700.jpg"
+  },
+  "キミトユメミシ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/12/92112.jpg" },
+  "ハピメア": {
+    "official": "http://www.purplesoftware.jp/products/hapymaher/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/76/88076.jpg"
+  },
+  "天使☆騒々 Re-BOOT!": {
+    "official": "https://www.yuzu-soft.com/products/ten_sz/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/88666.jpg"
+  },
+  "甘えかたは彼女なりに。": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/88/91288.jpg"
+  },
+  "キラ☆キラ": {
+    "official": "http://project.over-drive.jp/kirakira/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/86581.jpg"
+  },
+  "絆きらめく恋いろは -椿恋歌-": {
+    "official": "http://crystalia.amusecraft.com/tsubaki/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/08/94408.jpg"
+  },
+  "暁の護衛 ～罪深き終末論～": {
+    "official": "http://www.akabeesoft3.com/products/goei2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/14/100214.jpg"
+  },
+  "Steins;Gate(XB360)": {
+    "official": "http://steinsgate.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/19/77819.jpg"
+  },
+  "V.G. NEO": {
+    "official": "https://bbs.sumisora.net/read.php?tid=11036156",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/16327.jpg"
+  },
+  "明日の君と逢うために": {
+    "official": "http://www.purplesoftware.jp/products/asukimi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/20/149120.jpg"
+  },
+  "月影のシミュラクル(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/29/82629.jpg"
+  },
+  "ぼーん・ふりーくす!": {
+    "official": "http://www.liar.co.jp/bf.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/94896.jpg"
+  },
+  "異世界の三姉妹さんが嫁いできました!?": {
+    "official": "https://evoll.jp/product/tonatotsu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/100596.jpg"
+  },
+  "十六夜のフォルトゥーナ": {
+    "official": "http://www.lapislazuli-soft.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/99/93099.jpg"
+  },
+  "金色ラブリッチェ -Golden Time-": {
+    "official": "http://sagaplanets.product.co.jp/works/kinkoigt/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/93843.jpg"
+  },
+  "あなたに恋する恋愛ルセット": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/66/114966.jpg"
+  },
+  "パニカル・コンフュージョン": {
+    "official": "http://www.escude.co.jp/product/panicon/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/90342.jpg"
+  },
+  "キミへ贈る、ソラの花": {
+    "official": "http://www.cabbit.jp/kimisora/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/69894.jpg"
+  },
+  "ギャングスタ・リパブリカ": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/50/151250.jpg"
+  },
+  "秋のうららの ～あかね色商店街～": {
+    "official": "http://www.bloomhandle.jp/akiurara/akiurara.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/109217.jpg"
+  },
+  "神待ちサナちゃん": {
+    "official": "http://frill.product.co.jp/kamimachi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/49581.jpg"
+  },
+  "ななついろ★ドロップス": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/38/99238.jpg"
+  },
+  "WHITE ALBUM": {
+    "official": "https://leaf.aquaplus.jp/product/wa/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/04/78304.jpg"
+  },
+  "お家に帰るまでがましまろです": {
+    "official": "http://www.web-marmalade.com/products/mashimaro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/79763.jpg"
+  },
+  "恋ではなく -It’s not love, but so where near.": {
+    "official": "http://www.akabeesoft3.com/products/koidehanaku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/08/97908.jpg"
+  },
+  "未来にキスを -Kiss the Future-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/95/136195.jpg"
+  },
+  "キラークイーン": { "cover": "https://t.vndb.org/cv/99/78699.jpg" },
+  "幻創のイデア ～Oratorio Phantasm Historia～": {
+    "official": "http://3rdeye.jp/products/idea/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/147783.jpg"
+  },
+  "桜吹雪 ～千年の恋をしました～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/41/144541.jpg"
+  },
+  "ここから夏のイノセンス!": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/29/127329.jpg"
+  },
+  "your diary": {
+    "official": "http://www.cuffs-cube.jp/products/yourdiary/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/81767.jpg"
+  },
+  "narcissu -SIDE 2nd-(非18禁)": {
+    "official": "http://stage-nana.sakura.ne.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/93313.jpg"
+  },
+  "聖なるかな -The Spirit of Eternity Sword 2-": {
+    "official": "http://www.xuse.co.jp/product/narukana/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/77856.jpg"
+  },
+  "真・恋姫†無双～萌将伝～": {
+    "official": "http://baseson.nexton-net.jp/msd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/29/27729.jpg"
+  },
+  "恋剣乙女": { "officialAlive": false, "cover": "https://t.vndb.org/cv/50/88750.jpg" },
+  "天使のいない12月": {
+    "official": "http://leaf.aquaplus.jp/product/other/ten.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/111443.jpg"
+  },
+  "紅月ゆれる恋あかり": {
+    "official": "http://crystalia.amusecraft.com/yureaka/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/89212.jpg"
+  },
+  "夏空カナタ": {
+    "official": "http://legacy.yuzu-soft.com/natsu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/52169.jpg"
+  },
+  "Hello,good-bye": {
+    "official": "http://www.lumpofsugar.co.jp/product/hgb/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/79818.jpg"
+  },
+  "恋色空模様": { "officialAlive": false, "cover": "https://t.vndb.org/cv/95/137595.jpg" },
+  "星空のメモリア -Wish upon a shooting star-": {
+    "official": "http://www.favo-soft.jp/soft/product/hoshimemo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/29/79729.jpg"
+  },
+  "ランス10": {
+    "official": "http://www.alicesoft.com/rance10/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/88391.jpg"
+  },
+  "絆きらめく恋いろは": {
+    "official": "http://crystalia.amusecraft.com/mekuiro",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/95258.jpg"
+  },
+  "マジカライド": { "officialAlive": false, "cover": "https://t.vndb.org/cv/51/149651.jpg" },
+  "働くオトナの恋愛事情": {
+    "official": "http://www.akabeesoft3.com/products/hatarakuotona/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/20/121520.jpg"
+  },
+  "未来ラジオと人工鳩": { "officialAlive": false, "cover": "https://t.vndb.org/cv/35/79935.jpg" },
+  "D.C.II Spring Celebration ～ダ・カーポII～ スプリング セレブレイション": {
+    "official": "https://circus-co.jp/product/dc2sc/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/17875.jpg"
+  },
+  "春音アリス＊グラム": {
+    "official": "http://nanawind.jp/product/prj04/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/101613.jpg"
+  },
+  "天神乱漫 LUCKY or UNLUCKY!?": {
+    "official": "http://legacy.yuzu-soft.com/tenshin/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/27811.jpg"
+  },
+  "宿星のガールフレンド ALL STAR": {
+    "official": "http://www.mirai-soft.net/syukugar-as/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/95453.jpg"
+  },
+  "この大空に、翼をひろげて": {
+    "official": "http://konosora.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/65/76365.jpg"
+  },
+  "るいは智を呼ぶ": {
+    "official": "http://www.akatsukiworks.com/product/ruitomo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/88196.jpg"
+  },
+  "Kanon": { "officialAlive": false, "cover": "https://t.vndb.org/cv/21/81221.jpg" },
+  "Petrichor -ペトリコール-": {
+    "official": "http://mellow-soft.com/petrichor/",
+    "officialAlive": true
+  },
+  "うたわれるもの 二人の白皇(PSV)": {
+    "official": "http://aquaplus.jp/uta/oro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/85164.jpg"
+  },
+  "ワルキューレロマンツェ More&More": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/06/114206.jpg"
+  },
+  "ChuSinGura46+1 -忠臣蔵46+1- 假名手本忠臣蔵編": { "cover": "https://t.vndb.org/cv/79/87879.jpg" },
+  "星空へ架かる橋": {
+    "official": "http://www.feng.jp/hoshi/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/93761.jpg"
+  },
+  "LOOPERS(非18禁)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/09/75909.jpg" },
+  "DUEL SAVIOR": { "officialAlive": false, "cover": "https://t.vndb.org/cv/54/89154.jpg" },
+  "Like a Butler": { "officialAlive": false, "cover": "https://t.vndb.org/cv/97/94797.jpg" },
+  "プリズム・アーク ～プリズム・ハート エピソード2 ～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/75/28675.jpg"
+  },
+  "AQUA": {
+    "official": "http://www.sorahane.org/aqua/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/102197.jpg"
+  },
+  "Scarlett ～スカーレット～": {
+    "official": "https://bbs.sumisora.net/read.php?tid=10902835",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/95370.jpg"
+  },
+  "恋色空模様 after happiness and extra hearts": { "cover": "https://t.vndb.org/cv/96/137596.jpg" },
+  "ソーサレス＊アライヴ! ～the World's End Fallen Star～": {
+    "official": "http://fanzagames-digination.com/fluorite/sorceress-alive/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/100612.jpg"
+  },
+  "超昂閃忍ハルカ": {
+    "official": "http://www.alicesoft.com/haruka/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/50/88850.jpg"
+  },
+  "いろとりどりのヒカリ": {
+    "official": "http://www.favo-soft.jp/soft/product/Hikari/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/88282.jpg"
+  },
+  "フローラル・フローラブ": {
+    "official": "http://sagaplanets.product.co.jp/works/floflo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/89939.jpg"
+  },
+  "ピュア×コネクト": {
+    "official": "http://www.hook-net.jp/smee/pureconnect/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/103570.jpg"
+  },
+  "Strawberry Nauts": {
+    "official": "http://www.hook-net.jp/strawberrynauts/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/95823.jpg"
+  },
+  "遥かに仰ぎ、麗しの": { "officialAlive": false, "cover": "https://t.vndb.org/cv/95/89195.jpg" },
+  "恋と恋するユートピア": {
+    "official": "http://lovematic.net/koipia/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/111480.jpg"
+  },
+  "eden* They were only two, on the planet.(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/17/79017.jpg"
+  },
+  "CAFE SOURIRE": {
+    "official": "http://www.cuffs.co.jp/products/cafesourire",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/72695.jpg"
+  },
+  "まいてつ Last Run!!": {
+    "official": "https://hikarifield.co.jp/maitetsu_lastrun/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/88927.jpg"
+  },
+  "俺たちに翼はない Prelude(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/46/88446.jpg"
+  },
+  "11月のアルカディア": { "officialAlive": false, "cover": "https://t.vndb.org/cv/23/27123.jpg" },
+  "天色＊アイルノーツ": {
+    "official": "http://www.yuzu-soft.com/ja/amairo.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/97302.jpg"
+  },
+  "ミライセカイのプラネッタ": {
+    "official": "http://www.libre-soft.jp/planetta/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/145042.jpg"
+  },
+  "fortissimo//Akkord:Bsusvier(非18禁)": {
+    "official": "http://cappuccino-soft.jp/lacryma-web/fortissimo/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/49/20749.jpg"
+  },
+  "水夏 ～SUIKA～": {
+    "official": "https://circus-co.jp/product/suikahp/main.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/95660.jpg"
+  },
+  "なないろ航路": { "officialAlive": false, "cover": "https://t.vndb.org/cv/30/91730.jpg" },
+  "ハナヒメ＊アブソリュート!": {
+    "official": "http://www.mirai-soft.net/hanahime/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/50/96350.jpg"
+  },
+  "缶詰少女ノ終末世界": {
+    "official": "http://www.silkysplus.jp/game/kanzume/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/104755.jpg"
+  },
+  "夏ノ雨": {
+    "official": "http://www.cuffs-cube.jp/products/natsunoame/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/89400.jpg"
+  },
+  "青春フラジャイル": {
+    "official": "https://www.purplesoftware.jp/products/seishun_f/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/116160.jpg"
+  },
+  "サメと生きる七日間": {
+    "official": "http://www.cuffs.co.jp/products/samenana/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/103911.jpg"
+  },
+  "fortissimo EXS//Akkord:nächsten Phase": {
+    "official": "http://cappuccino-soft.jp/lacryma-web/fortissimoexs/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/93345.jpg"
+  },
+  "君とつながる恋フラグ": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/90/108390.jpg"
+  },
+  "スマガ -STAR MINE GIRL-": {
+    "official": "http://www.sumaga.net/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/93358.jpg"
+  },
+  "リトルバスターズ!エクスタシー": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/12/75612.jpg"
+  },
+  "Fate/stay night": {
+    "official": "http://www.typemoon.com/products/fate/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/89071.jpg"
+  },
+  "Clear -クリア-": {
+    "official": "http://www.moon-stone.jp/product/ms06/06_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/108070.jpg"
+  },
+  "FLIP＊FLOP 〜INNOCENCE OVERCLOCK〜": {
+    "official": "https://www.fanzagames-digination.com/flipflop_io/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/72/88872.jpg"
+  },
+  "すぴぱら - Alice the magical conductor. STORY #01 - Spring Has Come!(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/67/82067.jpg"
+  },
+  "Justy×Nasty ～魔王はじめました～": {
+    "official": "http://whirlpool.co.jp/justynasty/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/89241.jpg"
+  },
+  "FORTUNE ARTERIAL": {
+    "official": "http://august-soft.com/fa/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/50725.jpg"
+  },
+  "黄昏のシンセミア": { "officialAlive": false, "cover": "https://t.vndb.org/cv/73/148573.jpg" },
+  "みずいろ": { "cover": "https://t.vndb.org/cv/66/111766.jpg" },
+  "鬼うた。～鬼が来たりて、甘えさせろとのたもうた。～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/36/71236.jpg"
+  },
+  "恋愛×ロワイアル": {
+    "official": "http://www.asa-pro.com/koirowa/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/81961.jpg"
+  },
+  "フユウソ -Snow World End- (全年齢本編無料版)(非18禁)": {
+    "official": "http://www.campus.gr.jp/product/fuyuuso/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/107394.jpg"
+  },
+  "BALDR SKY Zero -バルドスカイゼロ-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/38/130838.jpg"
+  },
+  "大図書館の羊飼い a good librarian like a good shepherd": {
+    "official": "http://www.august-soft.com/daito/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/72/86072.jpg"
+  },
+  "円交少女2 ～JKアイドル真鈴の場合～": {
+    "official": "http://frill.product.co.jp/enko-shojo2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/33306.jpg"
+  },
+  "恋想リレーション": {
+    "official": "http://www.lumpofsugar.co.jp/product/rensou/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/93789.jpg"
+  },
+  "フォーチュンクッキー": { "cover": "https://t.vndb.org/cv/61/129761.jpg" },
+  "カラフルアクアリウム": { "officialAlive": false, "cover": "https://t.vndb.org/cv/69/94069.jpg" },
+  "タユタマ -It’s Happy Days-": {
+    "official": "http://www.lumpofsugar.co.jp/product/happydays/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/16/113216.jpg"
+  },
+  "ボクラはピアチェーレ": {
+    "official": "http://www.adlib-software.com/bokupia/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/05/27705.jpg"
+  },
+  "Triptych": {
+    "official": "http://www.alcot.biz/product/triptych/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/94106.jpg"
+  },
+  "D.C.II ～ダ・カーポII～": {
+    "official": "https://circus-co.jp/product/dc2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/93568.jpg"
+  },
+  "俺たちに翼はない AfterStory": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/48/63448.jpg"
+  },
+  "PrismRhythm -プリズムリズム-": {
+    "official": "http://www.lumpofsugar.co.jp/product/prismrhythm/index.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/105025.jpg"
+  },
+  "魔界天使ジブリール4": {
+    "official": "http://frontwing.jp/product/djibril4/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/38/119438.jpg"
+  },
+  "はるのあしおと": { "officialAlive": false, "cover": "https://t.vndb.org/cv/70/91570.jpg" },
+  "ToHeart2(PS2)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/90/94790.jpg" },
+  "サクラ大戦(SS)": {
+    "official": "http://game.sakura-taisen.com/sakura1/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/88183.jpg"
+  },
+  "恋愛、借りちゃいました": {
+    "official": "http://www.asa-pro.com/koikari/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/59/81959.jpg"
+  },
+  "流星ワールドアクター": {
+    "official": "http://fanzagames-digination.com/heliodor/world-actor/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/77962.jpg"
+  },
+  "レミニセンス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/92/127692.jpg" },
+  "D.C.II To You ～ダ・カーポII～ トゥーユー": {
+    "official": "http://circus.nandemo.gr.jp/sakuhin/dc2ty/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/17874.jpg"
+  },
+  "終わりなき夏 永遠なる音律": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/01/107801.jpg"
+  },
+  "群青の空を越えて": {
+    "official": "http://www.light.gr.jp/light/products/gunjou/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/09/4009.jpg"
+  },
+  "源平繚乱絵巻 -GIKEI-": {
+    "official": "http://inre-soft.com/gikei/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/44189.jpg"
+  },
+  "ずっと前から女子でした": { "official": "http://www.feng.jp/zutto/", "officialAlive": true },
+  "この恋、青春により。": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/01/103301.jpg"
+  },
+  "時を紡ぐ約束": { "officialAlive": false, "cover": "https://t.vndb.org/cv/33/107533.jpg" },
+  "その花が咲いたら、また僕は君に出逢う": {
+    "official": "http://www.campus.gr.jp/product/kimihana/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/94302.jpg"
+  },
+  "こんそめ! ～combination somebody～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/44/144544.jpg"
+  },
+  "鯨神のティアスティラ": {
+    "official": "http://whirlpool.co.jp/tearstilla/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/15/97115.jpg"
+  },
+  "ユキイロサイン": {
+    "official": "http://wonder-fool.jp/yukiiro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/26/89626.jpg"
+  },
+  "うたわれるもの 偽りの仮面(PSV)": {
+    "official": "http://aquaplus.jp/uta/itsu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/85161.jpg"
+  },
+  "ほしうた": {
+    "official": "http://frontwing.jp/product/hoshiuta/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/09/147809.jpg"
+  },
+  "ピュアソングガーデン!": {
+    "official": "http://www.pulltop.com/PSG",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/93293.jpg"
+  },
+  "StarTRain": {
+    "official": "http://www.mixed-up-web.com/str/str.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/100246.jpg"
+  },
+  "-atled- everlasting song": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/22/69522.jpg"
+  },
+  "ゴア・スクリーミング・ショウ": {
+    "official": "http://www.cyc-soft.com/b-cyc-pro/gss/gss_Frame.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/78073.jpg"
+  },
+  "しゅがてん! -sugarfull tempering-": {
+    "official": "http://recette.clearrave.co.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/79769.jpg"
+  },
+  "R.U.R.U.R ～ル・ル・ル・ル～ このこのために、せめてきれいな星空を": {
+    "official": "http://www.light.gr.jp/light/products/rurur/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/146378.jpg"
+  },
+  "ふぃぎゅ@メイト": {
+    "official": "http://www.escude.co.jp/product/figu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/22/89622.jpg"
+  },
+  "ワガママハイスペック": {
+    "official": "http://wagahigh.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/76545.jpg"
+  },
+  "失われた未来を求めて": { "cover": "https://t.vndb.org/cv/85/99885.jpg" },
+  "Ever17 -the out of infinity-": {
+    "official": "https://ever17.misumi.com.ar/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/79412.jpg"
+  },
+  "ソーサリージョーカーズ": {
+    "official": "http://3rdeye.jp/products/sorcery/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/76758.jpg"
+  },
+  "初情スプリンクル": {
+    "official": "https://whirlpool.co.jp/sprinkle/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/97094.jpg"
+  },
+  "月陽炎": { "cover": "https://t.vndb.org/cv/24/101524.jpg" },
+  "ましろぼたん": { "officialAlive": false, "cover": "https://t.vndb.org/cv/20/150620.jpg" },
+  "ユメミルクスリ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/95/78995.jpg" },
+  "Memories Off #5 とぎれたフィルム(PS2)": {
+    "official": "http://memoriesoff.jp/psp/5/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/75870.jpg"
+  },
+  "はるまで、くるる。": {
+    "official": "http://www.sumikko-soft.com/harukuru/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/89189.jpg"
+  },
+  "月あかりランチ OZ sings, The last fairy tale.": {
+    "official": "http://ex-one.cc/tk/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/90979.jpg"
+  },
+  "翠の海 -midori no umi-": {
+    "official": "http://www.cabbit.jp/midori/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/99/81699.jpg"
+  },
+  "うみねこのなく頃に散 Episode8 Twilight of the golden witch(非18禁)": {
+    "official": "http://07th-expansion.net/umi/Main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/86264.jpg"
+  },
+  "プレゼンス": {
+    "official": "http://clockup.entacom.net/product/presence/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/124493.jpg"
+  },
+  "少女マイノリティ -慰めの愛-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/07/103307.jpg"
+  },
+  "ジサツのための101の方法": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/41/50641.jpg"
+  },
+  "夏ノ終熄": {
+    "official": "http://www.cuffs.co.jp/products/endofsummer/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/116177.jpg"
+  },
+  "聖娼女 ～性奴育成学園～": {
+    "official": "http://frill.product.co.jp/frill10/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/121596.jpg"
+  },
+  "pieces/揺り籠のカナリア": {
+    "official": "https://whirlpool.co.jp/canary/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/90781.jpg"
+  },
+  "Areas ～恋する乙女の3H～": {
+    "official": "http://www.lapislazuli-soft.com/areas_3h/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/86/93286.jpg"
+  },
+  "カタハネ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/11/99711.jpg" },
+  "Sugar*Style": {
+    "official": "http://www.hook-net.jp/smee/sugarstyle/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/79761.jpg"
+  },
+  "LOVELY×CATION2": {
+    "official": "http://www.hibiki-site.com/lc2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/36/92536.jpg"
+  },
+  "タユタマ2 -After Stories-": {
+    "official": "http://www.lumpofsugar.co.jp/product/tayutama2_as/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/38/91638.jpg"
+  },
+  "シンソウノイズ ～受信探偵の事件簿～": {
+    "official": "http://www.digination-dmm.com/azurite/shinso/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/98124.jpg"
+  },
+  "pieces/渡り鳥のソムニウム": {
+    "official": "https://whirlpool.co.jp/pieces/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/90779.jpg"
+  },
+  "プリンセスブレイブ! ～雀卓の騎士～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/37/71237.jpg"
+  },
+  "ショコラ ～maid cafe “curio”～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/83/90783.jpg"
+  },
+  "Quartett!": {
+    "official": "http://www.littlewitch.jp/products/lw02quartett/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/65/98565.jpg"
+  },
+  "星ノ音サンクチュアリ": {
+    "official": "http://www.web-marmalade.com/products/hoshinone/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/98558.jpg"
+  },
+  "とらいあんぐるハート3 ～Sweet Songs Forever～": {
+    "official": "http://www.sp-janis.com/janis/triangleheart3/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/89362.jpg"
+  },
+  "円交少女 ～陸上部ゆっきーの場合～": {
+    "official": "http://frill.product.co.jp/enko-shojo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/123625.jpg"
+  },
+  "シュガーコートフリークス": {
+    "official": "http://www.littlewitch.jp/home/special/lw08/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/27643.jpg"
+  },
+  "AYAKASHI アヤカシ": {
+    "official": "http://www.t-apricot.jp/products/aya/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/90024.jpg"
+  },
+  "長靴をはいたデコ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/81/112281.jpg" },
+  "花鐘カナデ＊グラム Chapter:1 小桜結": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/48/93948.jpg"
+  },
+  "クリミナルボーダー 1st offence": {
+    "official": "https://www.purplesoftware.jp/products/criminalborder/1st.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/04/117604.jpg"
+  },
+  "片恋いの月": { "officialAlive": false, "cover": "https://t.vndb.org/cv/33/111233.jpg" },
+  "千の刃濤、桃花染の皇姫 -花あかり-": {
+    "official": "http://august-soft.com/hatou_fd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/97918.jpg"
+  },
+  "閃鋼のクラリアス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/20/114220.jpg" },
+  "攫ノ雌": { "official": "http://www.cyberworks.jp/tink/sarai/", "officialAlive": true },
+  "シンフォニック=レイン(非18禁)": {
+    "official": "http://www.kogado.com/html/kuroneko/sr/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/89273.jpg"
+  },
+  "初恋サクラメント": {
+    "official": "http://www.purplesoftware.jp/products/hassaku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/111513.jpg"
+  },
+  "いたいけな彼女": {
+    "official": "http://zero.product.co.jp/products/itaike/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/129453.jpg"
+  },
+  "はるるみなもに!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/15/107515.jpg" },
+  "黄雷のガクトゥーン ～What a shining braves～": {
+    "official": "http://www.liar.co.jp/guac_top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/79755.jpg"
+  },
+  "3days -満ちてゆく刻の彼方で-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/98/95698.jpg"
+  },
+  "CHAOS;CHILD(XBO)": {
+    "official": "http://chaoschild.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/75835.jpg"
+  },
+  "白恋サクラ＊グラム": {
+    "official": "http://nanawind.jp/product/prj05/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/101811.jpg"
+  },
+  "月の彼方で逢いましょう SweetSummerRainbow": {
+    "official": "http://toneworks.product.co.jp/ssr/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/101547.jpg"
+  },
+  "LUNARiA -Virtualized Moonchild-(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/10/86910.jpg"
+  },
+  "Volume7": { "cover": "https://t.vndb.org/cv/91/25491.jpg" },
+  "夜が来る! -Square of the MOON-": {
+    "official": "http://www.alicesoft.com/night/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/20/95820.jpg"
+  },
+  "ラブライド・イヴ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/65/98665.jpg" },
+  "メモリア": {
+    "official": "http://www.purplesoftware.jp/products/memoria/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/111506.jpg"
+  },
+  "虚ノ少女": {
+    "official": "http://www.gungnir.co.jp/innocentgrey/products/pro_vacant/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/88062.jpg"
+  },
+  "時計仕掛けのレイライン -黄昏時の境界線-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/21/99321.jpg"
+  },
+  "LOST CHILD": { "cover": "https://t.vndb.org/cv/56/128756.jpg" },
+  "それは舞い散る桜のように-Re:BIRTH-": {
+    "official": "https://project-navel.com/sorechiru/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/95617.jpg"
+  },
+  "僕と恋するポンコツアクマ。": {
+    "official": "http://s-mi-le.com/ponkotsu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/76812.jpg"
+  },
+  "BALDR BRINGER": { "officialAlive": false, "cover": "https://t.vndb.org/cv/02/33002.jpg" },
+  "幕末尽忠報国烈士伝 -MIBURO-": {
+    "official": "http://inre-soft.com/miburo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/34333.jpg"
+  },
+  "1/1彼氏彼女": {
+    "official": "http://www.hook-net.jp/smee/1kano/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/04/94604.jpg"
+  },
+  "俺たちに翼はない(PSV)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/46/88446.jpg"
+  },
+  "はるかぜどりに、とまりぎを。2nd Story ～月の扉と海の欠片～": {
+    "official": "http://www.sky-fish.jp/harutoma2nd/harutoma2_index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/27651.jpg"
+  },
+  "キサラギGOLD★STAR": {
+    "official": "http://sagaplanets.product.co.jp/works/kisaragi/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/94555.jpg"
+  },
+  "想いを捧げる乙女のメロディー": {
+    "official": "http://www.ensemble-game.com/16.otomelo/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/113875.jpg"
+  },
+  "QUALIA ～約束の軌跡～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/88/79788.jpg"
+  },
+  "9-nine- 新章(非18禁)": {
+    "official": "https://palette.clearrave.co.jp/product/9-nine-/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/59/77159.jpg"
+  },
+  "ゆきこいめると": {
+    "official": "http://frontwing.jp/product/yukimel/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/95567.jpg"
+  },
+  "保健室のセンセーとシャボン玉中毒の助手": {
+    "official": "https://citrus-soft.net/product/hokejyo/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/94254.jpg"
+  },
+  "もしも明日が晴れならば": {
+    "official": "http://www.clearrave.co.jp/product/mosiraba/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/89542.jpg"
+  },
+  "蒼の彼方のフォーリズム(PSV)": {
+    "official": "http://aokana.net/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/79855.jpg"
+  },
+  "まどひ白きの神隠し": {
+    "official": "https://www.lumpofsugar.co.jp/product/madoki/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/93791.jpg"
+  },
+  "喫茶ステラと死神の蝶": {
+    "official": "http://www.yuzu-soft.com/products/stella/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/113927.jpg"
+  },
+  "たいせつなきみのために、ぼくにできるいちばんのこと": {
+    "official": "http://d-lion.net/product/taikimi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/113581.jpg"
+  },
+  "神の国の魔法使い(非18禁)": {
+    "official": "https://www.kamimaho.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/91017.jpg"
+  },
+  "Angel Beats! -1st beat-(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/70/121870.jpg"
+  },
+  "鎖 -クサリ-": { "officialAlive": false, "cover": "https://t.vndb.org/cv/48/92348.jpg" },
+  "恋妹SWEET☆DAYS": {
+    "official": "http://www.parasol-soft.com/product/koiimo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/109132.jpg"
+  },
+  "IxSHE Tell": {
+    "official": "http://www.hook-net.jp/ixshetell/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/52/80752.jpg"
+  },
+  "アマナツ": {
+    "official": "http://azarashi-soft.nexton-net.jp/amanatu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/78992.jpg"
+  },
+  "ラムネ": {
+    "official": "http://www.gungho.jp/cgame/game/lamune/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/88066.jpg"
+  },
+  "吸血殲鬼ヴェドゴニア": {
+    "official": "https://www.nitroplus.co.jp/pc/lineup/into_02/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/93371.jpg"
+  },
+  "さかあがりハリケーン ～LET’S PILE UP OUR SCHOOL!～": {
+    "cover": "https://t.vndb.org/cv/70/76770.jpg"
+  },
+  "リプキス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/12/93112.jpg" },
+  "ワールド・エレクション": {
+    "official": "http://whirlpool.co.jp/worldelection/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/26/91426.jpg"
+  },
+  "HaremKingdom -ハーレムキングダム-": {
+    "official": "http://www.hook-net.jp/smee/haremkingdom/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/29/78029.jpg"
+  },
+  "サナララ ～SA・NA・RA・RA～": {
+    "official": "https://bbs.sumisora.net/read.php?tid=10946514",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/89975.jpg"
+  },
+  "夏雪 ～summer_snow～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/48/144548.jpg"
+  },
+  "乙女理論とその周辺 -Ecole de Paris-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/46/92146.jpg"
+  },
+  "クダンノフォークロア(非18禁)": {
+    "official": "http://sukerasparo.com/folklore/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/38101.jpg"
+  },
+  "俺の姿が、透明に!? 不可視の薬と数奇な運命": {
+    "official": "http://hulotte.jp/product/invisible/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/116180.jpg"
+  },
+  "Hyper→Highspeed→Genius": {
+    "official": "http://windmill.suki.jp/product/HHG/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/89217.jpg"
+  },
+  "ココロ@ファンクション!": {
+    "official": "http://pulltop.com/gp12/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/93294.jpg"
+  },
+  "君と彼女と彼女の恋。": {
+    "official": "https://www.nitroplus.co.jp/game/totono/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/07/77907.jpg"
+  },
+  "Faint Tone": {
+    "official": "http://www.reon-soft.com/fainttone/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/90789.jpg"
+  },
+  "この大空に、翼をひろげて FLIGHT DIARY": {
+    "official": "http://konosora.jp/fd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/79739.jpg"
+  },
+  "Ever17 -the out of infinity-(PS2)": {
+    "official": "http://wks.arai-kibou.ru/ever17.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/79412.jpg"
+  },
+  "ママトト ～a record of war～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/72/91072.jpg"
+  },
+  "アンレス・テルミナリア": {
+    "official": "https://whirlpool.co.jp/unlessterminalia/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/114960.jpg"
+  },
+  "ハッピーライヴ ショウアップ アンコール!!": {
+    "official": "http://www.favo-soft.jp/soft/product/happylive_showup_encore/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/110977.jpg"
+  },
+  "アイキス3 cute(NS)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/58/101858.jpg" },
+  "こんな娘がいたら僕はもう…!!": {
+    "official": "http://www.akabeesoft2.com/conboku/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/109573.jpg"
+  },
+  "凌辱看護婦学院": {
+    "official": "http://www.hs-crowd.co.jp/anim/product/pro_pc/pc001/rkg.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/38/135938.jpg"
+  },
+  "大帝国": {
+    "official": "http://www.alicesoft.com/daiteikoku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/95793.jpg"
+  },
+  "かしましコミュニケーション": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/92/113292.jpg"
+  },
+  "あると": {
+    "official": "http://www.purplesoftware.jp/products/alto/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/111483.jpg"
+  },
+  "フタマタ恋愛": {
+    "official": "https://asa-pro.com/futakoi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/89064.jpg"
+  },
+  "FLOWERS -Le volume sur automne-(秋篇)(非18禁)": {
+    "official": "http://www.gungnir.co.jp/lily/flowers3/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/77913.jpg"
+  },
+  "シュヴァルツェスマーケン 殉教者たち(非18禁)": {
+    "official": "http://www.age-soft.com/former/Product/sm/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/08/90508.jpg"
+  },
+  "Missing-X-Link ～天のゆりかご、伽の花～": {
+    "official": "http://fanzagames-digination.com/fluorite/missingxlink/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/38801.jpg"
+  },
+  "Cafe Little Wish": { "cover": "https://t.vndb.org/cv/22/96622.jpg" },
+  "ラムネ2": { "cover": "https://t.vndb.org/cv/76/95376.jpg" },
+  "CHAOS;HEAD(非18禁)": {
+    "official": "http://www.nitroplus.co.jp/pc/lineup/into_15/index.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/93360.jpg"
+  },
+  "ひこうき雲の向こう側": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/75/102675.jpg"
+  },
+  "何処へ行くの、あの日": {
+    "official": "http://www.moon-stone.jp/product/ms03/d_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/96868.jpg"
+  },
+  "ゆきいろ ～空に六花の住む町～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/01/12901.jpg"
+  },
+  "ChuSinGura46+1 -忠臣蔵46+1- 江戸急進派編 -Edo radical faction": {
+    "cover": "https://t.vndb.org/cv/16/105316.jpg"
+  },
+  "シンシア ～Sincerely to you～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/73/138073.jpg"
+  },
+  "”Hello, world.”": {
+    "official": "https://www.nitroplus.co.jp/game/04-helloworld/sofurin.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/93370.jpg"
+  },
+  "SHUFFLE!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/64/98864.jpg" },
+  "シロガネ×スピリッツ!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/35/91735.jpg" },
+  "プリンセスブライド": { "officialAlive": false, "cover": "https://t.vndb.org/cv/72/114572.jpg" },
+  "マブラヴ オルタネイティヴ クロニクルズ 01": {
+    "official": "http://www.age-soft.com/former/Product/chronicles01/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/76125.jpg"
+  },
+  "ウィッチズガーデン": {
+    "official": "http://windmill.suki.jp/product/witch/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/82643.jpg"
+  },
+  "ルリのかさね ～いもうと物語り～": {
+    "official": "http://product.hobibox.net/ruri-imouto/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/107513.jpg"
+  },
+  "カラフルキッス ～12コの胸キュン!～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/79/98779.jpg"
+  },
+  "花色ヘプタグラム": {
+    "official": "http://www.lumpofsugar.co.jp/product/hanairo/index.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/44/98644.jpg"
+  },
+  "しろくまベルスターズ♪": {
+    "official": "http://www.pulltop.com/gp08/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/93296.jpg"
+  },
+  "青い空のカミュ": {
+    "official": "http://kai-soft.jp/BSC/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/108646.jpg"
+  },
+  "南十字星恋歌 Southern Cross Love Song": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/15/24715.jpg"
+  },
+  "ぱすてるチャイムContinue": {
+    "official": "http://www.alicesoft.com/pastel2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/95802.jpg"
+  },
+  "夜明け前より瑠璃色な -Moonlight Cradle-": {
+    "official": "http://august-soft.com/yak_mc/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/87/94687.jpg"
+  },
+  "星空鉄道とシロの旅(非18禁)": {
+    "official": "http://shiratamaco.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/15/92115.jpg"
+  },
+  "カルタグラ ～ツキ狂イノ病～ 《REBIRTH FHD SIZE EDITION》": {
+    "official": "http://www.gungnir.co.jp/innocentgrey/products/cartagrafhd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/77274.jpg"
+  },
+  "超電激ストライカー": { "officialAlive": false, "cover": "https://t.vndb.org/cv/54/76354.jpg" },
+  "D.C.II P.S. ～ダ・カーポII～プラスシチュエーション(PS2)": {
+    "official": "http://circus.nandemo.gr.jp/common/dc2ps/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/93568.jpg"
+  },
+  "放課後シンデレラ": {
+    "official": "http://www.hook-net.jp/houkago/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/88/93288.jpg"
+  },
+  "ISLAND(非18禁)": {
+    "official": "http://never-island.com/game/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/75939.jpg"
+  },
+  "乙女が彩る恋のエッセンス": {
+    "official": "http://www.ensemble-game.com/13_otoiro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/72/112772.jpg"
+  },
+  "秋色謳華": {
+    "official": "http://www.purplesoftware.jp/products/ouka/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/03/111503.jpg"
+  },
+  "MeltyMoment -メルティモーメント-": {
+    "official": "http://www.hook-net.jp/MeltyMoment/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/25917.jpg"
+  },
+  "Routes -ルーツ-": {
+    "official": "http://leaf.aquaplus.jp/product/rts/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/97811.jpg"
+  },
+  "スクランブル・ラバーズ": {
+    "official": "http://www.aries-soft.jp/scramble_lovers/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/128018.jpg"
+  },
+  "BALDR HEART": { "officialAlive": false, "cover": "https://t.vndb.org/cv/02/123602.jpg" },
+  "真剣で私に恋しなさい! S": {
+    "official": "http://www.minatosoft.com/majikoi-s/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/87877.jpg"
+  },
+  "華は短し、踊れよ乙女": {
+    "official": "http://ensemble-game.com/28.hanaoto/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/89696.jpg"
+  },
+  "最果てのイマ": {
+    "official": "http://www.xuse.co.jp/product/015_farthest/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/16/95716.jpg"
+  },
+  "Tiny Dungeon ～BRAVE or SLAVE～": {
+    "official": "http://www.rosebleu.jp/product/TinyDungeon/td4/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/93467.jpg"
+  },
+  "ぎりギリLOVE": { "cover": "https://t.vndb.org/cv/42/8042.jpg" },
+  "サルテ": {
+    "official": "http://so-iree.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/81639.jpg"
+  },
+  "きみと僕との騎士の日々 -楽園のシュバリエ-": {
+    "official": "http://amusecraft.com/piriri/kimikishi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/49/89649.jpg"
+  },
+  "アマカノ ～Second Season～": {
+    "official": "http://azarashi-soft.nexton-net.jp/amakano-ss/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/96613.jpg"
+  },
+  "タユタマ2 -you’re the only one-": {
+    "official": "http://lumpofsugar.co.jp/product/tayutama2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/38/79738.jpg"
+  },
+  "巫女みこナース": {
+    "official": "http://www.psycho-cop.net/pro/mikomiko/miko.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/439.jpg"
+  },
+  "Memories Off 2nd(PSP)": {
+    "official": "http://memoriesoff.jp/psp/2nd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/75866.jpg"
+  },
+  "キミのとなりで恋してる! ～The respective happiness～": {
+    "official": "http://www.h-comb.biz/new_title/13_fd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/93775.jpg"
+  },
+  "あやかしびと": {
+    "official": "http://www.propeller-game.com/product/ayakasi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/03/99603.jpg"
+  },
+  "イブニクル": {
+    "official": "http://www.alicesoft.com/evenicle/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/85/95785.jpg"
+  },
+  "グリーングリーン3 ハローグッバイ": {
+    "official": "http://timelesslink.net/frame/guriguri3/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/99/145899.jpg"
+  },
+  "BALDR SKY Zero 2 -バルドスカイゼロツー-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/96/123596.jpg"
+  },
+  "ハロー・レディ!": {
+    "official": "http://www.akatsukiworks.com/product/hello/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/82127.jpg"
+  },
+  "スズノネセブン!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/08/69908.jpg" },
+  "魔導巧殻 ～闇の月女神は導国で詠う～": {
+    "official": "http://www.eukleia.co.jp/eushully/eu014.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/50/109050.jpg"
+  },
+  "なないろリンカネーション": {
+    "official": "http://www.silkysplus.jp/game/nanarin/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/76843.jpg"
+  },
+  "ToHeart(PS)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/87/89487.jpg" },
+  "紫影のソナーニル ～What a beautiful memories～": {
+    "official": "http://www.liar.co.jp/28th_top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/90882.jpg"
+  },
+  "アステリズム -Astraythem-": {
+    "official": "http://www.chuable.net/ast/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/101445.jpg"
+  },
+  "私立レイプ女学院": {
+    "official": "http://www.hs-crowd.co.jp/anim/product/pro_pc/pc005/rape.html",
+    "officialAlive": true
+  },
+  "あきゆめくくる": {
+    "official": "http://www.sumikko-soft.com/akikuru/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/32680.jpg"
+  },
+  "WHITE ALBUM -綴られる冬の想い出-(PS3)": {
+    "official": "http://aquaplus.jp/wa/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/04/78304.jpg"
+  },
+  "ゆめこい ～夢見る魔法少女と恋の呪文～": {
+    "official": "http://www.parasol-soft.com/product/parasol4th/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/97100.jpg"
+  },
+  "幻のディストピア": { "officialAlive": false, "cover": "https://t.vndb.org/cv/74/25874.jpg" },
+  "桜舞う乙女のロンド": {
+    "official": "http://www.ensemble-game.com/07.sakuoto/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/113868.jpg"
+  },
+  "魔法使いの夜 -WITCH ON THE HOLY NIGHT-": {
+    "official": "http://www.typemoon.com/products/mahoyo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/85324.jpg"
+  },
+  "リアル妹がいる大泉くんのばあい": {
+    "official": "http://www.h-comb.biz/product/03/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/112268.jpg"
+  },
+  "いさましいちびの許婚": { "cover": "https://t.vndb.org/cv/00/147200.jpg" },
+  "クロウカシス 七憑キノ贄": {
+    "official": "http://www.gungnir.co.jp/innocentgrey/products/pro_caucasus/cc_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/77306.jpg"
+  },
+  "シュヴァルツェスマーケン 紅血の紋章(非18禁)": {
+    "official": "http://www.age-soft.com/former/Product/sma/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/08/90508.jpg"
+  },
+  "プリズム◇リコレクション!": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/08/107508.jpg"
+  },
+  "斬魔大聖デモンベイン": {
+    "official": "http://www.demonbane.com/special1/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/93369.jpg"
+  },
+  "夜明け前より瑠璃色な": {
+    "official": "http://www.august-soft.com/yoake/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/69881.jpg"
+  },
+  "E×E": {
+    "official": "http://legacy.yuzu-soft.com/exe/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/101532.jpg"
+  },
+  "恋にはあまえが必要です": {
+    "official": "http://www.hook-net.jp/koiama/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/89133.jpg"
+  },
+  "ワンコとリリー": {
+    "official": "http://www.cuffs.co.jp/02_wanko/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/76/55176.jpg"
+  },
+  "タマユラミライ": {
+    "official": "http://fanzagames-digination.com/azurite/tamayura/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/78274.jpg"
+  },
+  "ましろ色シンフォニー *mutsu-no-hana(PSP)": {
+    "official": "http://www.comfort-soft.jp/products/mashiro/#top",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/38/95138.jpg"
+  },
+  "電激ストライカー": { "officialAlive": false, "cover": "https://t.vndb.org/cv/54/76354.jpg" },
+  "大番長 Big Bang Age": {
+    "official": "http://www.alicesoft.com/bancho/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/91101.jpg"
+  },
+  "ネコっかわいがり! -クレインイヌネコ病院診察中-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/48/96248.jpg"
+  },
+  "クドわふたー": { "officialAlive": false, "cover": "https://t.vndb.org/cv/18/92618.jpg" },
+  "春色桜瀬": {
+    "official": "http://www.purplesoftware.jp/products/haruiro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/94158.jpg"
+  },
+  "Dark Blue": {
+    "official": "http://s-digi.jp/darkness/soft_db/db01.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/122451.jpg"
+  },
+  "ねこツク、さくら。": {
+    "official": "http://www.lumpofsugar.co.jp/product/nekotuku/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/89567.jpg"
+  },
+  "ほしフル ～星藤学園天文同好会～": {
+    "official": "https://fandc.co.jp/hoshiful/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/97883.jpg"
+  },
+  "フルウソ -Complete Four Seasons-": {
+    "official": "http://www.campus.gr.jp/product/fulluso/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/89225.jpg"
+  },
+  "はぴねす!": {
+    "official": "http://windmill.suki.jp/product/6th/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/91406.jpg"
+  },
+  "雲上のフェアリーテイル": {
+    "official": "http://www.cosmiccute.com/products/untei/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/89647.jpg"
+  },
+  "Rewrite Harvest festa!(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/32/79532.jpg"
+  },
+  "罪ノ光ランデヴー": { "officialAlive": false, "cover": "https://t.vndb.org/cv/51/94351.jpg" },
+  "アマカノ＋": {
+    "official": "http://azarashi-soft.nexton-net.jp/amakano+/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/111564.jpg"
+  },
+  "BALDR SKY DiveX ”DREAM WORLD”": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/06/123606.jpg"
+  },
+  "天使騒々re-boot！": {
+    "official": "https://www.yuzu-soft.com/products/ten_sz/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/88666.jpg"
+  },
+  "処女はお姉さまに恋してる": {
+    "official": "http://www.caramel-box.com/products/otoboku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/112658.jpg"
+  },
+  "なつくもゆるる": {
+    "official": "http://www.sumikko-soft.com/natsukuru/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/40/26040.jpg"
+  },
+  "けもの道☆ガーリッシュスクエア2": {
+    "official": "https://whirlpool.co.jp/kemonomichi-gs2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/86/81586.jpg"
+  },
+  "恋する彼女の不器用な舞台": {
+    "official": "http://www.cuffs-cube.jp/products/koikano/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/98563.jpg"
+  },
+  "11eyes CrossOver(XB360)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/65/94265.jpg"
+  },
+  "アカイイト(PS2)": {
+    "official": "http://www.success-corp.co.jp/software/ps2/akaiito/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/85/89085.jpg"
+  },
+  "グリムガーデンの少女 -witch in gleamgarden-": {
+    "official": "http://www.cosmiccute.com/products/gleamgarden/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/48/89648.jpg"
+  },
+  "RE:D Cherish!": {
+    "official": "http://crystalia.amusecraft.com/red/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/05/106905.jpg"
+  },
+  "SHUFFLE!エピソード2 ～神にも悪魔にも狙われている男～": {
+    "official": "https://project-navel.com/shuffle_ep2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/98864.jpg"
+  },
+  "あくありうむ。(PS4)": {
+    "official": "http://www.entergram.co.jp/aquarium/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/76192.jpg"
+  },
+  "空を飛ぶ、3つの方法。": {
+    "official": "http://cappuccino-soft.jp/lacryma-web/soramitsu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/28/98828.jpg"
+  },
+  "シルヴァリオ トリニティ": {
+    "official": "http://www.light.gr.jp/light/products/trinity/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/89118.jpg"
+  },
+  "ALIA's CARNIVAL! Flowering Sky": {
+    "official": "http://nanawind.jp/product/prj03/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/82633.jpg"
+  },
+  "はにかみCLOVER": { "officialAlive": false, "cover": "https://t.vndb.org/cv/90/101890.jpg" },
+  "ソニコミ(非18禁)": {
+    "official": "http://supersonico.jp/sonicomi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/77857.jpg"
+  },
+  "クロノクロック": {
+    "official": "http://www.purplesoftware.jp/products/chronoclock/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/76523.jpg"
+  },
+  "planetarian ～ちいさなほしのゆめ～(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/96/75896.jpg"
+  },
+  "涼風のメルト -Where wishes are drawn to each other-": {
+    "official": "http://www.whirlpool.co.jp/melt/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/97523.jpg"
+  },
+  "カミカゼ☆エクスプローラー!": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/07/107507.jpg"
+  },
+  "ALIA's CARNIVAL!": {
+    "official": "http://nanawind.jp/product/prj02/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/44/82644.jpg"
+  },
+  "アキウソ -The only neat thing to do-": {
+    "official": "http://www.campus.gr.jp/product/akiuso",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/107389.jpg"
+  },
+  "神咒神威神楽": {
+    "official": "http://www.light.gr.jp/light/products/kajirikamuikagura/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/79692.jpg"
+  },
+  "運命線上のφ": {
+    "official": "http://www.lumpofsugar.co.jp/product/unmei/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/90/93790.jpg"
+  },
+  "放課後シンデレラ2": {
+    "official": "https://www.hook-net.jp/houkago2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/101694.jpg"
+  },
+  "CHAOS;CHILD(PS4)": {
+    "official": "http://chaoschild.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/75835.jpg"
+  },
+  "夏色ラムネ": {
+    "official": "http://www.carolworks.com/products/ramune/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/116001.jpg"
+  },
+  "恋する乙女と守護の楯": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/75/102375.jpg"
+  },
+  "僕がサダメ 君には翼を。": {
+    "official": "http://www.akatsukiworks.com/product/bokutsuba/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/15/59815.jpg"
+  },
+  "見上げてごらん、夜空の星を Interstellar Focus": {
+    "official": "http://www.pulltop.com/full-of-stars/if/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/52/101352.jpg"
+  },
+  "フェイクアズール・アーコロジー": {
+    "official": "http://www.akabeesoft3.com/products/arcology/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/107535.jpg"
+  },
+  "きっと、澄みわたる朝色よりも、": {
+    "official": "http://www.propeller-game.com/product/kitto/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/79698.jpg"
+  },
+  "PRIMAL×HEARTS2": {
+    "official": "http://www.web-marmalade.com/products/primal2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/82631.jpg"
+  },
+  "果つることなき未来ヨリ X-RATED": {
+    "official": "http://x-rated.hatsumira.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/30/75930.jpg"
+  },
+  "Trample on “Schatten!!” ～かげふみのうた～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/78/77878.jpg"
+  },
+  "シンスメモリーズ 星天の下で(PS4)": {
+    "official": "http://memoriesoff.jp/since/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/80135.jpg"
+  },
+  "いただきじゃんがりあんR": { "cover": "https://t.vndb.org/cv/09/3909.jpg" },
+  "まじかりっく⇔スカイハイ －空飛ぶホウキに想いをのせて－": {
+    "official": "http://whirlpool.co.jp/magisk/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/101791.jpg"
+  },
+  "僕が天使になった理由 LOVE SONG OF THE ANGELS.": {
+    "official": "http://over-drive.jp/project/bokuten/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/30/93830.jpg"
+  },
+  "ティンクル☆くるせいだーす": {
+    "official": "http://www.lillian.jp/kurukuru/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/89695.jpg"
+  },
+  "恋姫†無双 ～ドキッ☆乙女だらけの三国志演義～": {
+    "official": "http://www.tactics.ne.jp/~baseson/koihime/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/36/89136.jpg"
+  },
+  "世界と世界の真ん中で": {
+    "official": "http://www.lumpofsugar.co.jp/product/sekachu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/88/93788.jpg"
+  },
+  "Wind -a breath of heart-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/34/89734.jpg"
+  },
+  "Eスクールライフ": {
+    "official": "http://www.hook-net.jp/eschoollife/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/89402.jpg"
+  },
+  "あるいは恋という名の魔法": {
+    "official": "http://omochi-soft.com/news/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/52/32652.jpg"
+  },
+  "月光のカルネヴァーレ": {
+    "official": "http://www.nitroplus.co.jp/pc/lineup/into_12/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/93361.jpg"
+  },
+  "PureHeart ～世界で一番アナタが好き～": {
+    "official": "http://sagaplanets.product.co.jp/works/pureheart/pure_h.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/136906.jpg"
+  },
+  "リベリオンズ Secret Game 2nd Stage(PSP)": {
+    "official": "http://yetigame.jp/rebellions/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/76556.jpg"
+  },
+  "スタディ§ステディ2": {
+    "official": "http://www.web-marmalade.com/products/sts2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/113971.jpg"
+  },
+  "D.C.III DASH ～ダ・カーポIII～ Ver.1.3 USBメモリ版(非18禁)": {
+    "official": "https://circus-co.jp/product/dc3_usb/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/91646.jpg"
+  },
+  "光輪の町、ラベンダーの少女": {
+    "official": "http://www.akabeesoft2.com/lavender/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/93879.jpg"
+  },
+  "僕はキミだけを見つめる ～I gaze at only you～": {
+    "official": "http://inre-soft.com/bokukimi/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/105391.jpg"
+  },
+  "迷える2人とセカイのすべて": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/17/116617.jpg"
+  },
+  "凍京NECRO": {
+    "official": "http://www.nitroplus.co.jp/game/tokyonecro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/78079.jpg"
+  },
+  "ナルキッソス -スミレ-(非18禁)": {
+    "official": "http://stage-nana.sakura.ne.jp/narcissu_sumire.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/120363.jpg"
+  },
+  "青空の見える丘": {
+    "official": "http://www.feng.jp/aozora/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/22/94422.jpg"
+  },
+  "朱 -Aka-": { "officialAlive": false, "cover": "https://t.vndb.org/cv/95/77795.jpg" },
+  "加奈 ～いもうと～": {
+    "official": "http://www.panther.co.jp/kana/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/03/88403.jpg"
+  },
+  "若葉色のカルテット": {
+    "official": "http://www.lumpofsugar.co.jp/product/quartet/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/98656.jpg"
+  },
+  "サクラノ詩 春ノ雪": { "cover": "https://t.vndb.org/cv/63/79663.jpg" },
+  "君と目覚める幾つかの方法": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/61/94261.jpg"
+  },
+  "Princess Party ～プリンセスパーティー～": {
+    "official": "http://circus-co.jp/product/pp/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/104066.jpg"
+  },
+  "聖エステラ学院の七人の魔女": {
+    "official": "http://www.astronauts.co.jp/sirius/7witches/index.html",
+    "officialAlive": true
+  },
+  "星空TeaParty えくすとら ～「恋愛」はじまりました!～": {
+    "official": "http://www.sky-fish.jp/sf-poco/hoshizora/hoshizora.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/15/89815.jpg"
+  },
+  "ラヴレッシブ": {
+    "official": "http://s-mi-le.com/loveressive/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/89692.jpg"
+  },
+  "アイキス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/60/93160.jpg" },
+  "サクラ大戦3 ～巴里は燃えているか～": {
+    "official": "http://game.sakura-taisen.com/databace/sakura_3.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/101502.jpg"
+  },
+  "すぺーす☆とらぶる": { "cover": "https://t.vndb.org/cv/37/143537.jpg" },
+  "時計仕掛けのレイライン -朝霧に散る花-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/08/79708.jpg"
+  },
+  "Coming×Humming!!": {
+    "official": "http://sagaplanets.product.co.jp/works/comihummi/ch.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/23400.jpg"
+  },
+  "鬼医者": {
+    "official": "http://sagaplanets.product.co.jp/works/oni/oni.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/28456.jpg"
+  },
+  "てとてトライオン!": {
+    "official": "http://www.pulltop.com/gp07/08_shokai.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/92347.jpg"
+  },
+  "うたわれるもの 二人の白皇(PS4)": {
+    "official": "http://aquaplus.jp/uta/oro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/85164.jpg"
+  },
+  "水月 ～迷心～(DC)": {
+    "official": "http://fandc.co.jp/catalog/consumer/144",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/22/101822.jpg"
+  },
+  "キスよりさきに恋よりはやく": {
+    "official": "http://www.sky-fish.jp/kisskoi/kk-index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/28839.jpg"
+  },
+  "エヴァーメイデン ～堕落の園の乙女たち～": {
+    "official": "http://www.liar.co.jp/ever-maiden/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/89931.jpg"
+  },
+  "この青空に約束を― ～melody of the sun and sea～(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/26/90926.jpg"
+  },
+  "魂響 ～御霊送りの詩～(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/31/149331.jpg"
+  },
+  "片恋いの月えくすとら": { "officialAlive": false, "cover": "https://t.vndb.org/cv/68/26868.jpg" },
+  "暁の護衛": {
+    "official": "http://www.akabeesoft3.com/products/goei/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/94423.jpg"
+  },
+  "氷華の舞う空に": {
+    "official": "http://www.rosebleu.jp/hyoka/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/101893.jpg"
+  },
+  "眠れる花は春をまつ。": { "cover": "https://t.vndb.org/cv/43/71243.jpg" },
+  "世界ノ全テ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/32/102332.jpg" },
+  "魂響 ～たまゆら～": { "officialAlive": false, "cover": "https://t.vndb.org/cv/31/149331.jpg" },
+  "LOVE&DEAD": {
+    "official": "http://www.liar.co.jp/ld.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/50/94850.jpg"
+  },
+  "WHITE ALBUM2 幸せの向こう側(PS3)": {
+    "official": "http://aquaplus.jp/wa2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/88962.jpg"
+  },
+  "ef - the latter tale.": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/16/77716.jpg"
+  },
+  "H2O -FOOTPRINTS IN THE SAND-": {
+    "official": "http://www.makura-soft.com/h2o/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/88447.jpg"
+  },
+  "二代目は☆魔法少女": {
+    "official": "http://www.sumikko-soft.com/2nd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/128098.jpg"
+  },
+  "創刻のアテリアル": {
+    "official": "http://www.eukleia.co.jp/eushully/eu013.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/93297.jpg"
+  },
+  "Snow Drop": { "officialAlive": false, "cover": "https://t.vndb.org/cv/41/138441.jpg" },
+  "SEXFRIEND ～セックスフレンド～": {
+    "official": "http://www.stoneheads.co.jp/stone/codepink/html/product/codepink.htm",
+    "officialAlive": true
+  },
+  "恋せよ!!妹番長": {
+    "official": "http://latte.nexton-net.jp/imoban/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/89266.jpg"
+  },
+  "STEINS;GATE 0(PS4)": {
+    "official": "http://steinsgate0.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/34/75834.jpg"
+  },
+  "信天翁航海録": {
+    "official": "http://www.liar.co.jp/raiL/albatross_top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/79695.jpg"
+  },
+  "TVアニメ「ISLAND」": {
+    "official": "http://never-island.com/game/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/75939.jpg"
+  },
+  "STEINS;GATE(非18禁)": {
+    "official": "http://steinsgate.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/19/77819.jpg"
+  },
+  "アルテミスブルー": {
+    "official": "http://www.akabeesoft3.com/products/artemis/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/36/107536.jpg"
+  },
+  "シークレットゲーム CODE:Revise": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/02/88202.jpg"
+  },
+  "さくらさくら": {
+    "official": "http://www.iam-hiquality.com/soft/03sakura/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/81942.jpg"
+  },
+  "シークレットゲーム -KILLER QUEEN-(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/41/78841.jpg"
+  },
+  "ネコぱら Vol.3 ネコたちのアロマティゼ": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/09/77409.jpg"
+  },
+  "鍵を隠したカゴのトリ -Bird in cage hiding the key-": {
+    "official": "http://www.cabbit.jp/torikago/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/92425.jpg"
+  },
+  "恋もも": { "cover": "https://t.vndb.org/cv/18/150618.jpg" },
+  "DEARDROPS": { "officialAlive": false, "cover": "https://t.vndb.org/cv/46/79746.jpg" },
+  "レコンキスタ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/11/96111.jpg" },
+  "働くオタクの恋愛事情": {
+    "official": "http://akabeesoft3.com/products/hataraku_otaku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/38353.jpg"
+  },
+  "どらぺこ! ～おねだりドラゴンとおっぱい勇者～": {
+    "official": "http://www.alicesoft.com/drapeko/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/105001.jpg"
+  },
+  "エーデルワイス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/27/88527.jpg" },
+  "竜翼のメロディア -Diva with the blessed dragonol-": {
+    "official": "http://whirlpool.co.jp/melodia/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/26/97126.jpg"
+  },
+  "水夏A.S+ ～SUIKA～": {
+    "official": "https://circus-co.jp/product/suikahp/main.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/95660.jpg"
+  },
+  "晴のちきっと菜の花びより": {
+    "official": "http://www.parasol-soft.com/product/haruno/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/03/89203.jpg"
+  },
+  "仄暗き時の果てより": {
+    "official": "http://www.moon-stone.jp/product/ms24/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/87833.jpg"
+  },
+  "翼をください": {
+    "official": "http://skysphere.jp/product/tsubasa/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/60213.jpg"
+  },
+  "Primary ～Magical★Trouble★Scramble～": {
+    "official": "http://www.sky-fish.jp/primary/primary-index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/28842.jpg"
+  },
+  "さくらいろ、舞うころに": {
+    "official": "http://www.pulltop.com/maukoro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/116201.jpg"
+  },
+  "星恋＊ティンクル": {
+    "official": "http://cabbage-soft.com/products/hoshikoi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/85/100585.jpg"
+  },
+  "ものべの -happy end-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/19/111619.jpg"
+  },
+  "天使の羽根を踏まないでっ": {
+    "official": "http://mephisto-game.com/angel/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/63081.jpg"
+  },
+  "～パンツを見せること、それが……～大宇宙の誇り": {
+    "official": "http://www.akabeesoft3.com/products/dai/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/127695.jpg"
+  },
+  "戦国†恋姫 ～乙女絢爛☆戦国絵巻～(非18禁)": {
+    "official": "http://nexton-net.jp/sengoku-koihime/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/97773.jpg"
+  },
+  "えれくと!": {
+    "official": "http://www.astronauts.co.jp/spica/erect/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/88664.jpg"
+  },
+  "鬼がくる。～姉がひん死でピンチです～": { "cover": "https://t.vndb.org/cv/09/32409.jpg" },
+  "ましろサマー": {
+    "official": "http://mana.product.co.jp/mashiro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/44/101444.jpg"
+  },
+  "紅い瞳に映るセカイ": {
+    "official": "http://www.favo-soft.jp/soft/product/WorldsEndLove/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/65/103065.jpg"
+  },
+  "なつ☆なつ": {
+    "official": "http://www.n43project.com/n43/npg22/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/50651.jpg"
+  },
+  "オモカゲ ～えっちなハプニング!? なんでもどんとこい!～": {
+    "official": "http://www.akabeesoft3.com/products/omokage/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/143139.jpg"
+  },
+  "痴漢専用車両2 ～報復の恥辱電車～": {
+    "official": "http://frill.product.co.jp/frill04/index.html",
+    "officialAlive": true
+  },
+  "Clover Point": {
+    "official": "https://bbs2.kdays.net/read/89337",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/125183.jpg"
+  },
+  "夏の色のノスタルジア": {
+    "official": "http://www.moon-stone.jp/product/ms18/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/84/81684.jpg"
+  },
+  "ゆのはな": {
+    "official": "http://www.pulltop.com/gp04/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/108856.jpg"
+  },
+  "落ち葉の舞う頃": {
+    "official": "http://www.sp-janis.com/noa/ochibanomaukoro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/143391.jpg"
+  },
+  "天結いキャッスルマイスター": {
+    "official": "http://www.eukleia.co.jp/eushully/eu018.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/89158.jpg"
+  },
+  "Ever17 -the out of infinity-(PSP)": {
+    "official": "http://wks.arai-kibou.ru/ever17.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/79412.jpg"
+  },
+  "Railway ～ここにある夢～": { "cover": "https://t.vndb.org/cv/45/8845.jpg" },
+  "想いを捧げる乙女のメロディー ～あふれる想いを調べにのせて～": {
+    "official": "http://www.ensemble-game.com/18.otomelo_shirabe/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/113874.jpg"
+  },
+  "ヴァニタスの羊": { "cover": "https://t.vndb.org/cv/52/101452.jpg" },
+  "春季限定ポコ・ア・ポコ!": {
+    "official": "http://www.h-comb.biz/ent/poco/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/16/89016.jpg"
+  },
+  "Dies irae ～Acta est Fabula～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/16/79716.jpg"
+  },
+  "働くオトナの恋愛事情2": {
+    "official": "http://www.akabeesoft3.com/products/hatarakuotona2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/121518.jpg"
+  },
+  "MUSICUS!": {
+    "official": "https://musicus.over-drive.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/77781.jpg"
+  },
+  "スマガスペシャル": {
+    "official": "http://www.sumaga.net/smgsp.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/93357.jpg"
+  },
+  "BALDR BULLET ”REVELLION”": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/95/92495.jpg"
+  },
+  "となりに彼女のいる幸せ ～Summer Surprise～": {
+    "official": "http://prekano.com/products/tonakais/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/97953.jpg"
+  },
+  "メモリーズオフ -Innocent Fille-(PS4)": {
+    "official": "http://memoriesoff.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/75847.jpg"
+  },
+  "晴れときどきお天気雨": {
+    "official": "http://www.clearrave.co.jp/product/hareten/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/89543.jpg"
+  },
+  "見上げた空におちていく": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/29/107529.jpg"
+  },
+  "タラレバ ～as in What if stories～": {
+    "official": "http://www.aries-soft.jp/tarareba/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/128017.jpg"
+  },
+  "innocent world": {
+    "official": "https://github.com/moyu15645/patch/blob/main/iw.zip",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/62247.jpg"
+  },
+  "ナイものねだりはもうお姉妹": {
+    "official": "http://www.aries-soft.jp/naimono/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/95994.jpg"
+  },
+  "吐溜 ～TRASH～": { "cover": "https://t.vndb.org/cv/36/144536.jpg" },
+  "恋愛教室": {
+    "official": "http://un-na.com/rk/dl.html#try",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/68935.jpg"
+  },
+  "萌え萌え2次大戦(略)3(PS4)": {
+    "official": "https://www.ss-alpha.co.jp/products/moesen3/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/03/84403.jpg"
+  },
+  "果てしなく青い、この空の下で…。": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/09/38209.jpg"
+  },
+  "すまいるCubic! 水平線まで何マイル? －アフター&アナザーストーリーズ": {
+    "cover": "https://t.vndb.org/cv/62/3462.jpg"
+  },
+  "犠母姉妹": { "officialAlive": false, "cover": "https://t.vndb.org/cv/17/144617.jpg" },
+  "トリノライン": { "officialAlive": false, "cover": "https://t.vndb.org/cv/86/101686.jpg" },
+  "Treating2U": { "officialAlive": false, "cover": "https://t.vndb.org/cv/28/138828.jpg" },
+  "ロイヤルガーデン ～乙女に恋する皇子の戯曲～": {
+    "official": "http://azarashi-soft.nexton-net.jp/royalgarden/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/50/106750.jpg"
+  },
+  "夏色の砂時計(PS2)": { "cover": "https://t.vndb.org/cv/55/93255.jpg" },
+  "Master×Re:master": { "officialAlive": false, "cover": "https://t.vndb.org/cv/50/144550.jpg" },
+  "FOLKLORE JAM": { "officialAlive": false, "cover": "https://t.vndb.org/cv/09/28709.jpg" },
+  "D.C.III R ～ダ・カーポIII アール～ X-rated": {
+    "official": "http://circus.nandemo.gr.jp/sakuhin/dc3r/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/91646.jpg"
+  },
+  "モエかん": {
+    "official": "http://www.keroq.co.jp/product/moe/moecom.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/48/78848.jpg"
+  },
+  "マブラヴ オルタネイティヴ クロニクルズ 02": {
+    "official": "http://www.age-soft.com/former/Product/chronicles02/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/76125.jpg"
+  },
+  "流星ワールドアクター Badge&Dagger": {
+    "official": "https://fanzagames-digination.com/heliodor/world-actor-bd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/78080.jpg"
+  },
+  "僕と、僕らの夏": {
+    "official": "http://www.light.gr.jp/light/products/bokunatu/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/28545.jpg"
+  },
+  "真・恋姫†夢想 -革命- 孫呉の血脈": {
+    "official": "http://baseson.nexton-net.jp/kakumei-go/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/95945.jpg"
+  },
+  "narcissu(非18禁)": {
+    "official": "http://stage-nana.sakura.ne.jp/narcissu.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/93313.jpg"
+  },
+  "死神の接吻は別離の味": {
+    "official": "http://www.h-comb.biz/product/02/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/89141.jpg"
+  },
+  "さくらいろプリズム": {
+    "official": "https://blooming-spectrum.com/sakurairo-prism/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/34/147234.jpg"
+  },
+  "TVアニメ「蒼の彼方のフォーリズム」": {
+    "official": "http://aokana.net/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/79855.jpg"
+  },
+  "雫": {
+    "official": "https://leaf.aquaplus.jp/product/sizuku/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/91332.jpg"
+  },
+  "ChuSinGura46+1 -忠臣蔵46+1-": {
+    "official": "http://inre-soft.com/index2.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/87879.jpg"
+  },
+  "あかね色に染まる坂": {
+    "official": "http://www.feng.jp/akaneiro/main.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/88302.jpg"
+  },
+  "ツクモノツキ": {
+    "official": "http://www.sugarpot-hp.com/soft/tukumonotuki/t00_1.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/07/110507.jpg"
+  },
+  "金色ラブリッチェ-Golden Time-": {
+    "official": "http://sagaplanets.product.co.jp/works/kinkoigt/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/93843.jpg"
+  },
+  "Phantom ～Phantom of inferno～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/74/85574.jpg"
+  },
+  "MinDeaD BlooD ～支配者の為の狂死曲～": {
+    "official": "http://www.cyc-soft.com/b-cyc-pro/mdb-dvd2/mdbdvd_form.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/44/103644.jpg"
+  },
+  "真・燐月": { "officialAlive": false, "cover": "https://t.vndb.org/cv/69/110269.jpg" },
+  "パステルチャイム3 バインドシーカー": {
+    "official": "http://www.alicesoft.com/pastelchime3/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/95792.jpg"
+  },
+  "ゆきうた": {
+    "official": "http://frontwing.jp/product/yukiuta/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/72/5272.jpg"
+  },
+  "猫忍えくすはーと": {
+    "official": "https://whirlpool.co.jp/nekonin/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/79458.jpg"
+  },
+  "夏空のペルセウス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/00/89200.jpg" },
+  "鬼畜王ランス": {
+    "official": "http://retropc.net/alice/30.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/91051.jpg"
+  },
+  "月に寄りそう乙女の作法2": {
+    "official": "http://project-navel.com/tsukiniyorisou_2nd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/92145.jpg"
+  },
+  "おとなり恋戦争!": {
+    "official": "http://www.sugar-house.org/trial.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/34/109434.jpg"
+  },
+  "ラブらブライド": {
+    "official": "http://www.chuable.net/lbr/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/107446.jpg"
+  },
+  "アオイシロ(PS2)": {
+    "official": "http://www.success-corp.co.jp/?page/contents/40",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/87564.jpg"
+  },
+  "処女はお姉さまに恋してる ～2人のエルダー～": {
+    "official": "http://www.caramel-box.com/products/otoboku2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/27711.jpg"
+  },
+  "レミニセンス Re:Collect": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/93/127693.jpg"
+  },
+  "恋剣乙女 ～再燃～": { "officialAlive": false, "cover": "https://t.vndb.org/cv/31/108531.jpg" },
+  "あねいも2 ～Second Stage～": {
+    "official": "https://www.bootup.jp/products/aneimo2/aneimo2.html",
+    "officialAlive": true
+  },
+  "Crescendo ～永遠だと思っていたあの頃～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/30/77830.jpg"
+  },
+  "バタフライシーカー": {
+    "official": "http://www.silkysplus.jp/game/butterfly/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/98179.jpg"
+  },
+  "WHITE ALBUM2": {
+    "official": "http://leaf.aquaplus.jp/product/wa2ic/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/88962.jpg"
+  },
+  "付喪女・あおゑ": {
+    "official": "http://www.astronauts.co.jp/comet/aoe/index.html",
+    "officialAlive": true
+  },
+  "はるかぜどりに、とまりぎを。": {
+    "official": "http://www.sky-fish.jp/harutoma/harutoma-index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/28841.jpg"
+  },
+  "竜姫ぐーたらいふ2": {
+    "official": "https://whirlpool.co.jp/drapri-2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/81594.jpg"
+  },
+  "ChuSinGura46+1 -忠臣蔵46＋1- 武士の鼓動(A samurai's beat)": {
+    "official": "http://inre-soft.com/csgfd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/24279.jpg"
+  },
+  "Forest": {
+    "official": "http://www.liar.co.jp/forest.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/94894.jpg"
+  },
+  "PP -ピアニッシモ- 操リ人形ノ輪舞": {
+    "official": "http://www.gungnir.co.jp/innocentgrey/products/pro_pianissimo/pp_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/77298.jpg"
+  },
+  "螺旋回廊2": { "officialAlive": false, "cover": "https://t.vndb.org/cv/83/90483.jpg" },
+  "ひだまりバスケット": { "officialAlive": false, "cover": "https://t.vndb.org/cv/70/94070.jpg" },
+  "朝凪のアクアノーツ": { "cover": "https://t.vndb.org/cv/22/150622.jpg" },
+  "エターナルファンタジー": {
+    "official": "https://circus-co.jp/product/nf/contents/html/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/18824.jpg"
+  },
+  "Secret Agent ～騎士学園の忍びなるもの～": {
+    "official": "http://www.ensemble-game.com/25.secretagent/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/80754.jpg"
+  },
+  "双子座のパラドクス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/10/96210.jpg" },
+  "天使ノ二挺拳銃 -Angelos Armas-": {
+    "official": "http://www.nitroplus.co.jp/pc/lineup/into_07/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/93367.jpg"
+  },
+  "ママは対魔忍": {
+    "official": "http://www.lilith-soft.com/black/product74/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/28/38528.jpg"
+  },
+  "BALDR FORCE EXE(PS2)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/74/87174.jpg" },
+  "こなかな2 Konatayori Kanatamade II": {
+    "official": "http://fandc.co.jp/konakana2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/119735.jpg"
+  },
+  "W.L.O.世界恋愛機構 未来のために、いま恋をしよう。": {
+    "official": "http://www.akabeesoft2.com/wlo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/27877.jpg"
+  },
+  "キスアト": { "officialAlive": false, "cover": "https://t.vndb.org/cv/93/93093.jpg" },
+  "借金姉妹2 After Story": { "cover": "https://t.vndb.org/cv/52/139452.jpg" },
+  "民族淫嬢": {
+    "official": "http://www.akabeesoft3.com/products/minzoku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/128371.jpg"
+  },
+  "アマカノ": {
+    "official": "http://azarashi-soft.nexton-net.jp/amakano/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/96612.jpg"
+  },
+  "機神飛翔デモンベイン(非18禁)": {
+    "official": "http://www.demonbane.com/special/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/93363.jpg"
+  },
+  "シャイニーシスターズ 女装主人公アイドルプロジェクト(非18禁)": {
+    "official": "http://www.ensemble-game.com/24.shinysisters/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/99/89699.jpg"
+  },
+  "イブニクル2": {
+    "official": "http://www.alicesoft.com/evenicle2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/95783.jpg"
+  },
+  "淫妖蟲 獄 ～凌触地獄退魔録～": {
+    "official": "http://cyberworks.jp/tink/inyogoku/",
+    "officialAlive": true
+  },
+  "ガラス姫と鏡の従者": { "officialAlive": false, "cover": "https://t.vndb.org/cv/89/101689.jpg" },
+  "祝姫(非18禁)": {
+    "official": "http://www.digination-dmm.com/iwaihime/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/40/79040.jpg"
+  },
+  "あるぺじお ～きみいろのメロディ～": {
+    "official": "http://etoiles-soft.com/siesta/product/alpeggio/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/73892.jpg"
+  },
+  "AVキング ADULT VIDEO KING": { "cover": "https://t.vndb.org/cv/18/91118.jpg" },
+  "宿星のガールフレンド3 -the destiny star of girlfriend-": {
+    "official": "http://www.mirai-soft.net/syukugar3/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/95393.jpg"
+  },
+  "よつのは": {
+    "official": "http://www.iam-hiquality.com/soft/02leaf/index2.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/81945.jpg"
+  },
+  "輝光翼戦記 天空のユミナ": {
+    "official": "http://www.eternal-will.jp/yumina/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/10/77810.jpg"
+  },
+  "ROBOTICS;NOTES(PS3)": {
+    "official": "http://roboticsnotes.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/75853.jpg"
+  },
+  "真・恋姫†夢想 -革命- 蒼天の覇王": {
+    "official": "http://baseson.nexton-net.jp/kakumei-gi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/44/95944.jpg"
+  },
+  "ひとつ飛ばし恋愛": {
+    "official": "http://asa-pro.com/hitotsutobashi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/34/93934.jpg"
+  },
+  "てんあく": { "officialAlive": false, "cover": "https://t.vndb.org/cv/21/119021.jpg" },
+  "メルキス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/02/93102.jpg" },
+  "夢見師": { "officialAlive": false, "cover": "https://t.vndb.org/cv/68/100268.jpg" },
+  "彼女は友達ですか? 恋人ですか? それともトメフレですか? Second": {
+    "official": "https://app.candysoft.jp/products/dessertsoft/tomefureS",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/111575.jpg"
+  },
+  "シルヴァリオ ヴェンデッタ -Verse of Orpheus-(PSV)": {
+    "official": "http://www.light.gr.jp/light/products/vendetta_cs/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/89117.jpg"
+  },
+  "ファタモルガーナの館(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/31/77731.jpg"
+  },
+  "SCHOOL DAYS HQ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/88/94788.jpg" },
+  "H2O FOOTPRINTS IN THE SAND": {
+    "official": "http://www.makura-soft.com/h2o/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/88447.jpg"
+  },
+  "シャムロックの花言葉": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/60/110960.jpg"
+  },
+  "D.C.II Fall in Love ～ダ・カーポII～ フォーリンラブ": {
+    "official": "https://circus-co.jp/product/dc2fl/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/18831.jpg"
+  },
+  "戦女神VERITA": {
+    "official": "http://www.eukleia.co.jp/eushully/eu011.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/143173.jpg"
+  },
+  "イモウトノカタチ": {
+    "official": "http://www.cuffs-sphere.jp/products/imouto",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/147493.jpg"
+  },
+  "ギャングスタ・アルカディア ～ヒッパルコスの天使～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/57/151257.jpg"
+  },
+  "真剣で私に恋しなさい!": {
+    "official": "http://www.minatosoft.com/majikoi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/40/79440.jpg"
+  },
+  "緋奈沢智花の絶対女王政": {
+    "official": "http://hadashi.product.co.jp/tomoka/index.html",
+    "officialAlive": true
+  },
+  "DEVILS DEVEL CONCEPT": {
+    "official": "http://akatsukiworks.com/product/ddc/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/16/142316.jpg"
+  },
+  "アルカナ・アルケミア": {
+    "official": "http://www.lumpofsugar.co.jp/product/arcana/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/87/81587.jpg"
+  },
+  "虹を見つけたら教えて。": {
+    "official": "http://www.actress.ne.jp/products/nijimite/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/115843.jpg"
+  },
+  "大図書館の羊飼い -Dreaming Sheep-": {
+    "official": "http://august-soft.com/daito_ds/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/87/69887.jpg"
+  },
+  "リアライブ": {
+    "official": "http://www.purplesoftware.jp/products/realive/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/111524.jpg"
+  },
+  "超昂神騎エクシール": {
+    "official": "http://www.alicesoft.com/ixseal/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/20/91220.jpg"
+  },
+  "innocent Eye’s": { "officialAlive": false, "cover": "https://t.vndb.org/cv/53/5553.jpg" },
+  "暁の護衛 トリニティ(PS3)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/23/94423.jpg"
+  },
+  "夜刀姫斬鬼行": { "officialAlive": false, "cover": "https://t.vndb.org/cv/59/21359.jpg" },
+  "聖剣のフェアリース": {
+    "official": "http://www.littlewitch.jp/home/special/lwv01/",
+    "officialAlive": true
+  },
+  "ANONYMOUS;CODE(NS)": {
+    "official": "http://anonymouscode.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/75863.jpg"
+  },
+  "恋色マリアージュ": {
+    "official": "http://www.web-marmalade.com/products/koiiro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/22/89222.jpg"
+  },
+  "ハジラブ -Making*Lovers-": {
+    "official": "https://www.hook-net.jp/smee/mlhd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/94598.jpg"
+  },
+  "コドモノアソビ": {
+    "official": "http://www.lumpofsugar.co.jp/product/kodomo/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/98645.jpg"
+  },
+  "いつか、届く、あの空に。 ～陽の道と緋の昏と～(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/15/89215.jpg"
+  },
+  "僕のエルフお姉さん": {
+    "official": "http://www.lilith-soft.com/black/product71/",
+    "officialAlive": true
+  },
+  "D.C.P.C. ～ダ・カーポ プラスコミュニケーション～": {
+    "official": "http://circus.nandemo.gr.jp/sakuhin/dcpc/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/88156.jpg"
+  },
+  "きゃらぶれーしょん! ～乙女は恋してキャラぶれる～": {
+    "official": "http://www.akabeesoft3.com/products/charabration/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/88871.jpg"
+  },
+  "あまいろショコラータ2": {
+    "official": "http://cabbage-soft.com/products/amachoco2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/81596.jpg"
+  },
+  "フェアリーテイル・レクイエム": {
+    "official": "http://www.liar.co.jp/fairy/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/14/93914.jpg"
+  },
+  "Canvas2 ～茜色のパレット～": {
+    "official": "http://fandc.co.jp/canvas2/pc/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/100766.jpg"
+  },
+  "赤線街路 ～昭和33年の初雪～": { "cover": "https://t.vndb.org/cv/27/25327.jpg" },
+  "おねがい♪ご主人さまっ!": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/47/130547.jpg"
+  },
+  "のーぶる☆わーくす": {
+    "official": "http://legacy.yuzu-soft.com/nw/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/101533.jpg"
+  },
+  "ヨスガノソラ": {
+    "official": "http://www.cuffs-sphere.jp/products/yosuga/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/84/96184.jpg"
+  },
+  "ANGEL NAVIGATE": {
+    "official": "http://www.aries-soft.jp/angelnavigate/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/150597.jpg"
+  },
+  "アマエミ -longing for you-": {
+    "official": "http://azarashi-soft.nexton-net.jp/amaemi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/89368.jpg"
+  },
+  "娘3動物園": { "cover": "https://t.vndb.org/cv/18/98218.jpg" },
+  "ホチキス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/45/91545.jpg" },
+  "ねこ☆こい! ～猫神さまとネコミミのたたり～": {
+    "official": "http://www.whirlpool.co.jp/nekokoi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/101746.jpg"
+  },
+  "Fate/hollow ataraxia(PSV)": {
+    "official": "http://www.typemoon.com/products/hollowvita/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/89213.jpg"
+  },
+  "NEEDY GIRL OVERDOSE": {
+    "official": "https://www.facebook.com/Yoakefs/posts/pfbid021dMtTqdMmQBXJXDJod4jQrtQN6CKB68huLcGfKxQp7jQxZfbtpW1AX9TmYJysxcCl",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/85842.jpg"
+  },
+  "カスタムオーダーメイド3D2": {
+    "official": "http://com3d2.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/101954.jpg"
+  },
+  "死妹人形": { "cover": "https://t.vndb.org/cv/25/138525.jpg" },
+  "SIN 黒朱鷺色の少女": { "cover": "https://t.vndb.org/cv/31/101531.jpg" },
+  "いきなりあなたに恋している": {
+    "official": "http://www.makura-soft.com/ikikoi/index02.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/100189.jpg"
+  },
+  "夏恋ハイプレッシャー": {
+    "official": "http://s-mi-le.com/natsupre/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/89691.jpg"
+  },
+  "うみねこのなく頃に咲 ～猫箱と夢想の交響曲～(NS)": {
+    "official": "http://www.entergram.co.jp/umineko/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/85323.jpg"
+  },
+  "少女魔法学リトルウィッチロマネスク": {
+    "official": "http://www.littlewitch.jp/home/special/LWRQ/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/14/81714.jpg"
+  },
+  "嫁探しが捗りすぎてヤバい。": {
+    "official": "http://hulotte.jp/product/yomeyaba/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/07/89207.jpg"
+  },
+  "Canvas3 ～白銀のポートレート～": {
+    "official": "http://fandc.co.jp/best/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/49/97749.jpg"
+  },
+  "スタディ§ステディ": {
+    "official": "http://www.web-marmalade.com/products/sts/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/79813.jpg"
+  },
+  "車輪の国、向日葵の少女(XB360)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/46/75646.jpg"
+  },
+  "乙女が奏でる恋のアリア": {
+    "official": "http://www.ensemble-game.com/10.otokana/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/113870.jpg"
+  },
+  "D.C.III With You ～ダ・カーポIII ウィズユー～": {
+    "official": "http://circus-co.jp/product/dc3wy/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/96117.jpg"
+  },
+  "ラストオーダー": { "officialAlive": false, "cover": "https://t.vndb.org/cv/39/109039.jpg" },
+  "夜明け前より瑠璃色な -Brighter than dawning blue-(PS2)": {
+    "official": "http://aria-soft.com/d_blue/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/69881.jpg"
+  },
+  "オトメクライシス": { "cover": "https://t.vndb.org/cv/27/105227.jpg" },
+  "Sugar+Spice2": {
+    "official": "http://www.chuable.net/ss2/ss2_top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/44/107444.jpg"
+  },
+  "あねいも ～アイとHのステップアップ～": { "cover": "https://t.vndb.org/cv/23/138923.jpg" },
+  "THE GOD OF DEATH": { "officialAlive": false, "cover": "https://t.vndb.org/cv/40/90840.jpg" },
+  "Dies irae ～Amantes amentes～(PSP)": {
+    "official": "http://www.light.gr.jp/light/products/diesirae_cs/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/16/79716.jpg"
+  },
+  "私立アキハバラ学園": {
+    "official": "http://frontwing.jp/product/akigaku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/97006.jpg"
+  },
+  "ぼくの一人戦争": {
+    "official": "http://www.akabeesoft2.com/bokusen/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/27875.jpg"
+  },
+  "Sentinel": {
+    "official": "http://clockup.entacom.net/product/sentinel/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/103966.jpg"
+  },
+  "白刃きらめく恋しらべ": {
+    "official": "http://crystalia.amusecraft.com/mekurabe/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/110173.jpg"
+  },
+  "つくとり": { "cover": "https://t.vndb.org/cv/69/769.jpg" },
+  "オトメスイッチ ～彼が持ってる彼女のリモコン～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/45/102845.jpg"
+  },
+  "D.C.III Dream Days ～ダ・カーポIII～ ドリームデイズ": {
+    "official": "http://circus-co.jp/product/dc3dd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/91651.jpg"
+  },
+  "こいびとどうしですることぜんぶ": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/72/150272.jpg"
+  },
+  "FairlyLife": {
+    "official": "http://www.hook-net.jp/fairlylife/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/97898.jpg"
+  },
+  "蒼の彼方のフォーリズム EXTRA1": {
+    "official": "http://aokana.net/extra1/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/79869.jpg"
+  },
+  "LOVESICK PUPPIES -僕らは恋するために生まれてきた-": {
+    "official": "http://www.cosmiccute.com/products/lovesickpuppies/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/116717.jpg"
+  },
+  "姫様LOVEライフ! -もーっと! イチャイチャ☆ぱらだいす!-": {
+    "official": "http://www.s-digi.jp/princess-sugar/01-soft/f01_himelove/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/150439.jpg"
+  },
+  "HOTEL.": {
+    "official": "http://www.akabeesoft3.com/products/hotel/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/128377.jpg"
+  },
+  "なついろレシピ": {
+    "official": "http://www.pulltop.com/PA01/#/top_j/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/98463.jpg"
+  },
+  "終の館 ～恋文～": {
+    "official": "http://circus-co.jp/product/tui_yakata/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/99097.jpg"
+  },
+  "雨に歌う譚詩曲 ～A rainbow after the rain～": { "cover": "https://t.vndb.org/cv/71/3771.jpg" },
+  "夏の終わりのニルヴァーナ": {
+    "official": "http://www.pajamas.ne.jp/nirvana/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/37/128037.jpg"
+  },
+  "Blue-Sky-Blue【s】－空を舞う翼－": {
+    "official": "http://e56.info/reindeer/sor/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/100273.jpg"
+  },
+  "アイカギ ～アフターデイズ～": {
+    "official": "http://azarashi-soft.nexton-net.jp/aikagiAD/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/98675.jpg"
+  },
+  "アマカノ ～Second Season～＋": {
+    "official": "http://azarashi-soft.nexton-net.jp/amakano2+/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/79682.jpg"
+  },
+  "宿星のガールフレンド2 -the destiny star of girlfriend-": {
+    "official": "http://www.mirai-soft.net/syukugar2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/95400.jpg"
+  },
+  "ほしうた ～Starlight Serenade～": {
+    "official": "http://frontwing.jp/product/hoshiutass/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/12/25912.jpg"
+  },
+  "魔王のくせに生イキだっ!": {
+    "official": "http://luxury.nexton-net.jp/_product/lux001/index2.html",
+    "officialAlive": true
+  },
+  "純情化憐フリークス!": {
+    "official": "http://wonder-fool.jp/freaks/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/105366.jpg"
+  },
+  "特別授業3SLG": {
+    "official": "http://www.bishop.gr.jp/products/tjslg/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/07/145507.jpg"
+  },
+  "天巫女姫": {
+    "official": "http://www.actress.ne.jp/download-sale/06_tenmiko/index.html",
+    "officialAlive": true
+  },
+  "友だちから恋びとへ": {
+    "official": "http://azarashi-soft.nexton-net.jp/tomokoi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/40/106040.jpg"
+  },
+  "聖の少女 -美娼女学園3-": {
+    "official": "https://argonauts-soft.com/products/ms28-3/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/09/150209.jpg"
+  },
+  "とらバ！": {
+    "official": "http://www.bootup.jp/products/toraba/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/29/150529.jpg"
+  },
+  "CLANNAD": { "officialAlive": false, "cover": "https://t.vndb.org/cv/95/75895.jpg" },
+  "月姫": {
+    "official": "http://www.typemoon.org/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/48/90048.jpg"
+  },
+  "うみねこのなく頃に散": {
+    "official": "http://07th-expansion.net/umi/Main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/86264.jpg"
+  },
+  "120円の春(PS2)": {
+    "official": "http://www.gungho.jp/cgame/game/120/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/52/121152.jpg"
+  },
+  "こいなかlovers": { "officialAlive": false, "cover": "https://t.vndb.org/cv/56/101956.jpg" },
+  "Imitation Lover": {
+    "official": "http://www.light.gr.jp/light/products/imilover/kyo/top/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/36/111236.jpg"
+  },
+  "CROSS FIRE": {
+    "official": "http://www.sp-janis.com/janis/crossfire/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/148394.jpg"
+  },
+  "王賊": { "officialAlive": false, "cover": "https://t.vndb.org/cv/64/28464.jpg" },
+  "グリーングリーン2 恋のスペシャルサマー": {
+    "official": "http://timelesslink.net/frame/guriguri2/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/37/150537.jpg"
+  },
+  "よついろ☆パッショナート!": {
+    "official": "http://www.sky-fish.jp/yotsuiro/yotsuiro_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/26571.jpg"
+  },
+  "フォーリンラブ×4tune": {
+    "official": "http://www.escude.co.jp/product/love4tune/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/84/89884.jpg"
+  },
+  "世界を救うだけの簡単なお仕事": {
+    "official": "http://www.rosebleu.jp/product/sksk/download/trial/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/89255.jpg"
+  },
+  "ビッチ姉ちゃんが清純なはずがないっ!": {
+    "official": "https://onomatope.site/bitch/index.html",
+    "officialAlive": true
+  },
+  "この世の果てで恋を唄う少女YU-NO(PSV)": {
+    "official": "http://yu-no.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/29/59029.jpg"
+  },
+  "痴漢専用車両 ～屈辱の痴漢電車～": {
+    "official": "http://frill.product.co.jp/frill01/index.html",
+    "officialAlive": true
+  },
+  "Snow Drop ～first step in spring～": { "cover": "https://t.vndb.org/cv/49/8949.jpg" },
+  "Maggot baits": {
+    "official": "http://clockup.net/maggotbaits/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/22/89122.jpg"
+  },
+  "ALMA ～ずっとそばに…～": {
+    "official": "http://bonbee.product.co.jp/soul.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/48023.jpg"
+  },
+  "マージ ～MARGINAL～": { "officialAlive": false, "cover": "https://t.vndb.org/cv/10/98610.jpg" },
+  "マブラヴ ALTERED FABLE": {
+    "official": "http://www.age-soft.com/former/Product/alteredfable/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/95643.jpg"
+  },
+  "ゆびさきコネクション": {
+    "official": "http://www.hook-net.jp/yubisaki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/93291.jpg"
+  },
+  "マブラヴ photonflowers*(PS3)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/39/90539.jpg"
+  },
+  "グリーングリーン": {
+    "official": "http://timelesslink.net/frame/guriguri1/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/95498.jpg"
+  },
+  "Ever17(XB360)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/57/102657.jpg" },
+  "死に逝く君、館に芽吹く憎悪": {
+    "official": "http://bug-system.com/product/02_si/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/89178.jpg"
+  },
+  "和香様の座する世界": {
+    "official": "http://www.minatocarnival.com/wakasama/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/22/113122.jpg"
+  },
+  "CHU→NING LOVER": {
+    "official": "http://www.sugar-house.org/products_chuni/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/14096.jpg"
+  },
+  "まじからっと☆れいでぃあんと": {
+    "official": "http://www.parasol-soft.com/product/magicarat/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/48/117948.jpg"
+  },
+  "遠望のフェルシス Horizon of the earth and sky": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/59/94159.jpg"
+  },
+  "魔女と剣と千の月": {
+    "official": "http://kai-soft.jp/MTS-WEB/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/151117.jpg"
+  },
+  "ちんくる★ツインクル フェスティバル!": {
+    "official": "https://digitalcute.com/ttf/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/102855.jpg"
+  },
+  "シークレットゲーム PORTABLE(PSP)": {
+    "official": "http://www.yetigame.jp/secretgame_psp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/78841.jpg"
+  },
+  "あやめの町とお姫様": { "officialAlive": false, "cover": "https://t.vndb.org/cv/99/103299.jpg" },
+  "まいにち好きして": {
+    "official": "http://sirius.product.co.jp/mainiti/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/150269.jpg"
+  },
+  "あかときっ! -夢こそまされ恋の魔砲-": {
+    "official": "http://www.escude.co.jp/product/akatoki/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/26/101926.jpg"
+  },
+  "Remember11 -the age of infinity-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/70/89570.jpg"
+  },
+  "1/2 summer": { "officialAlive": false, "cover": "https://t.vndb.org/cv/23/89523.jpg" },
+  "W ～ウィッシュ～(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/93/99093.jpg"
+  },
+  "まじぷり －Wonder Cradle－": {
+    "official": "http://www.purplesoftware.jp/products/maji/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/116767.jpg"
+  },
+  "夢幻廻廊1.5 ～連鎖～": {
+    "official": "http://www.cyc-soft.com/b-cyc/mugen1_5_info/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/119793.jpg"
+  },
+  "スイセイギンカ": {
+    "official": "http://www.akatsukiworks.com/product/suiseiginka/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/116623.jpg"
+  },
+  "CURE GIRL": {
+    "official": "http://www.gungnir.co.jp/noesis/products/curegirl/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/47/101447.jpg"
+  },
+  "恋する乙女と守護の楯 -The shield of AIGIS-(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/75/102375.jpg"
+  },
+  "ゴスデリ -GOTHIC DELUSION-": {
+    "official": "http://www.lose.jp/gothderi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/90/101990.jpg"
+  },
+  "Magical Marriage Lunatics!!": {
+    "official": "http://www.moon-stone.jp/product/ms16/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/79453.jpg"
+  },
+  "黒の歌姫": {
+    "official": "http://clockup.entacom.net/product/utahime/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/41/135041.jpg"
+  },
+  "せんすいぶ!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/17/89617.jpg" },
+  "空と海が、ふれあう彼方(非18禁)": {
+    "official": "http://www.pulltop.com/umikana/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/76418.jpg"
+  },
+  "SEVEN": { "cover": "https://t.vndb.org/cv/13/106413.jpg" },
+  "マイ・フェア・エンジェル": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/17/119017.jpg"
+  },
+  "‘&’ -空の向こうで咲きますように-": {
+    "official": "http://www.akatsukiworks.com/product/and/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/36/90136.jpg"
+  },
+  "メモリーズオフ6 Complete(PSV)": {
+    "official": "http://memoriesoff.jp/6cp/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/75867.jpg"
+  },
+  "恋式マニュアル": { "officialAlive": false, "cover": "https://t.vndb.org/cv/74/94774.jpg" },
+  "マテリアルブレイブ イグニッション": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/07/135207.jpg"
+  },
+  "アイコトバ": {
+    "official": "http://azarashi-soft.nexton-net.jp/aikotoba/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/89223.jpg"
+  },
+  "Marguerite Sphere -マーガレット スフィア-": { "cover": "https://t.vndb.org/cv/38/135338.jpg" },
+  "Dolphin Divers": { "officialAlive": false, "cover": "https://t.vndb.org/cv/09/94809.jpg" },
+  "ももいろガーディアン": {
+    "official": "http://www.alicesoft.com/momonga/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/95795.jpg"
+  },
+  "はぴとら -HappyTransportation-": {
+    "official": "http://www.bloomhandle.jp/hapitora/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/89646.jpg"
+  },
+  "天空のシンフォニア": {
+    "official": "http://fandc.co.jp/sinfonia/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/47063.jpg"
+  },
+  "ピアノの森の満開の下": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/21/128021.jpg"
+  },
+  "ゆまほろめ 時を停めた館で明日を探す迷子たち": {
+    "official": "https://www.lumpofsugar.co.jp/product/yumahorome/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/90/81590.jpg"
+  },
+  "11eyes -Resona Forma-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/81/110581.jpg"
+  },
+  "Dearest Blue": {
+    "official": "http://s-digi.jp/lilim/02_soft/02_darkness/08_deb/deb01.html",
+    "officialAlive": true
+  },
+  "神がかりクロスハート!": {
+    "official": "http://windmill.suki.jp/product/kamigakari/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/115589.jpg"
+  },
+  "海と雪のシアンブルー": {
+    "official": "http://cuffs.co.jp/products/cyanblue/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/100579.jpg"
+  },
+  "未来戦姫スレイブニル": { "officialAlive": false, "cover": "https://t.vndb.org/cv/47/25947.jpg" },
+  "黒よりも昏い青": {
+    "official": "http://s-digi.jp/lilim/02_soft/01_lilim/08_kuroao/kuroao1.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/5911.jpg"
+  },
+  "こみっくパーティー": {
+    "official": "https://leaf.aquaplus.jp/product/cp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/07/97307.jpg"
+  },
+  "星の乙女と六華の姉妹": {
+    "official": "http://www.ensemble-game.com/27.hoshioto/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/113881.jpg"
+  },
+  "Flyable CandyHeart": { "officialAlive": false, "cover": "https://t.vndb.org/cv/47/105147.jpg" },
+  "SEVEN-BRIDGE": {
+    "official": "http://www.liar.co.jp/seven.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/94897.jpg"
+  },
+  "アイキス2": { "officialAlive": false, "cover": "https://t.vndb.org/cv/12/113312.jpg" },
+  "Sugar+Spice!": {
+    "official": "http://www.chuable.net/ss/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/101446.jpg"
+  },
+  "なないろ＊クリップ ～最後のステージ～": { "cover": "https://t.vndb.org/cv/80/93080.jpg" },
+  "恋愛家庭教師ルルミ★Coordinate!": {
+    "official": "http://riffraff.product.co.jp/rurumicoorde/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/37/93737.jpg"
+  },
+  "真説 猟奇の檻": { "officialAlive": false, "cover": "https://t.vndb.org/cv/84/142384.jpg" },
+  "Deep One -ディープワン-": {
+    "official": "http://nameless.nexton-net.jp/game/do01/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/97954.jpg"
+  },
+  "ココロが繋ぐ恋標": { "officialAlive": false, "cover": "https://t.vndb.org/cv/50/103350.jpg" },
+  "犠妹 ～背徳の契り～": { "cover": "https://t.vndb.org/cv/25/144625.jpg" },
+  "この空がついえる瞬間に": { "cover": "https://t.vndb.org/cv/73/52273.jpg" },
+  "罪恋×2/3": {
+    "official": "http://www.campus.gr.jp/product/tsumikoi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/04/89304.jpg"
+  },
+  "シュクレ ～sweet and charming time for you.～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/35/9635.jpg"
+  },
+  "D.C.WhiteSeason ～ダ・カーポ ホワイトシーズン～": {
+    "official": "http://circus.nandemo.gr.jp/sakuhin/dcws/dcws.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/98578.jpg"
+  },
+  "ゆ・め・く・み! ～訳あり物件、妖精つき～": { "cover": "https://t.vndb.org/cv/07/149107.jpg" },
+  "ヤキモチストリーム": {
+    "official": "http://madosoft.net/yakimochi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/21/45521.jpg"
+  },
+  "ひぐらしのなく頃に奉(非18禁)": {
+    "official": "http://07th-expansion.net/higu_hou/Main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/75600.jpg"
+  },
+  "アンバークォーツ ～Amber Quartz～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/22/96122.jpg"
+  },
+  "僕と恋するポンコツアクマ。すっごいえっち!": {
+    "official": "http://s-mi-le.com/ponkotsuse/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/76923.jpg"
+  },
+  "ダイヤミック・デイズ": {
+    "official": "http://www.lumpofsugar.co.jp/product/dd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/93793.jpg"
+  },
+  "姫さまっ、お手やわらかに!": { "cover": "https://t.vndb.org/cv/28/105228.jpg" },
+  "工口倫子シリーズVol3 人類最強性欲の嫁の姉": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/34/56434.jpg"
+  },
+  "5 -ファイブ-": {
+    "official": "http://ram.product.co.jp/5/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/51660.jpg"
+  },
+  "炎の孕ませ同級生": {
+    "official": "http://www.teck.co.jp/squeez/soft/h_dqs/h_dqs_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/28/136528.jpg"
+  },
+  "時計仕掛けのレイライン -残影の夜が明ける時-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/20/79720.jpg"
+  },
+  "はじらひ": { "cover": "https://t.vndb.org/cv/81/28681.jpg" },
+  "もっと 姉、ちゃんとしようよっ! アフターストーリー": {
+    "official": "http://www.candysoft.jp/ohp/01_products/Motto-ane_fd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/28423.jpg"
+  },
+  "将軍様はお年頃": {
+    "official": "http://www.alcot.biz/product/shogun/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/89227.jpg"
+  },
+  "下半身の壁 ～新・凌辱痴漢地獄": {
+    "official": "http://www.hs-crowd.co.jp/anim/product/pro_pc/pc012/kabe.html",
+    "officialAlive": true
+  },
+  "どんちゃんがきゅ～": {
+    "official": "http://www.light.gr.jp/light/products/donchan/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/55/28555.jpg"
+  },
+  "ヴァルキリーコンプレックス": {
+    "official": "http://circus-co.jp/product/vc/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/14/137114.jpg"
+  },
+  "School Days": { "officialAlive": false, "cover": "https://t.vndb.org/cv/88/94788.jpg" },
+  "STEINS;GATE ELITE": {
+    "official": "http://steinsgate.jp/elite/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/19/77819.jpg"
+  },
+  "パサージュ! ～passage of life.～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/70/22070.jpg"
+  },
+  "さくら、もゆ。-as the Night's, Reincarnation-": {
+    "official": "http://www.favo-soft.jp/soft/product/sakura/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/79671.jpg"
+  },
+  "夢幻のさくら2": { "official": "http://www.cyberworks.jp/tink/sakura2/", "officialAlive": true },
+  "Dreamin'Her -僕は、彼女の夢を見る。-": {
+    "official": "https://life0.info/dreaminher/index",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/84401.jpg"
+  },
+  "SPIRAL!!": {
+    "official": "https://www.project-navel.com/spiral/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/98864.jpg"
+  },
+  "PRINCESS WALTZ": {
+    "official": "http://www.pulltop.com/gp05/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/49/79449.jpg"
+  },
+  "Myself;Yourself(PS2)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/79/82879.jpg" },
+  "CHAOS;HEAD NOAH(XB360)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/05/75805.jpg"
+  },
+  "見上げてごらん、夜空の星を FINE DAYS": {
+    "official": "http://www.pulltop.com/full-of-stars/fd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/101353.jpg"
+  },
+  "CoronaBlossom vol.1 -Gift From the Galaxy-": {
+    "official": "http://coroblo.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/75942.jpg"
+  },
+  "ランドセルシンドローム": {
+    "official": "http://randro.mochioto.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/60654.jpg"
+  },
+  "同心 ～三姉妹のエチュード～": {
+    "official": "http://www.hs-crowd.co.jp/crowd/product/lot/dou/dou.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/29774.jpg"
+  },
+  "ゴッドシスターズ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/27/110327.jpg" },
+  "ティンクル☆くるせいだーす GoGo!(PSP)": {
+    "official": "http://d-game.dengeki.com/kurukuru/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/89695.jpg"
+  },
+  "ひなたテラス -We don’t abandon you.-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/02/139502.jpg"
+  },
+  "魔女こいにっき Dragon×Caravan(PSV)": {
+    "official": "http://www.entergram.co.jp/majokoi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/84/79784.jpg"
+  },
+  "MinDeaD BlooD ～麻由と麻奈の輸血箱～": {
+    "official": "http://www.cyc-soft.com/b-cyc-pro/mdb_y/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/25/75725.jpg"
+  },
+  "恋しよっ?": {
+    "official": "http://crossover-game.jp/koishiyo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/96031.jpg"
+  },
+  "となりに彼女のいる幸せ ～Winter Guest～": {
+    "official": "http://prekano.com/products/tonakaiw/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/89283.jpg"
+  },
+  "Fate/stay night [Realta Nua](PS2)": {
+    "official": "http://www.typemoon.com/dl/dl_fate.html#fatetrial",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/89071.jpg"
+  },
+  "めぐり、ひとひら。": {
+    "official": "http://www.caramel-box.com/products/meguri/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/87/89287.jpg"
+  },
+  "コンチェルトノート": { "officialAlive": false, "cover": "https://t.vndb.org/cv/05/92505.jpg" },
+  "槇村葉月の恋語り": {
+    "official": "http://azarashi-soft-plusone.nexton-net.jp/makikoi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/110117.jpg"
+  },
+  "脅迫2 ～傷に咲く花 鮮血の紅～": {
+    "official": "http://www.ail-soft.com/pro_kyo2.htm",
+    "officialAlive": true
+  },
+  "天文時計のアリア": {
+    "official": "http://www.campus.gr.jp/product/orloi_aria/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/101591.jpg"
+  },
+  "MELTY BLOOD Actress Again(PS2)": {
+    "official": "http://e56.info/mbaaps2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/18/104118.jpg"
+  },
+  "蝉時雨": {
+    "official": "http://www.sp-janis.com/noa/semishigure/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/87/9087.jpg"
+  },
+  "星空のメモリア Eternal Heart": {
+    "official": "http://www.favo-soft.jp/soft/product/EternalHeart/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/88/77188.jpg"
+  },
+  "聖鍵遣いの命題": {
+    "official": "http://unicorn.la/product/01sekapoji/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/140278.jpg"
+  },
+  "レーシャル・マージ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/60/89260.jpg" },
+  "ピュアソングガーデン！": {
+    "official": "http://www.pulltop.com/PSG",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/93293.jpg"
+  },
+  "カタハネ ―An' call Belle―": {
+    "official": "http://www.katahane.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/11/99711.jpg"
+  },
+  "夏色小町": {
+    "official": "http://www.purplesoftware.jp/products/natsu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/94/99094.jpg"
+  },
+  "Dear My Friend": { "officialAlive": false, "cover": "https://t.vndb.org/cv/48/28548.jpg" },
+  "アッチむいて恋": {
+    "official": "http://www.asa-pro.com/top/new/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/69874.jpg"
+  },
+  "魔法はあめいろ?": { "officialAlive": false, "cover": "https://t.vndb.org/cv/71/150271.jpg" },
+  "Phantom INTEGRATION": {
+    "official": "http://www.nitroplus.co.jp/pc/lineup/into_01/phantom_int/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/74/85574.jpg"
+  },
+  "忘レナ草 ～Forget-me-Not～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/28/39328.jpg"
+  },
+  "コミュ -黒い竜と優しい王国-": {
+    "official": "http://www.akatsukiworks.com/product/com/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/81/116081.jpg"
+  },
+  "恋愛フェイズ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/82/26482.jpg" },
+  "凌辱制服女学園 ～恥蜜に濡れた制服～": {
+    "official": "http://squeez-soft.jp/soft/rsj/rsj_info.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/144701.jpg"
+  },
+  "アイドル魔法少女ちるちる☆みちる 前編(非18禁)": {
+    "official": "http://frontwing.jp/product/mgm/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/26/75926.jpg"
+  },
+  "Chu×Chuアイドる2 ‐melodies×memories": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/84/105284.jpg"
+  },
+  "planetarian -雪圏球-(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/76/106576.jpg"
+  },
+  "アヤカシ散華": {
+    "official": "http://www.debonosu.jp/debonosu/game/ayakashi/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/44/24744.jpg"
+  },
+  "ウィザーズコンプレックス": {
+    "official": "http://windmill.suki.jp/product/wiz/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/89373.jpg"
+  },
+  "Lien ～終わらない君の唄～": { "cover": "https://t.vndb.org/cv/75/5875.jpg" },
+  "お兄ちゃん、朝までずっとギュッてして! 夜までもっとエッチして!": {
+    "official": "http://tinkle-position.com/onigyuh/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/129873.jpg"
+  },
+  "理 －コトワリ－ ～キミの心の零れた欠片～": {
+    "official": "http://cdrive-soft.com/kotowari/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/149297.jpg"
+  },
+  "Princess Party Camellia ～プリンセスパーティーカメリア～": {
+    "official": "http://circus-co.jp/product/ppc/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/104066.jpg"
+  },
+  "猫忍えくすはーと3": {
+    "official": "https://whirlpool.co.jp/nekonin-3",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/16/79816.jpg"
+  },
+  "おたマ! ～おたく仲間はちっこいマニア～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/74/105274.jpg"
+  },
+  "ひよこストライク!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/08/37608.jpg" },
+  "うたわれるもの": { "officialAlive": false, "cover": "https://t.vndb.org/cv/65/77965.jpg" },
+  "サナララR": { "officialAlive": false, "cover": "https://t.vndb.org/cv/75/89975.jpg" },
+  "PILE☆DRIVER": { "cover": "https://t.vndb.org/cv/36/10136.jpg" },
+  "テレビの消えた日": {
+    "official": "http://www.keroq.co.jp/petitkeroq/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/30/147530.jpg"
+  },
+  "胸キュン! はぁとde恋シ・テ・ル ～お兄ちゃんもっと大好き～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/33/111333.jpg"
+  },
+  "恋するココロと魔法のコトバ": {
+    "official": "https://hearts.amusecraft.com/koikoro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/116957.jpg"
+  },
+  "メモリーズオフ -Innocent Fille- for Dearest(非18禁)": {
+    "official": "http://memoriesoff.jp/if/fd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/75851.jpg"
+  },
+  "Triangle Love -アプリコットフィズ-": {
+    "official": "http://www.campus.gr.jp/product/triangle_af/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/87/107387.jpg"
+  },
+  "倉野くんちのふたご事情": {
+    "official": "http://www.cuffs-cube.jp/products/kurafuta/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/100580.jpg"
+  },
+  "俺の彼女はヒトでなし": { "officialAlive": false, "cover": "https://t.vndb.org/cv/40/62740.jpg" },
+  "箱庭ロジック": {
+    "official": "http://www.cabbit.jp/logic/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/26/92426.jpg"
+  },
+  "緋の月": { "cover": "https://t.vndb.org/cv/78/151178.jpg" },
+  "ぽっと -Rondo for Dears-": { "cover": "https://t.vndb.org/cv/17/29117.jpg" },
+  "狂った教頭No.2 ～この支配からの卒業～": {
+    "official": "http://www.jado-soft.com/kyoutou2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/29262.jpg"
+  },
+  "聖なるかな外伝 精霊天翔 ～壊れゆく世界の少女たち～": {
+    "official": "http://www.xuse.co.jp/product/041_seirei/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/92257.jpg"
+  },
+  "恋は夢見る妄烈ガール!": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/56/101556.jpg"
+  },
+  "Remember11 -the age of infinity-(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/70/89570.jpg"
+  },
+  "うみねこのなく頃に Episode1 Legend of the golden witch(非18禁)": {
+    "official": "http://07th-expansion.net/umi/Main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/85323.jpg"
+  },
+  "LEGEND SEVEN ～白雪姫と7人の英雄～": {
+    "official": "http://legend7.info/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/35/26435.jpg"
+  },
+  "あっぱれ！天下御免": {
+    "official": "http://baseson.nexton-net.jp/10th/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/136517.jpg"
+  },
+  "乙女が彩る恋のエッセンス ～笑顔で織りなす未来～": {
+    "official": "http://www.ensemble-game.com/15.otoiro_egao/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/112771.jpg"
+  },
+  "リトルバスターズ!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/12/75612.jpg" },
+  "Fate/stay night [Realta Nua](PSV)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/71/89071.jpg"
+  },
+  "赫炎のインガノック ～What a beautiful people～": {
+    "official": "http://www.liar.co.jp/inganock.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/93956.jpg"
+  },
+  "ソレヨリノ前奏詩": { "officialAlive": false, "cover": "https://t.vndb.org/cv/16/95416.jpg" },
+  "ナツイロココロログ": {
+    "official": "https://hearts.amusecraft.com/rorolog/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/00/93300.jpg"
+  },
+  "みらろま Miracle Romance Strawberry Scramble": {
+    "official": "http://www.web-marmalade.com/data/miraroma/mr_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/119982.jpg"
+  },
+  "ルートダブル -Before Crime * After Days-(XB360)": {
+    "official": "http://www.yetigame.jp/w/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/76393.jpg"
+  },
+  "英雄＊戦姫": {
+    "official": "http://tenco.cc/products/eiyusenki",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/81701.jpg"
+  },
+  "初恋＊シンドローム": {
+    "official": "http://www.campus.gr.jp/product/hatsudoro/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/107391.jpg"
+  },
+  "I/O(PS2)": {
+    "official": "http://regista.co.jp/io/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/7745.jpg"
+  },
+  "こんぼく麻雀 ～こんな麻雀があったら僕はロン!～": {
+    "official": "http://www.akabeesoft2.com/conboku_m/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/10/24210.jpg"
+  },
+  "AlexiA(非18禁)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/80/59380.jpg" },
+  "セヴンデイズ あなたとすごす七日間(非18禁)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/45/79645.jpg"
+  },
+  "DUEL SAVIOR DESTINY(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/54/89154.jpg"
+  },
+  "恋する乙女と守護の楯 Re:boot The “SHIELD-9”": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/75/102375.jpg"
+  },
+  "新・白銀のソレイユ -ReANSWER-": {
+    "official": "http://www.sky-fish.jp/soleil_rea/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/25070.jpg"
+  },
+  "Routes PE(PS2)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/11/97811.jpg" },
+  "君が主で執事が俺で -They are My noble Masters-": {
+    "official": "http://www.minatosoft.com/kimiaru/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/20639.jpg"
+  },
+  "あえて無視するキミとの未来 ～Relay broadcast～": {
+    "official": "http://www.h-comb.biz/product/09/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/94771.jpg"
+  },
+  "流星☆キセキ -SHOOTING PROBE-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/75/105275.jpg"
+  },
+  "キッキングホース★ラプソディ": {
+    "official": "http://www.h-comb.biz/product/05/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/112270.jpg"
+  },
+  "STEAL!": {
+    "official": "http://spray.product.co.jp/product/steal/xrated.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/16906.jpg"
+  },
+  "QUINTUPLE☆SPLASH": {
+    "official": "http://www.parasol-soft.com/product/quintuple/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/146897.jpg"
+  },
+  "魔法少女消耗戦線 another record -ちいさきものたちのゆめ-": {
+    "official": "http://metalogiq.jp/games/deadendaegis_fd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/90353.jpg"
+  },
+  "月と魔法と太陽と": { "officialAlive": false, "cover": "https://t.vndb.org/cv/58/558.jpg" },
+  "ネコぱら Vol.1 ソレイユ開店しました!": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/94/78994.jpg"
+  },
+  "るいは智を呼ぶファンディスク -明日のむこうに視える風-": {
+    "official": "http://www.akatsukiworks.com/product/ruitomo_fd/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/88197.jpg"
+  },
+  "夕緋ノ向コウ側": {
+    "official": "http://www.tactics.ne.jp/~baseson/yuuhi/y_index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/1496.jpg"
+  },
+  "恋神 ‐ラブカミ‐": {
+    "official": "http://www.pulltop.com/gp09/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/90/150890.jpg"
+  },
+  "あまたらすリドルスター": {
+    "official": "https://moeapp.net/special/riddlestar.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/79469.jpg"
+  },
+  "ロスト・エコーズ": {
+    "official": "https://www.petitlinge.net/blank",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/89654.jpg"
+  },
+  "空のつくりかた -under the same sky, over the rainbow-": {
+    "official": "http://cosmiccute.com/products/soratsuku/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/92970.jpg"
+  },
+  "妹スパイラル": {
+    "official": "http://macaronsoft.jp/imouto_sp/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/25989.jpg"
+  },
+  "鬼哭街 The Cyber Slayer": {
+    "official": "http://www.nitroplus.co.jp/pc/lineup/into_03/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/86531.jpg"
+  },
+  "ラブレプリカ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/57/26257.jpg" },
+  "ANONYMOUS;CODE": {
+    "official": "http://anonymouscode.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/63/75863.jpg"
+  },
+  "うみねこのなく頃に Episode2 Turn of the golden witch(非18禁)": {
+    "official": "http://07th-expansion.net/umi/Main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/85323.jpg"
+  },
+  "魔法少女消耗戦線 DeadΩAegis": {
+    "official": "http://metalogiq.jp/games/deadendaegis/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/77980.jpg"
+  },
+  "effect ～悪魔の仔～": {
+    "official": "http://hadashi.product.co.jp/effect/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/99/16599.jpg"
+  },
+  "木洩れ陽のノスタルジーカ -Raggio di sole nostalgico-": {
+    "official": "http://www.nona.dti.ne.jp/d-space/sp/nostalgico/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/85/26085.jpg"
+  },
+  "マジカル☆ディアーズ": { "cover": "https://t.vndb.org/cv/36/25536.jpg" },
+  "天使のたまご": {
+    "official": "http://www.purplesoftware.jp/products/tentama/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/14669.jpg"
+  },
+  "まじかる☆アンティーク": {
+    "official": "http://leaf.aquaplus.jp/product/ma/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/100964.jpg"
+  },
+  "LOVELY QUEST": {
+    "official": "http://www.hook-net.jp/lovelyquest/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/30/26230.jpg"
+  },
+  "乙女が結ぶ月夜の煌めき": {
+    "official": "http://www.ensemble-game.com/21.ototsuki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/89697.jpg"
+  },
+  "戦国†恋姫X ～乙女絢爛☆戦国絵巻～": {
+    "official": "http://baseson.nexton-net.jp/senkoi-x/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/97773.jpg"
+  },
+  "IZUMO4": {
+    "official": "http://www.studio-ego.jp/game/izumo4/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/01/27401.jpg"
+  },
+  "夏色あさがおレジデンス": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/77/26377.jpg"
+  },
+  "らくえん ～あいかわらずなぼく。の場合～": { "cover": "https://t.vndb.org/cv/40/21240.jpg" },
+  "熱帯低気圧少女(PS2)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/40/96740.jpg" },
+  "銀色 完全版": { "officialAlive": false, "cover": "https://t.vndb.org/cv/93/95293.jpg" },
+  "彼女と俺と恋人と。": {
+    "official": "http://www.pulltop.com/PL01/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/93456.jpg"
+  },
+  "Memories Off ～それから～ for Windows(非18禁)": {
+    "official": "http://memoriesoff.jp/psp/sorekara/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/120533.jpg"
+  },
+  "ツユチル・レター ～海と栞に雨音を～(非18禁)": {
+    "official": "http://lily-spinel.com/tsuyuchiru1/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/39/78939.jpg"
+  },
+  "辻堂さんのバージンロード": {
+    "official": "http://www.minatocarnival.com/tsujidou-vr/index.php",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/88/89188.jpg"
+  },
+  "ウチはもう、延期できない。": {
+    "official": "http://www.cuffs.co.jp/products/enking/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/137746.jpg"
+  },
+  "運命予報をお知らせします": {
+    "official": "http://yonaki.rdy.jp/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/30/62730.jpg"
+  },
+  "タユタマ -Kiss on my Deity-(XB360)": {
+    "official": "http://www.lumpofsugar.co.jp/product/tayutama/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/102489.jpg"
+  },
+  "マブラヴ 全年齢版(非18禁)": {
+    "official": "http://www.muvluv.com/product01_muvluv/top_extra.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/68/75768.jpg"
+  },
+  "グリザイア クロノスリベリオン(非18禁)": {
+    "official": "https://gri-chro.grisaia-pt.com/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/34/76034.jpg"
+  },
+  "ナルキッソス ～もしも明日があるなら～Portable(PSP)": {
+    "official": "http://www.kadohobi.jp/narcissu/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/93313.jpg"
+  },
+  "キミの瞳にヒットミー": { "officialAlive": false, "cover": "https://t.vndb.org/cv/48/87448.jpg" },
+  "マブラヴ オルタネイティヴ トータル・イクリプス(PS3)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/29/90529.jpg"
+  },
+  "天気雨": {
+    "official": "http://www.candysoft.jp/gumisoft/sun-shower/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/06/83406.jpg"
+  },
+  "空の少女 -美娼女学園1-": {
+    "official": "https://argonauts-soft.com/products/ms28/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/45/151745.jpg"
+  },
+  "魔都拳侠傳 マスクド上海": {
+    "official": "http://www.liar.co.jp/mshanghai.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/93993.jpg"
+  },
+  "夢見ヶ丘": { "cover": "https://t.vndb.org/cv/90/6290.jpg" },
+  "才気煥発才色兼備の君たちへ": {
+    "official": "http://www.akabeesoft3.com/products/saisai/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/37/9037.jpg"
+  },
+  "イヅナ斬審剣": { "officialAlive": false, "cover": "https://t.vndb.org/cv/74/128374.jpg" },
+  "恋愛0キロメートル": {
+    "official": "http://www.asa-pro.com/top/zero/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/116878.jpg"
+  },
+  "TVアニメ「Φなる・あぷろーち」": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/05/99105.jpg"
+  },
+  "さくらシンクロニシティ": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/58/147458.jpg"
+  },
+  "Yin-Yang! X Change Alternative": {
+    "official": "http://www.hs-crowd.co.jp/crowd/product/lot/xca/xca.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/66/88266.jpg"
+  },
+  "百花繚乱エリクシル": { "officialAlive": false, "cover": "https://t.vndb.org/cv/85/94785.jpg" },
+  "Princess-Style": { "cover": "https://t.vndb.org/cv/09/149109.jpg" },
+  "Heart of Hearts": { "officialAlive": false, "cover": "https://t.vndb.org/cv/63/3363.jpg" },
+  "お兄ちゃん、キッスの準備はまだですか?": {
+    "official": "http://tinkle-position.com/onikiss/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/71/93771.jpg"
+  },
+  "Liber_7 永劫の終わりを待つ君へ": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/18/116618.jpg"
+  },
+  "Scramble Heart": {
+    "official": "http://bonbee.product.co.jp/scrambleheart/scramble.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/59/59.jpg"
+  },
+  "車輪の国、悠久の少年少女": {
+    "official": "http://www.akabeesoft2.com/s_fd/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/78/93878.jpg"
+  },
+  "幻奏童話ALICETALE": {
+    "official": "http://galactica.nexton-net.jp/alice/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/57/111157.jpg"
+  },
+  "紙の上の魔法使い": {
+    "official": "http://kagura.rdy.jp/kamimaho/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/92770.jpg"
+  },
+  "プリズム・プリンセス ～ふたりの姫騎士と股間の紋章～": {
+    "official": "http://www.pajamas.ne.jp/p_princess/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/89297.jpg"
+  },
+  "フユキス": { "officialAlive": false, "cover": "https://t.vndb.org/cv/74/93274.jpg" },
+  "白光のヴァルーシア ～What a beautiful hopes～": {
+    "official": "http://www.liar.co.jp/val_top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/93979.jpg"
+  },
+  "三色絵恋 -Tricolour Lovestory-(PS4)": {
+    "official": "http://www.dramaticcreate.com/tricolour/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/33/79533.jpg"
+  },
+  "echo.": {
+    "official": "http://www.sputnikworks.com/products/echo/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/2354.jpg"
+  },
+  "巫女舞 ～ただ一つの願い～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/24/97024.jpg"
+  },
+  "お嬢様はご機嫌ナナメ": {
+    "official": "http://www.ensemble-game.com/06.ojyonana/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/67/113867.jpg"
+  },
+  "真・恋姫†無双 ～乙女繚乱☆三国志演義～": {
+    "official": "https://baseson.nexton-net.jp/sinkoihime/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/87/89187.jpg"
+  },
+  "終わりなきメイド達の夜": {
+    "official": "http://www.hs-crowd.co.jp/crowd/product/lot/maid/maid.html",
+    "officialAlive": true
+  },
+  "ナマイキデレーション": {
+    "official": "http://madosoft.net/namaiki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/60/23260.jpg"
+  },
+  "潮風の消える海に": {
+    "official": "http://www.light.gr.jp/light/products/siokaze/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/10/109210.jpg"
+  },
+  "かりぐらし恋愛": {
+    "official": "http://www.asa-pro.com/karigurashi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/21/89121.jpg"
+  },
+  "ヘリオトロープ -それは死に至る神の愛-": {
+    "official": "http://www.reactor.me/hatena/heliotrope/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/52173.jpg"
+  },
+  "Harmonia(非18禁)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/06/75906.jpg" },
+  "季節を抱きしめて(PS)": { "officialAlive": false, "cover": "https://t.vndb.org/cv/69/99269.jpg" },
+  "乙女が結ぶ月夜の煌めき Fullmoon Days": {
+    "official": "http://www.ensemble-game.com/23.ototsukiFD/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/89698.jpg"
+  },
+  "ひなたぼっこ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/10/112110.jpg" },
+  "White ～blanche comme la lune～": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/71/95371.jpg"
+  },
+  "同級生(Win)": { "cover": "https://t.vndb.org/cv/79/78179.jpg" },
+  "ひとつ飛ばし恋愛V(PSV)": {
+    "official": "http://www.entergram.co.jp/hitotsutobashiV/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/34/93934.jpg"
+  },
+  "EVE ghost enemies": {
+    "official": "https://el-dia.net/eve3/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/85/103585.jpg"
+  },
+  "ガマンができない童貞兄キと、スナオになれない反抗妹": {
+    "official": "https://www.dlsite.com/maniax/announce/=/product_id/RJ393720.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/58/51458.jpg"
+  },
+  "機神咆吼デモンベイン": {
+    "official": "http://www.demonbane.com/houkou-pc/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/93369.jpg"
+  },
+  "冷徹冷静しかして×××!!": {
+    "official": "http://www.chien.jp/reirei/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/48/114248.jpg"
+  },
+  "神様のような君へ": {
+    "official": "http://www.cuffs-cube.jp/products/kamikimi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/89/89389.jpg"
+  },
+  "ラブラブル ～lover able～": {
+    "official": "http://www.hook-net.jp/smee/loverable/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/85/101885.jpg"
+  },
+  "姫と婬欲のテスタメント": {
+    "official": "https://www.escude.co.jp/product/testament/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/70/105470.jpg"
+  },
+  "Dies irae ～Interview with Kaziklu Bey～(非18禁)": {
+    "official": "http://www.light.gr.jp/light/products/dies_kaziklubey/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/79/80379.jpg"
+  },
+  "FLOWERS -Le volume sur printemps-(春篇)(非18禁)": {
+    "official": "http://www.gungnir.co.jp/lily/flowers/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/53/77853.jpg"
+  },
+  "マーヴェリックマックス": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/02/7702.jpg"
+  },
+  "knot ～絆の魔法～": { "cover": "https://t.vndb.org/cv/33/3533.jpg" },
+  "North Wind": {
+    "official": "https://fandc.co.jp/dreamsoft/northwind/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/29/92329.jpg"
+  },
+  "クライミライ2": { "cover": "https://t.vndb.org/cv/65/150165.jpg" },
+  "Orange Pocket -オレンジポケット-": {
+    "official": "http://www.hook-net.jp/orange_pocket/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/98569.jpg"
+  },
+  "GUN-KATANA(銃刀) ―Non Human Killer―": {
+    "official": "http://www.cyc-soft.com/b-cyc-pro/gun/g_main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/88/75688.jpg"
+  },
+  "出会って5分は俺のもの! 時間停止と不可避な運命": {
+    "official": "http://hulotte.jp/product/atropos/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/93/89193.jpg"
+  },
+  "Tears to Tiara -花冠の大地-(PS3)": {
+    "official": "http://aquaplus.jp/ttt/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/19/52819.jpg"
+  },
+  "Vermilion -Bind of Blood-": {
+    "official": "http://www.light.gr.jp/light/products/vermilion/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/48/27948.jpg"
+  },
+  "D.C.II Dearest Marriage ～ダ・カーポII～ ディアレストマリッジ": {
+    "official": "http://circus-co.jp/product/dc2dm/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/98/31498.jpg"
+  },
+  "キミのとなりで恋してる!": {
+    "official": "http://www.h-comb.biz/new_title/13/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/93773.jpg"
+  },
+  "PURELY×CATION": {
+    "official": "http://www.hibiki-site.com/purely-cation/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/69/99469.jpg"
+  },
+  "永遠のアセリア -The Spirit of Eternity Sword-": {
+    "official": "https://github.com/moyu15645/patch/blob/main/aselia_v2.zip",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/79743.jpg"
+  },
+  "アマガミ(PS2)": {
+    "official": "http://amagami.info/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/65/101465.jpg"
+  },
+  "君に燈る灯": { "cover": "https://t.vndb.org/cv/95/4095.jpg" },
+  "Re:birth colony -Lost azurite-": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/32/107532.jpg"
+  },
+  "キスからはじめるエゴイズム": {
+    "official": "http://s-mi-le.com/satsuki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/05/90205.jpg"
+  },
+  "蝶の毒 華の鎖": {
+    "official": "http://www.aromarie.com/product/chou/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/78783.jpg"
+  },
+  "神楽花莚譚": {
+    "official": "http://www.debonosu.jp/debonosu/game/kaentan/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/27/25827.jpg"
+  },
+  "片翼の天使": { "cover": "https://t.vndb.org/cv/04/48804.jpg" },
+  "私が好きなら「好き」って言って!": {
+    "official": "http://www.chuable.net/sukisuki/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/54/101354.jpg"
+  },
+  "波間の国のファウスト": {
+    "official": "http://www.bitterdrop.jp/top",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/143513.jpg"
+  },
+  "夏の幼馴染と、冬のカノジョ": {
+    "official": "http://www.nephrite-softhouse.com/natuhuyu/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/15/22015.jpg"
+  },
+  "誰が殺したコマドリを": {
+    "official": "http://smilesenki.com/komadori/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/96/62396.jpg"
+  },
+  "あおぞらストライプ": {
+    "official": "http://www.astronauts.co.jp/spica/aozora_stripe/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/97697.jpg"
+  },
+  "夏神楽": { "officialAlive": false, "cover": "https://t.vndb.org/cv/74/129374.jpg" },
+  "うみねこのなく頃に Episode4 Alliance of the golden witch(非18禁)": {
+    "official": "http://07th-expansion.net/umi/Main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/85323.jpg"
+  },
+  "レイルロアの略奪者": {
+    "official": "http://3rdeye.jp/raillore/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/108223.jpg"
+  },
+  "保母さんちゅ!": { "cover": "https://t.vndb.org/cv/56/3656.jpg" },
+  "Tiny Dungeon ～BLACK and WHITE～": {
+    "official": "http://www.rosebleu.jp/product/TinyDungeon/td1/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/31/89231.jpg"
+  },
+  "空色の風琴": { "officialAlive": false, "cover": "https://t.vndb.org/cv/04/99104.jpg" },
+  "LOVEREC.": {
+    "official": "http://www.alcot.biz/product/loverec/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/93777.jpg"
+  },
+  "神様のゲーム －監禁された6人の男女－": {
+    "official": "http://www.xuse.co.jp/product/054_kamisama/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/08/138108.jpg"
+  },
+  "古色迷宮輪舞曲 ～HISTOIRE DE DESTIN～": {
+    "official": "http://masterup.net/yatanootori/yatagarasu/product/furuiro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/42/89242.jpg"
+  },
+  "タイムリープぱらだいす": {
+    "official": "http://frontwing.jp/product/paradise/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/07/97907.jpg"
+  },
+  "俺の彼女のウラオモテ ～Pure Sweet Heart～(PSP)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/07/69707.jpg"
+  },
+  "アイコン": { "cover": "https://t.vndb.org/cv/61/110161.jpg" },
+  "飛ぶ山羊はさかさまの木の夢を見るか": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/11/14911.jpg"
+  },
+  "Aquas": { "cover": "https://t.vndb.org/cv/85/128485.jpg" },
+  "bitter smile.": { "officialAlive": false, "cover": "https://t.vndb.org/cv/83/90883.jpg" },
+  "すたーらいと☆アイドル -COLORFUL TOP STAGE!-": {
+    "official": "http://www.foundation-soft.jp/products/idol/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/77/108677.jpg"
+  },
+  "ときどきシュガー": {
+    "official": "http://www.xuse.co.jp/product/012_sugar/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/88/148688.jpg"
+  },
+  "鬼畜眼鏡": {
+    "official": "http://spray.product.co.jp/product/megane/xrated.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/38/48738.jpg"
+  },
+  "FATAL TWELVE(非18禁)": {
+    "official": "http://fatal12.com/en.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/24/76524.jpg"
+  },
+  "フォセット －Cafe au Le Ciel Bleu－": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/30/82830.jpg"
+  },
+  "ひぐらしのなく頃に祭(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/00/75600.jpg"
+  },
+  "se・きらら": {
+    "official": "http://www.se-kirara.jp/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/83/1783.jpg"
+  },
+  "姫様LOVEライフ!": {
+    "official": "http://www.s-digi.jp/princess-sugar/01-soft/03_himelove/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/13/115313.jpg"
+  },
+  "ナツメグ": { "officialAlive": false, "cover": "https://t.vndb.org/cv/03/96103.jpg" },
+  "虹翼のソレイユ -vii’s World-": {
+    "official": "http://www.sky-fish.jp/soleil_7sw/7sw-index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/17/143717.jpg"
+  },
+  "クリミナルボーダー 2nd offence": {
+    "official": "https://www.purplesoftware.jp/products/criminalborder/2nd.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/04/117604.jpg"
+  },
+  "夏色さじたりうす ～浜井原学園弓道部～": {
+    "official": "http://www.bloomhandle.jp/natsuiro/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/23/109223.jpg"
+  },
+  "神咒神威神楽 曙之光(PSV)": {
+    "official": "http://www.light.gr.jp/light/products/kkk_cs/psvita/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/92/79692.jpg"
+  },
+  "瑠璃櫻(非18禁)": {
+    "official": "https://www.lumpofsugar.co.jp/product/rurizakura/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/80/87980.jpg"
+  },
+  "水平線まで何マイル? - Deep Blue Sky & Pure White Wings -": {
+    "cover": "https://t.vndb.org/cv/54/70154.jpg"
+  },
+  "お嬢様は素直になれない": {
+    "official": "http://www.ensemble-game.com/17.ojonai/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/76/113876.jpg"
+  },
+  "星の王子くん": { "officialAlive": false, "cover": "https://t.vndb.org/cv/43/117043.jpg" },
+  "ときめきメモリアル2(PS)": {
+    "official": "http://www.konami.jp/products/tokimeki2/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/94664.jpg"
+  },
+  "友達以上恋人未満": {
+    "official": "http://studio-mebius.product.co.jp/software/tmkihp/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/75/90275.jpg"
+  },
+  "さくらビットマップ": {
+    "official": "http://www.hook-net.jp/sakura/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/97/103097.jpg"
+  },
+  "あまいろショコラータ": {
+    "official": "http://cabbage-soft.com/products/amachoco/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/76856.jpg"
+  },
+  "Summer Pockets REFLECTION BLUE": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/08/75908.jpg"
+  },
+  "天使のいない１２月": {
+    "official": "http://leaf.aquaplus.jp/product/other/ten.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/111443.jpg"
+  },
+  "処女はお姉さまに恋してる ～3つのきら星～": {
+    "official": "http://www.caramel-box.com/products/otoboku3/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/62/112662.jpg"
+  },
+  "それは舞い散る桜のように 完全版": { "cover": "https://t.vndb.org/cv/17/95617.jpg" },
+  "Flyable Heart": { "officialAlive": false, "cover": "https://t.vndb.org/cv/45/105145.jpg" },
+  "賢者の贈り妹": {
+    "official": "http://www.noukano.com/kenimo/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/61/27861.jpg"
+  },
+  "ジュエルスオーシャン": {
+    "official": "http://www.escude.co.jp/product/jewel/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/43/89643.jpg"
+  },
+  "凌辱学園長/奴隷倶楽部 ～読心調教録～": {
+    "official": "http://clockup.entacom.net/product/ryoujyoku/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/90/148090.jpg"
+  },
+  "オーガストファンBOX": {
+    "official": "http://august-soft.com/fbox/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/14/25514.jpg"
+  },
+  "恋する乙女と守護の楯 ～薔薇の聖母～": {
+    "official": "http://www.axl-soft.jp/products/12/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/02/94802.jpg"
+  },
+  "幼なじみは大統領 My girlfriend is the PRESIDENT.": {
+    "official": "https://www.alcot.biz/product/osana/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/65/93765.jpg"
+  },
+  "人妻戦隊アイサイガーPowered": {
+    "official": "http://www.n43project.com/n43/npg42/index.html",
+    "officialAlive": true
+  },
+  "HHG 女神の終焉": {
+    "official": "http://windmill.suki.jp/product/HHGX/top.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/101195.jpg"
+  },
+  "キスベル": { "officialAlive": false, "cover": "https://t.vndb.org/cv/69/93269.jpg" },
+  "マガツバライ(NS)": {
+    "official": "http://www.light.gr.jp/light/products/magatsubarai/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/73/141373.jpg"
+  },
+  "恋と選挙とチョコレート ポータブル(PSP)": {
+    "official": "http://d-game.dengeki.com/koichoco/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/32/88032.jpg"
+  },
+  "Tears to Tiara": {
+    "official": "http://leaf.aquaplus.jp/product/ttt/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/19/52819.jpg"
+  },
+  "こいとれ ～REN-AI TRAINING～": {
+    "official": "http://gindokei.entacom.net/koitore/index.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/29051.jpg"
+  },
+  "うみねこのなく頃に散 Episode5 End of the Golden Witch(非18禁)": {
+    "official": "http://07th-expansion.net/umi/Main.htm",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/64/86264.jpg"
+  },
+  "景の海のアペイリア ～カサブランカの騎士～": {
+    "official": "http://www.silkysplus.jp/game/apeiria/another_story.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/46/145446.jpg"
+  },
+  "かみのゆ": {
+    "official": "http://www.light.gr.jp/light/products/kaminoyu/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/95/10495.jpg"
+  },
+  "銀色": { "officialAlive": false, "cover": "https://t.vndb.org/cv/93/95293.jpg" },
+  "腐り姫 ～euthanasia～": {
+    "official": "http://www.liar.co.jp/kusaritop.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/91/88791.jpg"
+  },
+  "あまつみそらに!": { "officialAlive": false, "cover": "https://t.vndb.org/cv/15/112015.jpg" },
+  "巫女さん細腕繁盛記": { "officialAlive": false, "cover": "https://t.vndb.org/cv/05/28405.jpg" },
+  "あした出逢った少女": {
+    "official": "http://www.moon-stone.jp/product/ms01/a_index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/56/108056.jpg"
+  },
+  "φなる・あぷろーち(PS2)": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/05/99105.jpg"
+  },
+  "思い出抱えてアイにコイ!!": {
+    "official": "http://www.hook-net.jp/ikoi/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/10/103910.jpg"
+  },
+  "ヘブンストラーダ": {
+    "official": "http://www.sp-janis.com/aniseed/heavenstrada/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/84/26584.jpg"
+  },
+  "タペストリー -you will meet yourself-": {
+    "official": "http://www.light.gr.jp/light/products/tapestry/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/51/127051.jpg"
+  },
+  "にゃんカフェマキアート ～猫がいるカフェのえっち事情～": {
+    "official": "http://www.sky-fish.jp/sf-poco/nyancafe/index.html",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/112582.jpg"
+  },
+  "for elise ～エリーゼのために～": { "cover": "https://t.vndb.org/cv/43/101443.jpg" },
+  "SWAN SONG": { "officialAlive": false, "cover": "https://t.vndb.org/cv/63/88963.jpg" },
+  "俺の瞳で丸裸!不可知な未来と視透かす運命": {
+    "official": "http://hulotte.jp/product/vision/",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/65/113265.jpg"
+  },
+  "VIPER-V16": {
+    "official": "https://github.com/akkera102/gbadev-ja-test/tree/main/130_viper_v16_rise_gba",
+    "officialAlive": true,
+    "cover": "https://t.vndb.org/cv/82/91282.jpg"
+  },
+  "パルフェ ~ショコラ second brew~": {
+    "officialAlive": false,
+    "cover": "https://t.vndb.org/cv/91/89091.jpg"
+  }
+}

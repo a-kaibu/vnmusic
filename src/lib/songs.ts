@@ -33,6 +33,8 @@ export const songs = raw as Song[];
 export type SongLinks = Partial<Record<ServiceKey | "youtube", string>> & {
   artwork?: string;
   album?: string;
+  /** サイト内再生用の YouTube 動画ID */
+  yt?: string;
 };
 export const links = rawLinks as Record<string, SongLinks>;
 /** ゲーム名 → 公式サイト / ジャケット */
@@ -137,7 +139,7 @@ export const coverStyle = (key: string) => {
   };
 };
 
-export type Group = { name: string; songs: Song[]; best: number; votes: number };
+export type Group = { name: string; songs: Song[] };
 export const groupBy = (list: Song[], key: (s: Song) => string): Group[] => {
   const m = new Map<string, Song[]>();
   for (const s of list) {
@@ -146,11 +148,6 @@ export const groupBy = (list: Song[], key: (s: Song) => string): Group[] => {
     (m.get(k) ?? m.set(k, []).get(k)!).push(s);
   }
   return [...m]
-    .map(([name, ss]) => ({
-      name,
-      songs: ss,
-      best: Math.min(...ss.map((s) => s.rank ?? 99999)),
-      votes: ss.reduce((a, s) => a + s.votes, 0),
-    }))
-    .sort((x, y) => y.votes - x.votes || x.best - y.best);
+    .map(([name, ss]) => ({ name, songs: ss }))
+    .sort((x, y) => y.songs.length - x.songs.length || x.name.localeCompare(y.name, "ja"));
 };

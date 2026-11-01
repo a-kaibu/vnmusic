@@ -1,49 +1,129 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Pause, Play, SkipBack, SkipForward, Video, VideoOff, X } from "lucide-react";
 import { type Song, services, searchQuery, links, artworkOf } from "../lib/songs";
+import { usePlayer } from "../lib/player";
 import { Cover } from "./Cover";
 
-/** 画面下の「再生中」風バー。選んだ曲と、すぐ開ける配信リンクを出す */
-export function NowBar({ song: s, onOpen }: { song: Song | null; onOpen: () => void }) {
+const mmss = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
+
+/** 画面下のプレーヤーバー。再生中の曲（なければ選んだ曲）と操作ボタン、配信リンク */
+export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: () => void }) {
+  const p = usePlayer();
+  const s = p.current ?? selected;
   if (!s) return null;
   const l = links[s.id] ?? {};
   const q = searchQuery(s);
   const avail = services.filter(
     (sv) => l[sv.key] || (sv.key !== "youtube" && s.stream[sv.key] > 0),
   );
-  const shown = avail.length ? avail : services.filter((sv) => sv.key === "youtube");
   const art = artworkOf(s);
+  const active = Boolean(p.current);
   return (
-    <div className="flex items-center gap-3 border-t border-line bg-bg px-3 py-2 md:px-4">
-      <button onClick={onOpen} className="flex min-w-0 flex-1 items-center gap-3 text-left">
-        {art ? (
-          <img src={art} alt="" className="size-12 rounded object-cover" />
-        ) : (
-          <Cover seed={s.game} className="size-12 rounded text-lg" />
+    <div className="border-t border-line bg-bg">
+      {active && (
+        <input
+          type="range"
+          min={0}
+          max={p.duration || 1}
+          step={1}
+          value={p.time}
+          onChange={(e) => p.seek(Number(e.target.value))}
+          className="block h-1 w-full cursor-pointer accent-accent"
+          aria-label="再生位置"
+        />
+      )}
+      <div className="flex items-center gap-3 px-3 py-2 md:px-4">
+        <button onClick={onOpen} className="flex min-w-0 flex-1 items-center gap-3 text-left">
+          {art ? (
+            <img src={art} alt="" className="size-12 rounded object-cover" />
+          ) : (
+            <Cover seed={s.game} className="size-12 rounded text-lg" />
+          )}
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold">{s.title}</p>
+            <p className="truncate text-xs text-muted">
+              {s.vocal || "（インスト）"} ・ {s.game}
+            </p>
+          </div>
+        </button>
+
+        {active && (
+          <div className="flex shrink-0 items-center gap-1">
+            <span className="mr-1 text-xs text-muted tabular-nums max-sm:hidden">
+              {mmss(p.time)} / {mmss(p.duration)}
+            </span>
+            <button
+              onClick={p.prev}
+              className="rounded-full p-2 text-muted hover:text-white"
+              aria-label="前の曲"
+            >
+              <SkipBack className="size-4" />
+            </button>
+            <button
+              onClick={p.toggle}
+              className="rounded-full bg-white p-2.5 text-black hover:scale-105"
+              aria-label={p.playing ? "一時停止" : "再生"}
+            >
+              {p.playing ? <Pause className="size-4" /> : <Play className="size-4" />}
+            </button>
+            <button
+              onClick={p.next}
+              disabled={!p.hasNext}
+              className="rounded-full p-2 text-muted hover:text-white disabled:opacity-30"
+              aria-label="次の曲"
+            >
+              <SkipForward className="size-4" />
+            </button>
+            <button
+              onClick={() => p.setShowVideo(!p.showVideo)}
+              className="rounded-full p-2 text-muted hover:text-white"
+              aria-label={p.showVideo ? "動画を隠す" : "動画を表示"}
+            >
+              {p.showVideo ? <Video className="size-4" /> : <VideoOff className="size-4" />}
+            </button>
+          </div>
         )}
-        <div className="min-w-0">
-          <p className="truncate text-sm font-semibold">{s.title}</p>
-          <p className="truncate text-xs text-muted">
-            {s.vocal || "（インスト）"} ・ {s.game}
-          </p>
+
+        <div className="flex shrink-0 items-center gap-1.5 max-md:hidden">
+          {avail.slice(0, 3).map((sv) => (
+            <a
+              key={sv.key}
+              href={l[sv.key] ?? sv.url(q) ?? "#"}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold text-black transition hover:brightness-110"
+              style={{ background: sv.color }}
+              title={`${sv.name}で開く`}
+            >
+              {sv.name}
+              {l[sv.key] && <ExternalLink className="size-3" />}
+            </a>
+          ))}
         </div>
-      </button>
-      <div className="flex shrink-0 items-center gap-1.5">
-        {shown.slice(0, 4).map((sv) => (
-          <a
-            key={sv.key}
-            href={l[sv.key] ?? sv.url(q) ?? "#"}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold text-black transition hover:brightness-110"
-            style={{ background: sv.color }}
-            title={`${sv.name}で開く`}
-          >
-            <span className="max-sm:hidden">{sv.name}</span>
-            <span className="sm:hidden">{sv.name.split(" ")[0]}</span>
-            {l[sv.key] && <ExternalLink className="size-3" />}
-          </a>
-        ))}
       </div>
+    </div>
+  );
+}
+
+/** YouTube プレーヤー本体。再生中は右下に小さく出す（隠しても再生は続く） */
+export function VideoBox() {
+  const p = usePlayer();
+  const visible = Boolean(p.current) && p.showVideo;
+  return (
+    <div
+      className={`fixed right-3 bottom-24 z-40 aspect-video w-[320px] overflow-hidden rounded-lg bg-black shadow-2xl ring-1 ring-line max-md:right-2 max-md:bottom-36 max-md:w-[240px] ${
+        visible ? "" : "pointer-events-none invisible"
+      }`}
+    >
+      <div ref={p.mount} className="size-full [&>iframe]:size-full" />
+      {visible && (
+        <button
+          onClick={() => p.setShowVideo(false)}
+          className="absolute top-1 right-1 rounded-full bg-black/60 p-1 text-white hover:bg-black"
+          aria-label="動画を隠す"
+        >
+          <X className="size-3.5" />
+        </button>
+      )}
     </div>
   );
 }

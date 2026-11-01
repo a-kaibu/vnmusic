@@ -1,10 +1,16 @@
 import type { ReactNode } from "react";
 import { X, ExternalLink, Disc, Mic, Globe, Search, Play } from "lucide-react";
+import { playable, usePlayer } from "../lib/player";
 import { type Song, services, searchQuery, links, games, artworkOf, type Flag } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
 
-type Props = { song: Song; onClose: () => void; onScope: (s: NonNullable<Scope>) => void };
+type Props = {
+  song: Song;
+  onClose: () => void;
+  onScope: (s: NonNullable<Scope>) => void;
+  onPlay: (s: Song) => void;
+};
 
 const e = encodeURIComponent;
 const karaoke = [
@@ -34,7 +40,9 @@ function Row({ label, children }: { label: string; children: ReactNode }) {
   );
 }
 
-export function SongDetail({ song: s, onClose, onScope }: Props) {
+export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
+  const player = usePlayer();
+  const isCurrent = player.current?.id === s.id;
   const q = searchQuery(s);
   const l = links[s.id] ?? {};
   const g = games[s.game] ?? {};
@@ -66,11 +74,7 @@ export function SongDetail({ song: s, onClose, onScope }: Props) {
         )}
 
         <div className="mt-4">
-          {s.rank && (
-            <p className="text-xs font-bold text-accent">
-              #{s.rank} ・ {s.votes}票
-            </p>
-          )}
+          {s.category && <p className="text-xs font-bold text-accent">{s.category}</p>}
           <h2 className="mt-1 text-2xl font-extrabold break-words">{s.title}</h2>
           {s.vocal && (
             <button
@@ -81,6 +85,31 @@ export function SongDetail({ song: s, onClose, onScope }: Props) {
             </button>
           )}
         </div>
+
+        {playable(s) && (
+          <button
+            onClick={() => (isCurrent ? player.toggle() : onPlay(s))}
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-accent py-2.5 text-sm font-bold text-black hover:brightness-110"
+          >
+            <Play className="size-4 fill-current" />
+            {isCurrent ? (player.playing ? "一時停止" : "再開") : "このサイトで再生"}
+          </button>
+        )}
+
+        {l.apple && (
+          <section className="mt-4">
+            <iframe
+              title="Apple Music"
+              src={l.apple.replace("https://music.apple.com/", "https://embed.music.apple.com/")}
+              allow="autoplay *; encrypted-media *; clipboard-write"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+              className="h-[175px] w-full overflow-hidden rounded-xl"
+            />
+            <p className="mt-1 text-[11px] text-muted/80">
+              Apple Music にサインインしていればフル再生、それ以外は試聴です。
+            </p>
+          </section>
+        )}
 
         {/* 配信 */}
         <section className="mt-5">
@@ -230,22 +259,11 @@ export function SongDetail({ song: s, onClose, onScope }: Props) {
           )}
         </section>
 
-        {(s.note || s.aggNote || s.prev.y2021 || s.prev.y2020 || s.prev.y2019) && (
+        {s.note && (
           <section className="mt-5 text-sm">
             <h3 className="mb-1 font-bold">メモ</h3>
             <dl>
               <Row label="備考">{s.note}</Row>
-              <Row label="集計">{s.aggNote}</Row>
-              <Row label="過去順位">
-                {[
-                  ["2021", s.prev.y2021],
-                  ["2020", s.prev.y2020],
-                  ["2019", s.prev.y2019],
-                ]
-                  .filter(([, v]) => v)
-                  .map(([y, v]) => `${y}年 ${v}位`)
-                  .join(" ・ ") || null}
-              </Row>
             </dl>
           </section>
         )}
