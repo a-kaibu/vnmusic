@@ -5,6 +5,7 @@ import { playable } from "../lib/player";
 import { type Song, year, artworkOf } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
+import { ScopeLink } from "./ScopeLink";
 import { StreamDots } from "./StreamDots";
 
 type Props = {
@@ -110,7 +111,11 @@ export function TrackList({
                     {s.title}
                   </p>
                   <p className="truncate text-xs text-muted">
-                    {s.vocal || "（インスト）"}
+                    {s.vocal ? (
+                      <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />
+                    ) : (
+                      "（インスト）"
+                    )}
                     <span className="md:hidden"> ・ {s.game}</span>
                   </p>
                 </div>
@@ -133,9 +138,11 @@ export function TrackList({
               >
                 {s.brand}
               </button>
-              <span className="text-xs text-muted tabular-nums max-md:hidden">{year(s)}</span>
-              <span className="text-right text-xs text-muted tabular-nums max-md:hidden">
-                {s.category}
+              <span className="text-xs text-muted tabular-nums max-md:hidden">
+                <ScopeLink kind="year" value={year(s)} onScope={onScope} />
+              </span>
+              <span className="truncate text-right text-xs text-muted max-md:hidden">
+                <ScopeLink kind="category" value={s.category} onScope={onScope} />
               </span>
               <div className="max-md:justify-self-end">
                 <StreamDots song={s} />

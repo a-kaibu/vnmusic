@@ -4,6 +4,7 @@ import { playable, usePlayer } from "../lib/player";
 import { type Song, services, searchQuery, links, games, artworkOf, type Flag } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
+import { ScopeLink } from "./ScopeLink";
 
 type Props = {
   song: Song;
@@ -74,15 +75,16 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
         )}
 
         <div className="mt-4">
-          {s.category && <p className="text-xs font-bold text-accent">{s.category}</p>}
+          {s.category && (
+            <p className="text-xs font-bold text-accent">
+              <ScopeLink kind="category" value={s.category} onScope={onScope} />
+            </p>
+          )}
           <h2 className="mt-1 text-2xl font-extrabold break-words">{s.title}</h2>
           {s.vocal && (
-            <button
-              onClick={() => onScope({ kind: "artist", name: s.vocal.split(" / ")[0] })}
-              className="mt-1 text-left text-sm text-muted hover:text-white hover:underline"
-            >
-              {s.vocal}
-            </button>
+            <p className="mt-1 text-sm text-muted">
+              <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />
+            </p>
           )}
         </div>
 
@@ -176,18 +178,34 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           </h3>
           <dl>
             <Row label="収録">
-              {l.album ? (
-                <a href={l.album} target="_blank" rel="noreferrer" className="hover:underline">
-                  {s.album || "アルバム"}
+              {s.album && <ScopeLink kind="album" value={s.album} onScope={onScope} />}
+              {l.album && (
+                <a
+                  href={l.album}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ml-2 inline-flex items-center gap-0.5 text-xs text-muted hover:text-white"
+                >
+                  Apple Music <ExternalLink className="size-3" />
                 </a>
-              ) : (
-                s.album
               )}
             </Row>
-            <Row label="作詞">{s.lyrics}</Row>
-            <Row label="作曲">{s.composer}</Row>
-            <Row label="編曲">{s.arranger}</Row>
-            <Row label="区分">{s.category}</Row>
+            <Row label="作詞">
+              {s.lyrics && <ScopeLink kind="lyrics" value={s.lyrics} onScope={onScope} split />}
+            </Row>
+            <Row label="作曲">
+              {s.composer && (
+                <ScopeLink kind="composer" value={s.composer} onScope={onScope} split />
+              )}
+            </Row>
+            <Row label="編曲">
+              {s.arranger && (
+                <ScopeLink kind="arranger" value={s.arranger} onScope={onScope} split />
+              )}
+            </Row>
+            <Row label="区分">
+              {s.category && <ScopeLink kind="category" value={s.category} onScope={onScope} />}
+            </Row>
             <Row label="ゲーム">
               <button
                 onClick={() => onScope({ kind: "game", name: s.game })}
@@ -204,7 +222,14 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
                 {s.brand}
               </button>
             </Row>
-            <Row label="発売日">{s.release}</Row>
+            <Row label="発売日">
+              {s.release && (
+                <>
+                  <ScopeLink kind="year" value={s.release.slice(0, 4)} onScope={onScope} />
+                  {s.release.slice(4)}
+                </>
+              )}
+            </Row>
           </dl>
           {g.official && (
             <a

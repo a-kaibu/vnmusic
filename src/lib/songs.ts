@@ -151,3 +151,52 @@ export const groupBy = (list: Song[], key: (s: Song) => string): Group[] => {
     .map(([name, ss]) => ({ name, songs: ss }))
     .sort((x, y) => y.songs.length - x.songs.length || x.name.localeCompare(y.name, "ja"));
 };
+
+/** クリックで絞り込める項目 */
+export type ScopeKind =
+  | "game"
+  | "brand"
+  | "artist"
+  | "lyrics"
+  | "composer"
+  | "arranger"
+  | "category"
+  | "year"
+  | "album";
+export const scopeLabel: Record<ScopeKind, string> = {
+  game: "ゲーム",
+  brand: "ブランド",
+  artist: "アーティスト",
+  lyrics: "作詞",
+  composer: "作曲",
+  arranger: "編曲",
+  category: "区分",
+  year: "発売年",
+  album: "収録CD",
+};
+/** "A / B" 形式の名義を分ける */
+export const people = (v: string) =>
+  v
+    .split(" / ")
+    .map((x) => x.trim())
+    .filter(Boolean);
+export const matchScope = (s: Song, kind: ScopeKind, name: string) => {
+  switch (kind) {
+    case "game":
+      return s.game === name;
+    case "brand":
+      return s.brand === name;
+    case "artist":
+      return people(s.vocal).includes(name);
+    case "lyrics":
+    case "composer":
+    case "arranger":
+      return people(s[kind]).includes(name);
+    case "category":
+      return s.category === name;
+    case "year":
+      return s.release.startsWith(name);
+    case "album":
+      return s.album === name;
+  }
+};

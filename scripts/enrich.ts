@@ -478,7 +478,7 @@ async function stageYoutube() {
           (g && nt.includes(g) ? 2 : 0) +
           (/topic|トピック/i.test(v.channel) ? 3 : 0) +
           (b.length >= 2 && nc.includes(b) ? 3 : 0) +
-          (/(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|叩いてみた|打ってみた|踊ってみた|ヲタ芸|dtx|太鼓|piano|ピアノ|mad|amv|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley)/i.test(
+          (/(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|叩いてみた|打ってみた|踊ってみた|ヲタ芸|dtx|太鼓|piano|ピアノ|mad|amv|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|maimai|譜面|音ゲー|プロセカ|chunithm|ongeki|osu!|beatmania|sdvx|ゆっくり|反応)/i.test(
             v.title,
           )
             ? -8

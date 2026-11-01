@@ -11,7 +11,17 @@ import {
   Play,
   Headphones,
 } from "lucide-react";
-import { songs, categoryGroups, categoryGroup, groupBy, streamCount, type Song } from "./lib/songs";
+import {
+  songs,
+  matchScope,
+  scopeLabel,
+  type ScopeKind,
+  categoryGroups,
+  categoryGroup,
+  groupBy,
+  streamCount,
+  type Song,
+} from "./lib/songs";
 import { normalize } from "./lib/search";
 import { TrackList } from "./components/TrackList";
 import { GroupGrid } from "./components/GroupGrid";
@@ -20,7 +30,7 @@ import { NowBar, VideoBox } from "./components/NowBar";
 import { usePlayer, playable } from "./lib/player";
 
 export type View = "tracks" | "games" | "brands" | "artists";
-export type Scope = { kind: "game" | "brand" | "artist"; name: string } | null;
+export type Scope = { kind: ScopeKind; name: string } | null;
 type Sort = "new" | "old" | "title";
 
 const index = songs.map((s) =>
@@ -62,13 +72,7 @@ export default function App() {
   const tracks = useMemo(() => {
     let list = searched;
     if (scope) {
-      list = list.filter((s) =>
-        scope.kind === "game"
-          ? s.game === scope.name
-          : scope.kind === "brand"
-            ? s.brand === scope.name
-            : firstArtist(s) === scope.name,
-      );
+      list = list.filter((s) => matchScope(s, scope.kind, scope.name));
     }
     if (cats.length) list = list.filter((s) => cats.includes(categoryGroup(s.category)));
     if (onlyStream) list = list.filter((s) => streamCount(s) > 0);
@@ -109,7 +113,7 @@ export default function App() {
 
   const heading = scope
     ? {
-        label: { game: "ゲーム", brand: "ブランド", artist: "アーティスト" }[scope.kind],
+        label: scopeLabel[scope.kind],
         title: scope.name,
       }
     : view === "tracks"
