@@ -26,6 +26,8 @@ type Song = {
 
 const root = new URL("../", import.meta.url);
 const songs: Song[] = JSON.parse(readFileSync(new URL("src/data/songs.json", root), "utf8"));
+/** 検索系ステージの対象。NO_BGM=1 なら BGM を後回しにする */
+const searchSongs = process.env.NO_BGM ? songs.filter((s) => !/BGM/.test(s.category)) : songs;
 const cacheDir = new URL("data/cache/", root);
 mkdirSync(cacheDir, { recursive: true });
 
@@ -470,7 +472,7 @@ type AppleOut = {
 async function stageApple(allSongs: boolean) {
   const out = load<Record<number, AppleOut>>("apple.json", {});
   const retry = process.argv.includes("--retry-null");
-  const targets = songs.filter(
+  const targets = searchSongs.filter(
     (s) => (allSongs || hasFlag(s)) && (!(s.id in out) || (retry && out[s.id] === null)),
   );
   console.log(`Apple Music 検索: ${targets.length} 曲 (約20件/分の制限があるため 3 秒間隔)`);
@@ -601,7 +603,7 @@ async function ytSearch(q: string) {
 
 async function stageYoutube() {
   const out = load<Record<number, YtOut>>("youtube.json", {});
-  const targets = songs.filter((s) => !(s.id in out));
+  const targets = searchSongs.filter((s) => !(s.id in out));
   console.log(`YouTube 検索: ${targets.length} 曲 (2 秒間隔)`);
   for (const [i, s] of targets.entries()) {
     try {
@@ -660,7 +662,7 @@ async function stageYoutube() {
 // ---------- yttopic: レーベル公式の「- Topic」音源を探す（YouTube Music の直リンク・サイト内再生に使う） ----------
 async function stageYtTopic() {
   const out = load<Record<number, YtOut>>("youtube-topic.json", {});
-  const targets = songs.filter((s) => !(s.id in out));
+  const targets = searchSongs.filter((s) => !(s.id in out));
   console.log(`YouTube 公式音源検索: ${targets.length} 曲 (2 秒間隔)`);
   for (const [i, s] of targets.entries()) {
     try {
@@ -722,7 +724,7 @@ async function stageKkbox() {
     })
   ).json()) as { access_token: string };
   const out = load<Record<number, KkOut>>("kkbox.json", {});
-  const targets = songs.filter((s) => !(s.id in out));
+  const targets = searchSongs.filter((s) => !(s.id in out));
   console.log(`KKBOX: ${targets.length} 曲`);
   const search = async (q: string) => {
     const r = await get(
@@ -809,7 +811,7 @@ async function stageYtFix() {
   const out = load<Record<number, YtOut>>("youtube-fix.json", {});
   const ok = (s: Song, v: YtOut) => v && ytTrusted(s, v, apple[s.id], kkbox[s.id]);
   const only = process.env.ONLY_IDS?.split(",").map(Number);
-  const targets = songs.filter(
+  const targets = searchSongs.filter(
     (s) =>
       (only ? only.includes(s.id) : !(s.id in out)) && !ok(s, ytTopic[s.id]) && !ok(s, yt[s.id]),
   );
@@ -880,7 +882,7 @@ async function stageSpotify() {
   const odesli = load<Record<number, OdesliOut>>("odesli.json", {});
   const out = load<Record<number, { url: string; artwork?: string } | null>>("spotify.json", {});
   // CSV の配信情報は古いので全曲探す（配信○△の曲は曲名一致だけで、それ以外は歌手も一致したものだけ採用）
-  const targets = songs.filter((s) => !odesli[s.id]?.spotify && !(s.id in out));
+  const targets = searchSongs.filter((s) => !odesli[s.id]?.spotify && !(s.id in out));
   console.log(`Spotify API: ${targets.length} 曲`);
   for (const [i, s] of targets.entries()) {
     const q = `track:${s.title}${firstArtist(s) ? ` artist:${firstArtist(s)}` : ""}`;
@@ -996,7 +998,7 @@ async function stageNico() {
     readFileSync(new URL("src/data/links.json", root), "utf8"),
   );
   const out = load<Record<number, NicoOut>>("nico.json", {});
-  const targets = songs.filter((s) => !links[s.id]?.yt && !(s.id in out));
+  const targets = searchSongs.filter((s) => !links[s.id]?.yt && !(s.id in out));
   console.log(`ニコニコ検索: ${targets.length} 曲 (1 秒間隔)`);
   const search = async (q: string) => {
     const u = new URL("https://snapshot.search.nicovideo.jp/api/v2/snapshot/video/contents/search");
@@ -1054,7 +1056,7 @@ type MbOut = {
 } | null;
 async function stageMb() {
   const out = load<Record<number, MbOut>>("mb.json", {});
-  const targets = songs.filter((s) => !(s.id in out));
+  const targets = searchSongs.filter((s) => !(s.id in out));
   console.log(`MusicBrainz: ${targets.length} 曲 (1.1 秒間隔)`);
   const UA = { headers: { "User-Agent": "vnmusic/0.1 (https://a-kaibu.github.io/vnmusic/)" } };
   const mb = async (path: string) => {
