@@ -305,6 +305,7 @@ export function VideoBox() {
     <>
       <div
         ref={box}
+        id="player-box"
         className={`fixed overflow-hidden bg-black ${
           anchored
             ? "z-[60] rounded-xl"
