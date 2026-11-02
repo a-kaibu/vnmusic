@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import {
-  ExternalLink,
   Pause,
   Play,
   SkipBack,
@@ -12,7 +11,7 @@ import {
   VideoOff,
   Minimize2,
 } from "lucide-react";
-import { type Song, flagOf, services, searchQuery, links, artworkOf } from "../lib/songs";
+import { type Song, artworkOf } from "../lib/songs";
 import { usePlayer } from "../lib/player";
 import { Cover } from "./Cover";
 
@@ -23,12 +22,6 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
   const p = usePlayer();
   const s = p.current ?? selected;
   if (!s) return null;
-  const l = links[s.id] ?? {};
-  const q = searchQuery(s);
-  // YouTube はサイト内で再生するので外部リンクは出さない
-  const avail = services.filter(
-    (sv) => sv.key !== "youtube" && (l[sv.key] || flagOf(s, sv.key) > 0),
-  );
   const art = artworkOf(s);
   const active = Boolean(p.current);
   return (
@@ -132,23 +125,6 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
             </button>
           </div>
         )}
-
-        <div className="flex shrink-0 items-center gap-1.5 max-md:hidden">
-          {avail.slice(0, 3).map((sv) => (
-            <a
-              key={sv.key}
-              href={l[sv.key] ?? sv.url(q) ?? "#"}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold text-black transition hover:brightness-110"
-              style={{ background: sv.color }}
-              title={`${sv.name}で開く`}
-            >
-              {sv.name}
-              {l[sv.key] && <ExternalLink className="size-3" />}
-            </a>
-          ))}
-        </div>
       </div>
     </div>
   );

@@ -210,9 +210,11 @@ export default function App() {
     setCats([]);
     scrollRef.current?.scrollTo({ top: 0 });
   };
+  // 一覧で曲を押したら再生。再生できない曲と広い画面では詳細も開く
   const select = (s: Song) => {
     setSelected(s);
-    setDetailOpen(true);
+    if (playable(s)) player.play(s, tracks);
+    if (!playable(s) || matchMedia("(min-width: 1024px)").matches) setDetailOpen(true);
   };
 
   const heading = scope

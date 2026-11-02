@@ -73,7 +73,6 @@ export function TrackList({
               role="button"
               tabIndex={0}
               onClick={() => onSelect(s)}
-              onDoubleClick={() => playable(s) && onPlay(s)}
               onKeyDown={(e) => e.key === "Enter" && onSelect(s)}
               className={`${grid} group absolute inset-x-0 cursor-pointer rounded-md px-2 md:px-3 ${active ? "bg-white/10" : "hover:bg-white/5"}`}
               style={{ height: ROW, transform: `translateY(${item.start - margin}px)` }}
