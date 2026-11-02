@@ -217,4 +217,6 @@ const asset = (p: string) => `${import.meta.env.BASE_URL}${p}`;
 export const artistImage = (name: string, list: Song[]) =>
   images.artist[name] ? asset(images.artist[name]) : list.map(artworkOf).find(Boolean);
 export const brandImage = (name: string, list: Song[]) =>
-  images.brand[name] ? asset(images.brand[name]) : list.map(artworkOf).find(Boolean);
+  images.brand[name]
+    ? asset(images.brand[name])
+    : (list.map((s) => games[s.gameKey]?.cover).find(Boolean) ?? list.map(artworkOf).find(Boolean));
