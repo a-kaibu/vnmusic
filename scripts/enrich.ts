@@ -1,6 +1,7 @@
 // 配信直リンク・ジャケット・ゲーム公式サイトを集めて src/data/links.json / games.json に書き出す。
 // 外部サイトへのネットワークアクセスが必要。途中で止めても data/cache/ から再開できる。
 //
+//   node scripts/enrich.ts egsmusic … 批評空間の楽曲データ（曲名・歌手・作詞作曲編曲・収録CD・ゲーム）を取得 → data/cache/egs-music.json
 //   node scripts/enrich.ts games    … 批評空間(ErogameScape)から公式サイト・ジャケットを取得し、公式サイトの生存確認
 //   node scripts/enrich.ts apple    … iTunes Search API で Apple Music の曲ページ・ジャケットを取得
 //   node scripts/enrich.ts odesli   … Apple Music の URL から song.link で Spotify / YouTube Music / Amazon Music などを取得
@@ -72,6 +73,34 @@ type EgsGame = {
 };
 type GameOut = { official?: string; officialAlive?: boolean; cover?: string; egs?: string };
 
+// 曲名には「&dagger;」「&times;」「&hearts;」などの文字参照がよく出てくる
+const entities: Record<string, string> = Object.fromEntries(
+  (
+    "amp:26 lt:3c gt:3e quot:22 apos:27 nbsp:a0 times:d7 hellip:2026 rsquo:2019 lsquo:2018 rdquo:201d ldquo:201c " +
+    "dagger:2020 Dagger:2021 hearts:2665 spades:2660 clubs:2663 diams:2666 hArr:21d4 rArr:21d2 harr:2194 rarr:2192 " +
+    "larr:2190 uarr:2191 darr:2193 infin:221e radic:221a forall:2200 exist:2203 equiv:2261 ne:2260 plusmn:b1 " +
+    "divide:f7 deg:b0 sect:a7 yen:a5 iexcl:a1 sup2:b2 sup3:b3 acute:b4 prime:2032 ndash:2013 mdash:2014 bull:2022 " +
+    "middot:b7 copy:a9 reg:ae trade:2122 laquo:ab raquo:bb acirc:e2 ecirc:ea eacute:e9 egrave:e8 aacute:e1 " +
+    "agrave:e0 uacute:fa ugrave:f9 oacute:f3 auml:e4 ouml:f6 uuml:fc Uuml:dc yuml:ff Oslash:d8 alpha:3b1 " +
+    "beta:3b2 gamma:3b3 eta:3b7 theta:3b8 mu:3bc nu:3bd pi:3c0 phi:3c6 omega:3c9 Alpha:391 Lambda:39b Sigma:3a3 " +
+    "Phi:3a6 Psi:3a8 Omega:3a9"
+  )
+    .split(" ")
+    .map((x) => x.split(":"))
+    .map(([n, c]) => [n, String.fromCodePoint(parseInt(c, 16))]),
+);
+const decodeHtml = (s: string) =>
+  s
+    .replace(/<[^>]+>/g, "")
+    .replace(/&(#x[0-9a-f]+|#\d+|[a-z0-9]+);/gi, (m, e: string) =>
+      e[0] === "#"
+        ? String.fromCodePoint(e[1] === "x" || e[1] === "X" ? parseInt(e.slice(2), 16) : Number(e.slice(1)))
+        : ["lrm", "rlm", "shy", "zwj", "zwnj"].includes(e)
+          ? ""
+          : (entities[e] ?? m),
+    )
+    .trim();
+
 async function egsSql(sql: string): Promise<string[][]> {
   const r = await get(
     "https://erogamescape.dyndns.org/~ap2/ero/toukei_kaiseki/sql_for_erogamer_form.php",
@@ -83,17 +112,8 @@ async function egsSql(sql: string): Promise<string[][]> {
   );
   const html = await r.text();
   const table = html.match(/<table[^>]*>([\s\S]*?)<\/table>/i)?.[1] ?? "";
-  const decode = (s: string) =>
-    s
-      .replace(/<[^>]+>/g, "")
-      .replace(/&amp;/g, "&")
-      .replace(/&lt;/g, "<")
-      .replace(/&gt;/g, ">")
-      .replace(/&quot;/g, '"')
-      .replace(/&#0?39;/g, "'")
-      .trim();
   return [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)]
-    .map((m) => [...m[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((c) => decode(c[1])))
+    .map((m) => [...m[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((c) => decodeHtml(c[1])))
     .filter((r) => r.length);
 }
 
@@ -192,6 +212,84 @@ async function pool<T>(items: T[], n: number, fn: (t: T) => Promise<void>) {
       while (i < items.length) await fn(items[i++]);
     }),
   );
+}
+
+// ---------- egsmusic: 批評空間の楽曲データ ----------
+// 曲 (musiclist) とゲームの関係 (game_music)、歌手・作詞・作曲・編曲、収録CDを取る。
+// SQLフォームは実行コストに上限があるので、テーブルごとに分けて 5 秒ずつ空けて投げる（全部で6回）。
+type EgsMusic = {
+  name: string;
+  furigana: string;
+  vocal: boolean;
+  release: string;
+  singer: string[];
+  lyrics: string[];
+  composer: string[];
+  arranger: string[];
+  album: string;
+};
+type EgsMusicCache = {
+  fetched: string;
+  music: Record<string, EgsMusic>;
+  games: Record<
+    string,
+    { name: string; brand: string; brandKind: string; model: string; sellday: string; erogame: boolean; vndb: string }
+  >;
+  /** [曲ID, ゲームID, 区分] */
+  gameMusic: [string, string, string][];
+};
+
+async function stageEgsMusic() {
+  const q = async (label: string, sql: string) => {
+    const rows = await egsSql(sql);
+    console.log(`  ${label}: ${rows.length} 行`);
+    await sleep(5000);
+    return rows;
+  };
+  console.log("批評空間から楽曲データを取得中…");
+  const base = await q(
+    "game_music",
+    "SELECT m.id, m.name, COALESCE(m.furigana,''), m.vocal, COALESCE(m.releasedate::text,''), gm.category, g.id, g.gamename, b.brandname, COALESCE(b.kind,''), COALESCE(g.model,''), COALESCE(g.sellday::text,''), COALESCE(g.erogame::text,''), COALESCE(g.vndb,'') FROM game_music gm JOIN musiclist m ON m.id = gm.music JOIN gamelist g ON g.id = gm.game JOIN brandlist b ON b.id = g.brandname ORDER BY m.id, g.id",
+  );
+  const out: EgsMusicCache = { fetched: new Date().toISOString().slice(0, 10), music: {}, games: {}, gameMusic: [] };
+  for (const [mid, name, furigana, vocal, release, category, gid, game, brand, brandKind, model, sellday, erogame, vndb] of base) {
+    out.music[mid] ??= {
+      name,
+      furigana,
+      vocal: vocal === "t",
+      // 発売日不明は 0001-01-01 になっている
+      release: release.startsWith("0001") ? "" : release,
+      singer: [],
+      lyrics: [],
+      composer: [],
+      arranger: [],
+      album: "",
+    };
+    out.games[gid] ??= { name: game, brand, brandKind, model, sellday, erogame: erogame === "true", vndb };
+    out.gameMusic.push([mid, gid, category]);
+  }
+  for (const [table, key] of [
+    ["singer", "singer"],
+    ["lyrics", "lyrics"],
+    ["composition", "composer"],
+    ["arrangement", "arranger"],
+  ] as const) {
+    const rows = await q(
+      table,
+      `SELECT x.music, c.name FROM ${table} x JOIN createrlist c ON c.id = x.creater ORDER BY x.music, x.created_at`,
+    );
+    for (const [mid, name] of rows) {
+      const list = out.music[mid]?.[key];
+      if (list && !list.includes(name)) list.push(name);
+    }
+  }
+  const items = await q(
+    "musicitem_music",
+    "SELECT mi.music, i.name FROM musicitem_music mi JOIN musicitemlist i ON i.id = mi.musicitem ORDER BY mi.music, i.releasedate NULLS LAST",
+  );
+  for (const [mid, name] of items) if (out.music[mid] && !out.music[mid].album) out.music[mid].album = name;
+  save("egs-music.json", out);
+  console.log(`  ${Object.keys(out.music).length} 曲 / ${Object.keys(out.games).length} 作品`);
 }
 
 // ---------- vndb: VNDB API (批評空間に繋がらないときの代替) ----------
@@ -1031,6 +1129,7 @@ function stageWrite() {
 
 const stage = process.argv[2] ?? "all";
 const allSongs = process.argv.includes("--all-songs");
+if (stage === "egsmusic") await stageEgsMusic();
 if (stage === "games") await stageGames();
 if (stage === "vndb" || stage === "all") await stageVndb();
 if (stage === "alive") await checkAlive(load("games.json", {}));

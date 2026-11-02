@@ -24,6 +24,7 @@ vp check        # lint + format + 型チェック
 
 ```sh
 node scripts/recent.ts           # 2023年以降のゲームの曲を集める（要ネットワーク）
+node scripts/enrich.ts egsmusic  # 批評空間の楽曲データを取得（要ネットワーク、SQLを6回投げるだけ）
 node scripts/convert.ts          # data/votes.csv + 2023年以降の曲 → src/data/songs.json
 node scripts/enrich.ts all       # 直リンク・ジャケット・公式サイトを収集（要ネットワーク）
 ```
@@ -39,7 +40,20 @@ node scripts/enrich.ts all       # 直リンク・ジャケット・公式サイ
 5. `site`（任意）— 公式サイトの「主題歌『曲名』」表記から拾う → `data/cache/recent-site.json`
 
 絞り込み条件を変えたときは `node scripts/recent.ts pick`（iTunes）/ `pick-yt`（YouTube）で保存済みの検索結果から選び直せます。
-作詞・作曲・カラオケ情報はありません。CSV と同じ曲は追加しません。
+CSV と同じ曲は追加しません。
+
+### 批評空間の楽曲データ（`node scripts/enrich.ts egsmusic`）
+
+批評空間 (ErogameScape) の SQL フォームから、曲（`musiclist`）・ゲームとの関係と区分（`game_music`）・歌手（`singer`）・作詞（`lyrics`）・作曲（`composition`）・編曲（`arrangement`）・収録CD（`musicitem_music`）をテーブルごとに取り、`data/cache/egs-music.json` に保存します。SQLフォームには実行コストの上限があるので、1回で全部は取らず、5秒ずつ空けて6回に分けて投げます。
+
+`convert.ts` はこれを使って次のことをします。
+
+- 2023年以降のゲーム: 批評空間のゲームと VNDB の ID（批評空間の `gamelist.vndb`）か名前・発売日・ブランドで対応づけ、曲名を日本語に、歌手・作詞・作曲・編曲・収録CDを批評空間の値にする。VNDB のローマ字の曲名は、フリガナをローマ字にして読みの近さで照合し、だめなら歌手と区分で照合する
+- VNDB の一覧になかった 2023年以降の成人向けPCゲーム（企業ブランド）も、批評空間に歌入りの曲があれば加える
+- CSV の曲: 歌手・作詞・作曲・編曲が空欄なら批評空間の値で埋める
+- 批評空間のクリエイター名に付く別名の括弧（例: `rino(CooRie、MEGUMI、うらん)`）は、CSV に同じ表記がなければ外す
+
+カラオケ情報はありません。
 
 `enrich.ts` の流れ:
 
