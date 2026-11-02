@@ -104,23 +104,6 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
             ref={frame}
             className="relative aspect-video w-full overflow-hidden rounded-xl bg-black shadow-2xl"
           >
-            {isCurrent && (
-              // 動画の上にも詳細パネルの一部を重ねて、ホイールやトラックパッドで
-              // パネルがそのままスクロール（Mac のバウンドも）するようにする。
-              // クリックで再生/一時停止、ダブルクリックで全画面（YouTube と同じ）
-              <button
-                onClick={player.toggle}
-                onDoubleClick={() =>
-                  void document
-                    .getElementById("player-box")
-                    ?.requestFullscreen?.()
-                    .catch(() => {})
-                }
-                className="absolute inset-0 z-[70] max-lg:hidden"
-                aria-label={player.playing ? "一時停止" : "再生"}
-                title="クリックで再生/一時停止、ダブルクリックで全画面"
-              />
-            )}
             {!isCurrent && (
               <button
                 onClick={() => onPlay(s)}
