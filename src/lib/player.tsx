@@ -19,6 +19,7 @@ type YTPlayer = {
   seekTo: (s: number, allow: boolean) => void;
   getCurrentTime: () => number;
   getDuration: () => number;
+  getPlayerState: () => number;
   setVolume: (v: number) => void;
 };
 declare global {
@@ -136,7 +137,14 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     const t = setInterval(() => {
       const p = player.current;
       if (!p?.getCurrentTime) return;
-      setSt((s) => (s.playing ? { ...s, time: p.getCurrentTime(), duration: p.getDuration() } : s));
+      // イベントを取りこぼしても表示がずれないよう、再生状態も毎回読み直す
+      const state = p.getPlayerState?.();
+      const playing = state === 1 || state === 3;
+      setSt((s) =>
+        playing || s.playing !== playing
+          ? { ...s, playing, time: p.getCurrentTime(), duration: p.getDuration() }
+          : s,
+      );
     }, 500);
     return () => clearInterval(t);
   }, []);
@@ -151,7 +159,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     },
     toggle: () => {
       if (!player.current) return;
-      if (st.playing) player.current.pauseVideo();
+      const state = player.current.getPlayerState?.();
+      if (state === 1 || state === 3) player.current.pauseVideo();
       else player.current.playVideo();
     },
     next: () => step(1),

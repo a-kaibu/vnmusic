@@ -57,7 +57,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
   useEffect(() => setCopied(false), [s.id]);
   const q = searchQuery(s);
   const l = links[s.id] ?? {};
-  const g = games[s.game] ?? {};
+  const g = games[s.gameKey] ?? {};
   const art = artworkOf(s);
   const anyKaraoke = Object.values(s.karaoke).some(Boolean);
 

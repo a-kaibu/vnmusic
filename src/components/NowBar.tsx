@@ -70,10 +70,16 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
             </button>
             <button
               onClick={p.toggle}
-              className="rounded-full bg-white p-2.5 text-black hover:scale-105"
+              className={`flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-bold text-black hover:brightness-110 ${p.playing ? "bg-white" : "bg-accent"}`}
               aria-label={p.playing ? "一時停止" : "再生"}
+              title={p.playing ? "一時停止" : "再生"}
             >
-              {p.playing ? <Pause className="size-4" /> : <Play className="size-4" />}
+              {p.playing ? (
+                <Pause className="size-4 fill-current" />
+              ) : (
+                <Play className="size-4 fill-current" />
+              )}
+              <span className="max-sm:hidden">{p.playing ? "一時停止" : "再生"}</span>
             </button>
             <button
               onClick={p.next}

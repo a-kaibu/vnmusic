@@ -21,7 +21,8 @@ export function GroupGrid({ groups, kind, onOpen }: Props) {
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {groups.slice(0, n).map((g) => {
           const first = g.songs[0];
-          const art = kind === "game" ? (games[g.name]?.cover ?? artworkOf(first)) : undefined;
+          const art =
+            kind === "game" ? (games[first.gameKey]?.cover ?? artworkOf(first)) : undefined;
           const sub =
             kind === "game"
               ? `${first.brand} ・ ${year(first)}`

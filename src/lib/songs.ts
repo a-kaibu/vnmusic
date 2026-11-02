@@ -14,6 +14,8 @@ export type Song = {
   composer: string;
   arranger: string;
   game: string;
+  /** 元データのゲーム名（(非18禁) などの付記つき）。links/games.json のキー */
+  gameKey: string;
   brand: string;
   release: string;
   category: string;
@@ -27,7 +29,14 @@ export type Song = {
 
 export type ServiceKey = "spotify" | "apple" | "ytmusic" | "amazon" | "mora" | "awa" | "fanza";
 
-export const songs = raw as Song[];
+// 「(非18禁)」「(PS2)」などの機種・レーティング付記は表示しない
+const platformTag =
+  /\s*[(（](非18禁|NS|PS\d?|PSV|PSP|XB360|XBO|SS|DC|BROWSER|iPhone|Win|ソシャゲ)[)）]\s*$/;
+export const songs = (raw as Omit<Song, "gameKey">[]).map((s) => ({
+  ...s,
+  gameKey: s.game,
+  game: s.game.replace(platformTag, ""),
+})) as Song[];
 
 /** scripts/enrich.ts が収集した直リンク (曲ID → サービス → URL) */
 export type SongLinks = Partial<Record<ServiceKey | "youtube", string>> & {
@@ -41,7 +50,7 @@ export const links = rawLinks as Record<string, SongLinks>;
 export type GameInfo = { official?: string; officialAlive?: boolean; cover?: string };
 export const games = rawGames as Record<string, GameInfo>;
 
-export const artworkOf = (s: Song) => links[s.id]?.artwork ?? games[s.game]?.cover;
+export const artworkOf = (s: Song) => links[s.id]?.artwork ?? games[s.gameKey]?.cover;
 
 /** 検索キーワード: 曲名 + 歌唱者(括弧内の別名は除く) */
 export const searchQuery = (s: Song) => {
