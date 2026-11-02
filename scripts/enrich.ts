@@ -798,7 +798,7 @@ function ytTrusted(
   const g = norm(s.game.replace(/\s*[(（][^)）]*[)）]\s*$/, "")).slice(0, 6);
   const b = norm(s.brand);
   if (
-    /(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu|piano|ピアノ|アレンジ|arrange|演奏|dtx|太鼓|ヲタ芸|踊って|叩いて|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|反応)/i.test(
+    /(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu|piano|ピアノ|アレンジ|arrange|演奏|dtx|太鼓|ヲタ芸|踊って|叩いて|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|反応|アイキャッチ|楽譜|耳コピ|\binst\b|壁紙)/i.test(
       y.title,
     )
   )
@@ -811,6 +811,64 @@ function ytTrusted(
   // レーベル配信の「Release - Topic」は、配信があると分かっている曲だけ信用する
   if (/^release - topic$/i.test(y.channel) && (apple || kk)) return true;
   return false;
+}
+
+// ---------- nico: ニコニコ動画 スナップショット検索 API（YouTube で見つからなかった曲だけ） ----------
+type NicoOut = { id: string; title: string; channel: string; length?: string } | null;
+async function stageNico() {
+  const links: Record<number, Record<string, string>> = JSON.parse(
+    readFileSync(new URL("src/data/links.json", root), "utf8"),
+  );
+  const out = load<Record<number, NicoOut>>("nico.json", {});
+  const targets = songs.filter((s) => !links[s.id]?.yt && !(s.id in out));
+  console.log(`ニコニコ検索: ${targets.length} 曲 (1 秒間隔)`);
+  const search = async (q: string) => {
+    const u = new URL("https://snapshot.search.nicovideo.jp/api/v2/snapshot/video/contents/search");
+    u.search = new URLSearchParams({
+      q,
+      targets: "title,tags",
+      fields: "contentId,title,lengthSeconds,channelId",
+      _sort: "-viewCounter",
+      _limit: "20",
+      _context: "vnmusic",
+    }).toString();
+    const j = (await (
+      await get(u.toString(), { headers: { "User-Agent": "vnmusic/0.1" } })
+    ).json()) as {
+      data?: { contentId: string; title: string; lengthSeconds: number }[];
+    };
+    return j.data ?? [];
+  };
+  for (const [i, s] of targets.entries()) {
+    try {
+      const t = norm(s.title);
+      let hit: NicoOut = null;
+      for (const q of [`${s.title} ${firstArtist(s)}`.trim(), s.title]) {
+        const res = await search(q);
+        const v = res.find((v) => {
+          if (!norm(v.title).includes(t) || v.lengthSeconds < 60 || v.lengthSeconds > 900)
+            return false;
+          return ytTrusted(s, { id: v.contentId, title: v.title, channel: "" });
+        });
+        if (v) {
+          hit = { id: v.contentId, title: v.title, channel: "", length: String(v.lengthSeconds) };
+          break;
+        }
+        await sleep(1000);
+      }
+      out[s.id] = hit;
+    } catch (e) {
+      console.warn(`  ! ${s.title}: ${(e as Error).message}`);
+    }
+    if (i % 25 === 24) {
+      save("nico.json", out);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
+    }
+    await sleep(1000);
+  }
+  save("nico.json", out);
 }
 
 // ---------- write ----------
@@ -826,6 +884,7 @@ function stageWrite() {
   const ytTopic = load<Record<number, YtOut>>("youtube-topic.json", {});
   const kkbox = load<Record<number, KkOut>>("kkbox.json", {});
   const ytFix = load<Record<number, YtOut>>("youtube-fix.json", {});
+  const nico = load<Record<number, NicoOut>>("nico.json", {});
   const links: Record<number, Record<string, string>> = {};
   for (const s of songs) {
     const l: Record<string, string> = {};
@@ -853,6 +912,10 @@ function stageWrite() {
       // 「- Topic」チャンネルはレーベルの公式音源なので YouTube Music でもそのまま聴ける
       if (ytTopic[s.id] || / - topic$|トピック$/i.test(y.channel))
         l.ytmusic ??= `https://music.youtube.com/watch?v=${y.id}`;
+    } else if (nico[s.id] && ytTrusted(s, nico[s.id]!)) {
+      // YouTube で見つからない曲だけニコニコ動画で再生する
+      l.nico = nico[s.id]!.id;
+      l.niconico = `https://www.nicovideo.jp/watch/${nico[s.id]!.id}`;
     }
     if (Object.keys(l).length) links[s.id] = l;
   }
@@ -885,4 +948,5 @@ if (stage === "youtube" || stage === "all") await stageYoutube();
 if (stage === "yttopic" || stage === "all") await stageYtTopic();
 if (stage === "kkbox" || stage === "all") await stageKkbox();
 if (stage === "ytfix" || stage === "all") await stageYtFix();
+if (stage === "nico") await stageNico();
 stageWrite();

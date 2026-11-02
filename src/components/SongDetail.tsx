@@ -43,7 +43,14 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
   const player = usePlayer();
   const isCurrent = player.current?.id === s.id;
   const [copied, setCopied] = useState(false);
-  const yt = links[s.id]?.yt;
+  const ytId = links[s.id]?.yt;
+  const nicoId = ytId ? undefined : links[s.id]?.nico;
+  const yt = ytId || nicoId;
+  const thumb = ytId
+    ? `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`
+    : nicoId
+      ? `https://nicovideo.cdn.nimg.jp/thumbnails/${nicoId.slice(2)}/${nicoId.slice(2)}`
+      : undefined;
   const frame = useRef<HTMLDivElement>(null);
   const { setAnchor } = player;
   useEffect(() => {
@@ -88,7 +95,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
 
       <div className="px-4 pb-6">
         {yt ? (
-          // 再生中はここに YouTube プレーヤーが重なる（VideoBox）
+          // 再生中はここに YouTube / ニコニコのプレーヤーが重なる（VideoBox）
           <div
             ref={frame}
             className="relative aspect-video w-full overflow-hidden rounded-xl bg-black shadow-2xl"
@@ -100,7 +107,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
                 aria-label={`${s.title}を再生`}
               >
                 <img
-                  src={`https://i.ytimg.com/vi/${yt}/hqdefault.jpg`}
+                  src={thumb}
                   alt=""
                   className="size-full object-cover opacity-80 transition group-hover:opacity-100"
                 />

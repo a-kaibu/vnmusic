@@ -40,11 +40,13 @@ export const songs = (raw as Omit<Song, "gameKey">[]).map((s) => ({
 })) as Song[];
 
 /** scripts/enrich.ts が収集した直リンク (曲ID → サービス → URL) */
-export type SongLinks = Partial<Record<ServiceKey | "youtube" | "kkbox", string>> & {
+export type SongLinks = Partial<Record<ServiceKey | "youtube" | "kkbox" | "niconico", string>> & {
   artwork?: string;
   album?: string;
   /** サイト内再生用の YouTube 動画ID */
   yt?: string;
+  /** YouTube に無い曲のサイト内再生用 ニコニコ動画ID (sm…) */
+  nico?: string;
 };
 export const links = rawLinks as Record<string, SongLinks>;
 /** ゲーム名 → 公式サイト / ジャケット */
@@ -64,7 +66,7 @@ export const searchQuery = (s: Song) => {
 };
 
 export type Service = {
-  key: ServiceKey | "youtube" | "kkbox";
+  key: ServiceKey | "youtube" | "kkbox" | "niconico";
   name: string;
   color: string;
   url: (q: string) => string | null;
@@ -119,6 +121,12 @@ export const services: Service[] = [
     name: "YouTube",
     color: "#ff0033",
     url: (q) => `https://www.youtube.com/results?search_query=${e(q)}`,
+  },
+  {
+    key: "niconico",
+    name: "ニコニコ動画",
+    color: "#cccccc",
+    url: (q) => `https://www.nicovideo.jp/search/${e(q)}`,
   },
 ];
 

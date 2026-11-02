@@ -10,7 +10,9 @@ import {
 import { type Song, links } from "./songs";
 
 /** サイト内で再生できる曲か（YouTube の動画が見つかっているか） */
-export const playable = (s: Song) => Boolean(links[s.id]?.yt);
+export const playable = (s: Song) => Boolean(links[s.id]?.yt || links[s.id]?.nico);
+
+const NICO = "https://embed.nicovideo.jp";
 
 type YTPlayer = {
   loadVideoById: (id: string) => void;
@@ -85,6 +87,15 @@ export const usePlayer = () => useContext(Ctx)!;
 export function PlayerProvider({ children }: { children: ReactNode }) {
   const player = useRef<YTPlayer | null>(null);
   const host = useRef<HTMLDivElement | null>(null);
+  const ytBox = useRef<HTMLDivElement | null>(null);
+  const nicoFrame = useRef<HTMLIFrameElement | null>(null);
+  /** いま鳴らしているのが YouTube かニコニコか */
+  const kind = useRef<"yt" | "nico">("yt");
+  const nicoPost = (eventName: string, data?: unknown) =>
+    nicoFrame.current?.contentWindow?.postMessage(
+      { eventName, data, sourceConnectorType: 1, playerId: "1" },
+      NICO,
+    );
   const queue = useRef<Song[]>([]);
   const idx = useRef(-1);
   const errors = useRef(0);
@@ -118,7 +129,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     async (i: number) => {
       idx.current = i;
       const song = queue.current[i];
-      const id = links[song.id]!.yt!;
+      const nico = links[song.id]?.yt ? undefined : links[song.id]?.nico;
+      const id = links[song.id]?.yt;
       const q = queue.current;
       setSt((s) => ({
         ...s,
@@ -128,10 +140,25 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
         hasPrev: q.slice(0, i).some(playable),
         hasNext: q.slice(i + 1).some(playable),
       }));
+      if (nico) {
+        // ニコニコ動画は埋め込みプレーヤーを postMessage で操作する
+        kind.current = "nico";
+        player.current?.pauseVideo?.();
+        ytBox.current!.style.display = "none";
+        nicoFrame.current!.style.display = "";
+        nicoFrame.current!.src = `${NICO}/watch/${nico}?jsapi=1&playerId=1&autoplay=1`;
+        return;
+      }
+      kind.current = "yt";
+      if (nicoFrame.current?.style.display !== "none") {
+        nicoFrame.current!.src = "about:blank";
+        nicoFrame.current!.style.display = "none";
+        ytBox.current!.style.display = "";
+      }
       await loadApi();
       if (!player.current) {
         const el = document.createElement("div");
-        host.current!.appendChild(el);
+        ytBox.current!.appendChild(el);
         player.current = new window.YT!.Player(el, {
           width: "100%",
           height: "100%",
@@ -159,15 +186,48 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
             },
           },
         });
-      } else player.current.loadVideoById(id);
+      } else player.current.loadVideoById(id!);
     },
     [step],
   );
 
   useEffect(() => {
+    const onMsg = (e: MessageEvent) => {
+      if (e.origin !== NICO || kind.current !== "nico") return;
+      const { eventName, data } = (e.data ?? {}) as { eventName?: string; data?: any };
+      if (eventName === "loadComplete") {
+        const d = Number(data?.videoInfo?.lengthInSeconds) || 0;
+        setSt((s) => ({ ...s, duration: d }));
+        nicoPost("volumeChange", { volume: volRef.current.volume / 100 });
+        nicoPost("mute", { mute: volRef.current.muted });
+        nicoPost("play");
+      } else if (eventName === "playerStatusChange") {
+        const st = data?.playerStatus;
+        if (st === 2) errors.current = 0;
+        if (st === 4) step(1);
+        setSt((s) => ({ ...s, playing: st === 2 || st === 1 }));
+      } else if (eventName === "playerMetadataChange") {
+        const t = (data?.currentTime ?? 0) / 1000;
+        setSt((s) => {
+          const d = data?.duration ? data.duration / 1000 : s.duration;
+          return Math.abs(s.time - t) < 0.4 && s.duration === d
+            ? s
+            : { ...s, time: t, duration: d };
+        });
+      } else if (eventName === "error") {
+        if (++errors.current < 3) step(1);
+        else setSt((s) => ({ ...s, playing: false }));
+      }
+    };
+    window.addEventListener("message", onMsg);
+    return () => window.removeEventListener("message", onMsg);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
     const t = setInterval(() => {
       const p = player.current;
-      if (!p?.getCurrentTime) return;
+      if (kind.current !== "yt" || !p?.getCurrentTime) return;
       // イベントを取りこぼしても表示がずれないよう、再生状態も毎回読み直す
       const state = p.getPlayerState?.();
       const playing = state === 1 || state === 3;
@@ -192,6 +252,10 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       void start(l.indexOf(song));
     },
     toggle: () => {
+      if (kind.current === "nico") {
+        userPaused.current = st.playing;
+        return nicoPost(st.playing ? "pause" : "play");
+      }
       if (!player.current) return;
       const state = player.current.getPlayerState?.();
       userPaused.current = state === 1 || state === 3;
@@ -200,14 +264,22 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     },
     next: () => step(1),
     prev: () => {
-      if (player.current && st.time > 5) return player.current.seekTo(0, true);
+      if (st.time > 5)
+        return kind.current === "nico"
+          ? nicoPost("seek", { time: 0 })
+          : player.current?.seekTo(0, true);
       step(-1);
     },
-    seek: (t) => player.current?.seekTo(t, true),
+    seek: (t) =>
+      kind.current === "nico"
+        ? nicoPost("seek", { time: t * 1000 })
+        : player.current?.seekTo(t, true),
     setShowVideo: (v) => setSt((s) => ({ ...s, showVideo: v })),
     setVolume: (v) => {
       player.current?.setVolume?.(v);
       if (v > 0) player.current?.unMute?.();
+      nicoPost("volumeChange", { volume: v / 100 });
+      if (v > 0) nicoPost("mute", { mute: false });
       try {
         localStorage.setItem(VOL_KEY, String(v));
       } catch {
@@ -218,11 +290,22 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     toggleMute: () => {
       if (st.muted) player.current?.unMute?.();
       else player.current?.mute?.();
+      nicoPost("mute", { mute: !st.muted });
       setSt((s) => ({ ...s, muted: !s.muted }));
     },
     setAnchor: (el) => setSt((s) => (s.anchor === el ? s : { ...s, anchor: el })),
     mount: (el) => {
       host.current = el;
+      if (!el || ytBox.current) return;
+      ytBox.current = document.createElement("div");
+      ytBox.current.className = "size-full";
+      const f = document.createElement("iframe");
+      f.className = "size-full";
+      f.style.display = "none";
+      f.allow = "autoplay; fullscreen";
+      f.allowFullscreen = true;
+      nicoFrame.current = f;
+      el.append(ytBox.current, f);
     },
   };
   return <Ctx.Provider value={api}>{children}</Ctx.Provider>;

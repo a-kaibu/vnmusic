@@ -177,7 +177,7 @@ export function VideoBox() {
             : "right-3 bottom-[calc(var(--dock-h,80px)+12px)] z-[55] aspect-video w-[320px] rounded-lg shadow-2xl ring-1 ring-line max-md:right-2 max-md:w-[240px]"
         } ${visible ? "" : "pointer-events-none opacity-0"}`}
       >
-        <div ref={p.mount} className="size-full [&>iframe]:size-full" />
+        <div ref={p.mount} className="size-full [&_iframe]:size-full" />
         {visible && !anchored && (
           <button
             onClick={() => p.setShowVideo(false)}
