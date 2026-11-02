@@ -159,15 +159,6 @@ export function VideoBox() {
 
   return (
     <>
-      {p.current && !visible && (
-        <button
-          onClick={() => p.setShowVideo(true)}
-          className="fixed right-3 bottom-24 z-40 flex items-center gap-1.5 rounded-full bg-elev px-3 py-2 text-xs font-bold text-white shadow-2xl ring-1 ring-line hover:bg-line max-md:right-2 max-md:bottom-36"
-        >
-          <Video className="size-4" />
-          プレーヤーを表示
-        </button>
-      )}
       <div
         ref={box}
         className={`fixed overflow-hidden bg-black ${
