@@ -18,8 +18,69 @@ import { Cover } from "./Cover";
 const mmss = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
 
 /** 画面下のプレーヤーバー。再生中の曲（なければ選んだ曲）と操作ボタン、配信リンク */
+/** YouTube と同じキー操作。文字入力中は効かせない */
+function useShortcuts(p: ReturnType<typeof usePlayer>) {
+  const ref = useRef(p);
+  ref.current = p;
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const p = ref.current;
+      if (!p.current || e.ctrlKey || e.metaKey || e.altKey) return;
+      const t = e.target as HTMLElement | null;
+      const typing =
+        t?.isContentEditable ||
+        t?.tagName === "TEXTAREA" ||
+        t?.tagName === "SELECT" ||
+        (t?.tagName === "INPUT" && (t as HTMLInputElement).type !== "range");
+      if (typing) return;
+      const vol = (d: number) =>
+        p.setVolume(Math.max(0, Math.min(100, (p.muted ? 0 : p.volume) + d)));
+      const seek = (d: number) => p.seek(Math.max(0, Math.min(p.duration || 0, p.time + d)));
+      const k = e.key;
+      if (k === " " || k === "k" || k === "K") p.toggle();
+      else if (k === "ArrowLeft") seek(-5);
+      else if (k === "ArrowRight") seek(5);
+      else if (k === "j" || k === "J") seek(-10);
+      else if (k === "l" || k === "L") seek(10);
+      else if (k === "ArrowUp") vol(5);
+      else if (k === "ArrowDown") vol(-5);
+      else if (k === "m" || k === "M") p.toggleMute();
+      else if (k === "N" && e.shiftKey) p.next();
+      else if (k === "P" && e.shiftKey) p.prev();
+      else if (k === "Home") p.seek(0);
+      else if (/^[0-9]$/.test(k) && p.duration) p.seek((p.duration * Number(k)) / 10);
+      else return;
+      e.preventDefault();
+    };
+    addEventListener("keydown", onKey);
+    return () => removeEventListener("keydown", onKey);
+  }, []);
+}
+
+/** 音量バーの上でホイールを回すと音量が変わる */
+function useWheelVolume(p: ReturnType<typeof usePlayer>) {
+  const ref = useRef(p);
+  ref.current = p;
+  const el = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const node = el.current;
+    if (!node) return;
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      const p = ref.current;
+      const d = e.deltaY < 0 ? 5 : -5;
+      p.setVolume(Math.max(0, Math.min(100, (p.muted ? 0 : p.volume) + d)));
+    };
+    node.addEventListener("wheel", onWheel, { passive: false });
+    return () => node.removeEventListener("wheel", onWheel);
+  });
+  return el;
+}
+
 export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: () => void }) {
   const p = usePlayer();
+  useShortcuts(p);
+  const wheel = useWheelVolume(p);
   const s = p.current ?? selected;
   if (!s) return null;
   const art = artworkOf(s);
@@ -65,6 +126,7 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
               onClick={p.prev}
               className="rounded-full p-2 text-muted hover:text-white"
               aria-label="前の曲"
+              title="前の曲 (Shift+P)"
             >
               <SkipBack className="size-4" />
             </button>
@@ -72,7 +134,7 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
               onClick={p.toggle}
               className="rounded-full p-2 text-white hover:bg-elev"
               aria-label={p.playing ? "一時停止" : "再生"}
-              title={p.playing ? "一時停止" : "再生"}
+              title={p.playing ? "一時停止 (スペース)" : "再生 (スペース)"}
             >
               {p.playing ? (
                 <Pause className="size-5 fill-current" />
@@ -85,15 +147,20 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
               disabled={!p.hasNext}
               className="rounded-full p-2 text-muted hover:text-white disabled:opacity-30"
               aria-label="次の曲"
+              title="次の曲 (Shift+N)"
             >
               <SkipForward className="size-4" />
             </button>
-            <div className="ml-1 flex items-center gap-1 max-md:hidden">
+            <div
+              ref={wheel}
+              className="ml-1 flex items-center gap-1 max-md:hidden"
+              title="ホイールでも音量を変えられます"
+            >
               <button
                 onClick={p.toggleMute}
                 className="rounded-full p-2 text-muted hover:text-white"
                 aria-label={p.muted ? "ミュート解除" : "ミュート"}
-                title={p.muted ? "ミュート解除" : "ミュート"}
+                title={p.muted ? "ミュート解除 (M)" : "ミュート (M)"}
               >
                 {p.muted || p.volume === 0 ? (
                   <VolumeX className="size-4" />
