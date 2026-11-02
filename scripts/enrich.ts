@@ -272,7 +272,12 @@ async function stageEgsMusic() {
     "game_music",
     "SELECT m.id, m.name, COALESCE(m.furigana,''), m.vocal, COALESCE(m.releasedate::text,''), gm.category, g.id, g.gamename, b.brandname, COALESCE(b.kind,''), COALESCE(g.model,''), COALESCE(g.sellday::text,''), COALESCE(g.erogame::text,''), COALESCE(g.vndb,''), COALESCE(g.shoukai,''), COALESCE(g.dmm,''), COALESCE(m.playtime::text,''), COALESCE(m.ohp,'') FROM game_music gm JOIN musiclist m ON m.id = gm.music JOIN gamelist g ON g.id = gm.game JOIN brandlist b ON b.id = g.brandname ORDER BY m.id, g.id",
   );
-  const out: EgsMusicCache = { fetched: new Date().toISOString().slice(0, 10), music: {}, games: {}, gameMusic: [] };
+  const out: EgsMusicCache = {
+    fetched: new Date().toISOString().slice(0, 10),
+    music: {},
+    games: {},
+    gameMusic: [],
+  };
   for (const r of base) {
     const [mid, name, furigana, vocal, release, category, gid, game, brand, brandKind, model] = r;
     const [sellday, erogame, vndb, official, dmm, playtime, ohp] = r.slice(11);
@@ -326,7 +331,12 @@ async function stageEgsMusic() {
   for (const [mid, name, release, disc, track] of items) {
     const m = out.music[mid];
     if (!m) continue;
-    m.items.push({ name, release: release.startsWith("0001") ? "" : release, disc: Number(disc), track: Number(track) });
+    m.items.push({
+      name,
+      release: release.startsWith("0001") ? "" : release,
+      disc: Number(disc),
+      track: Number(track),
+    });
   }
   // 発売日不明 (0001-01-01) のCDは後ろに回してから、最初に出たCDを album にする
   for (const m of Object.values(out.music)) {
@@ -992,7 +1002,14 @@ function ytTrusted(
 }
 
 // ---------- nico: ニコニコ動画 スナップショット検索 API（YouTube で見つからなかった曲だけ） ----------
-type NicoOut = { id: string; title: string; channel: string; length?: string } | null;
+/** manual: 手で確認して入れた動画（自動の取り違え判定をしない） */
+type NicoOut = {
+  id: string;
+  title: string;
+  channel: string;
+  length?: string;
+  manual?: boolean;
+} | null;
 async function stageNico() {
   const links: Record<number, Record<string, string>> = JSON.parse(
     readFileSync(new URL("src/data/links.json", root), "utf8"),
@@ -1119,9 +1136,6 @@ function stageWrite() {
   const kkbox = load<Record<number, KkOut>>("kkbox.json", {});
   const ytFix = load<Record<number, YtOut>>("youtube-fix.json", {});
   const nico = load<Record<number, NicoOut>>("nico.json", {});
-  const overrides: Record<number, { yt?: string | null; nico?: string }> = JSON.parse(
-    readFileSync(new URL("data/overrides.json", root), "utf8"),
-  );
   const links: Record<number, Record<string, string>> = {};
   for (const s of songs) {
     const l: Record<string, string> = {};
@@ -1140,35 +1154,22 @@ function stageWrite() {
     if (sp && !l.spotify) l.spotify = sp.url;
     if (sp?.artwork && !l.artwork) l.artwork = sp.artwork;
     // 公式音源が見つかっていればそちらを優先（サイト内再生・YouTube Music の直リンク）
-    const y = [ytTopic[s.id], yt[s.id], ytFix[s.id]].find(
-      (v) => v && ytTrusted(s, v, apple[s.id], kkbox[s.id]),
-    );
+    // 手で確認したニコニコ動画があれば、YouTube の自動検索結果より優先する
+    const y = nico[s.id]?.manual
+      ? undefined
+      : [ytTopic[s.id], yt[s.id], ytFix[s.id]].find(
+          (v) => v && ytTrusted(s, v, apple[s.id], kkbox[s.id]),
+        );
     if (y) {
       l.yt = y.id; // サイト内再生用の動画ID
       l.youtube ??= `https://www.youtube.com/watch?v=${y.id}`;
       // 「- Topic」チャンネルはレーベルの公式音源なので YouTube Music でもそのまま聴ける
       if (ytTopic[s.id] || / - topic$|トピック$/i.test(y.channel))
         l.ytmusic ??= `https://music.youtube.com/watch?v=${y.id}`;
-    } else if (nico[s.id] && ytTrusted(s, nico[s.id]!)) {
+    } else if (nico[s.id] && (nico[s.id]!.manual || ytTrusted(s, nico[s.id]!))) {
       // YouTube で見つからない曲だけニコニコ動画で再生する
       l.nico = nico[s.id]!.id;
       l.niconico = `https://www.nicovideo.jp/watch/${nico[s.id]!.id}`;
-    }
-    // 手で直した分（data/overrides.json: { 曲ID: { yt: null | 動画ID, nico: "sm…" } }）
-    const o = overrides[s.id];
-    if (o) {
-      if (o.yt === null) {
-        if (l.youtube === `https://www.youtube.com/watch?v=${l.yt}`) delete l.youtube;
-        if (l.ytmusic === `https://music.youtube.com/watch?v=${l.yt}`) delete l.ytmusic;
-        delete l.yt;
-      } else if (o.yt) {
-        l.yt = o.yt;
-        l.youtube = `https://www.youtube.com/watch?v=${o.yt}`;
-      }
-      if (o.nico && !l.yt) {
-        l.nico = o.nico;
-        l.niconico = `https://www.nicovideo.jp/watch/${o.nico}`;
-      }
     }
     if (Object.keys(l).length) links[s.id] = l;
   }
