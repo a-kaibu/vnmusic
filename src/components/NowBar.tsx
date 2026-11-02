@@ -37,7 +37,10 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
           step={1}
           value={p.time}
           onChange={(e) => p.seek(Number(e.target.value))}
-          className="block h-1 w-full cursor-pointer accent-accent"
+          className="seek block w-full"
+          style={
+            { "--pct": `${p.duration ? (p.time / p.duration) * 100 : 0}%` } as React.CSSProperties
+          }
           aria-label="再生位置"
         />
       )}
