@@ -25,8 +25,9 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
   if (!s) return null;
   const l = links[s.id] ?? {};
   const q = searchQuery(s);
+  // YouTube はサイト内で再生するので外部リンクは出さない
   const avail = services.filter(
-    (sv) => l[sv.key] || (sv.key !== "youtube" && s.stream[sv.key] > 0),
+    (sv) => sv.key !== "youtube" && (l[sv.key] || s.stream[sv.key] > 0),
   );
   const art = artworkOf(s);
   const active = Boolean(p.current);
