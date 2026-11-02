@@ -235,75 +235,57 @@ export default function App() {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="flex min-h-0 flex-1 gap-2 p-2 max-md:p-0">
-        {/* Sidebar */}
-        <aside className="flex w-60 shrink-0 flex-col gap-2 max-md:hidden">
-          <div className="rounded-xl bg-panel p-4">
-            <div className="mb-4 flex items-center gap-2 text-lg font-bold">
-              <Disc3 className="size-6 text-accent" />
-              vnmusic
-            </div>
-            <nav className="flex flex-col gap-1">
-              {nav.map((n) => (
-                <button
-                  key={n.key}
-                  onClick={() => go(n.key)}
-                  className={`flex items-center gap-3 rounded-lg px-3 py-2 text-left text-sm font-semibold transition ${
-                    view === n.key && !scope ? "bg-elev text-white" : "text-muted hover:text-white"
-                  }`}
-                >
-                  <n.icon className="size-5" />
-                  {n.label}
-                </button>
-              ))}
-            </nav>
-          </div>
-          <div className="flex-1 overflow-auto rounded-xl bg-panel p-4 text-sm text-muted">
-            <p className="mb-3 font-semibold text-white">収録データ</p>
-            <dl className="grid grid-cols-2 gap-y-2">
-              <dt>楽曲</dt>
-              <dd className="text-right text-white tabular-nums">
-                {songs.length.toLocaleString()}
-              </dd>
-              <dt>ゲーム</dt>
-              <dd className="text-right text-white tabular-nums">
-                {new Set(songs.map((s) => s.game)).size.toLocaleString()}
-              </dd>
-              <dt>ブランド</dt>
-              <dd className="text-right text-white tabular-nums">
-                {new Set(songs.map((s) => s.brand)).size.toLocaleString()}
-              </dd>
-              <dt>配信情報あり</dt>
-              <dd className="text-right text-white tabular-nums">
-                {songs.filter((s) => streamCount(s) > 0).length}
-              </dd>
-            </dl>
-          </div>
-        </aside>
-
+      <header className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2.5 md:px-5">
+        <button
+          onClick={() => {
+            go("tracks");
+            setQuery("");
+          }}
+          className="flex shrink-0 items-center gap-2 text-lg font-bold"
+          title="全曲"
+        >
+          <Disc3 className="size-6 text-accent" />
+          vnmusic
+        </button>
+        <nav className="flex items-center gap-1">
+          {nav
+            .filter((n) => n.key !== "tracks")
+            .map((n) => (
+              <button
+                key={n.key}
+                onClick={() => go(n.key)}
+                className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold transition ${
+                  view === n.key && !scope
+                    ? "bg-white text-black"
+                    : "text-muted hover:bg-elev hover:text-white"
+                }`}
+              >
+                <n.icon className="size-4 max-sm:hidden" />
+                {n.label}
+              </button>
+            ))}
+        </nav>
+        <label className="ml-auto flex h-10 w-full max-w-sm items-center gap-2 rounded-full bg-elev px-4 ring-white/20 focus-within:ring-2 max-md:order-last max-md:max-w-none">
+          <Search className="size-4 shrink-0 text-muted" />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="曲名・ゲーム・ブランド・歌手・作曲者で検索"
+            className="w-full bg-transparent text-sm outline-none placeholder:text-muted"
+          />
+          {query && (
+            <button onClick={() => setQuery("")} aria-label="クリア">
+              <X className="size-4 text-muted hover:text-white" />
+            </button>
+          )}
+        </label>
+      </header>
+      <div className="flex min-h-0 flex-1 gap-2 px-2 pb-2 max-md:p-0">
         {/* Main */}
         <main
           ref={scrollRef}
           className="relative min-w-0 flex-1 overflow-y-auto rounded-xl bg-panel max-md:rounded-none"
         >
-          <header className="sticky top-0 z-20 flex items-center gap-3 bg-panel/85 px-4 py-3 backdrop-blur md:px-6">
-            <Disc3 className="size-6 shrink-0 text-accent md:hidden" />
-            <label className="flex h-10 w-full max-w-md items-center gap-2 rounded-full bg-elev px-4 ring-white/20 focus-within:ring-2">
-              <Search className="size-4 shrink-0 text-muted" />
-              <input
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="曲名・ゲーム・ブランド・歌手・作曲者で検索"
-                className="w-full bg-transparent text-sm outline-none placeholder:text-muted"
-              />
-              {query && (
-                <button onClick={() => setQuery("")} aria-label="クリア">
-                  <X className="size-4 text-muted hover:text-white" />
-                </button>
-              )}
-            </label>
-          </header>
-
           <section
             className="px-4 pt-6 pb-5 md:px-6"
             style={{
@@ -442,20 +424,6 @@ export default function App() {
             setDetailOpen(true);
           }}
         />
-
-        {/* Mobile nav */}
-        <nav className="grid grid-cols-4 border-t border-line bg-bg md:hidden">
-          {nav.map((n) => (
-            <button
-              key={n.key}
-              onClick={() => go(n.key)}
-              className={`flex flex-col items-center gap-1 py-2 text-[10px] ${view === n.key && !scope ? "text-white" : "text-muted"}`}
-            >
-              <n.icon className="size-5" />
-              {n.label}
-            </button>
-          ))}
-        </nav>
       </div>
     </div>
   );
