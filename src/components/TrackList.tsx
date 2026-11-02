@@ -58,6 +58,7 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
           const s = songs[item.index];
           const active = s.id === selectedId;
           const art = artworkOf(s);
+          const ok = playable(s);
           return (
             <div
               key={s.id}
@@ -65,7 +66,8 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
               tabIndex={0}
               onClick={() => onSelect(s)}
               onKeyDown={(e) => e.key === "Enter" && onSelect(s)}
-              className={`${grid} group absolute inset-x-0 cursor-pointer rounded-md px-2 md:px-3 ${active ? "bg-white/10" : "hover:bg-white/5"}`}
+              title={ok ? undefined : "サイト内では再生できません（クリックで配信リンクを表示）"}
+              className={`${grid} group absolute inset-x-0 cursor-pointer rounded-md px-2 md:px-3 ${active ? "bg-white/10" : "hover:bg-white/5"} ${ok ? "" : "opacity-40 grayscale"}`}
               style={{ height: ROW, transform: `translateY(${item.start - margin}px)` }}
             >
               <div className="flex min-w-0 items-center gap-3">
@@ -80,7 +82,7 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
                       <AudioLines className="size-5" />
                     </span>
                   ) : (
-                    playable(s) && (
+                    ok && (
                       <button
                         onClick={(e) => {
                           e.stopPropagation();

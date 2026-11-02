@@ -2,6 +2,7 @@ import raw from "../data/songs.json";
 import rawLinks from "../data/links.json";
 import rawGames from "../data/games.json";
 import rawImages from "../data/images.json";
+import rawCds from "../data/cds.json";
 
 export type Flag = 0 | 1 | 2;
 export type Song = {
@@ -52,6 +53,9 @@ export const links = rawLinks as Record<string, SongLinks>;
 /** ゲーム名 → 公式サイト / ジャケット */
 export type GameInfo = { official?: string; officialAlive?: boolean; cover?: string };
 export const games = rawGames as Record<string, GameInfo>;
+
+/** 曲ID → 収録CDの外部ページ（VGMdb・通販など。MusicBrainz 経由） */
+export const cds = rawCds as Record<string, { name: string; url: string }[]>;
 
 export const artworkOf = (s: Song) => links[s.id]?.artwork ?? games[s.gameKey]?.cover;
 

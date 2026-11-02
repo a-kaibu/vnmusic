@@ -1,0 +1,409 @@
+{
+  "1": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/117717" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/573d99e2-cd05-42bc-90e2-6ddfbd9843c4"
+    }
+  ],
+  "2": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/130932" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/bf2c633c-8dc4-4eca-992d-0c1a16e67b8c"
+    }
+  ],
+  "3": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/133398" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/ce8701ca-0842-44bc-8272-d34a8745c12e"
+    }
+  ],
+  "4": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/61123" },
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B0B6457K39" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/products/detail.php?product_id=2120667"
+    },
+    { "name": "Getchu.com", "url": "http://www.getchu.com/soft.phtml?id=1188650" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/e380691d-2e0c-4b7d-b732-230beeca9b75"
+    }
+  ],
+  "5": [
+    { "name": "Discogs", "url": "https://www.discogs.com/release/15624094" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/151903" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/3851a00f-8d73-4020-92d5-bf1446bebf73"
+    }
+  ],
+  "6": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/73244" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/6da2f551-e8b0-41ca-b818-34442b4146a6"
+    }
+  ],
+  "7": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B07JM7FTFB" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/83942" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/products/detail.php?product_id=2120667"
+    },
+    { "name": "Getchu.com", "url": "http://www.getchu.com/soft.phtml?id=1188650" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/32be958c-0af4-4ad2-8a09-49a3e7529389"
+    }
+  ],
+  "8": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/121720" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/82e88694-e1f6-4ab6-a327-f350b7adeb8d"
+    }
+  ],
+  "9": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/30188" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/8945da3c-e581-4202-8f86-60e4bd1de67a"
+    }
+  ],
+  "10": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/101629" },
+    { "name": "BOOTH", "url": "https://symphonysounds.booth.pm/items/1451759" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/c23b0e2a-d699-4d1a-8236-b630d2c2d42f"
+    }
+  ],
+  "11": [
+    { "name": "BOOTH", "url": "https://booth.pm/ja/items/3380827" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/115472" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/15372fa4-9087-4cd4-a2ec-dd248894668b"
+    }
+  ],
+  "12": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/117717" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/f15acdfe-7805-41dd-9a24-a1e18fb94983"
+    }
+  ],
+  "13": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B07JM7FTFB" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/83942" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/products/detail.php?product_id=2120667"
+    },
+    { "name": "Getchu.com", "url": "http://www.getchu.com/soft.phtml?id=1188650" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/c7b2bc43-d552-48f4-9024-0015cde3f79f"
+    }
+  ],
+  "14": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/112550" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/70282299-324f-479e-8368-2025dadbe8eb"
+    }
+  ],
+  "15": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/111903" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/d4c7850e-d09b-4f09-a241-d9208af71924"
+    }
+  ],
+  "16": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/85303" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/643af187-3551-464b-bac8-190f31f20470"
+    }
+  ],
+  "17": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/15926" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/4d157a1c-ce0b-4f2e-bac4-6624253b1026"
+    }
+  ],
+  "18": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/104554" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/7207aae7-3197-45d2-b145-2b8a70ddb6d8"
+    }
+  ],
+  "19": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/52630" },
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B0B6457K39" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/products/detail.php?product_id=2120667"
+    },
+    { "name": "Getchu.com", "url": "http://www.getchu.com/soft.phtml?id=1188650" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/6d91bac6-b29e-4911-8742-cc37adaeb4ba"
+    }
+  ],
+  "20": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/89128" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/6897c52b-b4b3-4d47-863e-3bb3c02d547e"
+    }
+  ],
+  "21": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/85472" },
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B08D4F8QG7" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/b3f88707-aa1a-4adb-82de-dd49e79a99ad"
+    }
+  ],
+  "22": [
+    { "name": "BOOTH", "url": "http://laplacian.booth.pm/items/2739710" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/106781" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/698afa4b-8e0c-4722-aabe-49ea6a1f0ea2"
+    }
+  ],
+  "23": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B08D75JD64" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/pn/%E3%80%90%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%E3%80%91Win+%E3%81%95%E3%81%8F%E3%82%89%E3%81%AE%E9%9B%B2%EF%BC%8A%E3%82%B9%E3%82%AB%E3%82%A2%E3%83%AC%E3%83%83%E3%83%88%E3%81%AE%E6%81%8B+%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AA%E3%83%BC%E3%83%88%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0/pd/1826278/"
+    },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/101728" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/4ee86b43-250c-4d4b-997f-c1b316726ee7"
+    }
+  ],
+  "24": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/143991" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/1e06ab3d-fcaf-4d77-913a-172083778abf"
+    }
+  ],
+  "25": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/144017" },
+    { "name": "BOOTH", "url": "https://booth.pm/en/items/3791781" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/22c45c5e-ceef-4042-8474-699583ed50e5"
+    }
+  ],
+  "26": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B07DJ85KP9" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/products/detail.php?product_id=1538640"
+    },
+    { "name": "ソフマップ", "url": "https://www.sofmap.com/product_detail.aspx?sku=18048785" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/79261" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/54dd9d66-de23-4989-8d32-e5ef51f696ce"
+    }
+  ],
+  "27": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/136781" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/f31ee1cb-fff1-4cdf-8283-905355f76cc0"
+    }
+  ],
+  "28": [
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/f8fbee82-d3dd-49be-97c8-1204e25ce81e"
+    }
+  ],
+  "29": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B0CV2LY1XY" },
+    { "name": "Discogs", "url": "https://www.discogs.com/release/29745586" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/131251" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/7eed79ae-8642-43a3-b99b-4033b5baf9c0"
+    }
+  ],
+  "30": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B0D23XKYRY" },
+    { "name": "ソフマップ", "url": "https://a.sofmap.com/product_detail.aspx?sku=80042636" },
+    { "name": "BOOTH", "url": "https://symphonysounds.booth.pm/items/5662906" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/138559" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/317b46ce-07b4-40aa-a96d-949c05977f25"
+    }
+  ],
+  "31": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B00SELJ7EC" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/4bfbb70b-4537-4070-89d4-4eafb97b3dc2"
+    }
+  ],
+  "32": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/52630" },
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B0B6457K39" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/products/detail.php?product_id=2120667"
+    },
+    { "name": "Getchu.com", "url": "http://www.getchu.com/soft.phtml?id=1188650" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/b7b16b5b-e7a4-4f06-a682-8b56d4e687c6"
+    }
+  ],
+  "33": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B000M7FPC4" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/13256" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/5f0045bd-4443-46c7-a7ac-e1af9a52e93c"
+    }
+  ],
+  "34": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/37575" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/ee19a71b-5784-4814-832e-4cc768b81d42"
+    }
+  ],
+  "35": [
+    { "name": "BOOTH", "url": "http://laplacian.booth.pm/items/2739710" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/106781" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/a0fde8c1-7fda-4264-bf1b-2ae7ce4fbbec"
+    }
+  ],
+  "36": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B08FZHPK58" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/101983" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/0e2997c3-2e46-4385-8ade-867b8994cc78"
+    }
+  ],
+  "37": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/41138" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/b7484535-f8f9-44c9-ac03-5e9c42981252"
+    }
+  ],
+  "38": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/61123" },
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B01N1JI5OY" },
+    { "name": "アニメイト", "url": "https://www.animate-onlineshop.jp/pd/1429510/" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/304ea90a-7b02-4173-bd32-7d42ac9f7686"
+    }
+  ],
+  "39": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/36481" },
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B07VD7VTTG" },
+    { "name": "Discogs", "url": "https://www.discogs.com/release/23426351" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/bdbed788-bab0-4152-848a-1bb9779a198c"
+    }
+  ],
+  "40": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/96680" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/29c1ed82-8f5a-4834-aac9-d1b8c75178c2"
+    }
+  ],
+  "41": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/21934" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/b90502dc-bdb0-44fc-bafb-15ac46279106"
+    }
+  ],
+  "42": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/85524" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/e709d2a2-0c05-4153-a707-6c9c838d25f7"
+    }
+  ],
+  "44": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B084VVSJLP" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/2cd7c465-deb3-4aef-b617-a01633a2c98e"
+    }
+  ],
+  "45": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B0166EO93M" },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/55877" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/e74aadc3-647c-4392-971b-767276decce0"
+    }
+  ],
+  "46": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/24778" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/c61d886a-f8ff-400f-a43a-119293c4c78b"
+    }
+  ],
+  "47": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/118983" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/f94880c7-b1cb-440a-bd7e-77296b9a8ee8"
+    }
+  ],
+  "48": [
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/5faa7674-a8f0-447f-8ebe-15225bea2db5"
+    }
+  ],
+  "49": [
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/164618" },
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B00MU0089G" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/0392c59c-cb22-4dd1-885c-14b733a941ed"
+    }
+  ],
+  "50": [
+    { "name": "Amazon", "url": "https://www.amazon.co.jp/gp/product/B07K94PLPB" },
+    {
+      "name": "アニメイト",
+      "url": "https://www.animate-onlineshop.jp/products/detail.php?product_id=1588221"
+    },
+    { "name": "VGMdb", "url": "https://vgmdb.net/album/81906" },
+    {
+      "name": "MusicBrainz",
+      "url": "https://musicbrainz.org/recording/3a1a0b31-950d-4421-8b20-b4b2b7e6ece6"
+    }
+  ]
+}

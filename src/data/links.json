@@ -666,7 +666,7 @@
     "youtube": "https://www.youtube.com/watch?v=v1WKOvekRxs",
     "ytmusic": "https://music.youtube.com/watch?v=v1WKOvekRxs"
   },
-  "138": { "yt": "cmsdl8uxeWs", "youtube": "https://www.youtube.com/watch?v=cmsdl8uxeWs" },
+  "138": { "nico": "sm44314031", "niconico": "https://www.nicovideo.jp/watch/sm44314031" },
   "139": {
     "apple": "https://music.apple.com/jp/album/%E5%B0%8F%E3%81%95%E3%81%AA%E3%81%A6%E3%81%AE%E3%81%B2%E3%82%89/1570089051?i=1570089054",
     "album": "https://music.apple.com/jp/album/%E5%B0%8F%E3%81%95%E3%81%AA%E3%81%A6%E3%81%AE%E3%81%B2%E3%82%89/1570089051?i=1570089054",
@@ -2112,6 +2112,7 @@
     "yt": "OFSInU0csM0",
     "youtube": "https://www.youtube.com/watch?v=OFSInU0csM0"
   },
+  "446": { "nico": "sm40447575", "niconico": "https://www.nicovideo.jp/watch/sm40447575" },
   "447": {
     "apple": "https://music.apple.com/jp/album/%E6%9C%AA%E6%9D%A5%E3%81%AF%E3%81%8D%E3%81%A3%E3%81%A8shinydays/827584643?i=827586911",
     "album": "https://music.apple.com/jp/album/%E6%9C%AA%E6%9D%A5%E3%81%AF%E3%81%8D%E3%81%A3%E3%81%A8shinydays/827584643?i=827586911",
@@ -2777,6 +2778,7 @@
     "youtube": "https://www.youtube.com/watch?v=IjkopLUWXCw",
     "ytmusic": "https://music.youtube.com/watch?v=IjkopLUWXCw"
   },
+  "606": { "nico": "sm40527181", "niconico": "https://www.nicovideo.jp/watch/sm40527181" },
   "607": {
     "apple": "https://music.apple.com/jp/album/%E3%82%82%E3%81%97%E3%82%82%E6%98%8E%E6%97%A5%E3%81%8C%E6%99%B4%E3%82%8C%E3%81%AA%E3%82%89%E3%81%B0/1518849291?i=1518849623",
     "album": "https://music.apple.com/jp/album/%E3%82%82%E3%81%97%E3%82%82%E6%98%8E%E6%97%A5%E3%81%8C%E6%99%B4%E3%82%8C%E3%81%AA%E3%82%89%E3%81%B0/1518849291?i=1518849623",
@@ -3279,6 +3281,7 @@
     "youtube": "https://www.youtube.com/watch?v=ESErNV6Zc2M",
     "ytmusic": "https://music.youtube.com/watch?v=ESErNV6Zc2M"
   },
+  "714": { "nico": "sm26892952", "niconico": "https://www.nicovideo.jp/watch/sm26892952" },
   "715": { "yt": "fBa2Tncx4fk", "youtube": "https://www.youtube.com/watch?v=fBa2Tncx4fk" },
   "716": {
     "apple": "https://music.apple.com/jp/album/dreaming-continue-ver-2011/1587907067?i=1587907072",
@@ -5335,7 +5338,9 @@
   "1211": {
     "apple": "https://music.apple.com/jp/album/aquavoice/1457671732?i=1457671735",
     "album": "https://music.apple.com/jp/album/aquavoice/1457671732?i=1457671735",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/d5/7f/49/d57f494d-86f6-93f2-294a-23ec4cde973f/yuijktttt.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/d5/7f/49/d57f494d-86f6-93f2-294a-23ec4cde973f/yuijktttt.jpg/600x600bb.jpg",
+    "nico": "sm4110911",
+    "niconico": "https://www.nicovideo.jp/watch/sm4110911"
   },
   "1212": { "nico": "sm12236624", "niconico": "https://www.nicovideo.jp/watch/sm12236624" },
   "1213": {
@@ -5414,7 +5419,9 @@
     "apple": "https://music.apple.com/jp/album/shining-saver/1588186652?i=1588187466",
     "album": "https://music.apple.com/jp/album/shining-saver/1588186652?i=1588187466",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/31/43/52/314352ac-6b53-14c4-1a0e-8d32e1f8c32e/859757387137_cover.jpg/600x600bb.jpg",
-    "kkbox": "https://www.kkbox.com/jp/ja/song/8mb5qFMQJRsamZyMNf"
+    "kkbox": "https://www.kkbox.com/jp/ja/song/8mb5qFMQJRsamZyMNf",
+    "nico": "sm35034884",
+    "niconico": "https://www.nicovideo.jp/watch/sm35034884"
   },
   "1235": {
     "yt": "y0rCELi7qb8",
@@ -5831,6 +5838,7 @@
     "youtube": "https://www.youtube.com/watch?v=_P9ktl-sOBU",
     "ytmusic": "https://music.youtube.com/watch?v=_P9ktl-sOBU"
   },
+  "1349": { "nico": "sm41397098", "niconico": "https://www.nicovideo.jp/watch/sm41397098" },
   "1350": { "yt": "yoBUVtFx7qc", "youtube": "https://www.youtube.com/watch?v=yoBUVtFx7qc" },
   "1352": {
     "yt": "rB6DlFbUzwo",
@@ -9637,7 +9645,9 @@
   "1764919702": {
     "apple": "https://music.apple.com/jp/album/%E8%91%AC%E9%80%81%E3%81%AE%E6%97%8B%E5%BE%8B/1764919701?i=1764919702",
     "album": "https://music.apple.com/jp/album/%E8%91%AC%E9%80%81%E3%81%AE%E6%97%8B%E5%BE%8B/1764919701?i=1764919702",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/23/81/2823810a-69c3-e6c3-50c7-5056b4abd246/0198448888608_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/23/81/2823810a-69c3-e6c3-50c7-5056b4abd246/0198448888608_cover.png/600x600bb.jpg",
+    "nico": "sm45258652",
+    "niconico": "https://www.nicovideo.jp/watch/sm45258652"
   },
   "1767766207": {
     "apple": "https://music.apple.com/jp/album/re-paradise/1767765975?i=1767766207",
@@ -9727,8 +9737,8 @@
     "apple": "https://music.apple.com/jp/album/%E6%98%8E%E3%81%91%E6%98%9F/1840359461?i=1840359462",
     "album": "https://music.apple.com/jp/album/%E6%98%8E%E3%81%91%E6%98%9F/1840359461?i=1840359462",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/28/77/89/28778946-11d1-1bee-9646-c2f059e273b8/PA00201738_0_247418_jacket.jpg/600x600bb.jpg",
-    "yt": "sCi3Aeasc7M",
-    "youtube": "https://www.youtube.com/watch?v=sCi3Aeasc7M"
+    "nico": "sm46315817",
+    "niconico": "https://www.nicovideo.jp/watch/sm46315817"
   },
   "1840359468": {
     "apple": "https://music.apple.com/jp/album/%E5%B9%BB%E7%81%AF%E8%8A%B1%E7%81%AB/1840359461?i=1840359468",

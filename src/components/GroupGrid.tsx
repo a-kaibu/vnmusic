@@ -56,12 +56,12 @@ export function GroupGrid({ groups, kind, onOpen }: Props) {
                   src={art}
                   alt=""
                   loading="lazy"
-                  className={`aspect-square w-full bg-elev shadow-lg ${
+                  className={`aspect-square w-full shadow-lg ${
                     kind === "artist"
-                      ? "rounded-full object-cover object-top"
+                      ? "rounded-full bg-elev object-cover object-top"
                       : kind === "brand" && art.includes("img/brand/")
-                        ? "rounded-md object-contain"
-                        : "rounded-md object-cover object-top"
+                        ? "rounded-md bg-white object-contain p-2"
+                        : "rounded-md bg-elev object-cover object-top"
                   }`}
                 />
               ) : (

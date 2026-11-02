@@ -798,7 +798,7 @@ function ytTrusted(
   const g = norm(s.game.replace(/\s*[(（][^)）]*[)）]\s*$/, "")).slice(0, 6);
   const b = norm(s.brand);
   if (
-    /(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu|piano|ピアノ|アレンジ|arrange|演奏|dtx|太鼓|ヲタ芸|踊って|叩いて|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|反応|アイキャッチ|楽譜|耳コピ|\binst\b|壁紙)/i.test(
+    /(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu|piano|ピアノ|アレンジ|arrange|演奏|dtx|太鼓|ヲタ芸|踊って|叩いて|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|反応|アイキャッチ|楽譜|耳コピ|歌枠|切り抜き|hololive|ホロライブ|にじさんじ|nijisanji|vtuber|\binst\b|壁紙)/i.test(
       y.title,
     )
   )
@@ -871,6 +871,53 @@ async function stageNico() {
   save("nico.json", out);
 }
 
+
+// ---------- mb: MusicBrainz（収録CDの VGMdb・通販ページ） ----------
+type MbOut = { recording: string; releases: { id: string; title: string; urls: string[] }[] } | null;
+async function stageMb() {
+  const out = load<Record<number, MbOut>>("mb.json", {});
+  const targets = songs.filter((s) => !(s.id in out));
+  console.log(`MusicBrainz: ${targets.length} 曲 (1.1 秒間隔)`);
+  const UA = { headers: { "User-Agent": "vnmusic/0.1 (https://a-kaibu.github.io/vnmusic/)" } };
+  const mb = async (path: string) => {
+    const r = await get(`https://musicbrainz.org/ws/2/${path}`, UA);
+    await sleep(1100);
+    return r.json() as Promise<any>;
+  };
+  for (const [i, s] of targets.entries()) {
+    try {
+      const a = firstArtist(s);
+      const q = `recording:"${s.title.replace(/"/g, "")}"` + (a ? ` AND artist:"${a.replace(/"/g, "")}"` : "");
+      const j = await mb(`recording?fmt=json&limit=5&query=${encodeURIComponent(q)}`);
+      const rec = (j.recordings ?? []).find(
+        (r: any) =>
+          norm(r.title) === norm(s.title) &&
+          (!a || r["artist-credit"]?.some((c: any) => norm(c.name).includes(norm(a)) || norm(a).includes(norm(c.name)))),
+      );
+      if (!rec) out[s.id] = null;
+      else {
+        const releases = [];
+        for (const rel of (rec.releases ?? []).slice(0, 2)) {
+          const e = await mb(`release/${rel.id}?fmt=json&inc=url-rels`);
+          releases.push({
+            id: rel.id,
+            title: e.title,
+            urls: (e.relations ?? []).map((z: any) => z.url?.resource).filter(Boolean),
+          });
+        }
+        out[s.id] = { recording: rec.id, releases };
+      }
+    } catch (e) {
+      console.warn(`  ! ${s.title}: ${(e as Error).message}`);
+    }
+    if (i % 25 === 24) {
+      save("mb.json", out);
+      console.log(`  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`);
+    }
+  }
+  save("mb.json", out);
+}
+
 // ---------- write ----------
 function stageWrite() {
   const apple = load<Record<number, AppleOut>>("apple.json", {});
@@ -885,6 +932,9 @@ function stageWrite() {
   const kkbox = load<Record<number, KkOut>>("kkbox.json", {});
   const ytFix = load<Record<number, YtOut>>("youtube-fix.json", {});
   const nico = load<Record<number, NicoOut>>("nico.json", {});
+  const overrides: Record<number, { yt?: string | null; nico?: string }> = JSON.parse(
+    readFileSync(new URL("data/overrides.json", root), "utf8"),
+  );
   const links: Record<number, Record<string, string>> = {};
   for (const s of songs) {
     const l: Record<string, string> = {};
@@ -917,6 +967,22 @@ function stageWrite() {
       l.nico = nico[s.id]!.id;
       l.niconico = `https://www.nicovideo.jp/watch/${nico[s.id]!.id}`;
     }
+    // 手で直した分（data/overrides.json: { 曲ID: { yt: null | 動画ID, nico: "sm…" } }）
+    const o = overrides[s.id];
+    if (o) {
+      if (o.yt === null) {
+        if (l.youtube === `https://www.youtube.com/watch?v=${l.yt}`) delete l.youtube;
+        if (l.ytmusic === `https://music.youtube.com/watch?v=${l.yt}`) delete l.ytmusic;
+        delete l.yt;
+      } else if (o.yt) {
+        l.yt = o.yt;
+        l.youtube = `https://www.youtube.com/watch?v=${o.yt}`;
+      }
+      if (o.nico && !l.yt) {
+        l.nico = o.nico;
+        l.niconico = `https://www.nicovideo.jp/watch/${o.nico}`;
+      }
+    }
     if (Object.keys(l).length) links[s.id] = l;
   }
   const gameOut: Record<string, { official?: string; officialAlive?: boolean; cover?: string }> =
@@ -929,6 +995,33 @@ function stageWrite() {
     };
     if (v.official || v.cover) gameOut[name] = v;
   }
+  // 収録CDの外部ページ（MusicBrainz 経由）
+  const mbOut = load<Record<number, MbOut>>("mb.json", {});
+  const shops: [RegExp, string][] = [
+    [/vgmdb\.net/, "VGMdb"],
+    [/amazon\.co\.jp/, "Amazon"],
+    [/getchu\.com/, "Getchu.com"],
+    [/booth\.pm/, "BOOTH"],
+    [/animate-onlineshop\.jp/, "アニメイト"],
+    [/melonbooks\.co\.jp/, "メロンブックス"],
+    [/toranoana\.jp/, "とらのあな"],
+    [/sofmap\.com/, "ソフマップ"],
+    [/yodobashi\.com/, "ヨドバシ"],
+    [/rakuten\.co\.jp/, "楽天ブックス"],
+    [/discogs\.com/, "Discogs"],
+  ];
+  const cds: Record<number, { name: string; url: string }[]> = {};
+  for (const [id, m] of Object.entries(mbOut)) {
+    if (!m) continue;
+    const list: { name: string; url: string }[] = [];
+    for (const u of m.releases.flatMap((r) => r.urls)) {
+      const name = shops.find(([re]) => re.test(u))?.[1];
+      if (name && !list.some((x) => x.name === name)) list.push({ name, url: u });
+    }
+    list.push({ name: "MusicBrainz", url: `https://musicbrainz.org/recording/${m.recording}` });
+    cds[Number(id)] = list;
+  }
+  writeFileSync(new URL("src/data/cds.json", root), JSON.stringify(cds));
   writeFileSync(new URL("src/data/links.json", root), JSON.stringify(links));
   writeFileSync(new URL("src/data/games.json", root), JSON.stringify(gameOut));
   console.log(
@@ -949,4 +1042,5 @@ if (stage === "yttopic" || stage === "all") await stageYtTopic();
 if (stage === "kkbox" || stage === "all") await stageKkbox();
 if (stage === "ytfix" || stage === "all") await stageYtFix();
 if (stage === "nico") await stageNico();
+if (stage === "mb") await stageMb();
 stageWrite();

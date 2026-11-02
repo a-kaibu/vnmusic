@@ -1,7 +1,7 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { X, ExternalLink, Disc, Mic, Globe, Search, Play, Link2, Check } from "lucide-react";
 import { usePlayer } from "../lib/player";
-import { type Song, services, searchQuery, links, games, artworkOf, flagOf } from "../lib/songs";
+import { type Song, services, searchQuery, links, games, artworkOf, flagOf, cds } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
 import { ScopeLink } from "./ScopeLink";
@@ -225,6 +225,23 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
                 >
                   Apple Music <ExternalLink className="size-3" />
                 </a>
+              )}
+            </Row>
+            <Row label="CD">
+              {cds[s.id] && (
+                <span className="flex flex-wrap gap-1.5">
+                  {cds[s.id].map((c) => (
+                    <a
+                      key={c.name}
+                      href={c.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 rounded-full border border-line px-2.5 py-0.5 text-xs text-muted hover:bg-elev hover:text-white"
+                    >
+                      {c.name} <ExternalLink className="size-3" />
+                    </a>
+                  ))}
+                </span>
               )}
             </Row>
             <Row label="作詞">
