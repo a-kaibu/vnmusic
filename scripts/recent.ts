@@ -3,7 +3,8 @@
 //   node scripts/recent.ts vndb     … VNDB から 2023年以降に発売された成人向けPCゲーム（企業ブランド）を取得
 //   node scripts/recent.ts itunes   … 各ゲームのタイトルで iTunes Search API を検索し、主題歌・挿入歌などのボーカル曲を拾う
 //   node scripts/recent.ts pick     … 保存済みの検索結果から曲を選び直す（data/cache/recent-itunes.json、git管理外）
-//   node scripts/recent.ts          … vndb → itunes
+//   node scripts/recent.ts staff    … VNDB のスタッフ欄（歌手・曲名）から拾い、日本語の曲名に照合
+//   node scripts/recent.ts          … vndb → itunes → youtube → staff
 //
 // 結果は data/cache/recent.json に保存（途中で止めても再開できる）。
 // Apple Music のリンクは data/cache/apple.json、ゲームの公式サイト・ジャケットは data/cache/games.json にも書き込むので、
@@ -353,13 +354,21 @@ async function stageItunes() {
 function syncCaches(out: Store) {
   const apple = load<Record<string, unknown>>("apple.json", {});
   const games = load<Record<string, Record<string, unknown>>>("games.json", {});
-  const yt = load<Record<string, YtSong[]>>("recent-yt.json", {});
+  const extra = [
+    load<Record<string, YtSong[]>>("recent-yt.json", {}),
+    load<Record<string, YtSong[]>>("recent-site.json", {}),
+    load<Record<string, StaffSong[]>>("recent-staff-songs.json", {}),
+  ];
+  const staff = extra[2] as Record<string, StaffSong[]>;
   let songs = 0;
   for (const g of Object.values(out)) {
-    if (!g.tracks?.length && !yt[g.vndb]?.length) continue;
+    const tracks = [
+      ...(g.tracks ?? []),
+      ...(staff[g.vndb] ?? []).flatMap((s) => (s.apple ? [s.apple] : [])),
+    ];
+    if (!tracks.length && !extra.some((e) => e[g.vndb]?.length)) continue;
     games[g.game] ??= { vndb: g.vndb, egs: "", official: g.official, cover: g.cover };
-    if (!g.tracks) continue;
-    for (const t of g.tracks) {
+    for (const t of tracks) {
       songs++;
       apple[t.trackId] = {
         track: t.track,
@@ -373,7 +382,7 @@ function syncCaches(out: Store) {
   }
   save("apple.json", apple);
   save("games.json", games);
-  console.log(`  ${songs} 曲 / ${Object.values(out).filter((g) => g.tracks?.length).length} 作品`);
+  console.log(`  Apple Music ${songs} 曲`);
 }
 
 // ---------- youtube: 配信されていない曲を、OPムービーや試聴動画のタイトル・説明文から拾う ----------
@@ -509,10 +518,391 @@ async function stageYoutube() {
   syncCaches(out);
 }
 
+// ---------- site: 公式サイトの「主題歌」表記から拾う ----------
+async function fetchText(url: string): Promise<{ text: string; html: string; url: string } | null> {
+  try {
+    const r = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(15000) });
+    if (!r.ok || !(r.headers.get("content-type") ?? "text/html").includes("html")) return null;
+    const buf = new Uint8Array(await r.arrayBuffer());
+    const head = new TextDecoder("latin1").decode(buf.slice(0, 3000));
+    const cs =
+      (r.headers.get("content-type") ?? "").match(/charset=([\w-]+)/i)?.[1] ??
+      head.match(/charset=["']?([\w-]+)/i)?.[1] ??
+      "utf-8";
+    let html: string;
+    try {
+      html = new TextDecoder(
+        cs.toLowerCase().replace(/^(x-)?sjis$|^shift-jis$/, "shift_jis"),
+      ).decode(buf);
+    } catch {
+      html = new TextDecoder("utf-8").decode(buf);
+    }
+    const text = html
+      .replace(/<(script|style)[\s\S]*?<\/\1>/gi, " ")
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/&nbsp;/g, " ")
+      .replace(/&amp;/g, "&")
+      .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+      .replace(/[ \t]+/g, " ");
+    return { text, html, url: r.url };
+  } catch {
+    return null;
+  }
+}
+
+// 主題歌が載っていそうなページ（同じサイト内）
+const subPage =
+  /spec|product|music|song|special|intro|info|outline|about|movie|top|index|gaiyou|story/i;
+
+function pickSite(g: RecentGame, texts: string[]): YtSong[] {
+  const songs = new Map<string, YtSong>();
+  const gn = norm(g.game);
+  const brand = norm(g.brand);
+  const re = new RegExp(
+    `(${catWord})(?:テーマ|曲|ソング)?\\s*[：:]?\\s*[「『“]([^」』”\\n]{1,40})[」』”]`,
+    "gi",
+  );
+  for (const text of texts) {
+    for (const m of text.matchAll(re)) {
+      const title = stripParen(m[2].trim());
+      const k = norm(title);
+      if (
+        !k ||
+        k === gn ||
+        gn.includes(k) ||
+        k === brand ||
+        /^(PS\d|Switch|NS|Steam)$/i.test(title)
+      )
+        continue;
+      const near = text.slice((m.index ?? 0) + m[0].length, (m.index ?? 0) + m[0].length + 120);
+      const artist = (
+        near.match(/^\s*[\/／]\s*([^\s　(（【\[|｜\n]{1,30})/)?.[1] ??
+        near.match(
+          /(?:歌|唄|Vocal|ボーカル|歌唱)\s*[：:]\s*([^\s　、,，/／|｜()（）【】「」\n]{1,30})/i,
+        )?.[1] ??
+        ""
+      ).replace(/(作詞|作曲|編曲).*$/, "");
+      const prev = songs.get(k);
+      if (!prev) songs.set(k, { title, artist, category: categoryOf(m[1]), from: "site" });
+      else prev.artist ||= artist;
+    }
+  }
+  return [...songs.values()];
+}
+
+async function stageSite() {
+  const out = load<Store>("recent.json", {});
+  const res = load<Record<string, YtSong[]>>("recent-site.json", {});
+  const raw = load<Record<string, string[]>>("recent-site-raw.json", {});
+  const targets = Object.values(out).filter((g) => g.official && !(g.vndb in res));
+  console.log(`公式サイト: ${targets.length} 作品`);
+  let done = 0;
+  const work = async (g: RecentGame) => {
+    if (!raw[g.vndb]) {
+      const texts: string[] = [];
+      // 体験版ページなどが登録されていることが多いので、そのディレクトリと一つ上も見る
+      const o = new URL(g.official!);
+      const starts = [
+        ...new Set(
+          [o.href, new URL("./", o).href, new URL("../", o).href].map((u) => u.replace(/#.*$/, "")),
+        ),
+      ].filter((u) => new URL(u).pathname !== "/" || new URL(g.official!).pathname === "/");
+      for (const start of starts) {
+        const top = await fetchText(start);
+        if (top) {
+          texts.push(top.text);
+          const base = new URL(top.url);
+          const links = [...top.html.matchAll(/(?:href|src)=["']([^"'#]+)["']/gi)]
+            .map((m) => {
+              try {
+                return new URL(m[1], base);
+              } catch {
+                return null;
+              }
+            })
+            .filter(
+              (u): u is URL =>
+                !!u &&
+                u.host === base.host &&
+                /\.(html?|php)$|\/$/.test(u.pathname) &&
+                subPage.test(u.pathname) &&
+                u.href !== base.href,
+            )
+            .map((u) => u.href);
+          for (const l of [...new Set(links)].slice(0, 6)) {
+            const p = await fetchText(l);
+            if (p) texts.push(p.text);
+          }
+        }
+      }
+      // 主題歌まわりだけ残す
+      raw[g.vndb] = texts.flatMap((t) =>
+        [...t.matchAll(new RegExp(`(${catWord})[\\s\\S]{0,200}`, "gi"))].map((m) => m[0]),
+      );
+    }
+    res[g.vndb] = pickSite(g, raw[g.vndb]);
+    if (++done % 25 === 0) {
+      save("recent-site.json", res);
+      save("recent-site-raw.json", raw);
+      const n = Object.values(res).reduce((x, y) => x + y.length, 0);
+      console.log(`  ${done}/${targets.length} (曲 ${n})`);
+    }
+  };
+  let i = 0;
+  await Promise.all(
+    Array.from({ length: 6 }, async () => {
+      while (i < targets.length) await work(targets[i++]);
+    }),
+  );
+  save("recent-site.json", res);
+  save("recent-site-raw.json", raw);
+  syncCaches(out);
+}
+
+// ---------- staff: VNDB のスタッフ欄（歌手と「OP "曲名"」の注記）から拾う ----------
+// VNDB の曲名はローマ字なので、iTunes・YouTube で見つけた日本語の曲名とローマ字で照合する
+export type StaffSong = YtSong & { romaji: string; apple?: RecentTrack };
+type StaffCredit = { singer: string; note: string };
+
+let kuro: { convert: (t: string, o: object) => Promise<string> } | undefined;
+async function toRomaji(t: string) {
+  if (!kuro) {
+    const K = (await import("kuroshiro")).default as any;
+    const A = (await import("kuroshiro-analyzer-kuromoji")).default as any;
+    const k = new (K.default ?? K)();
+    await k.init(new (A.default ?? A)());
+    kuro = k;
+  }
+  return kuro!.convert(t, { to: "romaji", mode: "normal", romajiSystem: "hepburn" });
+}
+// 長音・つづりの揺れをならして比べる
+const roma = (s: string) =>
+  s
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "")
+    .replace(/(ou|oo|oh)/g, "o")
+    .replace(/(uu)/g, "u")
+    .replace(/(ei|ee)/g, "e")
+    .replace(/(aa)/g, "a")
+    .replace(/(ii)/g, "i")
+    .replace(/wo/g, "o")
+    .replace(/m(?=[bmp])/g, "n")
+    .replace(/(.)\1+/g, "$1");
+function similar(a: string, b: string) {
+  if (!a || !b) return 0;
+  if (a === b) return 1;
+  // レーベンシュタイン距離から 0〜1 の類似度
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++)
+      d[i][j] = Math.min(
+        d[i - 1][j] + 1,
+        d[i][j - 1] + 1,
+        d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+  return 1 - d[a.length][b.length] / Math.max(a.length, b.length);
+}
+
+function parseCredits(credits: StaffCredit[]) {
+  const songs = new Map<string, { romaji: string; category: string; singers: string[] }>();
+  for (const c of credits) {
+    const singer = /[぀-ヿ一-鿿]/.test(c.singer) ? c.singer.replace(/\s+/g, "") : c.singer;
+    let label = "";
+    for (const m of (c.note ?? "").matchAll(/([A-Za-z0-9 .&'\-]*?)\s*["“]([^"”]+)["”]/g)) {
+      label = m[1].replace(/^[\s,;&]+|[\s,;&]+$/g, "").trim() || label;
+      const title = m[2].trim();
+      const category = /grand/i.test(label)
+        ? "グランドED"
+        : /\bop\b|opening/i.test(label)
+          ? "OP"
+          : /\bed\b|ending|\bend\b/i.test(label)
+            ? "ED"
+            : /ins/i.test(label)
+              ? "挿入歌"
+              : /image/i.test(label)
+                ? "イメージソング"
+                : "主題歌";
+      const k = roma(title);
+      const prev = songs.get(k);
+      if (prev) {
+        if (!prev.singers.includes(singer)) prev.singers.push(singer);
+      } else songs.set(k, { romaji: title, category, singers: [singer] });
+    }
+  }
+  return [...songs.values()];
+}
+
+async function stageStaff() {
+  const out = load<Store>("recent.json", {});
+  const staff = load<Record<string, StaffCredit[]>>("recent-staff.json", {});
+  const todo = Object.keys(out).filter((id) => !(id in staff));
+  for (let i = 0; i < todo.length; i += 50) {
+    const j = await vndb("vn", {
+      filters: ["or", ...todo.slice(i, i + 50).map((id) => ["id", "=", id])],
+      fields: "staff.role,staff.note,staff.name,staff.original",
+      results: 100,
+    });
+    for (const v of j.results)
+      staff[v.id] = v.staff
+        .filter((s: any) => s.role === "songs" && s.note)
+        .map((s: any) => ({ singer: s.original ?? s.name, note: s.note }));
+    await sleep(1000);
+  }
+  save("recent-staff.json", staff);
+
+  const yt = load<Record<string, YtSong[]>>("recent-yt.json", {});
+  const site = load<Record<string, YtSong[]>>("recent-site.json", {});
+  const rawSinger = load<Record<string, any[]>>("recent-singer-raw.json", {});
+  const rawYt = load<Record<string, YtVideo[]>>("recent-yt-raw.json", {});
+  const rawYt2 = load<Record<string, YtVideo[]>>("recent-staff-yt-raw.json", {});
+  const res: Record<string, StaffSong[]> = {};
+  const romaCache = new Map<string, string>();
+  const r = async (t: string) => {
+    if (!romaCache.has(t)) romaCache.set(t, roma(await toRomaji(t)));
+    return romaCache.get(t)!;
+  };
+  const games = Object.values(out).filter((g) => staff[g.vndb]?.length);
+  console.log(`VNDB スタッフ欄: ${games.length} 作品`);
+  for (const [gi, g] of games.entries()) {
+    const songs = parseCredits(staff[g.vndb]);
+    const day = new Date(g.release.replace(/\//g, "-")).getTime();
+    // 歌手名で iTunes を検索（歌手ごとにキャッシュ）
+    for (const s of songs)
+      for (const singer of s.singers.slice(0, 2)) {
+        if (rawSinger[singer]) continue;
+        try {
+          rawSinger[singer] = await itunes(singer);
+        } catch (e) {
+          console.warn(`  ! ${singer}: ${(e as Error).message}`);
+          rawSinger[singer] = [];
+        }
+        await sleep(3000);
+      }
+    const apple = songs
+      .flatMap((s) => s.singers.flatMap((x) => rawSinger[x] ?? []))
+      .filter((t) => {
+        const when = new Date(t.releaseDate).getTime();
+        return t.kind === "song" && when >= day - 400 * 864e5 && when <= day + 3 * 365 * 864e5;
+      });
+    const titles = [
+      ...(out[g.vndb].tracks ?? []).map((t) => t.title),
+      ...(yt[g.vndb] ?? []).map((t) => t.title),
+      ...(site[g.vndb] ?? []).map((t) => t.title),
+      ...(rawYt[g.vndb] ?? []).flatMap((v) =>
+        [...`${v.title} ${v.snippet}`.matchAll(/[「『]([^」』]{1,40})[」』]/g)].map((m) => m[1]),
+      ),
+    ];
+    const list: StaffSong[] = [];
+    const jp = /[\u3040-\u30ff\u4e00-\u9fff]/;
+    // 英字どうしは完全一致、日本語の曲名はローマ字にして 0.85 以上
+    const score = async (want: string, title: string) =>
+      jp.test(title) ? similar(want, await r(title)) : roma(title) === want ? 1 : 0;
+    for (const s of songs) {
+      const want = roma(s.romaji);
+      let best: { score: number; title: string; apple?: any } = { score: 0, title: "" };
+      for (const t of apple) {
+        const title = stripParen(t.trackName ?? "");
+        if (variant.test((t.trackName ?? "").replace(title, ""))) continue;
+        const sc = await score(want, title);
+        if (sc > best.score) best = { score: sc, title, apple: t };
+      }
+      const tryTitles = async (list: string[]) => {
+        for (const t0 of list) {
+          const title = stripParen(t0.trim());
+          if (!title || title.length > 40) continue;
+          const sc = await score(want, title);
+          if (sc > best.score + 0.01) best = { score: sc, title };
+        }
+      };
+      await tryTitles(titles);
+      // まだ日本語の曲名が分からなければ「歌手 ゲーム名」で YouTube を検索
+      if (best.score < 0.85) {
+        const q = `${s.singers[0]} ${g.game}`;
+        if (!rawYt2[q]) {
+          try {
+            rawYt2[q] = await ytSearch(q);
+          } catch {
+            // 連続で検索すると弾かれることがあるので、少し待ってもう一度
+            await sleep(30000);
+            rawYt2[q] = await ytSearch(q).catch(() => []);
+          }
+          await sleep(4000);
+        }
+        await tryTitles(
+          rawYt2[q].flatMap((v) => [
+            ...[...`${v.title} ${v.snippet}`.matchAll(/[「『]([^」』]{1,40})[」』]/g)].map(
+              (m) => m[1],
+            ),
+            ...v.title.split(/\s*[\/／|｜【】\[\]]\s*/),
+          ]),
+        );
+      }
+      const ok = best.score >= 0.85;
+      const a = ok ? best.apple : undefined;
+      list.push({
+        title: ok ? best.title : s.romaji,
+        romaji: s.romaji,
+        artist: s.singers.join(" / "),
+        category: s.category,
+        from: "vndb",
+        apple: a
+          ? {
+              trackId: a.trackId,
+              title: best.title,
+              artist: a.artistName,
+              album: a.collectionName,
+              category: s.category,
+              release: (a.releaseDate ?? "").slice(0, 10).replace(/-/g, "/"),
+              track: (a.trackViewUrl ?? "").replace(/[?&]uo=\d+/, ""),
+              albumUrl: (a.collectionViewUrl ?? "").replace(/[?&]uo=\d+/, ""),
+              artwork: a.artworkUrl100?.replace("100x100bb", "600x600bb"),
+            }
+          : undefined,
+      });
+    }
+    res[g.vndb] = list;
+    if (gi % 20 === 19) {
+      save("recent-singer-raw.json", rawSinger);
+      save("recent-staff-yt-raw.json", rawYt2);
+      console.log(`  ${gi + 1}/${games.length}`);
+    }
+  }
+  save("recent-singer-raw.json", rawSinger);
+  save("recent-staff-yt-raw.json", rawYt2);
+  save("recent-staff-songs.json", res);
+  const all = Object.values(res).flat();
+  console.log(
+    `  ${all.length} 曲（日本語の曲名が分かった ${all.filter((s) => s.title !== s.romaji).length}、Apple Music ${all.filter((s) => s.apple).length}）`,
+  );
+  syncCaches(out);
+}
+
 const stage = process.argv[2] ?? "all";
+if (stage === "staff") await stageStaff();
+if (stage === "site") await stageSite();
+if (stage === "pick-site") {
+  const out = load<Store>("recent.json", {});
+  const raw = load<Record<string, string[]>>("recent-site-raw.json", {});
+  const res: Record<string, YtSong[]> = {};
+  for (const g of Object.values(out)) if (raw[g.vndb]) res[g.vndb] = pickSite(g, raw[g.vndb]);
+  save("recent-site.json", res);
+}
+if (stage === "test-site") {
+  const out = load<Store>("recent.json", {});
+  for (const name of process.argv.slice(3)) {
+    const g = Object.values(out).find((x) => x.game.startsWith(name));
+    if (!g?.official) continue;
+    const top = await fetchText(g.official);
+    console.log(g.game, g.official, top ? pickSite(g, [top.text]) : "fetch failed");
+  }
+}
 if (stage === "vndb" || stage === "all") await stageVndb();
 if (stage === "itunes" || stage === "all") await stageItunes();
 if (stage === "youtube" || stage === "all") await stageYoutube();
+if (stage === "all") await stageStaff();
 if (stage === "pick-yt") {
   const out = load<Store>("recent.json", {});
   const raw = load<Record<string, YtVideo[]>>("recent-yt-raw.json", {});

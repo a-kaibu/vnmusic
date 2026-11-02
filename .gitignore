@@ -30,3 +30,6 @@ dist-ssr
 public/img/**/*.src
 data/cache/recent-itunes.json
 data/cache/recent-yt-raw.json
+data/cache/recent-site-raw.json
+data/cache/recent-singer-raw.json
+data/cache/recent-staff-yt-raw.json

@@ -116,6 +116,11 @@ const recentGames = Object.values(cache("recent.json") as Record<string, RecentG
   a.release.localeCompare(b.release),
 );
 const ytSongs = cache("recent-yt.json") as Record<string, YtSong[]>;
+const siteSongs = cache("recent-site.json") as Record<string, YtSong[]>;
+const staffSongs = cache("recent-staff-songs.json") as Record<
+  string,
+  (YtSong & { apple?: { trackId: number; album: string } })[]
+>;
 const key = (s: string) =>
   s
     .normalize("NFKC")
@@ -129,44 +134,57 @@ const hash = (s: string) => {
 };
 const seen = new Set(songs.map((s) => `${key(s.game).slice(0, 4)}|${key(s.title)}`));
 const off = { spotify: 0, apple: 0, ytmusic: 0, amazon: 0, mora: 0, awa: 0, fanza: 0 } as const;
+type Item = YtSong & { id: number; album: string; apple: boolean };
 const recent = recentGames.flatMap((g) => {
-  const items = [
-    ...(g.tracks ?? []).map((t) => ({ ...t, id: t.trackId, apple: true })),
-    ...(ytSongs[g.vndb] ?? []).map((t) => ({
-      ...t,
-      id: hash(`${g.vndb}|${key(t.title)}`),
-      album: "",
-      apple: false,
-    })),
-  ];
-  return items.flatMap((t) => {
-    const k = `${key(g.game).slice(0, 4)}|${key(t.title)}`;
-    if (seen.has(k)) return [];
-    seen.add(k);
-    return [
-      {
-        id: t.id,
-        rank: null,
-        title: t.title,
-        votes: 0,
-        points: 0,
-        vocal: t.artist.replace(/\s*[&、,]\s*/g, " / "),
-        lyrics: "",
-        composer: "",
-        arranger: "",
-        game: g.game,
-        brand: g.brand,
-        release: g.release,
-        category: t.category,
-        album: t.album ? `『${t.album}』` : "",
-        stream: { ...off, apple: t.apple ? (2 as const) : (0 as const) },
-        karaoke: { dam: 0, joysound: 0, karatetsu: 0, pasela: 0 },
-        note: "",
-        aggNote: "",
-        prev: { y2021: null, y2020: null, y2019: null },
-      },
-    ];
+  const hashed = (t: YtSong): Item => ({
+    ...t,
+    id: hash(`${g.vndb}|${key(t.title)}`),
+    album: "",
+    apple: false,
   });
+  // VNDB のスタッフ欄（歌手・区分が確か）→ iTunes → YouTube → 公式サイトの順に、同じ曲は情報を補い合う
+  const items: Item[] = [
+    ...(staffSongs[g.vndb] ?? []).map((t) =>
+      t.apple ? { ...t, id: t.apple.trackId, album: t.apple.album, apple: true } : hashed(t),
+    ),
+    ...(g.tracks ?? []).map((t) => ({ ...t, id: t.trackId, apple: true })),
+    ...(ytSongs[g.vndb] ?? []).map(hashed),
+    ...(siteSongs[g.vndb] ?? []).map(hashed),
+  ];
+  const merged = new Map<string, Item>();
+  for (const t of items) {
+    const k = `${key(g.game).slice(0, 4)}|${key(t.title)}`;
+    if (seen.has(k)) continue;
+    const prev = merged.get(k);
+    if (!prev) merged.set(k, { ...t });
+    else {
+      if (!prev.apple && t.apple) Object.assign(prev, { id: t.id, album: t.album, apple: true });
+      prev.artist ||= t.artist;
+      prev.category ||= t.category;
+    }
+  }
+  for (const k of merged.keys()) seen.add(k);
+  return [...merged.values()].map((t) => ({
+    id: t.id,
+    rank: null,
+    title: t.title,
+    votes: 0,
+    points: 0,
+    vocal: t.artist.replace(/\s*[&、,]\s*/g, " / "),
+    lyrics: "",
+    composer: "",
+    arranger: "",
+    game: g.game,
+    brand: g.brand,
+    release: g.release,
+    category: t.category,
+    album: t.album ? `『${t.album}』` : "",
+    stream: { ...off, apple: t.apple ? (2 as const) : (0 as const) },
+    karaoke: { dam: 0, joysound: 0, karatetsu: 0, pasela: 0 },
+    note: "",
+    aggNote: "",
+    prev: { y2021: null, y2020: null, y2019: null },
+  }));
 });
 
 mkdirSync(new URL("../src/data/", import.meta.url), { recursive: true });

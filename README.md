@@ -35,6 +35,8 @@ node scripts/enrich.ts all       # 直リンク・ジャケット・公式サイ
 1. `vndb` — VNDB から 2023年1月以降に発売された成人向けPCゲーム（企業ブランド）の一覧・ブランド・発売日・公式サイト・ジャケットを取得 → `data/cache/recent.json`
 2. `itunes` — ゲーム名で iTunes Search API を検索し、サントラ・主題歌シングルからボーカル曲を拾う（BGM・インスト・別バージョンは除く）
 3. `youtube` — 「ゲーム名 主題歌」「ゲーム名 OP ED」で YouTube を検索し、OPムービーや試聴動画のタイトル・説明文にある「OPテーマ『曲名』」などから曲名・歌手を拾う → `data/cache/recent-yt.json`
+4. `staff` — VNDB のスタッフ欄（歌手と「OP "曲名"」の注記）から曲を拾う。曲名はローマ字なので、歌手名で iTunes・YouTube を検索して日本語の曲名にローマ字で照合する（見つからなければローマ字のまま）→ `data/cache/recent-staff-songs.json`
+5. `site`（任意）— 公式サイトの「主題歌『曲名』」表記から拾う → `data/cache/recent-site.json`
 
 絞り込み条件を変えたときは `node scripts/recent.ts pick`（iTunes）/ `pick-yt`（YouTube）で保存済みの検索結果から選び直せます。
 作詞・作曲・カラオケ情報はありません。CSV と同じ曲は追加しません。
