@@ -27,6 +27,7 @@ import {
 import { normalize } from "./lib/search";
 import { TrackList } from "./components/TrackList";
 import { GroupGrid } from "./components/GroupGrid";
+import { BrandPicker } from "./components/BrandPicker";
 import { SongDetail } from "./components/SongDetail";
 import { NowBar, VideoBox } from "./components/NowBar";
 import { usePlayer, playable } from "./lib/player";
@@ -377,27 +378,16 @@ export default function App() {
                     </button>
                   </>
                 )}
-                <select
-                  value={scope?.kind === "brand" ? scope.name : ""}
-                  onChange={(e) =>
-                    e.target.value
-                      ? openScope({ kind: "brand", name: e.target.value })
-                      : setScope(null)
-                  }
-                  className="ml-auto max-w-44 rounded-full bg-elev px-3 py-1 text-xs font-semibold outline-none"
-                  aria-label="ブランドで絞り込み"
-                >
-                  <option value="">すべてのブランド</option>
-                  {brandOptions.map((b) => (
-                    <option key={b.name} value={b.name}>
-                      {b.name}（{b.songs.length}）
-                    </option>
-                  ))}
-                </select>
+                <BrandPicker
+                  brands={brandOptions}
+                  value={scope?.kind === "brand" ? scope.name : null}
+                  onChange={(name) => (name ? openScope({ kind: "brand", name }) : setScope(null))}
+                />
                 <select
                   value={sort}
                   onChange={(e) => setSort(e.target.value as Sort)}
-                  className="rounded-full bg-elev px-3 py-1 text-xs font-semibold outline-none"
+                  className="rounded-full bg-elev px-3 py-1.5 text-sm font-semibold outline-none"
+                  aria-label="並び順"
                 >
                   <option value="random">ランダム</option>
                   <option value="new">発売日が新しい順</option>
