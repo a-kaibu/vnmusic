@@ -102,7 +102,8 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           // 再生中はここに YouTube / ニコニコのプレーヤーが重なる（VideoBox）
           <div
             ref={frame}
-            className="relative aspect-video w-full overflow-hidden rounded-xl bg-black shadow-2xl"
+            // 画面いっぱいに開いたとき動画が画面を埋めてスクロールできなくならないよう、高さは画面の4割まで
+            className="relative mx-auto aspect-video w-full max-w-[calc(40dvh*16/9)] overflow-hidden rounded-xl bg-black shadow-2xl"
           >
             {!isCurrent && (
               <button
