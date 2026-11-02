@@ -28121,6 +28121,10 @@
     "yt": "EGPeoG_nMHQ",
     "youtube": "https://www.youtube.com/watch?v=EGPeoG_nMHQ"
   },
+  "1489958289877": {
+    "yt": "PLbTb9K0er8",
+    "youtube": "https://www.youtube.com/watch?v=PLbTb9K0er8"
+  },
   "1489959239047": {
     "yt": "VE0dwG-zuFM",
     "youtube": "https://www.youtube.com/watch?v=VE0dwG-zuFM"
@@ -28435,7 +28439,10 @@
   "1284358882852": {
     "apple": "https://music.apple.com/jp/album/monologue-feat-%E6%B0%91%E5%AE%89%E3%81%A8%E3%82%82%E3%81%88/1546838507?i=1546838885",
     "album": "https://music.apple.com/jp/album/monologue-feat-%E6%B0%91%E5%AE%89%E3%81%A8%E3%82%82%E3%81%88/1546838507?i=1546838885",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg",
+    "yt": "eSfih28dV-k",
+    "youtube": "https://www.youtube.com/watch?v=eSfih28dV-k",
+    "ytmusic": "https://music.youtube.com/watch?v=eSfih28dV-k"
   },
   "1084128316801": {
     "yt": "kzjjrELadoY",
@@ -28558,6 +28565,10 @@
     "yt": "nn12zfP_tE4",
     "youtube": "https://www.youtube.com/watch?v=nn12zfP_tE4"
   },
+  "1722474151752": {
+    "yt": "3u5m6kYROYE",
+    "youtube": "https://www.youtube.com/watch?v=3u5m6kYROYE"
+  },
   "1781226942267": {
     "yt": "WiYRUrhh1Wo",
     "youtube": "https://www.youtube.com/watch?v=WiYRUrhh1Wo"
@@ -28628,6 +28639,10 @@
   "1084063225141": {
     "yt": "ymmMnEby2eI",
     "youtube": "https://www.youtube.com/watch?v=ymmMnEby2eI"
+  },
+  "1603321106872": {
+    "yt": "53bm5eDQoEA",
+    "youtube": "https://www.youtube.com/watch?v=53bm5eDQoEA"
   },
   "1603321108177": {
     "yt": "kTs9Q5cy21w",
@@ -29465,33 +29480,56 @@
     "youtube": "https://www.youtube.com/watch?v=3ppqsD_njmY"
   },
   "1669335644602": {
+    "apple": "https://music.apple.com/jp/album/%E8%A6%9A%E9%86%92-%E9%97%87%E3%83%8E%E6%89%89%E3%83%B2%E9%96%8B%E3%82%AF%E6%99%82-feat-%E5%B8%82%E5%B7%9D%E3%81%BF%E3%81%83/1546838507?i=1546838519",
+    "album": "https://music.apple.com/jp/album/%E8%A6%9A%E9%86%92-%E9%97%87%E3%83%8E%E6%89%89%E3%83%B2%E9%96%8B%E3%82%AF%E6%99%82-feat-%E5%B8%82%E5%B7%9D%E3%81%BF%E3%81%83/1546838507?i=1546838519",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg",
     "yt": "lK8Z2kbl6Hw",
     "youtube": "https://www.youtube.com/watch?v=lK8Z2kbl6Hw",
     "ytmusic": "https://music.youtube.com/watch?v=lK8Z2kbl6Hw"
   },
   "1284358878937": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%9B%E3%83%B3%E3%83%88%E3%81%AF%E8%AA%B0%E3%82%88%E3%82%8A%E3%82%82-feat-%E4%BD%90%E8%97%A4%E9%81%BC%E4%BD%B3/1546838507?i=1546839224",
+    "album": "https://music.apple.com/jp/album/%E3%83%9B%E3%83%B3%E3%83%88%E3%81%AF%E8%AA%B0%E3%82%88%E3%82%8A%E3%82%82-feat-%E4%BD%90%E8%97%A4%E9%81%BC%E4%BD%B3/1546838507?i=1546839224",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg",
     "yt": "EiZhzjKtj44",
     "youtube": "https://www.youtube.com/watch?v=EiZhzjKtj44",
     "ytmusic": "https://music.youtube.com/watch?v=EiZhzjKtj44"
   },
   "1603320555292": {
+    "apple": "https://music.apple.com/jp/album/under-the-dark-moon-feat-rita/1323942008?i=1323942143",
+    "album": "https://music.apple.com/jp/album/under-the-dark-moon-feat-rita/1323942008?i=1323942143",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/66/95/b7/6695b79c-ba82-9e76-db74-2fa22f1a1054/4571312470356_cover.jpg/600x600bb.jpg",
     "yt": "rFergjUz3s8",
     "youtube": "https://www.youtube.com/watch?v=rFergjUz3s8",
     "ytmusic": "https://music.youtube.com/watch?v=rFergjUz3s8"
+  },
+  "1669334895967": {
+    "apple": "https://music.apple.com/jp/album/depravity-feat-iyuna/1321809005?i=1321809287",
+    "album": "https://music.apple.com/jp/album/depravity-feat-iyuna/1321809005?i=1321809287",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ed/8d/82/ed8d82de-512c-5542-1232-5f97b18c6309/4571312470349_cover.jpg/600x600bb.jpg"
   },
   "1901499906852": {
     "yt": "N7MX4ia0jvE",
     "youtube": "https://www.youtube.com/watch?v=N7MX4ia0jvE"
   },
   "1723298806482": {
+    "apple": "https://music.apple.com/jp/album/%E6%9A%81%E3%81%AE%E3%83%90%E3%82%BF%E3%83%95%E3%83%A9%E3%82%A4/1051214992?i=1051215001",
+    "album": "https://music.apple.com/jp/album/%E6%9A%81%E3%81%AE%E3%83%90%E3%82%BF%E3%83%95%E3%83%A9%E3%82%A4/1051214992?i=1051215001",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/43/a6/76/43a676d0-35a5-b4e1-2773-1e5480194e0b/GNCA-7193.jpg/600x600bb.jpg",
     "yt": "oiKweLFxMOQ",
     "youtube": "https://www.youtube.com/watch?v=oiKweLFxMOQ"
   },
   "1723298806917": {
+    "apple": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%A8%E6%84%9B%E3%81%AB%E3%81%AA%E3%82%8B/1051214992?i=1051215002",
+    "album": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%A8%E6%84%9B%E3%81%AB%E3%81%AA%E3%82%8B/1051214992?i=1051215002",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/43/a6/76/43a676d0-35a5-b4e1-2773-1e5480194e0b/GNCA-7193.jpg/600x600bb.jpg",
     "yt": "YLed9NOw_U4",
     "youtube": "https://www.youtube.com/watch?v=YLed9NOw_U4"
   },
   "1723298805612": {
+    "apple": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB/1051214992?i=1051215004",
+    "album": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB/1051214992?i=1051215004",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/43/a6/76/43a676d0-35a5-b4e1-2773-1e5480194e0b/GNCA-7193.jpg/600x600bb.jpg",
     "yt": "jtxIsyFjDeE",
     "youtube": "https://www.youtube.com/watch?v=jtxIsyFjDeE",
     "ytmusic": "https://music.youtube.com/watch?v=jtxIsyFjDeE"
@@ -29500,19 +29538,41 @@
     "yt": "A_RT2VsdXPs",
     "youtube": "https://www.youtube.com/watch?v=A_RT2VsdXPs"
   },
+  "1684862287392": {
+    "apple": "https://music.apple.com/jp/album/%E9%BB%84%E9%87%91%E6%AF%94%E7%8E%87/363973087?i=363973131",
+    "album": "https://music.apple.com/jp/album/%E9%BB%84%E9%87%91%E6%AF%94%E7%8E%87/363973087?i=363973131",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/7d/a0/50/mzi.tgobietg.jpg/600x600bb.jpg"
+  },
   "1490699117497": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A7%E3%83%8E%E3%82%B0%E3%83%A9%E3%83%A0/6794976937?i=6794976938",
+    "album": "https://music.apple.com/jp/album/%E3%83%95%E3%82%A7%E3%83%8E%E3%82%B0%E3%83%A9%E3%83%A0/6794976937?i=6794976938",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/d2/20/2dd2208e-f089-7f32-1c08-f3dfe91bfb08/4582325372803_Cover.jpg/600x600bb.jpg",
     "yt": "NXF0K6IqaOM",
     "youtube": "https://www.youtube.com/watch?v=NXF0K6IqaOM"
   },
+  "1669336992667": {
+    "apple": "https://music.apple.com/jp/album/%E6%A5%BD%E5%9C%92%E3%81%AE%E3%83%9B%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/6794976709?i=6794976710",
+    "album": "https://music.apple.com/jp/album/%E6%A5%BD%E5%9C%92%E3%81%AE%E3%83%9B%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/6794976709?i=6794976710",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/03/ae/12/03ae12d4-f7ab-da9c-d1eb-02590b8a6c17/4582325372827_Cover.jpg/600x600bb.jpg"
+  },
   "1669336992232": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AE%E5%A4%8F%E3%81%AE%E6%97%A5%E3%81%AE%E6%83%B3%E3%81%84%E5%87%BA-short-ver/6794301476?i=6794301954",
+    "album": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AE%E5%A4%8F%E3%81%AE%E6%97%A5%E3%81%AE%E6%83%B3%E3%81%84%E5%87%BA-short-ver/6794301476?i=6794301954",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/28/77/c7/2877c7bb-61fd-9141-86e0-70420bcfab90/4582325377426_Cover.jpg/600x600bb.jpg",
     "yt": "9u1oIxaFXpE",
     "youtube": "https://www.youtube.com/watch?v=9u1oIxaFXpE"
   },
   "1865362325352": {
+    "apple": "https://music.apple.com/jp/album/intersection/1801590336?i=1801590342",
+    "album": "https://music.apple.com/jp/album/intersection/1801590336?i=1801590342",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f7/a9/7a/f7a97a7e-fa4e-066c-1d3d-3f6afcf3a369/5021732645166.jpg/600x600bb.jpg",
     "yt": "QJwC97kW0ME",
     "youtube": "https://www.youtube.com/watch?v=QJwC97kW0ME"
   },
   "1865362326657": {
+    "apple": "https://music.apple.com/jp/album/scarlet-wings/1801470870?i=1801470876",
+    "album": "https://music.apple.com/jp/album/scarlet-wings/1801470870?i=1801470876",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/6f/f1/536ff102-0247-4b71-ce45-bfc6883f1291/5021732643216.jpg/600x600bb.jpg",
     "yt": "o4nMaIdKVw0",
     "youtube": "https://www.youtube.com/watch?v=o4nMaIdKVw0",
     "ytmusic": "https://music.youtube.com/watch?v=o4nMaIdKVw0"
@@ -29534,10 +29594,16 @@
     "youtube": "https://www.youtube.com/watch?v=qHNSOGYWWOY"
   },
   "1490699116192": {
+    "apple": "https://music.apple.com/jp/album/punitive-justice-%E5%8D%83%E5%B9%B4%E3%81%AE%E9%8C%AF%E7%B6%9C/6773565159?i=6773565660",
+    "album": "https://music.apple.com/jp/album/punitive-justice-%E5%8D%83%E5%B9%B4%E3%81%AE%E9%8C%AF%E7%B6%9C/6773565159?i=6773565660",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/f0/ef/75f0efce-9666-3a7a-ba14-b422f71f447e/4582325373312_Cover.jpg/600x600bb.jpg",
     "yt": "AqeL8OZAOdE",
     "youtube": "https://www.youtube.com/watch?v=AqeL8OZAOdE"
   },
   "1603385446417": {
+    "apple": "https://music.apple.com/jp/album/%E6%98%A5%E8%89%B2%E3%83%A1%E3%83%AD%E3%83%87%E3%82%A3-jumping-lover-mix/1008719745?i=1008719761",
+    "album": "https://music.apple.com/jp/album/%E6%98%A5%E8%89%B2%E3%83%A1%E3%83%AD%E3%83%87%E3%82%A3-jumping-lover-mix/1008719745?i=1008719761",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/40/be/48/40be4853-b558-9244-8056-85faf0c77578/859751985667_cover.jpg/600x600bb.jpg",
     "yt": "9ORsFaGFhtQ",
     "youtube": "https://www.youtube.com/watch?v=9ORsFaGFhtQ"
   },
@@ -29545,23 +29611,55 @@
     "yt": "ikukMbOUCUo",
     "youtube": "https://www.youtube.com/watch?v=ikukMbOUCUo"
   },
+  "1603385648257": {
+    "apple": "https://music.apple.com/jp/album/%E6%81%8B%E9%A2%A8-sweetheart-feat-lira/925629902?i=925629944",
+    "album": "https://music.apple.com/jp/album/%E6%81%8B%E9%A2%A8-sweetheart-feat-lira/925629902?i=925629944",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/44/e2/52/44e25256-601e-4591-b9a3-ce46f98cb289/4988044948280_cover.jpg/600x600bb.jpg"
+  },
   "1528981245517": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%90%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%A8%E3%83%B3%E3%82%B2%E3%83%BC%E3%82%B8-saqwz-remix/1008704753?i=1008704843",
+    "album": "https://music.apple.com/jp/album/%E3%83%90%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%A8%E3%83%B3%E3%82%B2%E3%83%BC%E3%82%B8-saqwz-remix/1008704753?i=1008704843",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/42/a1/a3/42a1a3d8-f8cf-4685-1032-a7b887cfd156/859751985193_cover.jpg/600x600bb.jpg",
     "yt": "x8fWlqVLxQU",
     "youtube": "https://www.youtube.com/watch?v=x8fWlqVLxQU"
   },
   "1528247793322": {
+    "apple": "https://music.apple.com/jp/album/dang-dang-%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB-my-life-feat-lira/925629902?i=925629906",
+    "album": "https://music.apple.com/jp/album/dang-dang-%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB-my-life-feat-lira/925629902?i=925629906",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/44/e2/52/44e25256-601e-4591-b9a3-ce46f98cb289/4988044948280_cover.jpg/600x600bb.jpg",
     "yt": "TtbpARL5qhY",
     "youtube": "https://www.youtube.com/watch?v=TtbpARL5qhY",
     "ytmusic": "https://music.youtube.com/watch?v=TtbpARL5qhY"
   },
   "1708011326257": {
+    "apple": "https://music.apple.com/jp/album/%E5%B9%B8%E3%81%9B%E3%81%AA%E6%84%9B%E3%81%AE%E3%82%AB%E3%82%BF%E3%83%81-feat-lira/925629902?i=925629950",
+    "album": "https://music.apple.com/jp/album/%E5%B9%B8%E3%81%9B%E3%81%AA%E6%84%9B%E3%81%AE%E3%82%AB%E3%82%BF%E3%83%81-feat-lira/925629902?i=925629950",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/44/e2/52/44e25256-601e-4591-b9a3-ce46f98cb289/4988044948280_cover.jpg/600x600bb.jpg",
     "yt": "C05hdm7Lm0U",
     "youtube": "https://www.youtube.com/watch?v=C05hdm7Lm0U",
     "ytmusic": "https://music.youtube.com/watch?v=C05hdm7Lm0U"
   },
+  "1603473262477": {
+    "apple": "https://music.apple.com/jp/album/flowering-bride-feat-ceui/1445522184?i=1445522191",
+    "album": "https://music.apple.com/jp/album/flowering-bride-feat-ceui/1445522184?i=1445522191",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/0a/b7/df/0ab7dfba-8be4-8c02-3eb0-cb64d13a5673/Overtake.jpg/600x600bb.jpg"
+  },
   "1603473256387": {
+    "apple": "https://music.apple.com/jp/album/%E7%A9%BA%E3%82%92%E8%A6%8B%E3%82%8B%E9%AD%94%E6%B3%95-feat-%E8%8C%B6%E5%A4%AA/1445522184?i=1445522193",
+    "album": "https://music.apple.com/jp/album/%E7%A9%BA%E3%82%92%E8%A6%8B%E3%82%8B%E9%AD%94%E6%B3%95-feat-%E8%8C%B6%E5%A4%AA/1445522184?i=1445522193",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/0a/b7/df/0ab7dfba-8be4-8c02-3eb0-cb64d13a5673/Overtake.jpg/600x600bb.jpg",
     "yt": "lfRz1R0AIrw",
     "youtube": "https://www.youtube.com/watch?v=lfRz1R0AIrw"
+  },
+  "1603473406897": {
+    "apple": "https://music.apple.com/jp/album/bon-voyage-feat-iyuna/1445522184?i=1445522194",
+    "album": "https://music.apple.com/jp/album/bon-voyage-feat-iyuna/1445522184?i=1445522194",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/0a/b7/df/0ab7dfba-8be4-8c02-3eb0-cb64d13a5673/Overtake.jpg/600x600bb.jpg"
+  },
+  "1603473406462": {
+    "apple": "https://music.apple.com/jp/album/feel-you/1815250474?i=1815250746",
+    "album": "https://music.apple.com/jp/album/feel-you/1815250474?i=1815250746",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/0a/75/a30a7502-9567-394b-b2cc-c7cf71a8785e/4571312471285_cover.jpg/600x600bb.jpg"
   },
   "1798522878112": {
     "yt": "q9pLVuAm-QA",
@@ -29572,19 +29670,49 @@
     "youtube": "https://www.youtube.com/watch?v=Vt34r54P674"
   },
   "1490635725817": {
+    "apple": "https://music.apple.com/jp/album/everlasting/1112168891?i=1112169201",
+    "album": "https://music.apple.com/jp/album/everlasting/1112168891?i=1112169201",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music30/v4/d3/b7/5a/d3b75a03-bf1c-e74a-3371-c1fbad41aa68/LXCH-0016.jpg/600x600bb.jpg",
     "yt": "5R7A4G1LjtQ",
     "youtube": "https://www.youtube.com/watch?v=5R7A4G1LjtQ"
   },
   "1642407249742": {
+    "apple": "https://music.apple.com/jp/album/cosmocall-field/1548884394?i=1548884395",
+    "album": "https://music.apple.com/jp/album/cosmocall-field/1548884394?i=1548884395",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/de/5e/11/de5e11af-148a-1807-1226-058734f0accd/094927_J.jpg/600x600bb.jpg",
     "yt": "ZLhqSXyZkbc",
     "youtube": "https://www.youtube.com/watch?v=ZLhqSXyZkbc"
   },
+  "1827423279222": {
+    "apple": "https://music.apple.com/jp/album/crystalline/1548884394?i=1548884399",
+    "album": "https://music.apple.com/jp/album/crystalline/1548884394?i=1548884399",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/de/5e/11/de5e11af-148a-1807-1226-058734f0accd/094927_J.jpg/600x600bb.jpg"
+  },
+  "1827423279657": {
+    "apple": "https://music.apple.com/jp/album/your-reply/1548884394?i=1548884397",
+    "album": "https://music.apple.com/jp/album/your-reply/1548884394?i=1548884397",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/de/5e/11/de5e11af-148a-1807-1226-058734f0accd/094927_J.jpg/600x600bb.jpg",
+    "yt": "t9d39RGs0JU",
+    "youtube": "https://www.youtube.com/watch?v=t9d39RGs0JU",
+    "ytmusic": "https://music.youtube.com/watch?v=t9d39RGs0JU"
+  },
   "1827423278352": {
+    "apple": "https://music.apple.com/jp/album/milky-way/1548884394?i=1548884398",
+    "album": "https://music.apple.com/jp/album/milky-way/1548884394?i=1548884398",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/de/5e/11/de5e11af-148a-1807-1226-058734f0accd/094927_J.jpg/600x600bb.jpg",
     "yt": "2GJMeQlZ1_4",
     "youtube": "https://www.youtube.com/watch?v=2GJMeQlZ1_4",
     "ytmusic": "https://music.youtube.com/watch?v=2GJMeQlZ1_4"
   },
+  "1827423278787": {
+    "apple": "https://music.apple.com/jp/album/at-last/1548884394?i=1548884396",
+    "album": "https://music.apple.com/jp/album/at-last/1548884394?i=1548884396",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/de/5e/11/de5e11af-148a-1807-1226-058734f0accd/094927_J.jpg/600x600bb.jpg"
+  },
   "1827423284442": {
+    "apple": "https://music.apple.com/jp/album/deeds-not-words/1548884394?i=1548884402",
+    "album": "https://music.apple.com/jp/album/deeds-not-words/1548884394?i=1548884402",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/de/5e/11/de5e11af-148a-1807-1226-058734f0accd/094927_J.jpg/600x600bb.jpg",
     "yt": "KpbU6IipzII",
     "youtube": "https://www.youtube.com/watch?v=KpbU6IipzII"
   },
@@ -29593,33 +29721,71 @@
     "youtube": "https://www.youtube.com/watch?v=u8xP1FJC5Zk"
   },
   "1284358877632": {
+    "apple": "https://music.apple.com/jp/album/you-know-my-heart-feat-%E8%97%A4%E5%A0%82%E3%81%BF%E3%81%95%E3%81%8D-%E6%A6%8E%E6%B4%A5%E3%81%BE%E3%81%8A/1546838507?i=1546838520",
+    "album": "https://music.apple.com/jp/album/you-know-my-heart-feat-%E8%97%A4%E5%A0%82%E3%81%BF%E3%81%95%E3%81%8D-%E6%A6%8E%E6%B4%A5%E3%81%BE%E3%81%8A/1546838507?i=1546838520",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg",
     "yt": "buUY-W87Et4",
     "youtube": "https://www.youtube.com/watch?v=buUY-W87Et4",
     "ytmusic": "https://music.youtube.com/watch?v=buUY-W87Et4"
   },
   "1684187496687": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%B9%E3%83%8E%E3%82%A6%E3%83%A1%E3%83%B0%E3%83%87%E3%83%B3/604882394?i=604882801",
+    "album": "https://music.apple.com/jp/album/%E3%82%B9%E3%83%8E%E3%82%A6%E3%83%A1%E3%83%B0%E3%83%87%E3%83%B3/604882394?i=604882801",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/19/41/2d/19412db9-a5c2-d0fd-5078-cdc128b54970/AVCA-62137.jpg/600x600bb.jpg",
     "yt": "ECR1ops5SWQ",
     "youtube": "https://www.youtube.com/watch?v=ECR1ops5SWQ"
   },
   "1684187495382": {
+    "apple": "https://music.apple.com/jp/album/deep-side-distance/604882394?i=604882781",
+    "album": "https://music.apple.com/jp/album/deep-side-distance/604882394?i=604882781",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/19/41/2d/19412db9-a5c2-d0fd-5078-cdc128b54970/AVCA-62137.jpg/600x600bb.jpg",
     "yt": "aELQdeacikI",
     "youtube": "https://www.youtube.com/watch?v=aELQdeacikI"
   },
   "1684187495817": {
+    "apple": "https://music.apple.com/jp/album/apocalypse-of-destiny/604882394?i=604882658",
+    "album": "https://music.apple.com/jp/album/apocalypse-of-destiny/604882394?i=604882658",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/19/41/2d/19412db9-a5c2-d0fd-5078-cdc128b54970/AVCA-62137.jpg/600x600bb.jpg",
     "yt": "931_6_xwgnc",
     "youtube": "https://www.youtube.com/watch?v=931_6_xwgnc"
   },
+  "1684187494512": {
+    "apple": "https://music.apple.com/jp/album/true-4-eyes/550946327?i=550946493",
+    "album": "https://music.apple.com/jp/album/true-4-eyes/550946327?i=550946493",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/ef/c4/65/efc4652d-90d1-f9f3-fb84-7d92ca8fcafd/AVCA-49736.jpg/600x600bb.jpg"
+  },
   "1684187494947": {
+    "apple": "https://music.apple.com/jp/album/no-place-like-a-stage/1745968006?i=1745968189",
+    "album": "https://music.apple.com/jp/album/no-place-like-a-stage/1745968006?i=1745968189",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4a/9a/db/4a9adb8f-e02b-144f-9d85-d402a1856b57/4562409330141.jpg/600x600bb.jpg",
     "yt": "LoiYv9IH7Ps",
     "youtube": "https://www.youtube.com/watch?v=LoiYv9IH7Ps"
   },
+  "1684928677092": {
+    "apple": "https://music.apple.com/jp/album/%E5%93%80%E9%A1%98%E8%BC%AA%E5%BB%BB/398125215?i=398125217",
+    "album": "https://music.apple.com/jp/album/%E5%93%80%E9%A1%98%E8%BC%AA%E5%BB%BB/398125215?i=398125217",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/66/ff/71/mzi.nojyvssj.jpg/600x600bb.jpg"
+  },
   "1085126449096": {
+    "apple": "https://music.apple.com/jp/album/ceremony/1748941861?i=1748942061",
+    "album": "https://music.apple.com/jp/album/ceremony/1748941861?i=1748942061",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/64/d9/9264d92e-43e3-f8aa-a10e-b5c37a2d3b4c/4562409330370.jpg/600x600bb.jpg",
     "yt": "8NaWAufEMWA",
     "youtube": "https://www.youtube.com/watch?v=8NaWAufEMWA"
   },
   "1085126451706": {
     "yt": "JRFhtsV12RI",
     "youtube": "https://www.youtube.com/watch?v=JRFhtsV12RI"
+  },
+  "1761149639397": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%A1%E3%82%B8%E3%83%9E%E3%82%B0%E3%83%AD-beautiful/651381574?i=651382771",
+    "album": "https://music.apple.com/jp/album/%E3%83%A1%E3%82%B8%E3%83%9E%E3%82%B0%E3%83%AD-beautiful/651381574?i=651382771",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/2c/71/12/2c711201-3409-5db0-79a8-f216441f451b/4511820-92440.jpg/600x600bb.jpg"
+  },
+  "1603232540872": {
+    "apple": "https://music.apple.com/jp/album/slg%E3%81%A0%E3%81%A3%E3%81%A6%E6%AC%B2%E3%81%97%E3%81%84%E3%82%82%E3%82%93/1704091395?i=1704091706",
+    "album": "https://music.apple.com/jp/album/slg%E3%81%A0%E3%81%A3%E3%81%A6%E6%AC%B2%E3%81%97%E3%81%84%E3%82%82%E3%82%93/1704091395?i=1704091706",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/41/e3/8d/41e38d9f-8a37-0022-c734-3beea127ac42/3617221759166_cover.jpg/600x600bb.jpg"
   },
   "1722562166172": {
     "yt": "qko8VxccRwc",
@@ -29634,8 +29800,21 @@
     "youtube": "https://www.youtube.com/watch?v=UUZ3wZvbLr0"
   },
   "1641844089607": {
+    "apple": "https://music.apple.com/jp/album/resistance/1229966817?i=1229966827",
+    "album": "https://music.apple.com/jp/album/resistance/1229966817?i=1229966827",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1a/6c/e3/1a6ce378-5a0a-302f-0f61-55ebd82c77ae/008187_4545291006059.jpg/600x600bb.jpg",
     "yt": "dR0G3iVtPiE",
     "youtube": "https://www.youtube.com/watch?v=dR0G3iVtPiE"
+  },
+  "1826841032592": {
+    "apple": "https://music.apple.com/jp/album/brand-new-day/1722839681?i=1722839820",
+    "album": "https://music.apple.com/jp/album/brand-new-day/1722839681?i=1722839820",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b5/fc/09/b5fc0978-e7a5-3927-60ff-5b503f8dd7b7/3617222344996_cover.jpg/600x600bb.jpg"
+  },
+  "1761148887282": {
+    "apple": "https://music.apple.com/jp/album/many-universes-psp%E7%94%A8%E3%82%B2%E3%83%BC%E3%83%A0-norn9-%E3%83%8E%E3%83%AB%E3%83%B3-%E3%83%8E%E3%83%8D%E3%83%83%E3%83%88-ed%E3%83%86%E3%83%BC%E3%83%9E/648697182?i=648697314",
+    "album": "https://music.apple.com/jp/album/many-universes-psp%E7%94%A8%E3%82%B2%E3%83%BC%E3%83%A0-norn9-%E3%83%8E%E3%83%AB%E3%83%B3-%E3%83%8E%E3%83%8D%E3%83%83%E3%83%88-ed%E3%83%86%E3%83%BC%E3%83%9E/648697182?i=648697314",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/e6/08/6d/e6086d15-7d5a-1875-9cc2-21077d42e145/GNCA-7181.jpg/600x600bb.jpg"
   },
   "1084063222966": {
     "yt": "U89y3Az7-qU",
@@ -29654,136 +29833,259 @@
     "youtube": "https://www.youtube.com/watch?v=ddJke1T33wg"
   },
   "1085039783176": {
+    "apple": "https://music.apple.com/jp/album/true-magic/880905989?i=880906006",
+    "album": "https://music.apple.com/jp/album/true-magic/880905989?i=880906006",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/14/8c/cc/148ccc7c-7a62-7e6b-eb76-0b1befe51c3f/4540295010156_cover.jpg/600x600bb.jpg",
     "yt": "sB4WQL01w90",
     "youtube": "https://www.youtube.com/watch?v=sB4WQL01w90"
   },
   "1085039781871": {
+    "apple": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%8C%E3%81%84%E3%81%9F%E6%9C%AA%E6%9D%A5-%E5%90%9B%E3%81%A8%E3%81%84%E3%81%AA%E3%81%84%E6%9C%AA%E6%9D%A5/880905989?i=880906016",
+    "album": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%8C%E3%81%84%E3%81%9F%E6%9C%AA%E6%9D%A5-%E5%90%9B%E3%81%A8%E3%81%84%E3%81%AA%E3%81%84%E6%9C%AA%E6%9D%A5/880905989?i=880906016",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/14/8c/cc/148ccc7c-7a62-7e6b-eb76-0b1befe51c3f/4540295010156_cover.jpg/600x600bb.jpg",
     "yt": "BQ93avnHe1Y",
     "youtube": "https://www.youtube.com/watch?v=BQ93avnHe1Y",
     "ytmusic": "https://music.youtube.com/watch?v=BQ93avnHe1Y"
+  },
+  "1085039232466": {
+    "apple": "https://music.apple.com/jp/album/%E6%98%A5%E9%A2%A8%E3%81%AB%E9%A1%98%E3%81%84%E3%82%92/880905989?i=880906011",
+    "album": "https://music.apple.com/jp/album/%E6%98%A5%E9%A2%A8%E3%81%AB%E9%A1%98%E3%81%84%E3%82%92/880905989?i=880906011",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/14/8c/cc/148ccc7c-7a62-7e6b-eb76-0b1befe51c3f/4540295010156_cover.jpg/600x600bb.jpg"
   },
   "1603644493702": {
     "yt": "8rY8T62-Evs",
     "youtube": "https://www.youtube.com/watch?v=8rY8T62-Evs"
   },
   "1603320556162": {
+    "apple": "https://music.apple.com/jp/album/bright-answer-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1323942008?i=1323942141",
+    "album": "https://music.apple.com/jp/album/bright-answer-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1323942008?i=1323942141",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/66/95/b7/6695b79c-ba82-9e76-db74-2fa22f1a1054/4571312470356_cover.jpg/600x600bb.jpg",
     "yt": "1kYZ40y91Jc",
     "youtube": "https://www.youtube.com/watch?v=1kYZ40y91Jc",
     "ytmusic": "https://music.youtube.com/watch?v=1kYZ40y91Jc"
   },
   "1489958694427": {
+    "apple": "https://music.apple.com/jp/album/%E5%85%89%E3%81%AE%E8%A1%8C%E6%96%B9-feat-iyuna/1327159443?i=1327159942",
+    "album": "https://music.apple.com/jp/album/%E5%85%89%E3%81%AE%E8%A1%8C%E6%96%B9-feat-iyuna/1327159443?i=1327159942",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/14/d5/3814d582-0e3c-3456-9ad1-315f4a2506e8/4571312470509_cover.jpg/600x600bb.jpg",
     "yt": "87H6dzUvbKM",
     "youtube": "https://www.youtube.com/watch?v=87H6dzUvbKM",
     "ytmusic": "https://music.youtube.com/watch?v=87H6dzUvbKM"
   },
   "1489959979852": {
+    "apple": "https://music.apple.com/jp/album/my-white-landscape-feat-yuiko/1327214934?i=1327214938",
+    "album": "https://music.apple.com/jp/album/my-white-landscape-feat-yuiko/1327214934?i=1327214938",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f6/a0/7f/f6a07f77-68b0-1a92-b31a-ca5a8eb4d050/4571312470516_cover.jpg/600x600bb.jpg",
     "yt": "X3GRxpsoEV8",
     "youtube": "https://www.youtube.com/watch?v=X3GRxpsoEV8",
     "ytmusic": "https://music.youtube.com/watch?v=X3GRxpsoEV8"
   },
   "1746209071237": {
+    "apple": "https://music.apple.com/jp/album/melody-memory-feat-nao/1328794234?i=1328794882",
+    "album": "https://music.apple.com/jp/album/melody-memory-feat-nao/1328794234?i=1328794882",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/62/83/43/6283434f-1e8d-66c4-d78d-6db85e186ae0/4571312470608_cover.jpg/600x600bb.jpg",
     "yt": "sgdXzvccB80",
     "youtube": "https://www.youtube.com/watch?v=sgdXzvccB80",
     "ytmusic": "https://music.youtube.com/watch?v=sgdXzvccB80"
   },
   "1669334897272": {
+    "apple": "https://music.apple.com/jp/album/%E8%BF%BD%E6%86%B6%E3%83%8E%E3%83%B4%E3%82%A1-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1321809005?i=1321809282",
+    "album": "https://music.apple.com/jp/album/%E8%BF%BD%E6%86%B6%E3%83%8E%E3%83%B4%E3%82%A1-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1321809005?i=1321809282",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ed/8d/82/ed8d82de-512c-5542-1232-5f97b18c6309/4571312470349_cover.jpg/600x600bb.jpg",
     "yt": "xWZf7wMMXjM",
     "youtube": "https://www.youtube.com/watch?v=xWZf7wMMXjM",
     "ytmusic": "https://music.youtube.com/watch?v=xWZf7wMMXjM"
   },
   "1669334897707": {
+    "apple": "https://music.apple.com/jp/album/go-ahead-feat-%E9%9C%9C%E6%9C%88%E3%81%AF%E3%82%8B%E3%81%8B-%E8%8C%B6%E5%A4%AA-%E7%89%87%E9%9C%A7%E7%83%88%E7%81%AB/1321809005?i=1321809288",
+    "album": "https://music.apple.com/jp/album/go-ahead-feat-%E9%9C%9C%E6%9C%88%E3%81%AF%E3%82%8B%E3%81%8B-%E8%8C%B6%E5%A4%AA-%E7%89%87%E9%9C%A7%E7%83%88%E7%81%AB/1321809005?i=1321809288",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ed/8d/82/ed8d82de-512c-5542-1232-5f97b18c6309/4571312470349_cover.jpg/600x600bb.jpg",
     "yt": "CSMW-ATKrZ4",
     "youtube": "https://www.youtube.com/watch?v=CSMW-ATKrZ4",
     "ytmusic": "https://music.youtube.com/watch?v=CSMW-ATKrZ4"
   },
   "1311756594862": {
+    "apple": "https://music.apple.com/jp/album/%E6%9C%88%E3%81%A8%E5%A4%AA%E9%99%BD-feat-%E7%B5%90%E6%9C%88%E3%81%9D%E3%82%89/1435474127?i=1435474368",
+    "album": "https://music.apple.com/jp/album/%E6%9C%88%E3%81%A8%E5%A4%AA%E9%99%BD-feat-%E7%B5%90%E6%9C%88%E3%81%9D%E3%82%89/1435474127?i=1435474368",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/1c/17/bd/1c17bd11-4e85-0de2-be51-29be935b18c4/4571312470868_cover.jpg/600x600bb.jpg",
     "yt": "M5v4PO8NmkY",
     "youtube": "https://www.youtube.com/watch?v=M5v4PO8NmkY",
     "ytmusic": "https://music.youtube.com/watch?v=M5v4PO8NmkY"
   },
   "1311756794962": {
+    "apple": "https://music.apple.com/jp/album/re-start-feat-%E5%BD%A9%E9%9F%B3/1551269539?i=1551269771",
+    "album": "https://music.apple.com/jp/album/re-start-feat-%E5%BD%A9%E9%9F%B3/1551269539?i=1551269771",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/75/68/b77568ac-f312-8a66-8240-60d6da091e87/4571312471087_cover.jpg/600x600bb.jpg",
     "yt": "q_hJFflNxAs",
     "youtube": "https://www.youtube.com/watch?v=q_hJFflNxAs",
     "ytmusic": "https://music.youtube.com/watch?v=q_hJFflNxAs"
   },
   "1603323203572": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%B5%E3%81%9F%E3%82%8A%E3%81%AE%E6%99%AF%E8%89%B2-feat-nao/1323942008?i=1323942145",
+    "album": "https://music.apple.com/jp/album/%E3%81%B5%E3%81%9F%E3%82%8A%E3%81%AE%E6%99%AF%E8%89%B2-feat-nao/1323942008?i=1323942145",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/66/95/b7/6695b79c-ba82-9e76-db74-2fa22f1a1054/4571312470356_cover.jpg/600x600bb.jpg",
     "yt": "Cjv1-NJN6I8",
     "youtube": "https://www.youtube.com/watch?v=Cjv1-NJN6I8",
     "ytmusic": "https://music.youtube.com/watch?v=Cjv1-NJN6I8"
   },
   "1489958693992": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%A6%E3%83%A1%E3%83%8E%E3%83%84%E3%83%9C%E3%83%9F-feat-%E8%8C%B6%E5%A4%AA/1435141332?i=1435141500",
+    "album": "https://music.apple.com/jp/album/%E3%83%A6%E3%83%A1%E3%83%8E%E3%83%84%E3%83%9C%E3%83%9F-feat-%E8%8C%B6%E5%A4%AA/1435141332?i=1435141500",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f7/6b/46/f76b4611-49af-b154-c8c6-250f672eb541/4571312470837_cover.jpg/600x600bb.jpg",
     "yt": "vxqE0xQ3nTI",
     "youtube": "https://www.youtube.com/watch?v=vxqE0xQ3nTI",
     "ytmusic": "https://music.youtube.com/watch?v=vxqE0xQ3nTI"
   },
   "1641432130252": {
+    "apple": "https://music.apple.com/jp/album/sweet-world-feat-yuiko/1703513362?i=1703513617",
+    "album": "https://music.apple.com/jp/album/sweet-world-feat-yuiko/1703513362?i=1703513617",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/83/58/dd/8358dd9c-3484-fb23-8bb0-2caf8b0779d8/4571312471292_cover.jpg/600x600bb.jpg",
     "yt": "5dFTnYBBQSs",
     "youtube": "https://www.youtube.com/watch?v=5dFTnYBBQSs",
     "ytmusic": "https://music.youtube.com/watch?v=5dFTnYBBQSs"
   },
+  "1283682249487": {
+    "apple": "https://music.apple.com/jp/album/trip-trip-arrange-ver/897955014?i=897955130",
+    "album": "https://music.apple.com/jp/album/trip-trip-arrange-ver/897955014?i=897955130",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/04/5d/7c/045d7c10-9362-c6d0-c1bd-3813f892cf87/Symphony.wav_Vol5.jpg/600x600bb.jpg"
+  },
   "1490699122282": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88-%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/6773565159?i=6773565668",
+    "album": "https://music.apple.com/jp/album/%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88-%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88/6773565159?i=6773565668",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/f0/ef/75f0efce-9666-3a7a-ba14-b422f71f447e/4582325373312_Cover.jpg/600x600bb.jpg",
     "yt": "3UAN3WrWUW4",
     "youtube": "https://www.youtube.com/watch?v=3UAN3WrWUW4"
   },
   "1940115432357": {
+    "apple": "https://music.apple.com/jp/album/%E6%84%9B%E3%81%AE%E8%8A%B1%E6%9D%9F/661066787?i=661067071",
+    "album": "https://music.apple.com/jp/album/%E6%84%9B%E3%81%AE%E8%8A%B1%E6%9D%9F/661066787?i=661067071",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/1b/4e/31/1b4e31b8-eb7c-d95e-6405-a54af124770c/LACM_14106.jpg/600x600bb.jpg",
     "yt": "ooKciKNlhck",
     "youtube": "https://www.youtube.com/watch?v=ooKciKNlhck"
   },
   "1746293246782": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%8B%E3%81%91%E3%81%8C%E3%81%88%E3%81%AE%E3%81%AA%E3%81%84%E6%83%B3%E3%81%84-%E3%81%9A%E3%81%A3%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB/6794976937?i=6794976940",
+    "album": "https://music.apple.com/jp/album/%E3%81%8B%E3%81%91%E3%81%8C%E3%81%88%E3%81%AE%E3%81%AA%E3%81%84%E6%83%B3%E3%81%84-%E3%81%9A%E3%81%A3%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB/6794976937?i=6794976940",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/d2/20/2dd2208e-f089-7f32-1c08-f3dfe91bfb08/4582325372803_Cover.jpg/600x600bb.jpg",
     "yt": "ScUPBQOnbys",
     "youtube": "https://www.youtube.com/watch?v=ScUPBQOnbys"
   },
   "1283535778462": {
+    "apple": "https://music.apple.com/jp/album/%E5%B9%BB%E5%BD%B1%E3%81%AE%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9/646283340?i=646283752",
+    "album": "https://music.apple.com/jp/album/%E5%B9%BB%E5%BD%B1%E3%81%AE%E3%83%A1%E3%83%93%E3%82%A6%E3%82%B9/646283340?i=646283752",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/84/d8/a5/84d8a586-a143-a8cf-d117-a5c3d030cd52/FVCG1232_1.jpg/600x600bb.jpg",
     "yt": "4GduwNHbFF4",
     "youtube": "https://www.youtube.com/watch?v=4GduwNHbFF4"
   },
   "1746293247217": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%97%E3%83%AA%E3%83%9F%E3%83%87%E3%82%A3%E3%82%A2/6791129564?i=6791129875",
+    "album": "https://music.apple.com/jp/album/%E3%83%97%E3%83%AA%E3%83%9F%E3%83%87%E3%82%A3%E3%82%A2/6791129564?i=6791129875",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "UART0LRdzS0",
     "youtube": "https://www.youtube.com/watch?v=UART0LRdzS0"
   },
   "1746293248087": {
+    "apple": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%AE%E4%BA%8B/6791129564?i=6791129657",
+    "album": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%AE%E4%BA%8B/6791129564?i=6791129657",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "P8Ghg_ZjoWE",
     "youtube": "https://www.youtube.com/watch?v=P8Ghg_ZjoWE"
   },
   "1746293247652": {
+    "apple": "https://music.apple.com/jp/album/%E8%92%BC%E3%81%84%E6%98%9F/6791129564?i=6791129635",
+    "album": "https://music.apple.com/jp/album/%E8%92%BC%E3%81%84%E6%98%9F/6791129564?i=6791129635",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "wNOj4DQ4OqI",
     "youtube": "https://www.youtube.com/watch?v=wNOj4DQ4OqI"
   },
   "1746293248957": {
+    "apple": "https://music.apple.com/jp/album/candy-love/6791129564?i=6791129638",
+    "album": "https://music.apple.com/jp/album/candy-love/6791129564?i=6791129638",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "5d9hp18qm7g",
     "youtube": "https://www.youtube.com/watch?v=5d9hp18qm7g"
   },
   "1746293248522": {
+    "apple": "https://music.apple.com/jp/album/mind-loop/6791129564?i=6791129641",
+    "album": "https://music.apple.com/jp/album/mind-loop/6791129564?i=6791129641",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "lI5MTlRDzpc",
     "youtube": "https://www.youtube.com/watch?v=lI5MTlRDzpc"
   },
   "1746293242867": {
+    "apple": "https://music.apple.com/jp/album/blue-moon/6791129564?i=6791129643",
+    "album": "https://music.apple.com/jp/album/blue-moon/6791129564?i=6791129643",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "9NmBHev2cYk",
     "youtube": "https://www.youtube.com/watch?v=9NmBHev2cYk"
   },
   "1746293242432": {
+    "apple": "https://music.apple.com/jp/album/rainbow-highway/6791129564?i=6791129645",
+    "album": "https://music.apple.com/jp/album/rainbow-highway/6791129564?i=6791129645",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "3X-ohsRkUBY",
     "youtube": "https://www.youtube.com/watch?v=3X-ohsRkUBY"
   },
   "1746293098882": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%8F%E3%83%AB%E3%82%AB-%E3%82%AB%E3%83%8A%E3%82%BF/6791129564?i=6791129649",
+    "album": "https://music.apple.com/jp/album/%E3%83%8F%E3%83%AB%E3%82%AB-%E3%82%AB%E3%83%8A%E3%82%BF/6791129564?i=6791129649",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1c/b1/dc1cb190-4c2c-71de-cacd-733fc29c2201/4560248015489_Cover.jpg/600x600bb.jpg",
     "yt": "w2NZ0wWFmVw",
     "youtube": "https://www.youtube.com/watch?v=w2NZ0wWFmVw"
   },
   "1788901598877": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%87%E3%83%BC%E3%83%88-%E3%82%A4%E3%83%B3-%E3%83%A6%E3%83%BC%E3%83%88%E3%83%94%E3%82%A2/1447344347?i=1447344364",
+    "album": "https://music.apple.com/jp/album/%E3%83%87%E3%83%BC%E3%83%88-%E3%82%A4%E3%83%B3-%E3%83%A6%E3%83%BC%E3%83%88%E3%83%94%E3%82%A2/1447344347?i=1447344364",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6c/8c/b1/6c8cb116-0e6f-a4dc-8d74-875001431908/COCX-40603.jpg/600x600bb.jpg",
     "yt": "LK9TZ8xP8AA",
     "youtube": "https://www.youtube.com/watch?v=LK9TZ8xP8AA",
     "ytmusic": "https://music.youtube.com/watch?v=LK9TZ8xP8AA"
   },
   "1788901597572": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%8D%E3%81%A3%E3%81%A8-%E3%81%9A%E3%81%A3%E3%81%A8/1616623549?i=1616623667",
+    "album": "https://music.apple.com/jp/album/%E3%81%8D%E3%81%A3%E3%81%A8-%E3%81%9A%E3%81%A3%E3%81%A8/1616623549?i=1616623667",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/2d/7e/9b2d7ed7-05a2-8b9c-f4bc-1ed595e297d2/COCX-41664.jpg/600x600bb.jpg",
     "yt": "TJt1sQa6h4Q",
     "youtube": "https://www.youtube.com/watch?v=TJt1sQa6h4Q",
     "ytmusic": "https://music.youtube.com/watch?v=TJt1sQa6h4Q"
   },
+  "1789464355332": {
+    "apple": "https://music.apple.com/jp/album/%E6%9A%81%E9%97%87/1051627922?i=1051627923",
+    "album": "https://music.apple.com/jp/album/%E6%9A%81%E9%97%87/1051627922?i=1051627923",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/89/13/43/891343b1-d0fc-03a4-202c-7cda9c3eaad6/GNCA-7183.jpg/600x600bb.jpg"
+  },
+  "1789464355767": {
+    "apple": "https://music.apple.com/jp/album/%E4%B9%85%E9%81%A0%E3%83%8E%E5%85%89/1051627922?i=1051627924",
+    "album": "https://music.apple.com/jp/album/%E4%B9%85%E9%81%A0%E3%83%8E%E5%85%89/1051627922?i=1051627924",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/89/13/43/891343b1-d0fc-03a4-202c-7cda9c3eaad6/GNCA-7183.jpg/600x600bb.jpg"
+  },
   "1902411973527": {
+    "apple": "https://music.apple.com/jp/album/%E5%B4%87%E3%82%81%E3%82%88-%E6%88%91%E3%81%AF%E7%A5%9E%E9%AC%BC/973837285?i=973837661",
+    "album": "https://music.apple.com/jp/album/%E5%B4%87%E3%82%81%E3%82%88-%E6%88%91%E3%81%AF%E7%A5%9E%E9%AC%BC/973837285?i=973837661",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/43/a2/2d/43a22d63-b2f8-131b-e286-f3426f1bb0bf/Jak_GUSTCD-10014.jpg/600x600bb.jpg",
     "yt": "yh30Taxfmjs",
     "youtube": "https://www.youtube.com/watch?v=yh30Taxfmjs"
   },
+  "1084886339101": {
+    "apple": "https://music.apple.com/jp/album/%E5%A4%A2%E3%81%AF%E3%81%8A%E3%81%84%E3%81%97%E3%81%8F%E7%84%A1%E9%99%90%E5%A4%A7-full/1587923349?i=1587924793",
+    "album": "https://music.apple.com/jp/album/%E5%A4%A2%E3%81%AF%E3%81%8A%E3%81%84%E3%81%97%E3%81%8F%E7%84%A1%E9%99%90%E5%A4%A7-full/1587923349?i=1587924793",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f2/95/82/f2958238-d548-6f86-56b5-fe118625d9f2/859757381340_cover.jpg/600x600bb.jpg",
+    "yt": "IxCtv2J3q8k",
+    "youtube": "https://www.youtube.com/watch?v=IxCtv2J3q8k",
+    "ytmusic": "https://music.youtube.com/watch?v=IxCtv2J3q8k"
+  },
+  "1669571224507": {
+    "apple": "https://music.apple.com/jp/album/%E8%BC%9D%E3%81%8B%E3%81%97%E3%81%8D%E6%97%A5%E5%B8%B8/1624441669?i=1624441671",
+    "album": "https://music.apple.com/jp/album/%E8%BC%9D%E3%81%8B%E3%81%97%E3%81%8D%E6%97%A5%E5%B8%B8/1624441669?i=1624441671",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e0/f1/81/e0f18141-a64b-c992-230b-9da98fba6f56/PA00099619_1_149929_jacket.jpg/600x600bb.jpg",
+    "yt": "BD1bSqc5ZNQ",
+    "youtube": "https://www.youtube.com/watch?v=BD1bSqc5ZNQ",
+    "ytmusic": "https://music.youtube.com/watch?v=BD1bSqc5ZNQ"
+  },
   "1669571224072": {
+    "apple": "https://music.apple.com/jp/album/%E6%98%9F%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89/1624441669?i=1624441672",
+    "album": "https://music.apple.com/jp/album/%E6%98%9F%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89/1624441669?i=1624441672",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e0/f1/81/e0f18141-a64b-c992-230b-9da98fba6f56/PA00099619_1_149929_jacket.jpg/600x600bb.jpg",
     "yt": "4HZzUQ82wE0",
     "youtube": "https://www.youtube.com/watch?v=4HZzUQ82wE0"
   },
@@ -29792,10 +30094,16 @@
     "youtube": "https://www.youtube.com/watch?v=m7sSeFtCtws"
   },
   "1603320905032": {
+    "apple": "https://music.apple.com/jp/album/welcome-berrys/877432178?i=877432182",
+    "album": "https://music.apple.com/jp/album/welcome-berrys/877432178?i=877432182",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/9b/40/bc/9b40bc6e-ead2-1e1d-3c9f-a8899a67ce1a/006926_4580204259214.jpg/600x600bb.jpg",
     "yt": "KjJdDqEAiMI",
     "youtube": "https://www.youtube.com/watch?v=KjJdDqEAiMI"
   },
   "1603320906337": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%BE%E3%81%9F%E5%A5%BD%E3%81%8D%E3%81%AB%E3%81%AA%E3%82%8B/877432178?i=877432186",
+    "album": "https://music.apple.com/jp/album/%E3%81%BE%E3%81%9F%E5%A5%BD%E3%81%8D%E3%81%AB%E3%81%AA%E3%82%8B/877432178?i=877432186",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/9b/40/bc/9b40bc6e-ead2-1e1d-3c9f-a8899a67ce1a/006926_4580204259214.jpg/600x600bb.jpg",
     "yt": "ulXTu6oK4Po",
     "youtube": "https://www.youtube.com/watch?v=ulXTu6oK4Po"
   },
@@ -29804,6 +30112,9 @@
     "youtube": "https://www.youtube.com/watch?v=JG2J2Ohs4ms"
   },
   "1603321108612": {
+    "apple": "https://music.apple.com/jp/album/%E4%BA%8C%E4%BA%BA%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0/1631796707?i=1631796717",
+    "album": "https://music.apple.com/jp/album/%E4%BA%8C%E4%BA%BA%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0/1631796707?i=1631796717",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f5/fd/23/f5fd23b0-f2ac-4a8a-39ef-5e4919206f10/SJRS-075-3356_SMEE_Vocal_Collection_My_Premium_Style.jpg/600x600bb.jpg",
     "yt": "hOZhgo1vPfc",
     "youtube": "https://www.youtube.com/watch?v=hOZhgo1vPfc"
   },
@@ -29819,6 +30130,10 @@
     "yt": "WvcOyBvCu6A",
     "youtube": "https://www.youtube.com/watch?v=WvcOyBvCu6A"
   },
+  "1528809602347": {
+    "yt": "6vOyIhsldgE",
+    "youtube": "https://www.youtube.com/watch?v=6vOyIhsldgE"
+  },
   "1708271930407": {
     "yt": "z30nckDGXAM",
     "youtube": "https://www.youtube.com/watch?v=z30nckDGXAM"
@@ -29831,6 +30146,11 @@
     "yt": "TrOAqESgsu4",
     "youtube": "https://www.youtube.com/watch?v=TrOAqESgsu4"
   },
+  "2006449228767": {
+    "apple": "https://music.apple.com/jp/album/%E8%9E%BA%E6%97%8B%E3%81%AE%E6%82%AA%E5%A4%A2/1354962176?i=1354962888",
+    "album": "https://music.apple.com/jp/album/%E8%9E%BA%E6%97%8B%E3%81%AE%E6%82%AA%E5%A4%A2/1354962176?i=1354962888",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/82/1b/69/821b695a-87c3-521e-220c-19a9c360cf66/859753975642_cover.jpg/600x600bb.jpg"
+  },
   "1603321105132": {
     "yt": "W1tiqwEgrcQ",
     "youtube": "https://www.youtube.com/watch?v=W1tiqwEgrcQ"
@@ -29840,11 +30160,17 @@
     "youtube": "https://www.youtube.com/watch?v=Iyfbbsr7xOc"
   },
   "1669247828542": {
+    "apple": "https://music.apple.com/jp/album/no-thank-you/1646007967?i=1646007969",
+    "album": "https://music.apple.com/jp/album/no-thank-you/1646007967?i=1646007969",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/52/08/d3/5208d364-2cc6-6862-b79a-3337e244c2ec/PA00105974_0_154853_jacket.jpg/600x600bb.jpg",
     "yt": "zuyWqksDfn8",
     "youtube": "https://www.youtube.com/watch?v=zuyWqksDfn8",
     "ytmusic": "https://music.youtube.com/watch?v=zuyWqksDfn8"
   },
   "1528247789407": {
+    "apple": "https://music.apple.com/jp/album/amazing-grace-feat-lira/925629902?i=925629937",
+    "album": "https://music.apple.com/jp/album/amazing-grace-feat-lira/925629902?i=925629937",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/44/e2/52/44e25256-601e-4591-b9a3-ce46f98cb289/4988044948280_cover.jpg/600x600bb.jpg",
     "yt": "5yFvuhp0SSE",
     "youtube": "https://www.youtube.com/watch?v=5yFvuhp0SSE"
   },
@@ -29853,10 +30179,16 @@
     "youtube": "https://www.youtube.com/watch?v=nnfopBOMDh4"
   },
   "1084062075001": {
+    "apple": "https://music.apple.com/jp/album/i-miss-you/834087865?i=834087880",
+    "album": "https://music.apple.com/jp/album/i-miss-you/834087865?i=834087880",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a8/61/90/a861905c-c3a9-9ab2-2ac7-3b02dc380c49/4538182411681_cov.jpg/600x600bb.jpg",
     "yt": "3WHHvNZrvxA",
     "youtube": "https://www.youtube.com/watch?v=3WHHvNZrvxA"
   },
   "1084798176346": {
+    "apple": "https://music.apple.com/jp/album/%E8%88%9E%E3%81%84%E4%B8%8A%E3%81%8C%E3%82%8C%E8%8A%B1%E5%90%B9%E9%9B%AA/1409997858?i=1409998342",
+    "album": "https://music.apple.com/jp/album/%E8%88%9E%E3%81%84%E4%B8%8A%E3%81%8C%E3%82%8C%E8%8A%B1%E5%90%B9%E9%9B%AA/1409997858?i=1409998342",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ca/df/79/cadf79a1-8c92-d6de-c5a3-82f4fefc3131/859754210056_cover.png/600x600bb.jpg",
     "yt": "fDBrK-W47y4",
     "youtube": "https://www.youtube.com/watch?v=fDBrK-W47y4"
   },
@@ -29864,11 +30196,33 @@
     "yt": "HHqKNwZbJxY",
     "youtube": "https://www.youtube.com/watch?v=HHqKNwZbJxY"
   },
+  "1684275515892": {
+    "apple": "https://music.apple.com/jp/album/step-forward/1202809289?i=1202809296",
+    "album": "https://music.apple.com/jp/album/step-forward/1202809289?i=1202809296",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/a3/d3/2b/a3d32b65-9624-5db9-f81f-ddbda72fdd58/Vol.1_2400.jpg/600x600bb.jpg",
+    "yt": "BKixnFF2mP8",
+    "youtube": "https://www.youtube.com/watch?v=BKixnFF2mP8",
+    "ytmusic": "https://music.youtube.com/watch?v=BKixnFF2mP8"
+  },
+  "1684275517197": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%AA%E3%82%BE%E3%83%A9%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9/1202813465?i=1202813597",
+    "album": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%AA%E3%82%BE%E3%83%A9%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9/1202813465?i=1202813597",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/9f/5d/54/9f5d540b-af1f-6141-f2c9-ee5f2ec9dbd3/Vol.3_2400.jpg/600x600bb.jpg",
+    "yt": "q-BDJR9WGAU",
+    "youtube": "https://www.youtube.com/watch?v=q-BDJR9WGAU",
+    "ytmusic": "https://music.youtube.com/watch?v=q-BDJR9WGAU"
+  },
   "1684275516762": {
+    "apple": "https://music.apple.com/jp/album/%E5%A4%A7%E5%A5%BD%E3%81%8D%E3%81%AA%E3%82%93%E3%81%A0/1202815735?i=1202815898",
+    "album": "https://music.apple.com/jp/album/%E5%A4%A7%E5%A5%BD%E3%81%8D%E3%81%AA%E3%82%93%E3%81%A0/1202815735?i=1202815898",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5e/97/d2/5e97d233-c8bc-522f-3768-94b162426599/Vol.4_2400.jpg/600x600bb.jpg",
     "yt": "itDhg5HEJfg",
     "youtube": "https://www.youtube.com/watch?v=itDhg5HEJfg"
   },
   "1684275511107": {
+    "apple": "https://music.apple.com/jp/album/%E7%A7%81%E3%81%A0%E3%81%91%E3%81%AE%E7%A9%BA/1202810521?i=1202810551",
+    "album": "https://music.apple.com/jp/album/%E7%A7%81%E3%81%A0%E3%81%91%E3%81%AE%E7%A9%BA/1202810521?i=1202810551",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/37/28/5a/37285a2b-3f9a-f7a2-a56c-1ade1dcc4a37/Vol.2_2400.jpg/600x600bb.jpg",
     "yt": "cCjYKZ6EiSA",
     "youtube": "https://www.youtube.com/watch?v=cCjYKZ6EiSA"
   },
@@ -29885,6 +30239,9 @@
     "youtube": "https://www.youtube.com/watch?v=ZqCieGlKUIQ"
   },
   "1490635525717": {
+    "apple": "https://music.apple.com/jp/album/%E6%88%A6%E5%88%83%E6%81%8B%E6%AD%8C/694940683?i=694941094",
+    "album": "https://music.apple.com/jp/album/%E6%88%A6%E5%88%83%E6%81%8B%E6%AD%8C/694940683?i=694941094",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/5a/78/a0/5a78a046-6179-32cf-0f04-fc8f10080186/cmyk150x150.jpg/600x600bb.jpg",
     "yt": "g7iqKFDMVHk",
     "youtube": "https://www.youtube.com/watch?v=g7iqKFDMVHk"
   },
@@ -29905,32 +30262,69 @@
     "youtube": "https://www.youtube.com/watch?v=myMLXVtfgEU"
   },
   "1490699116627": {
+    "apple": "https://music.apple.com/jp/album/%E5%B9%BB%E8%A1%93%E3%81%AE%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%AD%E3%83%BC%E3%83%89/6795498508?i=6795498510",
+    "album": "https://music.apple.com/jp/album/%E5%B9%BB%E8%A1%93%E3%81%AE%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%AD%E3%83%BC%E3%83%89/6795498508?i=6795498510",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/38/ab/66/38ab660d-5938-5d3f-01f3-d3c82321cc90/4582325373077_Cover.jpg/600x600bb.jpg",
     "yt": "7eiG100JkRc",
     "youtube": "https://www.youtube.com/watch?v=7eiG100JkRc"
   },
+  "1789311850857": {
+    "apple": "https://music.apple.com/jp/album/tender-is-the-night/6795001913?i=6795001925",
+    "album": "https://music.apple.com/jp/album/tender-is-the-night/6795001913?i=6795001925",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/f1/0d/67f10d20-b303-5ae5-6c6b-d41d247c0cd6/4582325373190_Cover.jpg/600x600bb.jpg"
+  },
   "1603734549577": {
+    "apple": "https://music.apple.com/jp/album/%E9%AD%82%E3%81%AEreload/1738872569?i=1738872580",
+    "album": "https://music.apple.com/jp/album/%E9%AD%82%E3%81%AEreload/1738872569?i=1738872580",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f7/d1/36/f7d136c0-ba11-f689-b77c-bc6ef373f588/4540774739868.png/600x600bb.jpg",
     "yt": "TtlnnuNoRKQ",
     "youtube": "https://www.youtube.com/watch?v=TtlnnuNoRKQ",
     "ytmusic": "https://music.youtube.com/watch?v=TtlnnuNoRKQ"
   },
   "1603734548707": {
+    "apple": "https://music.apple.com/jp/album/keep-the-faith/1738893957?i=1738894161",
+    "album": "https://music.apple.com/jp/album/keep-the-faith/1738893957?i=1738894161",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/f5/d7/d1f5d72e-acc5-dad3-01b9-45b0ecc71951/4540774737406.png/600x600bb.jpg",
     "yt": "rwHzawk0iUQ",
     "youtube": "https://www.youtube.com/watch?v=rwHzawk0iUQ",
     "ytmusic": "https://music.youtube.com/watch?v=rwHzawk0iUQ"
   },
   "1722564611742": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%89%E3%82%AD%E3%83%89%E3%82%AD-true-love-feat-%E6%A9%98%E3%81%BE%E3%81%8A-%E7%B5%90%E8%A1%A3%E8%8F%9C-%E3%81%93%E3%81%AE%E3%81%88%E3%82%86%E3%81%9A%E3%81%93/1546838507?i=1546838523",
+    "album": "https://music.apple.com/jp/album/%E3%83%89%E3%82%AD%E3%83%89%E3%82%AD-true-love-feat-%E6%A9%98%E3%81%BE%E3%81%8A-%E7%B5%90%E8%A1%A3%E8%8F%9C-%E3%81%93%E3%81%AE%E3%81%88%E3%82%86%E3%81%9A%E3%81%93/1546838507?i=1546838523",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg",
     "yt": "3PAOZlXg1z4",
     "youtube": "https://www.youtube.com/watch?v=3PAOZlXg1z4",
     "ytmusic": "https://music.youtube.com/watch?v=3PAOZlXg1z4"
   },
+  "1641760460857": {
+    "apple": "https://music.apple.com/jp/album/%E6%B7%B1%E6%B7%B5%E3%81%AE%E4%B8%AD%E3%81%AE%E5%85%89/1229966817?i=1229967259",
+    "album": "https://music.apple.com/jp/album/%E6%B7%B1%E6%B7%B5%E3%81%AE%E4%B8%AD%E3%81%AE%E5%85%89/1229966817?i=1229967259",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1a/6c/e3/1a6ce378-5a0a-302f-0f61-55ebd82c77ae/008187_4545291006059.jpg/600x600bb.jpg"
+  },
   "1489959788452": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%B3-feat-duca/1327214934?i=1327214950",
+    "album": "https://music.apple.com/jp/album/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%B3-feat-duca/1327214934?i=1327214950",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f6/a0/7f/f6a07f77-68b0-1a92-b31a-ca5a8eb4d050/4571312470516_cover.jpg/600x600bb.jpg",
     "yt": "uN2xEtaxoCo",
     "youtube": "https://www.youtube.com/watch?v=uN2xEtaxoCo",
     "ytmusic": "https://music.youtube.com/watch?v=uN2xEtaxoCo"
   },
   "1311756592252": {
+    "apple": "https://music.apple.com/jp/album/im-here-feat-%E8%8C%B6%E5%A4%AA/1435141332?i=1435141558",
+    "album": "https://music.apple.com/jp/album/im-here-feat-%E8%8C%B6%E5%A4%AA/1435141332?i=1435141558",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f7/6b/46/f76b4611-49af-b154-c8c6-250f672eb541/4571312470837_cover.jpg/600x600bb.jpg",
     "yt": "e1aGHon_iqk",
     "youtube": "https://www.youtube.com/watch?v=e1aGHon_iqk"
+  },
+  "1641844087867": {
+    "yt": "D3MuDdm2Kls",
+    "youtube": "https://www.youtube.com/watch?v=D3MuDdm2Kls"
+  },
+  "1528898709487": {
+    "apple": "https://music.apple.com/jp/album/my-shinin-star/1120676763?i=1120677237",
+    "album": "https://music.apple.com/jp/album/my-shinin-star/1120676763?i=1120677237",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music30/v4/0c/fb/1e/0cfb1eaa-5f0e-e288-b5bd-82d9c4730a31/PrimiST_2400_x_2400.jpg/600x600bb.jpg"
   },
   "1084886875891": {
     "yt": "7rg2qpHFTSs",
@@ -29940,23 +30334,47 @@
     "yt": "8sKSIQzCIBM",
     "youtube": "https://www.youtube.com/watch?v=8sKSIQzCIBM"
   },
+  "1669335644167": {
+    "apple": "https://music.apple.com/jp/album/%E7%9C%A9%E6%83%91%E3%81%AEmarionette-feat-%E6%A9%98%E3%81%BE%E3%81%8A/1546838507?i=1546838860",
+    "album": "https://music.apple.com/jp/album/%E7%9C%A9%E6%83%91%E3%81%AEmarionette-feat-%E6%A9%98%E3%81%BE%E3%81%8A/1546838507?i=1546838860",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg"
+  },
+  "1722887052447": {
+    "apple": "https://music.apple.com/jp/album/losing-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1647380332?i=1647381140",
+    "album": "https://music.apple.com/jp/album/losing-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1647380332?i=1647381140",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/45/fd/58/45fd5814-9806-e4ff-0dd0-6c806cbf77be/859758741136_cover.jpg/600x600bb.jpg"
+  },
   "1684275510672": {
     "yt": "P5wm8X-JvAs",
     "youtube": "https://www.youtube.com/watch?v=P5wm8X-JvAs"
+  },
+  "1722475501122": {
+    "apple": "https://music.apple.com/jp/album/%E7%84%A1%E9%99%90%E6%97%8B%E5%BE%8B/6795001913?i=6795001927",
+    "album": "https://music.apple.com/jp/album/%E7%84%A1%E9%99%90%E6%97%8B%E5%BE%8B/6795001913?i=6795001927",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/f1/0d/67f10d20-b303-5ae5-6c6b-d41d247c0cd6/4582325373190_Cover.jpg/600x600bb.jpg"
   },
   "1489958492152": {
     "yt": "3wyZF5atmb4",
     "youtube": "https://www.youtube.com/watch?v=3wyZF5atmb4"
   },
   "1722802625907": {
+    "apple": "https://music.apple.com/jp/album/%E7%B4%85%E3%83%8E%E5%A4%9C%E3%83%8E%E5%94%84/1889067733?i=1889067998",
+    "album": "https://music.apple.com/jp/album/%E7%B4%85%E3%83%8E%E5%A4%9C%E3%83%8E%E5%94%84/1889067733?i=1889067998",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/29/88/ee298833-4b0c-e3df-595b-97bda9dddd40/4562412125963_Cover.jpg/600x600bb.jpg",
     "yt": "MQR8inmoGWM",
     "youtube": "https://www.youtube.com/watch?v=MQR8inmoGWM"
   },
   "1722802481487": {
+    "apple": "https://music.apple.com/jp/album/%E6%9D%B1%E4%BA%B0%E6%B5%AA%E6%BC%AB%E8%AD%9A/1889067733?i=1889068001",
+    "album": "https://music.apple.com/jp/album/%E6%9D%B1%E4%BA%B0%E6%B5%AA%E6%BC%AB%E8%AD%9A/1889067733?i=1889068001",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/29/88/ee298833-4b0c-e3df-595b-97bda9dddd40/4562412125963_Cover.jpg/600x600bb.jpg",
     "yt": "-R4SwsA7TOc",
     "youtube": "https://www.youtube.com/watch?v=-R4SwsA7TOc"
   },
   "1722802481052": {
+    "apple": "https://music.apple.com/jp/album/%E6%98%9F%E9%99%8D%E3%83%AB%E5%A4%9C-%E5%83%95%E3%83%8E%E3%83%AF%E3%83%AB%E3%83%84/1889067733?i=1889067999",
+    "album": "https://music.apple.com/jp/album/%E6%98%9F%E9%99%8D%E3%83%AB%E5%A4%9C-%E5%83%95%E3%83%8E%E3%83%AF%E3%83%AB%E3%83%84/1889067733?i=1889067999",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/29/88/ee298833-4b0c-e3df-595b-97bda9dddd40/4562412125963_Cover.jpg/600x600bb.jpg",
     "yt": "9Snr3SY0VYg",
     "youtube": "https://www.youtube.com/watch?v=9Snr3SY0VYg"
   },
@@ -30028,6 +30446,16 @@
     "yt": "l0t-ZtJDTEI",
     "youtube": "https://www.youtube.com/watch?v=l0t-ZtJDTEI"
   },
+  "1669071511732": {
+    "apple": "https://music.apple.com/jp/album/resonant-world/1856738295?i=1856738296",
+    "album": "https://music.apple.com/jp/album/resonant-world/1856738295?i=1856738296",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/37/ba/ef37ba02-7e57-06ef-acc5-05c54716b72e/4540774141456.png/600x600bb.jpg"
+  },
+  "1669071512167": {
+    "apple": "https://music.apple.com/jp/album/all-our-might-tonight-adf-ver/1316390694?i=1316391494",
+    "album": "https://music.apple.com/jp/album/all-our-might-tonight-adf-ver/1316390694?i=1316391494",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/0a/53/84/0a5384fa-b778-0cc0-7360-14789f6c776c/859753849035_cover.jpg/600x600bb.jpg"
+  },
   "1669071512602": {
     "yt": "Wp7qXUSqLpk",
     "youtube": "https://www.youtube.com/watch?v=Wp7qXUSqLpk"
@@ -30037,6 +30465,9 @@
     "youtube": "https://www.youtube.com/watch?v=41FI4ZM_IHY"
   },
   "1669071509992": {
+    "apple": "https://music.apple.com/jp/album/%E5%A5%B3%E7%A5%9E%E3%81%AE%E8%BF%BD%E6%86%B6/1316390694?i=1316391549",
+    "album": "https://music.apple.com/jp/album/%E5%A5%B3%E7%A5%9E%E3%81%AE%E8%BF%BD%E6%86%B6/1316390694?i=1316391549",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/0a/53/84/0a5384fa-b778-0cc0-7360-14789f6c776c/859753849035_cover.jpg/600x600bb.jpg",
     "yt": "tXrjfG_HOUM",
     "youtube": "https://www.youtube.com/watch?v=tXrjfG_HOUM"
   },
@@ -30049,10 +30480,16 @@
     "youtube": "https://www.youtube.com/watch?v=qxZj_S1_e2o"
   },
   "1669071511297": {
+    "apple": "https://music.apple.com/jp/album/times-out/983239359?i=983239374",
+    "album": "https://music.apple.com/jp/album/times-out/983239359?i=983239374",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/49/43/95/494395b3-b376-e59e-3db3-d5de0acd7495/angels_data.jpg/600x600bb.jpg",
     "yt": "nZtm7sMPYPg",
     "youtube": "https://www.youtube.com/watch?v=nZtm7sMPYPg"
   },
   "1669071508252": {
+    "apple": "https://music.apple.com/jp/album/%E5%85%89/1751183142?i=1751183500",
+    "album": "https://music.apple.com/jp/album/%E5%85%89/1751183142?i=1751183500",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/72/e5/b172e5f1-d072-7f38-b0e3-0714c888413c/4562409330431.jpg/600x600bb.jpg",
     "yt": "It0He_IpfMs",
     "youtube": "https://www.youtube.com/watch?v=It0He_IpfMs"
   },
@@ -30061,6 +30498,9 @@
     "youtube": "https://www.youtube.com/watch?v=YZfHjP4N2N4"
   },
   "1311845353132": {
+    "apple": "https://music.apple.com/jp/album/route-exit/1248802435?i=1248802598",
+    "album": "https://music.apple.com/jp/album/route-exit/1248802435?i=1248802598",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/47/aa/db/47aadb94-22fa-3b2d-b9cc-1dd4370387f7/LZC-1200.jpg/600x600bb.jpg",
     "yt": "1ACo5u4PHwE",
     "youtube": "https://www.youtube.com/watch?v=1ACo5u4PHwE"
   },
@@ -30085,44 +30525,96 @@
     "youtube": "https://www.youtube.com/watch?v=o9JB3FdFk98"
   },
   "1603386191572": {
+    "apple": "https://music.apple.com/jp/album/%E5%81%BD%E3%83%AA%E3%83%8E%E8%8F%AF-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1329658657?i=1329658943",
+    "album": "https://music.apple.com/jp/album/%E5%81%BD%E3%83%AA%E3%83%8E%E8%8F%AF-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1329658657?i=1329658943",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4a/ce/f9/4acef994-34a5-2034-a416-a3bc66a918bc/4571312470615_cover.jpg/600x600bb.jpg",
     "yt": "JqXSZ8ac9X0",
     "youtube": "https://www.youtube.com/watch?v=JqXSZ8ac9X0",
     "ytmusic": "https://music.youtube.com/watch?v=JqXSZ8ac9X0"
   },
   "1603885160932": {
+    "apple": "https://music.apple.com/jp/album/%E9%80%81%E3%82%8C%E3%81%AA%E3%81%84%E3%83%A9%E3%83%96%E3%83%AC%E3%82%BF%E3%83%BC/814891144?i=814891161",
+    "album": "https://music.apple.com/jp/album/%E9%80%81%E3%82%8C%E3%81%AA%E3%81%84%E3%83%A9%E3%83%96%E3%83%AC%E3%82%BF%E3%83%BC/814891144?i=814891161",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/c1/b6/47/c1b6474a-de11-a003-f47b-0ed51ee14429/859750654342_cover.jpg/600x600bb.jpg",
     "yt": "53AbXzOT0lM",
     "youtube": "https://www.youtube.com/watch?v=53AbXzOT0lM",
     "ytmusic": "https://music.youtube.com/watch?v=53AbXzOT0lM"
   },
+  "1745711201992": {
+    "apple": "https://music.apple.com/jp/album/forget-me-not/814891144?i=814891158",
+    "album": "https://music.apple.com/jp/album/forget-me-not/814891144?i=814891158",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/c1/b6/47/c1b6474a-de11-a003-f47b-0ed51ee14429/859750654342_cover.jpg/600x600bb.jpg"
+  },
   "1745711202862": {
+    "apple": "https://music.apple.com/jp/album/green-day/814891144?i=814891147",
+    "album": "https://music.apple.com/jp/album/green-day/814891144?i=814891147",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/c1/b6/47/c1b6474a-de11-a003-f47b-0ed51ee14429/859750654342_cover.jpg/600x600bb.jpg",
     "yt": "GKaes9ScN9U",
     "youtube": "https://www.youtube.com/watch?v=GKaes9ScN9U"
   },
   "1745711200687": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%BC%E3%83%AD/814891144?i=814891155",
+    "album": "https://music.apple.com/jp/album/%E3%82%BC%E3%83%AD/814891144?i=814891155",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/c1/b6/47/c1b6474a-de11-a003-f47b-0ed51ee14429/859750654342_cover.jpg/600x600bb.jpg",
     "yt": "klcm0KHZgQY",
     "youtube": "https://www.youtube.com/watch?v=klcm0KHZgQY",
     "ytmusic": "https://music.youtube.com/watch?v=klcm0KHZgQY"
   },
   "1745711200252": {
+    "apple": "https://music.apple.com/jp/album/%E5%A5%B3%E3%81%AE%E5%AD%90/814891144?i=814891169",
+    "album": "https://music.apple.com/jp/album/%E5%A5%B3%E3%81%AE%E5%AD%90/814891144?i=814891169",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/c1/b6/47/c1b6474a-de11-a003-f47b-0ed51ee14429/859750654342_cover.jpg/600x600bb.jpg",
     "yt": "fG07trY1Krs",
     "youtube": "https://www.youtube.com/watch?v=fG07trY1Krs",
     "ytmusic": "https://music.youtube.com/watch?v=fG07trY1Krs"
   },
+  "1745709907432": {
+    "apple": "https://music.apple.com/jp/album/%E8%8A%B1%E9%99%8D%E3%82%8B%E4%B8%98/814891144?i=814891163",
+    "album": "https://music.apple.com/jp/album/%E8%8A%B1%E9%99%8D%E3%82%8B%E4%B8%98/814891144?i=814891163",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/c1/b6/47/c1b6474a-de11-a003-f47b-0ed51ee14429/859750654342_cover.jpg/600x600bb.jpg"
+  },
   "1641345318172": {
+    "apple": "https://music.apple.com/jp/album/%E5%A4%9C%E5%85%89%E3%81%AE%E8%9D%B6-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1546838507?i=1546838858",
+    "album": "https://music.apple.com/jp/album/%E5%A4%9C%E5%85%89%E3%81%AE%E8%9D%B6-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1546838507?i=1546838858",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg",
     "yt": "SPSQqCHrlRA",
     "youtube": "https://www.youtube.com/watch?v=SPSQqCHrlRA",
     "ytmusic": "https://music.youtube.com/watch?v=SPSQqCHrlRA"
   },
   "1684277003592": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%84%E3%81%8F%E3%81%A4%E3%82%82%E3%81%AE%E6%9C%AA%E6%9D%A5/743656105?i=743656106",
+    "album": "https://music.apple.com/jp/album/%E3%81%84%E3%81%8F%E3%81%A4%E3%82%82%E3%81%AE%E6%9C%AA%E6%9D%A5/743656105?i=743656106",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/fd/97/de/fd97dee7-766f-afbc-12bf-311bef68cc6e/dj.pgjrkhtn.jpg/600x600bb.jpg",
     "yt": "uxtfP9Id09A",
     "youtube": "https://www.youtube.com/watch?v=uxtfP9Id09A"
   },
   "1788989007342": {
+    "apple": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%AE%E5%89%8D%E3%81%A7%E3%81%AF%E5%B0%91%E5%B9%B4%E3%81%AE%E3%81%BE%E3%81%BE/743656105?i=743656108",
+    "album": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%AE%E5%89%8D%E3%81%A7%E3%81%AF%E5%B0%91%E5%B9%B4%E3%81%AE%E3%81%BE%E3%81%BE/743656105?i=743656108",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/fd/97/de/fd97dee7-766f-afbc-12bf-311bef68cc6e/dj.pgjrkhtn.jpg/600x600bb.jpg",
     "yt": "xV2o36aZrg8",
     "youtube": "https://www.youtube.com/watch?v=xV2o36aZrg8",
     "ytmusic": "https://music.youtube.com/watch?v=xV2o36aZrg8"
   },
+  "1788989007777": {
+    "apple": "https://music.apple.com/jp/album/%E5%83%95%E3%81%AF%E3%81%84%E3%81%A4%E3%81%A0%E3%81%A3%E3%81%A6/743656105?i=743656107",
+    "album": "https://music.apple.com/jp/album/%E5%83%95%E3%81%AF%E3%81%84%E3%81%A4%E3%81%A0%E3%81%A3%E3%81%A6/743656105?i=743656107",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/fd/97/de/fd97dee7-766f-afbc-12bf-311bef68cc6e/dj.pgjrkhtn.jpg/600x600bb.jpg"
+  },
+  "1788989008212": {
+    "apple": "https://music.apple.com/jp/album/tears-to-tiara-%E5%87%B1%E6%AD%8C-from-hispania/743656105?i=743656110",
+    "album": "https://music.apple.com/jp/album/tears-to-tiara-%E5%87%B1%E6%AD%8C-from-hispania/743656105?i=743656110",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/fd/97/de/fd97dee7-766f-afbc-12bf-311bef68cc6e/dj.pgjrkhtn.jpg/600x600bb.jpg"
+  },
+  "1788989008647": {
+    "apple": "https://music.apple.com/jp/album/until-from-hispania/743656105?i=743656114",
+    "album": "https://music.apple.com/jp/album/until-from-hispania/743656105?i=743656114",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/fd/97/de/fd97dee7-766f-afbc-12bf-311bef68cc6e/dj.pgjrkhtn.jpg/600x600bb.jpg"
+  },
   "1528746011002": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%9F%E3%83%A9%E3%82%AF%E3%83%AB-%E3%81%BD%E3%83%BC%E3%81%9F%E3%81%B6%E3%82%8B-%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/6795001909?i=6795001911",
+    "album": "https://music.apple.com/jp/album/%E3%83%9F%E3%83%A9%E3%82%AF%E3%83%AB-%E3%81%BD%E3%83%BC%E3%81%9F%E3%81%B6%E3%82%8B-%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/6795001909?i=6795001911",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e5/ed/77/e5ed77c3-49d7-0504-5ea5-bb013b3f8287/4582325373237_Cover.jpg/600x600bb.jpg",
     "yt": "1Xm9f88i_20",
     "youtube": "https://www.youtube.com/watch?v=1Xm9f88i_20",
     "ytmusic": "https://music.youtube.com/watch?v=1Xm9f88i_20"
@@ -30136,10 +30628,16 @@
     "youtube": "https://www.youtube.com/watch?v=HA2dFPx7L-Q"
   },
   "1684187147817": {
+    "apple": "https://music.apple.com/jp/album/%E5%A4%8F%E8%89%B2sunshine-flower/6795001913?i=6795001917",
+    "album": "https://music.apple.com/jp/album/%E5%A4%8F%E8%89%B2sunshine-flower/6795001913?i=6795001917",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/f1/0d/67f10d20-b303-5ae5-6c6b-d41d247c0cd6/4582325373190_Cover.jpg/600x600bb.jpg",
     "yt": "CJ5u-RNryw4",
     "youtube": "https://www.youtube.com/watch?v=CJ5u-RNryw4"
   },
   "1669336994842": {
+    "apple": "https://music.apple.com/jp/album/%E9%82%82%E9%80%85%E3%81%AE%E3%83%95%E3%82%A7%E3%82%BF%E3%83%AA%E3%83%86%E3%83%BC%E3%83%88/6795496137?i=6795496140",
+    "album": "https://music.apple.com/jp/album/%E9%82%82%E9%80%85%E3%81%AE%E3%83%95%E3%82%A7%E3%82%BF%E3%83%AA%E3%83%86%E3%83%BC%E3%83%88/6795496137?i=6795496140",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b9/89/1f/b9891fea-01ee-41ab-83bc-8cf8cfbe4a88/4582325373244_Cover.jpg/600x600bb.jpg",
     "yt": "KxDc5ozONTQ",
     "youtube": "https://www.youtube.com/watch?v=KxDc5ozONTQ"
   },
@@ -30160,23 +30658,48 @@
     "youtube": "https://www.youtube.com/watch?v=zwMA2f9oOdc"
   },
   "1528898162692": {
+    "apple": "https://music.apple.com/jp/album/my-love-story/1121797105?i=1121797429",
+    "album": "https://music.apple.com/jp/album/my-love-story/1121797105?i=1121797429",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/d9/44/78/d9447833-8db2-aedc-f6af-dc9c22b4b5d6/859752969246_cover.jpg/600x600bb.jpg",
     "yt": "Jo0VH13mPZ4",
     "youtube": "https://www.youtube.com/watch?v=Jo0VH13mPZ4"
   },
+  "1528898163127": {
+    "apple": "https://music.apple.com/jp/album/%E9%A2%A8%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB-%E7%A9%BA%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB/1121797105?i=1121797432",
+    "album": "https://music.apple.com/jp/album/%E9%A2%A8%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB-%E7%A9%BA%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB/1121797105?i=1121797432",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/d9/44/78/d9447833-8db2-aedc-f6af-dc9c22b4b5d6/859752969246_cover.jpg/600x600bb.jpg"
+  },
   "1489958695297": {
+    "apple": "https://music.apple.com/jp/album/ill-be-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1327159443?i=1327159943",
+    "album": "https://music.apple.com/jp/album/ill-be-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1327159443?i=1327159943",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/14/d5/3814d582-0e3c-3456-9ad1-315f4a2506e8/4571312470509_cover.jpg/600x600bb.jpg",
     "yt": "ZZN-YQ-w2nM",
     "youtube": "https://www.youtube.com/watch?v=ZZN-YQ-w2nM",
     "ytmusic": "https://music.youtube.com/watch?v=ZZN-YQ-w2nM"
   },
   "1489959978982": {
+    "apple": "https://music.apple.com/jp/album/boy-meets-girl-feat-%E8%8C%B6%E5%A4%AA/1327214934?i=1327214936",
+    "album": "https://music.apple.com/jp/album/boy-meets-girl-feat-%E8%8C%B6%E5%A4%AA/1327214934?i=1327214936",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f6/a0/7f/f6a07f77-68b0-1a92-b31a-ca5a8eb4d050/4571312470516_cover.jpg/600x600bb.jpg",
     "yt": "CES-H8SHQYA",
     "youtube": "https://www.youtube.com/watch?v=CES-H8SHQYA",
     "ytmusic": "https://music.youtube.com/watch?v=CES-H8SHQYA"
   },
   "1603734346867": {
+    "apple": "https://music.apple.com/jp/album/%E9%BB%84%E6%98%8F%E3%81%AE%E3%83%AA%E3%83%99%E3%83%AA%E3%82%AA%E3%83%B3-feat-nao/1327159443?i=1327159939",
+    "album": "https://music.apple.com/jp/album/%E9%BB%84%E6%98%8F%E3%81%AE%E3%83%AA%E3%83%99%E3%83%AA%E3%82%AA%E3%83%B3-feat-nao/1327159443?i=1327159939",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/14/d5/3814d582-0e3c-3456-9ad1-315f4a2506e8/4571312470509_cover.jpg/600x600bb.jpg",
     "yt": "NRCTDY47LAo",
     "youtube": "https://www.youtube.com/watch?v=NRCTDY47LAo",
     "ytmusic": "https://music.youtube.com/watch?v=NRCTDY47LAo"
+  },
+  "1529222097622": {
+    "apple": "https://music.apple.com/jp/album/%E7%85%8C%E3%82%81%E3%81%8F%E7%A9%BA%E3%81%B8/1481925904?i=1481926080",
+    "album": "https://music.apple.com/jp/album/%E7%85%8C%E3%82%81%E3%81%8F%E7%A9%BA%E3%81%B8/1481925904?i=1481926080",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/93/7a/cf/937acf79-61bc-a5c9-3222-8f5ecb7ea9e9/859755151044_cover.jpg/600x600bb.jpg",
+    "yt": "mdMqeRw-9mg",
+    "youtube": "https://www.youtube.com/watch?v=mdMqeRw-9mg",
+    "ytmusic": "https://music.youtube.com/watch?v=mdMqeRw-9mg"
   },
   "1529222098057": {
     "yt": "5_JJErtrVyc",
@@ -30193,46 +30716,99 @@
     "ytmusic": "https://music.youtube.com/watch?v=IK--FOr93MM"
   },
   "1641760665742": {
+    "apple": "https://music.apple.com/jp/album/last-stardust/1755575726?i=1755575727",
+    "album": "https://music.apple.com/jp/album/last-stardust/1755575726?i=1755575727",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ca/3a/56/ca3a56f0-286e-69aa-8869-49082d699b48/4562409332428.jpg/600x600bb.jpg",
     "yt": "dN9rfKXuVpQ",
     "youtube": "https://www.youtube.com/watch?v=dN9rfKXuVpQ"
   },
   "1788313122612": {
+    "apple": "https://music.apple.com/jp/album/over-the-galaxy/1755575726?i=1755575731",
+    "album": "https://music.apple.com/jp/album/over-the-galaxy/1755575726?i=1755575731",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ca/3a/56/ca3a56f0-286e-69aa-8869-49082d699b48/4562409332428.jpg/600x600bb.jpg",
     "yt": "4O0x1brXrn8",
     "youtube": "https://www.youtube.com/watch?v=4O0x1brXrn8"
   },
+  "1084949930011": {
+    "apple": "https://music.apple.com/jp/album/%E5%83%95%E3%81%AB%E6%81%8B%E3%82%92%E3%81%97%E3%81%A6/935572421?i=935572432",
+    "album": "https://music.apple.com/jp/album/%E5%83%95%E3%81%AB%E6%81%8B%E3%82%92%E3%81%97%E3%81%A6/935572421?i=935572432",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/fe/8a/9d/fe8a9db0-8e5e-e51b-d5dc-7abde6b464cc/007113_4580204259610.jpg/600x600bb.jpg"
+  },
+  "1084949930881": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%9C%E3%82%AF%E6%81%8B/935572421?i=935572435",
+    "album": "https://music.apple.com/jp/album/%E3%83%9C%E3%82%AF%E6%81%8B/935572421?i=935572435",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/fe/8a/9d/fe8a9db0-8e5e-e51b-d5dc-7abde6b464cc/007113_4580204259610.jpg/600x600bb.jpg"
+  },
   "1528245146782": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%AA%E3%83%A2%E3%83%86%E3%81%A8%E3%82%A6%E3%83%A9/1481925904?i=1481926076",
+    "album": "https://music.apple.com/jp/album/%E3%82%AA%E3%83%A2%E3%83%86%E3%81%A8%E3%82%A6%E3%83%A9/1481925904?i=1481926076",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/93/7a/cf/937acf79-61bc-a5c9-3222-8f5ecb7ea9e9/859755151044_cover.jpg/600x600bb.jpg",
     "yt": "2Fwq6slXLyA",
     "youtube": "https://www.youtube.com/watch?v=2Fwq6slXLyA"
   },
+  "1722802481922": {
+    "apple": "https://music.apple.com/jp/album/%E8%BB%8C%E8%B7%A1/1269954535?i=1269954537",
+    "album": "https://music.apple.com/jp/album/%E8%BB%8C%E8%B7%A1/1269954535?i=1269954537",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ec/0c/42/ec0c420e-8ccc-57d1-661b-167cb8a8e20c/REC-647.jpg/600x600bb.jpg"
+  },
   "1722802479747": {
+    "apple": "https://music.apple.com/jp/album/%E6%B0%B8%E9%81%A0%E3%81%AB-%E3%81%B2%E3%81%A8%E3%81%A4/1269954535?i=1269954540",
+    "album": "https://music.apple.com/jp/album/%E6%B0%B8%E9%81%A0%E3%81%AB-%E3%81%B2%E3%81%A8%E3%81%A4/1269954535?i=1269954540",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ec/0c/42/ec0c420e-8ccc-57d1-661b-167cb8a8e20c/REC-647.jpg/600x600bb.jpg",
     "yt": "KTfSR1ifN8Q",
     "youtube": "https://www.youtube.com/watch?v=KTfSR1ifN8Q"
   },
   "1722802479312": {
+    "apple": "https://music.apple.com/jp/album/%E9%9B%AA%E8%A7%A3%E3%81%91%E3%81%9F%E3%82%89/1269954535?i=1269954538",
+    "album": "https://music.apple.com/jp/album/%E9%9B%AA%E8%A7%A3%E3%81%91%E3%81%9F%E3%82%89/1269954535?i=1269954538",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ec/0c/42/ec0c420e-8ccc-57d1-661b-167cb8a8e20c/REC-647.jpg/600x600bb.jpg",
     "yt": "tgEK3wf-fRI",
     "youtube": "https://www.youtube.com/watch?v=tgEK3wf-fRI"
   },
   "2006776952982": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%AB%E3%83%9F%E3%83%8A%E3%82%B9/1537267114?i=1537267450",
+    "album": "https://music.apple.com/jp/album/%E3%83%AB%E3%83%9F%E3%83%8A%E3%82%B9/1537267114?i=1537267450",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ed/70/22/ed7022ce-dbff-28e6-6459-7847689d928e/jacket_SEXX00997B00Z_550.jpg/600x600bb.jpg",
     "yt": "b5-BiwtGTn4",
     "youtube": "https://www.youtube.com/watch?v=b5-BiwtGTn4"
   },
   "2006776954287": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%8B%E3%82%8A%E3%81%B5%E3%82%8B/1537260018?i=1537260019",
+    "album": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%8B%E3%82%8A%E3%81%B5%E3%82%8B/1537260018?i=1537260019",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0b/07/aa/0b07aade-f8f2-f405-e23a-8a297eb1c918/jacket_SEXX00346B00Z_550.jpg/600x600bb.jpg",
     "yt": "VxAv6OUPiDY",
     "youtube": "https://www.youtube.com/watch?v=VxAv6OUPiDY"
   },
   "1789464350112": {
+    "apple": "https://music.apple.com/jp/album/%E6%A1%9C%E3%81%AE%E8%BD%8D/1049614721?i=1049614722",
+    "album": "https://music.apple.com/jp/album/%E6%A1%9C%E3%81%AE%E8%BD%8D/1049614721?i=1049614722",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/67/cf/57/67cf5736-01d9-9099-40f2-8b871e2e1bce/KDSD-00683.jpg/600x600bb.jpg",
     "yt": "5j-4tQtO4Z0",
     "youtube": "https://www.youtube.com/watch?v=5j-4tQtO4Z0"
   },
+  "1789464350547": {
+    "apple": "https://music.apple.com/jp/album/%E6%B0%B8%E3%81%84%E4%BD%99%E7%99%BD%E3%82%92%E8%B6%8A%E3%81%88%E3%81%A6/1463022989?i=1463023177",
+    "album": "https://music.apple.com/jp/album/%E6%B0%B8%E3%81%84%E4%BD%99%E7%99%BD%E3%82%92%E8%B6%8A%E3%81%88%E3%81%A6/1463022989?i=1463023177",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/f1/a7/a6/f1a7a642-a2f3-a1c2-fcda-f4e5216ee0da/XFCD-0113-0114.jpg/600x600bb.jpg"
+  },
   "1940028024762": {
+    "apple": "https://music.apple.com/jp/album/reverberation-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3/1102315327?i=1102315422",
+    "album": "https://music.apple.com/jp/album/reverberation-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3/1102315327?i=1102315422",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/60/1a/e8/601ae882-6381-3bf4-55a7-ddf936c873eb/GNCA-7208.jpg/600x600bb.jpg",
     "yt": "rVNrhWxj7J4",
     "youtube": "https://www.youtube.com/watch?v=rVNrhWxj7J4"
   },
   "1940028025197": {
+    "apple": "https://music.apple.com/jp/album/%E6%B7%B1%E6%84%9B%E3%81%AA%E3%82%8B%E7%89%A9%E8%AA%9E/757552180?i=757552186",
+    "album": "https://music.apple.com/jp/album/%E6%B7%B1%E6%84%9B%E3%81%AA%E3%82%8B%E7%89%A9%E8%AA%9E/757552180?i=757552186",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/7d/d6/54/7dd654f4-28f2-2b13-0611-aca3ec0a30cf/KDSD-00676.jpg/600x600bb.jpg",
     "yt": "MG93Nmqsd6w",
     "youtube": "https://www.youtube.com/watch?v=MG93Nmqsd6w"
   },
   "1528810547167": {
+    "apple": "https://music.apple.com/jp/album/%E7%A5%9E%E7%9A%84%E5%89%B5%E9%80%A0/950913970?i=950913994",
+    "album": "https://music.apple.com/jp/album/%E7%A5%9E%E7%9A%84%E5%89%B5%E9%80%A0/950913970?i=950913994",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/20/a7/5c/20a75c52-d46c-0f16-201a-aaae41696c06/LACA-15470.jpg/600x600bb.jpg",
     "yt": "cO-bf8zkHPA",
     "youtube": "https://www.youtube.com/watch?v=cO-bf8zkHPA"
   },
@@ -30250,8 +30826,16 @@
     "ytmusic": "https://music.youtube.com/watch?v=ktUx80A4IsI"
   },
   "1490635326052": {
+    "apple": "https://music.apple.com/jp/album/%E7%BE%8E%E3%81%97%E3%81%8D%E5%8B%87%E8%80%85/908880935?i=908880949",
+    "album": "https://music.apple.com/jp/album/%E7%BE%8E%E3%81%97%E3%81%8D%E5%8B%87%E8%80%85/908880935?i=908880949",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/45/b3/94/45b39404-7734-6865-1dbf-d3674e83c173/H1-nml-large.jpg/600x600bb.jpg",
     "yt": "nzgSBmOX1uk",
     "youtube": "https://www.youtube.com/watch?v=nzgSBmOX1uk"
+  },
+  "1641760464772": {
+    "apple": "https://music.apple.com/jp/album/%E7%86%B1%E7%A0%82%E3%83%8E%E8%96%94%E8%96%87/1229966817?i=1229967258",
+    "album": "https://music.apple.com/jp/album/%E7%86%B1%E7%A0%82%E3%83%8E%E8%96%94%E8%96%87/1229966817?i=1229967258",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1a/6c/e3/1a6ce378-5a0a-302f-0f61-55ebd82c77ae/008187_4545291006059.jpg/600x600bb.jpg"
   },
   "1746293102797": {
     "yt": "TG8sIeiID4o",
@@ -30262,25 +30846,51 @@
     "youtube": "https://www.youtube.com/watch?v=9rezPtAQBwc"
   },
   "1684926437277": {
+    "apple": "https://music.apple.com/jp/album/heartbeat-feat-%E3%81%82%E3%81%B2%E3%82%8B/1231328515?i=1231328833",
+    "album": "https://music.apple.com/jp/album/heartbeat-feat-%E3%81%82%E3%81%B2%E3%82%8B/1231328515?i=1231328833",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9a/c6/38/9ac6381a-ac97-22f4-58c3-829971511ccc/859753577853_cover.jpg/600x600bb.jpg",
     "yt": "Z9K4P33M1dA",
     "youtube": "https://www.youtube.com/watch?v=Z9K4P33M1dA"
   },
   "1585556151695": {
+    "apple": "https://music.apple.com/jp/album/prominence-feat-keina/1395686773?i=1395686777",
+    "album": "https://music.apple.com/jp/album/prominence-feat-keina/1395686773?i=1395686777",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1f/39/bb/1f39bbce-12f3-f4d0-0f05-47c5bd76bb71/859754128832_cover.png/600x600bb.jpg",
     "yt": "1GWFhUplsk0",
     "youtube": "https://www.youtube.com/watch?v=1GWFhUplsk0",
     "ytmusic": "https://music.youtube.com/watch?v=1GWFhUplsk0"
   },
   "1901588113542": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AE%E5%A4%8F%E3%81%BE%E3%81%A7-feat-%E3%81%82%E3%81%B2%E3%82%8B/1231328515?i=1231328527",
+    "album": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AE%E5%A4%8F%E3%81%BE%E3%81%A7-feat-%E3%81%82%E3%81%B2%E3%82%8B/1231328515?i=1231328527",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9a/c6/38/9ac6381a-ac97-22f4-58c3-829971511ccc/859753577853_cover.jpg/600x600bb.jpg",
     "yt": "1RcZWa9_0h8",
     "youtube": "https://www.youtube.com/watch?v=1RcZWa9_0h8"
+  },
+  "1684776918207": {
+    "yt": "JUpetsdVcec",
+    "youtube": "https://www.youtube.com/watch?v=JUpetsdVcec"
   },
   "1865450881782": {
     "yt": "bzgUoTzOA34",
     "youtube": "https://www.youtube.com/watch?v=bzgUoTzOA34"
   },
   "1865450886567": {
+    "apple": "https://music.apple.com/jp/album/brand-new-way-broadway/615903159?i=615904348",
+    "album": "https://music.apple.com/jp/album/brand-new-way-broadway/615903159?i=615904348",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/7c/0a/43/7c0a43ea-06b3-b099-da60-1690178552b2/4948722453734.jpg/600x600bb.jpg",
     "yt": "tPYH7MyX9i0",
     "youtube": "https://www.youtube.com/watch?v=tPYH7MyX9i0"
+  },
+  "1940197960992": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%AD%E3%83%9F%E5%B0%82%E7%94%A8-only-hero/763396850?i=763397890",
+    "album": "https://music.apple.com/jp/album/%E3%82%AD%E3%83%9F%E5%B0%82%E7%94%A8-only-hero/763396850?i=763397890",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/a9/02/a1/a902a1cd-c043-8e28-dc14-3e7406683c93/PA00043190_0_52170_jacket.jpg/600x600bb.jpg"
+  },
+  "1940197961427": {
+    "apple": "https://music.apple.com/jp/album/beginning-of-love/763396850?i=763397915",
+    "album": "https://music.apple.com/jp/album/beginning-of-love/763396850?i=763397915",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/a9/02/a1/a902a1cd-c043-8e28-dc14-3e7406683c93/PA00043190_0_52170_jacket.jpg/600x600bb.jpg"
   },
   "1084128460351": {
     "yt": "mYdzbCZamfw",
@@ -30294,16 +30904,27 @@
     "yt": "WkpOuUUNdtg",
     "youtube": "https://www.youtube.com/watch?v=WkpOuUUNdtg"
   },
+  "1684927728357": {
+    "apple": "https://music.apple.com/jp/album/insomnia/398124960?i=398125036",
+    "album": "https://music.apple.com/jp/album/insomnia/398124960?i=398125036",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/e3/92/7e/mzi.mfxeuiml.jpg/600x600bb.jpg"
+  },
   "1827510691602": {
     "yt": "kxTte1YigZ0",
     "youtube": "https://www.youtube.com/watch?v=kxTte1YigZ0"
   },
   "1489958697037": {
+    "apple": "https://music.apple.com/jp/album/angels-tear-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1327159443?i=1327159940",
+    "album": "https://music.apple.com/jp/album/angels-tear-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1327159443?i=1327159940",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/14/d5/3814d582-0e3c-3456-9ad1-315f4a2506e8/4571312470509_cover.jpg/600x600bb.jpg",
     "yt": "HvVOPMG8hso",
     "youtube": "https://www.youtube.com/watch?v=HvVOPMG8hso",
     "ytmusic": "https://music.youtube.com/watch?v=HvVOPMG8hso"
   },
   "1489959980722": {
+    "apple": "https://music.apple.com/jp/album/with-shiver-feat-iyuna/1327214934?i=1327214940",
+    "album": "https://music.apple.com/jp/album/with-shiver-feat-iyuna/1327214934?i=1327214940",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f6/a0/7f/f6a07f77-68b0-1a92-b31a-ca5a8eb4d050/4571312470516_cover.jpg/600x600bb.jpg",
     "yt": "AISPm5OQlMg",
     "youtube": "https://www.youtube.com/watch?v=AISPm5OQlMg",
     "ytmusic": "https://music.youtube.com/watch?v=AISPm5OQlMg"
@@ -30317,12 +30938,20 @@
     "youtube": "https://www.youtube.com/watch?v=kAWvamuTxK0"
   },
   "1084798919761": {
+    "apple": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%8C%E3%81%84%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E3%81%8B%E3%82%89/1629819125?i=1629819420",
+    "album": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%8C%E3%81%84%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E3%81%8B%E3%82%89/1629819125?i=1629819420",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/22/78/f6/2278f662-c1e2-aa21-88a0-4572413e4d32/SJRS-075-3342_Melty_Moment_ORIGINNAL_SOUNDTRACK.jpg/600x600bb.jpg",
     "yt": "DNTm4bJXg9o",
     "youtube": "https://www.youtube.com/watch?v=DNTm4bJXg9o"
   },
   "1528981244212": {
     "yt": "TU3P9SPPna0",
     "youtube": "https://www.youtube.com/watch?v=TU3P9SPPna0"
+  },
+  "1283206906717": {
+    "apple": "https://music.apple.com/jp/album/%E7%AC%91%E9%A1%94/1629819125?i=1629819444",
+    "album": "https://music.apple.com/jp/album/%E7%AC%91%E9%A1%94/1629819125?i=1629819444",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/22/78/f6/2278f662-c1e2-aa21-88a0-4572413e4d32/SJRS-075-3342_Melty_Moment_ORIGINNAL_SOUNDTRACK.jpg/600x600bb.jpg"
   },
   "1603145332072": {
     "yt": "DbwbUzq-tB0",
@@ -30345,34 +30974,90 @@
     "youtube": "https://www.youtube.com/watch?v=Ly_Nxz1bZj8"
   },
   "1084798170256": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%97%E3%81%AE%E3%81%B6%E3%82%8C%E3%81%A9/1409997858?i=1409998339",
+    "album": "https://music.apple.com/jp/album/%E3%81%97%E3%81%AE%E3%81%B6%E3%82%8C%E3%81%A9/1409997858?i=1409998339",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ca/df/79/cadf79a1-8c92-d6de-c5a3-82f4fefc3131/859754210056_cover.png/600x600bb.jpg",
     "yt": "0eCEwThp5Nc",
     "youtube": "https://www.youtube.com/watch?v=0eCEwThp5Nc"
   },
+  "1084798725751": {
+    "apple": "https://music.apple.com/jp/album/%E6%9C%88%E3%81%AE%E9%9E%A0/1409997858?i=1409998544",
+    "album": "https://music.apple.com/jp/album/%E6%9C%88%E3%81%AE%E9%9E%A0/1409997858?i=1409998544",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ca/df/79/cadf79a1-8c92-d6de-c5a3-82f4fefc3131/859754210056_cover.png/600x600bb.jpg"
+  },
+  "2006776559307": {
+    "apple": "https://music.apple.com/jp/album/star-glitter/1583690067?i=1583690191",
+    "album": "https://music.apple.com/jp/album/star-glitter/1583690067?i=1583690191",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/17/8d/d5/178dd50a-53c8-1595-40b7-541668b51c29/VEATP-38996.jpg/600x600bb.jpg"
+  },
   "2006776413582": {
+    "apple": "https://music.apple.com/jp/album/across-the-rainbow/1583690067?i=1583690173",
+    "album": "https://music.apple.com/jp/album/across-the-rainbow/1583690067?i=1583690173",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/17/8d/d5/178dd50a-53c8-1595-40b7-541668b51c29/VEATP-38996.jpg/600x600bb.jpg",
     "yt": "U4p7DOwodrs",
     "youtube": "https://www.youtube.com/watch?v=U4p7DOwodrs",
     "ytmusic": "https://music.youtube.com/watch?v=U4p7DOwodrs"
   },
+  "2006776414017": {
+    "apple": "https://music.apple.com/jp/album/natsukage-%E5%A4%8F%E9%99%B0/1466605830?i=1466605831",
+    "album": "https://music.apple.com/jp/album/natsukage-%E5%A4%8F%E9%99%B0/1466605830?i=1466605831",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b3/be/ee/b3beee81-9f67-1634-1ef2-77f4f7bd484f/VICL-37480.jpg/600x600bb.jpg"
+  },
   "2006776414452": {
+    "apple": "https://music.apple.com/jp/album/%E5%85%89/1583690067?i=1583690189",
+    "album": "https://music.apple.com/jp/album/%E5%85%89/1583690067?i=1583690189",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/17/8d/d5/178dd50a-53c8-1595-40b7-541668b51c29/VEATP-38996.jpg/600x600bb.jpg",
     "yt": "10UaRTdMh-g",
     "youtube": "https://www.youtube.com/watch?v=10UaRTdMh-g"
   },
   "2006775816327": {
+    "apple": "https://music.apple.com/jp/album/make-our-sound/1653055829?i=1653055836",
+    "album": "https://music.apple.com/jp/album/make-our-sound/1653055829?i=1653055836",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8c/9e/14/8c9e144a-821e-f705-577a-a18a81c88fca/4582647656100_cover.png/600x600bb.jpg",
     "yt": "Q59igwtLEhM",
     "youtube": "https://www.youtube.com/watch?v=Q59igwtLEhM"
   },
   "2006775814152": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%AA%E3%83%9C%E3%83%B3/1539362231?i=1539362233",
+    "album": "https://music.apple.com/jp/album/%E3%83%AA%E3%83%9C%E3%83%B3/1539362231?i=1539362233",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f0/37/1c/f0371cef-90df-2c01-0684-5a9d4ca8bf60/VICL-37571.jpg/600x600bb.jpg",
     "yt": "FS23bm5H6XY",
     "youtube": "https://www.youtube.com/watch?v=FS23bm5H6XY"
   },
   "1722562168782": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%AA%E3%81%A4%E9%A2%A8%E3%81%AB%E4%B9%97%E3%81%A3%E3%81%A6-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1546838507?i=1546838867",
+    "album": "https://music.apple.com/jp/album/%E3%81%AA%E3%81%A4%E9%A2%A8%E3%81%AB%E4%B9%97%E3%81%A3%E3%81%A6-feat-%E9%9D%92%E8%91%89%E3%82%8A%E3%82%93%E3%81%94/1546838507?i=1546838867",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/d5/66/3bd566d9-55a0-d30d-1fac-022e3117c5f0/859756503217_cover.jpg/600x600bb.jpg",
     "yt": "_OkfjQKCJKQ",
     "youtube": "https://www.youtube.com/watch?v=_OkfjQKCJKQ",
     "ytmusic": "https://music.youtube.com/watch?v=_OkfjQKCJKQ"
   },
+  "1684865135772": {
+    "apple": "https://music.apple.com/jp/album/%E7%B2%BE%E7%A5%9E%E4%B8%8D%E5%AE%89%E5%AE%9A%E5%89%A4/363973087?i=363973094",
+    "album": "https://music.apple.com/jp/album/%E7%B2%BE%E7%A5%9E%E4%B8%8D%E5%AE%89%E5%AE%9A%E5%89%A4/363973087?i=363973094",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/7d/a0/50/mzi.tgobietg.jpg/600x600bb.jpg"
+  },
+  "1684187496252": {
+    "apple": "https://music.apple.com/jp/album/coloration/824198009?i=824198043",
+    "album": "https://music.apple.com/jp/album/coloration/824198009?i=824198043",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/53/47/05/5347059c-321d-25fc-6044-78fa0be112aa/LALM-4005.jpg/600x600bb.jpg"
+  },
+  "1684452439527": {
+    "apple": "https://music.apple.com/jp/album/grow-up-shining/824198009?i=824198044",
+    "album": "https://music.apple.com/jp/album/grow-up-shining/824198009?i=824198044",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/53/47/05/5347059c-321d-25fc-6044-78fa0be112aa/LALM-4005.jpg/600x600bb.jpg"
+  },
   "1084799117686": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A8%E3%81%AA%E3%81%A4%E3%81%AE/1112480104?i=1112480492",
+    "album": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A8%E3%81%AA%E3%81%A4%E3%81%AE/1112480104?i=1112480492",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/87/9c/21/879c21be-fddd-c149-ad88-6ed4a35f76f2/LXCH-0017.jpg/600x600bb.jpg",
     "yt": "uQ-uqvBKCTE",
     "youtube": "https://www.youtube.com/watch?v=uQ-uqvBKCTE"
+  },
+  "1311521760547": {
+    "apple": "https://music.apple.com/jp/album/%E5%A4%8F%E8%89%B2memories/1112480104?i=1112480538",
+    "album": "https://music.apple.com/jp/album/%E5%A4%8F%E8%89%B2memories/1112480104?i=1112480538",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/87/9c/21/879c21be-fddd-c149-ad88-6ed4a35f76f2/LXCH-0017.jpg/600x600bb.jpg"
   },
   "1084798915846": {
     "yt": "qUaCVH7R15g",
@@ -30395,9 +31080,17 @@
     "youtube": "https://www.youtube.com/watch?v=TtcpIrcaNFo"
   },
   "1490635932007": {
+    "apple": "https://music.apple.com/jp/album/everlasting-memories/972507183?i=972507184",
+    "album": "https://music.apple.com/jp/album/everlasting-memories/972507183?i=972507184",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/c0/5b/b2/c05bb271-f646-5d5e-3717-876195d17be3/4538182520321_cov.jpg/600x600bb.jpg",
     "yt": "x89VAVSQRXE",
     "youtube": "https://www.youtube.com/watch?v=x89VAVSQRXE",
     "ytmusic": "https://music.youtube.com/watch?v=x89VAVSQRXE"
+  },
+  "1745799017617": {
+    "apple": "https://music.apple.com/jp/album/first-song/972507440?i=972507443",
+    "album": "https://music.apple.com/jp/album/first-song/972507440?i=972507443",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/66/ba/f3/66baf332-c4b0-35d8-37d6-77ebfd17c0ce/4538182520338_cov.jpg/600x600bb.jpg"
   },
   "1708422131992": {
     "yt": "gCPpz-hDRy8",
@@ -30407,28 +31100,55 @@
     "yt": "HcMziOz4K_o",
     "youtube": "https://www.youtube.com/watch?v=HcMziOz4K_o"
   },
+  "1529070892927": {
+    "apple": "https://music.apple.com/jp/album/rainbow-smile/897955014?i=897955121",
+    "album": "https://music.apple.com/jp/album/rainbow-smile/897955014?i=897955121",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/04/5d/7c/045d7c10-9362-c6d0-c1bd-3813f892cf87/Symphony.wav_Vol5.jpg/600x600bb.jpg"
+  },
   "1641344169772": {
     "yt": "ziXz8XoOF0k",
     "youtube": "https://www.youtube.com/watch?v=ziXz8XoOF0k"
   },
   "1951263523744": {
+    "apple": "https://music.apple.com/jp/album/superorbital/779369130?i=779369132",
+    "album": "https://music.apple.com/jp/album/superorbital/779369130?i=779369132",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b8/38/63/b8386344-9949-3b53-dc99-a2e5299bb93c/data.jpg/600x600bb.jpg",
     "yt": "WvMfws2mnHY",
     "youtube": "https://www.youtube.com/watch?v=WvMfws2mnHY"
+  },
+  "1939699743312": {
+    "apple": "https://music.apple.com/jp/album/more/892296666?i=892296672",
+    "album": "https://music.apple.com/jp/album/more/892296666?i=892296672",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/e3/34/10/e33410ae-1c1a-c349-bce9-0a4001937f91/MORE.jpg/600x600bb.jpg"
   },
   "1669570267507": {
     "yt": "M0IuJM6GsuU",
     "youtube": "https://www.youtube.com/watch?v=M0IuJM6GsuU"
   },
+  "1684775623647": {
+    "apple": "https://music.apple.com/jp/album/%E7%9C%A0%E3%82%8A%E5%A7%AB%E3%81%AF%E8%B5%B7%E3%81%8D%E3%81%9F%E3%81%8F%E3%81%AA%E3%82%93%E3%81%8B%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F/363973087?i=363973129",
+    "album": "https://music.apple.com/jp/album/%E7%9C%A0%E3%82%8A%E5%A7%AB%E3%81%AF%E8%B5%B7%E3%81%8D%E3%81%9F%E3%81%8F%E3%81%AA%E3%82%93%E3%81%8B%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F/363973087?i=363973129",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/7d/a0/50/mzi.tgobietg.jpg/600x600bb.jpg"
+  },
   "1528746005347": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%8D%E3%82%8A%E3%81%B2%E3%82%89%E3%81%91-%E3%83%AD%E3%83%BC%E3%83%97%E3%83%AC-%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%AC%E3%83%BC%E3%83%AB/6773586918?i=6773586919",
+    "album": "https://music.apple.com/jp/album/%E3%81%8D%E3%82%8A%E3%81%B2%E3%82%89%E3%81%91-%E3%83%AD%E3%83%BC%E3%83%97%E3%83%AC-%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%AC%E3%83%BC%E3%83%AB/6773586918?i=6773586919",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/93/13/8d/93138d83-4d74-ac84-347b-ad7c583e3adc/4582325373381_Cover.jpg/600x600bb.jpg",
     "yt": "wgZE5oenssM",
     "youtube": "https://www.youtube.com/watch?v=wgZE5oenssM",
     "ytmusic": "https://music.youtube.com/watch?v=wgZE5oenssM"
   },
   "1788901991247": {
+    "apple": "https://music.apple.com/jp/album/never-give-up/6776545660?i=6776545663",
+    "album": "https://music.apple.com/jp/album/never-give-up/6776545660?i=6776545663",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c1/5f/ec/c15fec27-9231-04c6-4287-539b44f46199/4582325373435_Cover.jpg/600x600bb.jpg",
     "yt": "E81hQb38zKo",
     "youtube": "https://www.youtube.com/watch?v=E81hQb38zKo"
   },
   "1283207105947": {
+    "apple": "https://music.apple.com/jp/album/lovely-smile/1092571298?i=1092572495",
+    "album": "https://music.apple.com/jp/album/lovely-smile/1092571298?i=1092572495",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/fd/45/19/fd451962-ae5c-2c33-5a91-53e6787bf6c0/HOOKSOFT_VocalCollection_My_Smile_Pocket_2400X2400.jpg/600x600bb.jpg",
     "yt": "LdplvlkCzUY",
     "youtube": "https://www.youtube.com/watch?v=LdplvlkCzUY",
     "ytmusic": "https://music.youtube.com/watch?v=LdplvlkCzUY"
@@ -30436,6 +31156,16 @@
   "2006776414887": {
     "yt": "zweVJrnE1uY",
     "youtube": "https://www.youtube.com/watch?v=zweVJrnE1uY"
+  },
+  "1789464893427": {
+    "apple": "https://music.apple.com/jp/album/%E4%BA%88%E6%84%9F/1398716956?i=1398717920",
+    "album": "https://music.apple.com/jp/album/%E4%BA%88%E6%84%9F/1398716956?i=1398717920",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/54/80/3e/54803e6d-da92-d520-7cbd-c9d35dc07b4d/XFCD-0060-61.jpg/600x600bb.jpg"
+  },
+  "1789464892992": {
+    "apple": "https://music.apple.com/jp/album/%E6%B0%B4%E5%BD%A9%E3%82%B0%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/1463022989?i=1463023179",
+    "album": "https://music.apple.com/jp/album/%E6%B0%B4%E5%BD%A9%E3%82%B0%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/1463022989?i=1463023179",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/f1/a7/a6/f1a7a642-a2f3-a1c2-fcda-f4e5216ee0da/XFCD-0113-0114.jpg/600x600bb.jpg"
   },
   "1708182616207": {
     "yt": "J0a5HkDRvQY",
@@ -30445,7 +31175,18 @@
     "yt": "ruG6sC0Gk_0",
     "youtube": "https://www.youtube.com/watch?v=ruG6sC0Gk_0"
   },
+  "1084951970596": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%A1%E3%83%B3%E3%83%88/987468755?i=987468757",
+    "album": "https://music.apple.com/jp/album/%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%A1%E3%83%B3%E3%83%88/987468755?i=987468757",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/77/2f/19/772f1927-f08c-d160-64fa-31a6d712484f/859751806139_cover.jpg/600x600bb.jpg",
+    "yt": "z5srQOvZnQc",
+    "youtube": "https://www.youtube.com/watch?v=z5srQOvZnQc",
+    "ytmusic": "https://music.youtube.com/watch?v=z5srQOvZnQc"
+  },
   "1084951971901": {
+    "apple": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A4%E3%81%98%E9%9B%B2%E3%81%AE%E7%A9%BA%E3%81%AB/987468755?i=987468759",
+    "album": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A4%E3%81%98%E9%9B%B2%E3%81%AE%E7%A9%BA%E3%81%AB/987468755?i=987468759",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/77/2f/19/772f1927-f08c-d160-64fa-31a6d712484f/859751806139_cover.jpg/600x600bb.jpg",
     "yt": "VNaMP0zj8Tk",
     "youtube": "https://www.youtube.com/watch?v=VNaMP0zj8Tk"
   },
@@ -30453,11 +31194,22 @@
     "yt": "2KjHCIhOP-w",
     "youtube": "https://www.youtube.com/watch?v=2KjHCIhOP-w"
   },
+  "1603233888502": {
+    "apple": "https://music.apple.com/jp/album/%E7%9E%AC%E9%96%93%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4/1511139319?i=1511139320",
+    "album": "https://music.apple.com/jp/album/%E7%9E%AC%E9%96%93%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4/1511139319?i=1511139320",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ab/13/cb/ab13cb0e-2a69-1fa0-eb29-de1a856c3c03/4511820-97199.jpg/600x600bb.jpg",
+    "yt": "i9fYJwZax2c",
+    "youtube": "https://www.youtube.com/watch?v=i9fYJwZax2c",
+    "ytmusic": "https://music.youtube.com/watch?v=i9fYJwZax2c"
+  },
   "1603233893287": {
     "yt": "8PHHz4jR2lA",
     "youtube": "https://www.youtube.com/watch?v=8PHHz4jR2lA"
   },
   "1603233892852": {
+    "apple": "https://music.apple.com/jp/album/day-by-day-ghosts-radio-edit/287589651?i=287589748",
+    "album": "https://music.apple.com/jp/album/day-by-day-ghosts-radio-edit/287589651?i=287589748",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/a4/01/f3/mzi.yddwrnht.tif/600x600bb.jpg",
     "yt": "sGZkNvzBng0",
     "youtube": "https://www.youtube.com/watch?v=sGZkNvzBng0"
   },
@@ -30477,6 +31229,14 @@
     "yt": "myqDGR0qOEE",
     "youtube": "https://www.youtube.com/watch?v=myqDGR0qOEE"
   },
+  "1311934114882": {
+    "apple": "https://music.apple.com/jp/album/i-will-be-with-you/1527519353?i=1527519408",
+    "album": "https://music.apple.com/jp/album/i-will-be-with-you/1527519353?i=1527519408",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/80/34/ff/8034ff89-becf-8fad-2ec2-80fee5ec34cc/859756060925_cover.png/600x600bb.jpg",
+    "yt": "nOUlV0P33rI",
+    "youtube": "https://www.youtube.com/watch?v=nOUlV0P33rI",
+    "ytmusic": "https://music.youtube.com/watch?v=nOUlV0P33rI"
+  },
   "1684452629622": {
     "yt": "4gkn3ltiqj8",
     "youtube": "https://www.youtube.com/watch?v=4gkn3ltiqj8"
@@ -30494,6 +31254,9 @@
     "youtube": "https://www.youtube.com/watch?v=b8bIV1KkBlM"
   },
   "1084798916716": {
+    "apple": "https://music.apple.com/jp/album/%E6%9C%AA%E6%9D%A5%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0/1766409141?i=1766409143",
+    "album": "https://music.apple.com/jp/album/%E6%9C%AA%E6%9D%A5%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0/1766409141?i=1766409143",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/7c/b0/9e7cb0c4-cb26-83ba-1fe1-00dfcb717b0d/732138992468_cover.jpg/600x600bb.jpg",
     "yt": "LMuy1Sf-Hi0",
     "youtube": "https://www.youtube.com/watch?v=LMuy1Sf-Hi0"
   },
@@ -30503,6 +31266,9 @@
     "ytmusic": "https://music.youtube.com/watch?v=0gdaz0DNtas"
   },
   "1489959789322": {
+    "apple": "https://music.apple.com/jp/album/sweet-days-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1327214934?i=1327214943",
+    "album": "https://music.apple.com/jp/album/sweet-days-feat-%E5%B0%8F%E6%98%A5%E3%82%81%E3%81%86/1327214934?i=1327214943",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f6/a0/7f/f6a07f77-68b0-1a92-b31a-ca5a8eb4d050/4571312470516_cover.jpg/600x600bb.jpg",
     "yt": "EkljHuhYSuE",
     "youtube": "https://www.youtube.com/watch?v=EkljHuhYSuE",
     "ytmusic": "https://music.youtube.com/watch?v=EkljHuhYSuE"
@@ -30511,7 +31277,20 @@
     "yt": "XaQBOhl06Bc",
     "youtube": "https://www.youtube.com/watch?v=XaQBOhl06Bc"
   },
+  "1669336588117": {
+    "apple": "https://music.apple.com/jp/album/%E8%8A%B1%E3%81%AE%E9%A0%81/950173580?i=950173584",
+    "album": "https://music.apple.com/jp/album/%E8%8A%B1%E3%81%AE%E9%A0%81/950173580?i=950173584",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/db/b7/22/dbb72259-fe34-319c-f0a2-df2f301b228b/FLOWERS.jpg/600x600bb.jpg"
+  },
+  "1865362126122": {
+    "apple": "https://music.apple.com/jp/album/%E5%88%BB%E9%99%90%E3%81%AE%E3%83%AD%E3%83%B3%E3%83%89/1893595622?i=1893595886",
+    "album": "https://music.apple.com/jp/album/%E5%88%BB%E9%99%90%E3%81%AE%E3%83%AD%E3%83%B3%E3%83%89/1893595622?i=1893595886",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/42/8b/ac428bc6-a15b-d9cc-19cb-9d3f2b24a42a/4562207988513_Cover.jpg/600x600bb.jpg"
+  },
   "1085039230291": {
+    "apple": "https://music.apple.com/jp/album/platinum-days/890360244?i=890360378",
+    "album": "https://music.apple.com/jp/album/platinum-days/890360244?i=890360378",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/08/d5/05/08d50543-dac8-e0cc-343b-40eec38e7244/LACA-15416.jpg/600x600bb.jpg",
     "yt": "zyKLJCpzmPw",
     "youtube": "https://www.youtube.com/watch?v=zyKLJCpzmPw"
   },
@@ -30519,11 +31298,22 @@
     "yt": "YwsCAieGbr4",
     "youtube": "https://www.youtube.com/watch?v=YwsCAieGbr4"
   },
+  "1085039231161": {
+    "apple": "https://music.apple.com/jp/album/%E6%A1%9C%E8%89%B2%E3%81%AE%E9%A1%98%E3%81%84/890360244?i=890360391",
+    "album": "https://music.apple.com/jp/album/%E6%A1%9C%E8%89%B2%E3%81%AE%E9%A1%98%E3%81%84/890360244?i=890360391",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/08/d5/05/08d50543-dac8-e0cc-343b-40eec38e7244/LACA-15416.jpg/600x600bb.jpg"
+  },
   "1085039434741": {
+    "apple": "https://music.apple.com/jp/album/my-happy-days/890360244?i=890360390",
+    "album": "https://music.apple.com/jp/album/my-happy-days/890360244?i=890360390",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/08/d5/05/08d50543-dac8-e0cc-343b-40eec38e7244/LACA-15416.jpg/600x600bb.jpg",
     "yt": "bYF5Zg0Xuw0",
     "youtube": "https://www.youtube.com/watch?v=bYF5Zg0Xuw0"
   },
   "1084950270181": {
+    "apple": "https://music.apple.com/jp/album/merry-merry-merry/890360244?i=890360383",
+    "album": "https://music.apple.com/jp/album/merry-merry-merry/890360244?i=890360383",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/08/d5/05/08d50543-dac8-e0cc-343b-40eec38e7244/LACA-15416.jpg/600x600bb.jpg",
     "yt": "56XKzc3Kayk",
     "youtube": "https://www.youtube.com/watch?v=56XKzc3Kayk"
   },
@@ -30544,10 +31334,16 @@
     "youtube": "https://www.youtube.com/watch?v=StB4IlmPDGI"
   },
   "1084798915411": {
+    "apple": "https://music.apple.com/jp/album/%E3%82%86%E3%82%89%E3%81%B5%E3%82%8F-sunny-day-short-ver/1557176676?i=1557176756",
+    "album": "https://music.apple.com/jp/album/%E3%82%86%E3%82%89%E3%81%B5%E3%82%8F-sunny-day-short-ver/1557176676?i=1557176756",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/45/4e/e1/454ee1f7-ce57-e731-9ec5-43fc49a202da/4543480001984_cover.png/600x600bb.jpg",
     "yt": "3gKuj6pKDGk",
     "youtube": "https://www.youtube.com/watch?v=3gKuj6pKDGk"
   },
   "1084949728171": {
+    "apple": "https://music.apple.com/jp/album/%E3%83%9B%E3%82%B7%E3%82%BE%E3%83%A9%E3%83%8F%E3%83%8A%E3%83%93-feat-%E8%92%BC%E8%A1%A3/1635022007?i=1635022012",
+    "album": "https://music.apple.com/jp/album/%E3%83%9B%E3%82%B7%E3%82%BE%E3%83%A9%E3%83%8F%E3%83%8A%E3%83%93-feat-%E8%92%BC%E8%A1%A3/1635022007?i=1635022012",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/21/ae/46/21ae46e7-8148-7306-599b-77a95fe512fc/859758484705_cover.jpg/600x600bb.jpg",
     "yt": "uJoA_Ci5u4E",
     "youtube": "https://www.youtube.com/watch?v=uJoA_Ci5u4E"
   },
@@ -30568,6 +31364,9 @@
     "youtube": "https://www.youtube.com/watch?v=HfFjoa1L1Fs"
   },
   "1084799116816": {
+    "apple": "https://music.apple.com/jp/album/affection-feat-kotoko/1435145445?i=1435145470",
+    "album": "https://music.apple.com/jp/album/affection-feat-kotoko/1435145445?i=1435145470",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/03/e9/7b/03e97b7a-c9b3-0524-75b4-09d9c75b131e/4571312470851_cover.jpg/600x600bb.jpg",
     "yt": "Yqt6E8u_lpU",
     "youtube": "https://www.youtube.com/watch?v=Yqt6E8u_lpU",
     "ytmusic": "https://music.youtube.com/watch?v=Yqt6E8u_lpU"
@@ -30846,5 +31645,895 @@
     "yt": "uHRsv4tqFrc",
     "youtube": "https://www.youtube.com/watch?v=uHRsv4tqFrc"
   },
-  "1084886878066": { "yt": "CTSacLjVWMM", "youtube": "https://www.youtube.com/watch?v=CTSacLjVWMM" }
+  "1084886878066": {
+    "yt": "CTSacLjVWMM",
+    "youtube": "https://www.youtube.com/watch?v=CTSacLjVWMM"
+  },
+  "1722474351417": {
+    "yt": "yqKqvhXdSUU",
+    "youtube": "https://www.youtube.com/watch?v=yqKqvhXdSUU"
+  },
+  "1722474350982": {
+    "yt": "lxBKuq-xoFw",
+    "youtube": "https://www.youtube.com/watch?v=lxBKuq-xoFw"
+  },
+  "1827336211362": {
+    "yt": "GdTt-Sd4DvM",
+    "youtube": "https://www.youtube.com/watch?v=GdTt-Sd4DvM",
+    "ytmusic": "https://music.youtube.com/watch?v=GdTt-Sd4DvM"
+  },
+  "1827336210492": {
+    "yt": "O5ah9AAyKQM",
+    "youtube": "https://www.youtube.com/watch?v=O5ah9AAyKQM",
+    "ytmusic": "https://music.youtube.com/watch?v=O5ah9AAyKQM"
+  },
+  "1722474558477": {
+    "yt": "hHRDk1UtgM4",
+    "youtube": "https://www.youtube.com/watch?v=hHRDk1UtgM4"
+  },
+  "1940027823357": {
+    "yt": "HZtnlBotXGI",
+    "youtube": "https://www.youtube.com/watch?v=HZtnlBotXGI",
+    "ytmusic": "https://music.youtube.com/watch?v=HZtnlBotXGI"
+  },
+  "1708334917972": {
+    "yt": "-QxU8_Qk610",
+    "youtube": "https://www.youtube.com/watch?v=-QxU8_Qk610",
+    "ytmusic": "https://music.youtube.com/watch?v=-QxU8_Qk610"
+  },
+  "1603472663047": {
+    "yt": "qk_OQwqtrSI",
+    "youtube": "https://www.youtube.com/watch?v=qk_OQwqtrSI"
+  },
+  "1603472662612": {
+    "yt": "C9K2dlWMstI",
+    "youtube": "https://www.youtube.com/watch?v=C9K2dlWMstI"
+  },
+  "1489959980287": {
+    "yt": "ksl7T91LiSU",
+    "youtube": "https://www.youtube.com/watch?v=ksl7T91LiSU",
+    "ytmusic": "https://music.youtube.com/watch?v=ksl7T91LiSU"
+  },
+  "1708333221472": {
+    "yt": "pJ1FO9tbUwA",
+    "youtube": "https://www.youtube.com/watch?v=pJ1FO9tbUwA",
+    "ytmusic": "https://music.youtube.com/watch?v=pJ1FO9tbUwA"
+  },
+  "1708422931522": {
+    "yt": "5d4oModIVQs",
+    "youtube": "https://www.youtube.com/watch?v=5d4oModIVQs"
+  },
+  "1708422931087": {
+    "yt": "FrIE0vv_Hzs",
+    "youtube": "https://www.youtube.com/watch?v=FrIE0vv_Hzs"
+  },
+  "1708422930652": {
+    "yt": "GYOtmtjZiIo",
+    "youtube": "https://www.youtube.com/watch?v=GYOtmtjZiIo"
+  },
+  "1781225649882": {
+    "yt": "h9qJZTsoHTQ",
+    "youtube": "https://www.youtube.com/watch?v=h9qJZTsoHTQ"
+  },
+  "1669159472647": {
+    "yt": "eODzJ2fAqJM",
+    "youtube": "https://www.youtube.com/watch?v=eODzJ2fAqJM"
+  },
+  "1826841183537": {
+    "yt": "dH0tKw47iLY",
+    "youtube": "https://www.youtube.com/watch?v=dH0tKw47iLY"
+  },
+  "1826841182232": {
+    "yt": "JR4gLJdKAnA",
+    "youtube": "https://www.youtube.com/watch?v=JR4gLJdKAnA"
+  },
+  "1826841182667": {
+    "yt": "8siX9S05IME",
+    "youtube": "https://www.youtube.com/watch?v=8siX9S05IME"
+  },
+  "1865775568392": {
+    "yt": "2aVbPoCYhnE",
+    "youtube": "https://www.youtube.com/watch?v=2aVbPoCYhnE"
+  },
+  "1084950267571": {
+    "yt": "_ZxrP9hL_w4",
+    "youtube": "https://www.youtube.com/watch?v=_ZxrP9hL_w4"
+  },
+  "1084950269746": {
+    "yt": "jqBWadR3uos",
+    "youtube": "https://www.youtube.com/watch?v=jqBWadR3uos"
+  },
+  "1708269280822": {
+    "yt": "B4yD7BCZqYU",
+    "youtube": "https://www.youtube.com/watch?v=B4yD7BCZqYU"
+  },
+  "1669246529632": {
+    "yt": "VJnldsJ6fXg",
+    "youtube": "https://www.youtube.com/watch?v=VJnldsJ6fXg"
+  },
+  "1781225790387": {
+    "yt": "Z_c5V1V0MdE",
+    "youtube": "https://www.youtube.com/watch?v=Z_c5V1V0MdE"
+  },
+  "1684188846057": {
+    "yt": "xPscDI173eg",
+    "youtube": "https://www.youtube.com/watch?v=xPscDI173eg"
+  },
+  "1603473799267": {
+    "yt": "SEEvpdzxH7k",
+    "youtube": "https://www.youtube.com/watch?v=SEEvpdzxH7k"
+  },
+  "1745799017182": {
+    "yt": "3oUGEkfNKaI",
+    "youtube": "https://www.youtube.com/watch?v=3oUGEkfNKaI"
+  },
+  "1283118536902": {
+    "yt": "4LIjR7Z4N34",
+    "youtube": "https://www.youtube.com/watch?v=4LIjR7Z4N34"
+  },
+  "1489958692687": {
+    "yt": "ImmmLN7yoM8",
+    "youtube": "https://www.youtube.com/watch?v=ImmmLN7yoM8",
+    "ytmusic": "https://music.youtube.com/watch?v=ImmmLN7yoM8"
+  },
+  "1684188850407": {
+    "yt": "3tb91hfDuyA",
+    "youtube": "https://www.youtube.com/watch?v=3tb91hfDuyA"
+  },
+  "1901677631757": {
+    "yt": "2PMuotJEaNo",
+    "youtube": "https://www.youtube.com/watch?v=2PMuotJEaNo"
+  },
+  "1528981390372": {
+    "yt": "jHGKCHVxREs",
+    "youtube": "https://www.youtube.com/watch?v=jHGKCHVxREs"
+  },
+  "1084797969721": {
+    "yt": "J6H3KATqLEQ",
+    "youtube": "https://www.youtube.com/watch?v=J6H3KATqLEQ"
+  },
+  "1528746011437": {
+    "yt": "m9Nw1SDp1ow",
+    "youtube": "https://www.youtube.com/watch?v=m9Nw1SDp1ow",
+    "ytmusic": "https://music.youtube.com/watch?v=m9Nw1SDp1ow"
+  },
+  "1746293650462": {
+    "yt": "9EdfK2vVYN4",
+    "youtube": "https://www.youtube.com/watch?v=9EdfK2vVYN4"
+  },
+  "1603385648692": {
+    "yt": "G0lcuo87OPw",
+    "youtube": "https://www.youtube.com/watch?v=G0lcuo87OPw"
+  },
+  "1603645646452": {
+    "yt": "b9bV0WLfcPM",
+    "youtube": "https://www.youtube.com/watch?v=b9bV0WLfcPM"
+  },
+  "1603144929262": {
+    "yt": "rU3hWyiRPLw",
+    "youtube": "https://www.youtube.com/watch?v=rU3hWyiRPLw"
+  },
+  "1603145129797": {
+    "yt": "34GxTG0lFAY",
+    "youtube": "https://www.youtube.com/watch?v=34GxTG0lFAY"
+  },
+  "1603145333377": {
+    "yt": "bJ9T-ehHUTI",
+    "youtube": "https://www.youtube.com/watch?v=bJ9T-ehHUTI",
+    "ytmusic": "https://music.youtube.com/watch?v=bJ9T-ehHUTI"
+  },
+  "1603145334247": {
+    "yt": "a-kW4TwfWFs",
+    "youtube": "https://www.youtube.com/watch?v=a-kW4TwfWFs",
+    "ytmusic": "https://music.youtube.com/watch?v=a-kW4TwfWFs"
+  },
+  "1745799015007": {
+    "yt": "s0kuq5u-qkI",
+    "youtube": "https://www.youtube.com/watch?v=s0kuq5u-qkI"
+  },
+  "1311434148937": {
+    "yt": "8_sZCTx0dZk",
+    "youtube": "https://www.youtube.com/watch?v=8_sZCTx0dZk"
+  },
+  "1311934264087": {
+    "yt": "MeVJEZ6FCTw",
+    "youtube": "https://www.youtube.com/watch?v=MeVJEZ6FCTw"
+  },
+  "1603385445547": {
+    "yt": "4Dmukdo7Ou8",
+    "youtube": "https://www.youtube.com/watch?v=4Dmukdo7Ou8"
+  },
+  "1311757146877": {
+    "yt": "W0HmwnFhvVk",
+    "youtube": "https://www.youtube.com/watch?v=W0HmwnFhvVk"
+  },
+  "1311757145137": {
+    "yt": "FH_zRh44EvA",
+    "youtube": "https://www.youtube.com/watch?v=FH_zRh44EvA"
+  },
+  "1684515978237": {
+    "yt": "LEPXzshVel8",
+    "youtube": "https://www.youtube.com/watch?v=LEPXzshVel8"
+  },
+  "1084949524591": {
+    "yt": "ba2ryddo55M",
+    "youtube": "https://www.youtube.com/watch?v=ba2ryddo55M"
+  },
+  "1084949523286": {
+    "yt": "r8gFH0xMko4",
+    "youtube": "https://www.youtube.com/watch?v=r8gFH0xMko4"
+  },
+  "1489958086732": {
+    "yt": "Z2HRyoMsIm8",
+    "youtube": "https://www.youtube.com/watch?v=Z2HRyoMsIm8"
+  },
+  "1489959035902": {
+    "yt": "ZLfNjb-wuck",
+    "youtube": "https://www.youtube.com/watch?v=ZLfNjb-wuck"
+  },
+  "1781225794737": {
+    "yt": "iJ6mljgYMlo",
+    "youtube": "https://www.youtube.com/watch?v=iJ6mljgYMlo",
+    "ytmusic": "https://music.youtube.com/watch?v=iJ6mljgYMlo"
+  },
+  "1283360001922": {
+    "yt": "qSfU0tw5ekw",
+    "youtube": "https://www.youtube.com/watch?v=qSfU0tw5ekw"
+  },
+  "1283360001487": {
+    "yt": "nf0Gb4XyJ7w",
+    "youtube": "https://www.youtube.com/watch?v=nf0Gb4XyJ7w",
+    "ytmusic": "https://music.youtube.com/watch?v=nf0Gb4XyJ7w"
+  },
+  "1084062073696": {
+    "yt": "JhcqSsWdrXo",
+    "youtube": "https://www.youtube.com/watch?v=JhcqSsWdrXo"
+  },
+  "1528981592212": {
+    "yt": "4MgdMN6YfRw",
+    "youtube": "https://www.youtube.com/watch?v=4MgdMN6YfRw"
+  },
+  "1746209275252": {
+    "yt": "-IIrxdrQ4Hk",
+    "youtube": "https://www.youtube.com/watch?v=-IIrxdrQ4Hk"
+  },
+  "1745799018487": {
+    "yt": "65gMrWpbK6Y",
+    "youtube": "https://www.youtube.com/watch?v=65gMrWpbK6Y"
+  },
+  "1745799018052": {
+    "yt": "hNfNbuhSdqk",
+    "youtube": "https://www.youtube.com/watch?v=hNfNbuhSdqk"
+  },
+  "1528746010132": {
+    "yt": "qqSbJly0qWo",
+    "youtube": "https://www.youtube.com/watch?v=qqSbJly0qWo",
+    "ytmusic": "https://music.youtube.com/watch?v=qqSbJly0qWo"
+  },
+  "1788901790277": {
+    "yt": "PJySA6n0Zbw",
+    "youtube": "https://www.youtube.com/watch?v=PJySA6n0Zbw"
+  },
+  "1603561967242": {
+    "yt": "crglfjPiZq8",
+    "youtube": "https://www.youtube.com/watch?v=crglfjPiZq8"
+  },
+  "1745711204602": {
+    "yt": "Vx0J8Fbv8dQ",
+    "youtube": "https://www.youtube.com/watch?v=Vx0J8Fbv8dQ"
+  },
+  "1669335643297": {
+    "yt": "WCgr4W9TStk",
+    "youtube": "https://www.youtube.com/watch?v=WCgr4W9TStk",
+    "ytmusic": "https://music.youtube.com/watch?v=WCgr4W9TStk"
+  },
+  "1684688756322": {
+    "yt": "2DDvZIeHN1s",
+    "youtube": "https://www.youtube.com/watch?v=2DDvZIeHN1s"
+  },
+  "1684688757192": {
+    "yt": "Gj6N9_Y4HiE",
+    "youtube": "https://www.youtube.com/watch?v=Gj6N9_Y4HiE"
+  },
+  "1490546968852": {
+    "yt": "jO1SGncs4b0",
+    "youtube": "https://www.youtube.com/watch?v=jO1SGncs4b0"
+  },
+  "1528809603652": {
+    "yt": "7Dm6cXpTvkQ",
+    "youtube": "https://www.youtube.com/watch?v=7Dm6cXpTvkQ"
+  },
+  "1641760860187": {
+    "yt": "MnGVAkKulS0",
+    "youtube": "https://www.youtube.com/watch?v=MnGVAkKulS0"
+  },
+  "1670224035532": {
+    "yt": "kfkgjIewUlk",
+    "youtube": "https://www.youtube.com/watch?v=kfkgjIewUlk"
+  },
+  "1684276255392": {
+    "yt": "UDh4GfT_fxo",
+    "youtube": "https://www.youtube.com/watch?v=UDh4GfT_fxo"
+  },
+  "2006276846532": {
+    "yt": "4gI7R1iStQg",
+    "youtube": "https://www.youtube.com/watch?v=4gI7R1iStQg"
+  },
+  "1310782825612": {
+    "yt": "2zLr2NUz_OY",
+    "youtube": "https://www.youtube.com/watch?v=2zLr2NUz_OY"
+  },
+  "1310782826917": {
+    "yt": "f_lzXml0Q4E",
+    "youtube": "https://www.youtube.com/watch?v=f_lzXml0Q4E"
+  },
+  "1940762422647": {
+    "yt": "hNm7MJwcdoA",
+    "youtube": "https://www.youtube.com/watch?v=hNm7MJwcdoA"
+  },
+  "1722474703767": {
+    "yt": "hkHUAZQnmko",
+    "youtube": "https://www.youtube.com/watch?v=hkHUAZQnmko"
+  },
+  "1684365368187": {
+    "yt": "wxExi-FrL2I",
+    "youtube": "https://www.youtube.com/watch?v=wxExi-FrL2I"
+  },
+  "1084063033741": {
+    "yt": "8Plhpz8POL0",
+    "youtube": "https://www.youtube.com/watch?v=8Plhpz8POL0"
+  },
+  "1084063032871": {
+    "yt": "1eDOICFJqnA",
+    "youtube": "https://www.youtube.com/watch?v=1eDOICFJqnA"
+  },
+  "1529069004157": {
+    "yt": "g_hQ7KG-KQA",
+    "youtube": "https://www.youtube.com/watch?v=g_hQ7KG-KQA"
+  },
+  "1684187900367": {
+    "yt": "SrhO05nNKNI",
+    "youtube": "https://www.youtube.com/watch?v=SrhO05nNKNI"
+  },
+  "1641760666177": {
+    "yt": "TiWyhfs4GaA",
+    "youtube": "https://www.youtube.com/watch?v=TiWyhfs4GaA"
+  },
+  "1641760664872": {
+    "yt": "EfxZ3WeRQmE",
+    "youtube": "https://www.youtube.com/watch?v=EfxZ3WeRQmE"
+  },
+  "1669158920197": {
+    "yt": "r6VwcRGGoSQ",
+    "youtube": "https://www.youtube.com/watch?v=r6VwcRGGoSQ"
+  },
+  "1490547911062": {
+    "yt": "CU3pZKOZ-1Y",
+    "youtube": "https://www.youtube.com/watch?v=CU3pZKOZ-1Y"
+  },
+  "1490547911497": {
+    "yt": "EDoZ5b5LBNA",
+    "youtube": "https://www.youtube.com/watch?v=EDoZ5b5LBNA",
+    "ytmusic": "https://music.youtube.com/watch?v=EDoZ5b5LBNA"
+  },
+  "1939786558437": {
+    "yt": "tAoAjvJLUbI",
+    "youtube": "https://www.youtube.com/watch?v=tAoAjvJLUbI",
+    "ytmusic": "https://music.youtube.com/watch?v=tAoAjvJLUbI"
+  },
+  "1939786557132": {
+    "yt": "LDdI0ZfXSU0",
+    "youtube": "https://www.youtube.com/watch?v=LDdI0ZfXSU0",
+    "ytmusic": "https://music.youtube.com/watch?v=LDdI0ZfXSU0"
+  },
+  "1283618862157": {
+    "yt": "Cq6tHyIseCM",
+    "youtube": "https://www.youtube.com/watch?v=Cq6tHyIseCM"
+  },
+  "1283618861722": {
+    "yt": "0zSv3Y7xiZ8",
+    "youtube": "https://www.youtube.com/watch?v=0zSv3Y7xiZ8"
+  },
+  "1684452438657": {
+    "yt": "PlP_kvDDat8",
+    "youtube": "https://www.youtube.com/watch?v=PlP_kvDDat8",
+    "ytmusic": "https://music.youtube.com/watch?v=PlP_kvDDat8"
+  },
+  "1684187297022": {
+    "yt": "RekE51dIRdg",
+    "youtube": "https://www.youtube.com/watch?v=RekE51dIRdg"
+  },
+  "1940115838647": {
+    "yt": "KJCvQZf9DvI",
+    "youtube": "https://www.youtube.com/watch?v=KJCvQZf9DvI"
+  },
+  "1940115834297": {
+    "yt": "R7FaGUHeCNY",
+    "youtube": "https://www.youtube.com/watch?v=R7FaGUHeCNY"
+  },
+  "1939850355102": {
+    "yt": "nm-Vq-cDMJQ",
+    "youtube": "https://www.youtube.com/watch?v=nm-Vq-cDMJQ"
+  },
+  "1603885554172": {
+    "yt": "Lea4aXxrBKY",
+    "youtube": "https://www.youtube.com/watch?v=Lea4aXxrBKY"
+  },
+  "1603885555477": {
+    "yt": "FqvaXhShSJ8",
+    "youtube": "https://www.youtube.com/watch?v=FqvaXhShSJ8"
+  },
+  "1670159744272": {
+    "yt": "vF8ZSvAH9Nw",
+    "youtube": "https://www.youtube.com/watch?v=vF8ZSvAH9Nw"
+  },
+  "1603233295597": {
+    "yt": "ElhG6Qkxj6Q",
+    "youtube": "https://www.youtube.com/watch?v=ElhG6Qkxj6Q"
+  },
+  "1641760857577": {
+    "yt": "MqKE7VPBTeA",
+    "youtube": "https://www.youtube.com/watch?v=MqKE7VPBTeA"
+  },
+  "1489959031552": {
+    "yt": "RL7Ff8jyzP0",
+    "youtube": "https://www.youtube.com/watch?v=RL7Ff8jyzP0"
+  },
+  "1641843740302": {
+    "yt": "cgoKba7hZpo",
+    "youtube": "https://www.youtube.com/watch?v=cgoKba7hZpo"
+  },
+  "1684276258437": {
+    "yt": "VGA4HIVmux4",
+    "youtube": "https://www.youtube.com/watch?v=VGA4HIVmux4"
+  },
+  "1311757144702": {
+    "yt": "yocdcNFHH5Y",
+    "youtube": "https://www.youtube.com/watch?v=yocdcNFHH5Y",
+    "ytmusic": "https://music.youtube.com/watch?v=yocdcNFHH5Y"
+  },
+  "1940199114177": {
+    "yt": "pXmKBv2F68I",
+    "youtube": "https://www.youtube.com/watch?v=pXmKBv2F68I",
+    "ytmusic": "https://music.youtube.com/watch?v=pXmKBv2F68I"
+  },
+  "1940027472312": {
+    "yt": "Di4dRfPdQkw",
+    "youtube": "https://www.youtube.com/watch?v=Di4dRfPdQkw"
+  },
+  "1283535573142": {
+    "yt": "RGbLPvM8rdI",
+    "youtube": "https://www.youtube.com/watch?v=RGbLPvM8rdI"
+  },
+  "1283535572707": {
+    "yt": "9q0axMCrlrw",
+    "youtube": "https://www.youtube.com/watch?v=9q0axMCrlrw"
+  },
+  "1940026874187": {
+    "yt": "xVBDpHMhVvA",
+    "youtube": "https://www.youtube.com/watch?v=xVBDpHMhVvA"
+  },
+  "1940026874622": {
+    "yt": "RxKmWf9V1WA",
+    "youtube": "https://www.youtube.com/watch?v=RxKmWf9V1WA"
+  },
+  "1669399777087": {
+    "yt": "FB-1RqRoFSk",
+    "youtube": "https://www.youtube.com/watch?v=FB-1RqRoFSk"
+  },
+  "1084886130736": {
+    "yt": "_Pl3YZxZiJc",
+    "youtube": "https://www.youtube.com/watch?v=_Pl3YZxZiJc"
+  },
+  "1084887823756": {
+    "yt": "rFBd1A61VYA",
+    "youtube": "https://www.youtube.com/watch?v=rFBd1A61VYA"
+  },
+  "1084799468296": {
+    "yt": "npUJBX2P8L8",
+    "youtube": "https://www.youtube.com/watch?v=npUJBX2P8L8"
+  },
+  "1489958695732": {
+    "yt": "xy5XPt1RPYw",
+    "youtube": "https://www.youtube.com/watch?v=xy5XPt1RPYw"
+  },
+  "1311522913732": {
+    "yt": "P_G1w1S9kPc",
+    "youtube": "https://www.youtube.com/watch?v=P_G1w1S9kPc"
+  },
+  "1669336791262": {
+    "yt": "Yq8WQ_xmw3w",
+    "youtube": "https://www.youtube.com/watch?v=Yq8WQ_xmw3w",
+    "ytmusic": "https://music.youtube.com/watch?v=Yq8WQ_xmw3w"
+  },
+  "1669336388452": {
+    "yt": "lDnag8d4j6M",
+    "youtube": "https://www.youtube.com/watch?v=lDnag8d4j6M"
+  },
+  "1489895846932": {
+    "yt": "VbJBwwLOUcg",
+    "youtube": "https://www.youtube.com/watch?v=VbJBwwLOUcg"
+  },
+  "2006213654952": {
+    "yt": "ontC6Kar75M",
+    "youtube": "https://www.youtube.com/watch?v=ontC6Kar75M"
+  },
+  "2006213655387": {
+    "yt": "qAo5lakBcpI",
+    "youtube": "https://www.youtube.com/watch?v=qAo5lakBcpI"
+  },
+  "2006213654082": {
+    "yt": "qAo5lakBcpI",
+    "youtube": "https://www.youtube.com/watch?v=qAo5lakBcpI"
+  },
+  "2006213847222": {
+    "yt": "Nx1LShsBTPs",
+    "youtube": "https://www.youtube.com/watch?v=Nx1LShsBTPs"
+  },
+  "1827101031222": {
+    "yt": "4UobU0vprEo",
+    "youtube": "https://www.youtube.com/watch?v=4UobU0vprEo"
+  },
+  "1827101032527": {
+    "yt": "Ad9yvSYky7k",
+    "youtube": "https://www.youtube.com/watch?v=Ad9yvSYky7k"
+  },
+  "1283618858677": {
+    "yt": "_r1PI1cD-rk",
+    "youtube": "https://www.youtube.com/watch?v=_r1PI1cD-rk",
+    "ytmusic": "https://music.youtube.com/watch?v=_r1PI1cD-rk"
+  },
+  "1641909577117": {
+    "yt": "2TaEc-Wcdtg",
+    "youtube": "https://www.youtube.com/watch?v=2TaEc-Wcdtg"
+  },
+  "1283271036592": {
+    "yt": "vS6keeiyVK8",
+    "youtube": "https://www.youtube.com/watch?v=vS6keeiyVK8"
+  },
+  "1788901788972": {
+    "yt": "D2pEnuuMb9w",
+    "youtube": "https://www.youtube.com/watch?v=D2pEnuuMb9w"
+  },
+  "1684277000547": {
+    "yt": "3RWqv0nkFVY",
+    "youtube": "https://www.youtube.com/watch?v=3RWqv0nkFVY"
+  },
+  "1603386390802": {
+    "yt": "2qSfhZw-6qc",
+    "youtube": "https://www.youtube.com/watch?v=2qSfhZw-6qc"
+  },
+  "1603386390367": {
+    "yt": "cAouMKXXm9c",
+    "youtube": "https://www.youtube.com/watch?v=cAouMKXXm9c"
+  },
+  "1641844683817": {
+    "yt": "dGiegAB2LxA",
+    "youtube": "https://www.youtube.com/watch?v=dGiegAB2LxA"
+  },
+  "1490698917397": {
+    "yt": "f7MNEalyuQY",
+    "youtube": "https://www.youtube.com/watch?v=f7MNEalyuQY"
+  },
+  "1708335322957": {
+    "yt": "W4DXxT7LMFw",
+    "youtube": "https://www.youtube.com/watch?v=W4DXxT7LMFw"
+  },
+  "1708335322087": {
+    "yt": "SKRYfUHlxJ0",
+    "youtube": "https://www.youtube.com/watch?v=SKRYfUHlxJ0"
+  },
+  "1708335317302": {
+    "yt": "LtXjXfXjjo8",
+    "youtube": "https://www.youtube.com/watch?v=LtXjXfXjjo8"
+  },
+  "1529220205807": {
+    "yt": "Z1WbdeMIwpI",
+    "youtube": "https://www.youtube.com/watch?v=Z1WbdeMIwpI"
+  },
+  "1669570670752": {
+    "yt": "VOaJI8Y-HjY",
+    "youtube": "https://www.youtube.com/watch?v=VOaJI8Y-HjY",
+    "ytmusic": "https://music.youtube.com/watch?v=VOaJI8Y-HjY"
+  },
+  "1746209826397": {
+    "yt": "goeFGkUj2ms",
+    "youtube": "https://www.youtube.com/watch?v=goeFGkUj2ms"
+  },
+  "1940027471442": {
+    "yt": "lur-5132Y7U",
+    "youtube": "https://www.youtube.com/watch?v=lur-5132Y7U"
+  },
+  "1940027472747": {
+    "yt": "qAMACZdlV3o",
+    "youtube": "https://www.youtube.com/watch?v=qAMACZdlV3o"
+  },
+  "1284270521302": {
+    "yt": "-NwaAY6AXs0",
+    "youtube": "https://www.youtube.com/watch?v=-NwaAY6AXs0"
+  },
+  "1284271471342": {
+    "yt": "A1VmCHi9oEI",
+    "youtube": "https://www.youtube.com/watch?v=A1VmCHi9oEI"
+  },
+  "1723298808222": {
+    "yt": "WGgRtIekIlc",
+    "youtube": "https://www.youtube.com/watch?v=WGgRtIekIlc"
+  },
+  "1939699748967": {
+    "yt": "GCfjTsvSL4M",
+    "youtube": "https://www.youtube.com/watch?v=GCfjTsvSL4M"
+  },
+  "1603232947162": {
+    "yt": "ESJuMH1GwSs",
+    "youtube": "https://www.youtube.com/watch?v=ESJuMH1GwSs"
+  },
+  "1311757348717": {
+    "yt": "_YBLLc-pn0w",
+    "youtube": "https://www.youtube.com/watch?v=_YBLLc-pn0w"
+  },
+  "1746209825527": {
+    "yt": "QrJv984SbFk",
+    "youtube": "https://www.youtube.com/watch?v=QrJv984SbFk"
+  },
+  "1641760263367": {
+    "yt": "xitOmQSpP1I",
+    "youtube": "https://www.youtube.com/watch?v=xitOmQSpP1I"
+  },
+  "1603232739667": {
+    "yt": "vYQLfR8q5Ag",
+    "youtube": "https://www.youtube.com/watch?v=vYQLfR8q5Ag"
+  },
+  "1789464702897": {
+    "yt": "su1HNlthVDw",
+    "youtube": "https://www.youtube.com/watch?v=su1HNlthVDw"
+  },
+  "1283359057972": {
+    "yt": "OsaOpbIeqZ8",
+    "youtube": "https://www.youtube.com/watch?v=OsaOpbIeqZ8"
+  },
+  "1084798724446": {
+    "yt": "MD35lERm548",
+    "youtube": "https://www.youtube.com/watch?v=MD35lERm548"
+  },
+  "1684275659007": {
+    "yt": "acrJ_SJaxwA",
+    "youtube": "https://www.youtube.com/watch?v=acrJ_SJaxwA"
+  },
+  "1708422929347": {
+    "yt": "uIsHlRveMM8",
+    "youtube": "https://www.youtube.com/watch?v=uIsHlRveMM8"
+  },
+  "1708422935002": {
+    "yt": "X7pC_50orvs",
+    "youtube": "https://www.youtube.com/watch?v=X7pC_50orvs"
+  },
+  "1642318881232": {
+    "yt": "iS73Gd0IWmc",
+    "youtube": "https://www.youtube.com/watch?v=iS73Gd0IWmc"
+  },
+  "1761085347267": {
+    "yt": "Kk5DnODLCWc",
+    "youtube": "https://www.youtube.com/watch?v=Kk5DnODLCWc"
+  },
+  "1761085346832": {
+    "yt": "I1_Ms29MEAs",
+    "youtube": "https://www.youtube.com/watch?v=I1_Ms29MEAs"
+  },
+  "1761085349877": {
+    "yt": "7OfFqSpnLBQ",
+    "youtube": "https://www.youtube.com/watch?v=7OfFqSpnLBQ"
+  },
+  "1761085349442": {
+    "yt": "XSbdrYvH93Q",
+    "youtube": "https://www.youtube.com/watch?v=XSbdrYvH93Q"
+  },
+  "1761085348572": {
+    "yt": "x8JaaSBvuvs",
+    "youtube": "https://www.youtube.com/watch?v=x8JaaSBvuvs"
+  },
+  "1761085351182": {
+    "yt": "w7qS51iltT4",
+    "youtube": "https://www.youtube.com/watch?v=w7qS51iltT4"
+  },
+  "1309776588687": {
+    "yt": "lxBKuq-xoFw",
+    "youtube": "https://www.youtube.com/watch?v=lxBKuq-xoFw"
+  },
+  "1641432128512": {
+    "yt": "iAft5hKCgk0",
+    "youtube": "https://www.youtube.com/watch?v=iAft5hKCgk0"
+  },
+  "1669336587247": {
+    "yt": "QjnK-R13r3w",
+    "youtube": "https://www.youtube.com/watch?v=QjnK-R13r3w",
+    "ytmusic": "https://music.youtube.com/watch?v=QjnK-R13r3w"
+  },
+  "1669336586812": {
+    "yt": "aHmM_pPMDHg",
+    "youtube": "https://www.youtube.com/watch?v=aHmM_pPMDHg",
+    "ytmusic": "https://music.youtube.com/watch?v=aHmM_pPMDHg"
+  },
+  "1669336586377": {
+    "yt": "2ch9FGl9Bps",
+    "youtube": "https://www.youtube.com/watch?v=2ch9FGl9Bps",
+    "ytmusic": "https://music.youtube.com/watch?v=2ch9FGl9Bps"
+  },
+  "1669336585942": {
+    "yt": "lBXCP_Vm5cc",
+    "youtube": "https://www.youtube.com/watch?v=lBXCP_Vm5cc",
+    "ytmusic": "https://music.youtube.com/watch?v=lBXCP_Vm5cc"
+  },
+  "1669336585507": {
+    "yt": "LvoyX6vtrvs",
+    "youtube": "https://www.youtube.com/watch?v=LvoyX6vtrvs"
+  },
+  "1669336585072": {
+    "yt": "UDDC3FxQRy4",
+    "youtube": "https://www.youtube.com/watch?v=UDDC3FxQRy4"
+  },
+  "1529157556672": {
+    "yt": "PKPKrmRfDzs",
+    "youtube": "https://www.youtube.com/watch?v=PKPKrmRfDzs"
+  },
+  "1746209825092": {
+    "yt": "u_UrcQ5PjMU",
+    "youtube": "https://www.youtube.com/watch?v=u_UrcQ5PjMU",
+    "ytmusic": "https://music.youtube.com/watch?v=u_UrcQ5PjMU"
+  },
+  "1722886456497": {
+    "yt": "8i9hDpWuWWE",
+    "youtube": "https://www.youtube.com/watch?v=8i9hDpWuWWE",
+    "ytmusic": "https://music.youtube.com/watch?v=8i9hDpWuWWE"
+  },
+  "1311668778802": {
+    "yt": "ukEABgVP1nQ",
+    "youtube": "https://www.youtube.com/watch?v=ukEABgVP1nQ"
+  },
+  "1311668778367": {
+    "yt": "mHpxq4VyIrI",
+    "youtube": "https://www.youtube.com/watch?v=mHpxq4VyIrI"
+  },
+  "1489958842762": {
+    "yt": "VnuaHWOH8YI",
+    "youtube": "https://www.youtube.com/watch?v=VnuaHWOH8YI"
+  },
+  "1529069001112": {
+    "yt": "zEq9Po_XIgg",
+    "youtube": "https://www.youtube.com/watch?v=zEq9Po_XIgg"
+  },
+  "1311757143832": {
+    "yt": "NMQLTJycmCw",
+    "youtube": "https://www.youtube.com/watch?v=NMQLTJycmCw",
+    "ytmusic": "https://music.youtube.com/watch?v=NMQLTJycmCw"
+  },
+  "1311757142092": {
+    "yt": "-y1GHzAbO6Q",
+    "youtube": "https://www.youtube.com/watch?v=-y1GHzAbO6Q",
+    "ytmusic": "https://music.youtube.com/watch?v=-y1GHzAbO6Q"
+  },
+  "1788901787667": {
+    "yt": "1GiBgVJQ_Kc",
+    "youtube": "https://www.youtube.com/watch?v=1GiBgVJQ_Kc"
+  },
+  "1788901787232": {
+    "yt": "EjGGjteAis4",
+    "youtube": "https://www.youtube.com/watch?v=EjGGjteAis4"
+  },
+  "1940199258162": {
+    "yt": "dGoe1YHc72s",
+    "youtube": "https://www.youtube.com/watch?v=dGoe1YHc72s"
+  },
+  "1084540069966": {
+    "yt": "yBM8teRDZJ4",
+    "youtube": "https://www.youtube.com/watch?v=yBM8teRDZJ4"
+  },
+  "1084540071706": {
+    "yt": "fr1df8IMnRA",
+    "youtube": "https://www.youtube.com/watch?v=fr1df8IMnRA"
+  },
+  "1084540066486": {
+    "yt": "3mp4169KoaU",
+    "youtube": "https://www.youtube.com/watch?v=3mp4169KoaU"
+  },
+  "1084540072141": {
+    "yt": "Km8_OBr-FAg",
+    "youtube": "https://www.youtube.com/watch?v=Km8_OBr-FAg"
+  },
+  "1084540217431": {
+    "yt": "dvqAd4DKgfo",
+    "youtube": "https://www.youtube.com/watch?v=dvqAd4DKgfo"
+  },
+  "1774695115182": {
+    "yt": "ErUPAuU2Sqk",
+    "youtube": "https://www.youtube.com/watch?v=ErUPAuU2Sqk"
+  },
+  "1084540218301": {
+    "yt": "mVZQOsgC5j8",
+    "youtube": "https://www.youtube.com/watch?v=mVZQOsgC5j8"
+  },
+  "1084540071271": {
+    "yt": "RhwiKARLE48",
+    "youtube": "https://www.youtube.com/watch?v=RhwiKARLE48"
+  },
+  "1722386535792": {
+    "yt": "9Mng64_7Zg8",
+    "youtube": "https://www.youtube.com/watch?v=9Mng64_7Zg8"
+  },
+  "1761151187562": {
+    "yt": "AdcAHoYk7TU",
+    "youtube": "https://www.youtube.com/watch?v=AdcAHoYk7TU"
+  },
+  "1865211323802": {
+    "yt": "FogwndQAr4M",
+    "youtube": "https://www.youtube.com/watch?v=FogwndQAr4M"
+  },
+  "1283357706862": {
+    "yt": "nbwGVKFVKUk",
+    "youtube": "https://www.youtube.com/watch?v=nbwGVKFVKUk"
+  },
+  "1788901391382": {
+    "yt": "b9hT8BHJ7VE",
+    "youtube": "https://www.youtube.com/watch?v=b9hT8BHJ7VE",
+    "ytmusic": "https://music.youtube.com/watch?v=b9hT8BHJ7VE"
+  },
+  "1826841035202": {
+    "yt": "p4YyQ8voBNA",
+    "youtube": "https://www.youtube.com/watch?v=p4YyQ8voBNA"
+  },
+  "1641843536287": {
+    "yt": "vG4AnaZZ6i0",
+    "youtube": "https://www.youtube.com/watch?v=vG4AnaZZ6i0"
+  },
+  "1084540215256": {
+    "yt": "-AV0YVr92r4",
+    "youtube": "https://www.youtube.com/watch?v=-AV0YVr92r4",
+    "ytmusic": "https://music.youtube.com/watch?v=-AV0YVr92r4"
+  },
+  "2006776558872": {
+    "yt": "1VYCYNtwFvs",
+    "youtube": "https://www.youtube.com/watch?v=1VYCYNtwFvs"
+  },
+  "2006776561917": {
+    "yt": "Y2OzpVdlsYc",
+    "youtube": "https://www.youtube.com/watch?v=Y2OzpVdlsYc"
+  },
+  "2006776561482": {
+    "yt": "kMHiMv6Oc14",
+    "youtube": "https://www.youtube.com/watch?v=kMHiMv6Oc14"
+  },
+  "1902410877327": {
+    "yt": "XRoggK2J9CE",
+    "youtube": "https://www.youtube.com/watch?v=XRoggK2J9CE"
+  },
+  "1902410876457": {
+    "yt": "pIgCfu6EK6c",
+    "youtube": "https://www.youtube.com/watch?v=pIgCfu6EK6c",
+    "ytmusic": "https://music.youtube.com/watch?v=pIgCfu6EK6c"
+  },
+  "1723299011367": {
+    "yt": "LtiuRfLL5cc",
+    "youtube": "https://www.youtube.com/watch?v=LtiuRfLL5cc"
+  },
+  "1723298804742": {
+    "yt": "7YsXkaxZmDA",
+    "youtube": "https://www.youtube.com/watch?v=7YsXkaxZmDA"
+  },
+  "1084950077041": {
+    "yt": "rjjcxz0cq_I",
+    "youtube": "https://www.youtube.com/watch?v=rjjcxz0cq_I"
+  },
+  "1084950076171": {
+    "yt": "n75DTRQ2QHw",
+    "youtube": "https://www.youtube.com/watch?v=n75DTRQ2QHw"
+  },
+  "1084950075736": {
+    "yt": "CkYhTFGlHGs",
+    "youtube": "https://www.youtube.com/watch?v=CkYhTFGlHGs"
+  },
+  "1084950075301": {
+    "yt": "ydxU6sI4CJ8",
+    "youtube": "https://www.youtube.com/watch?v=ydxU6sI4CJ8"
+  },
+  "1084950074866": { "yt": "CDFUajpplTk", "youtube": "https://www.youtube.com/watch?v=CDFUajpplTk" }
 }
