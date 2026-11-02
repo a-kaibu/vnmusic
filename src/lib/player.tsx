@@ -53,6 +53,20 @@ const loadApi = () =>
     document.head.appendChild(s);
   }));
 
+export type Repeat = "off" | "all" | "one";
+const MODE_KEY = "vnmusic:mode";
+const loadMode = (): { repeat: Repeat; shuffle: boolean } => {
+  try {
+    const m = JSON.parse(localStorage.getItem(MODE_KEY) ?? "{}");
+    return {
+      repeat: ["off", "all", "one"].includes(m.repeat) ? m.repeat : "off",
+      shuffle: Boolean(m.shuffle),
+    };
+  } catch {
+    return { repeat: "off", shuffle: false };
+  }
+};
+
 type State = {
   current: Song | null;
   playing: boolean;
@@ -60,6 +74,9 @@ type State = {
   duration: number;
   hasPrev: boolean;
   hasNext: boolean;
+  /** off: 最後で止まる / all: 先頭に戻る / one: 同じ曲をくり返す */
+  repeat: Repeat;
+  shuffle: boolean;
   showVideo: boolean;
   /** 0〜100 */
   volume: number;
@@ -72,6 +89,9 @@ type Api = State & {
   play: (song: Song, list: Song[]) => void;
   toggle: () => void;
   next: () => void;
+  /** off → all → one → off */
+  cycleRepeat: () => void;
+  toggleShuffle: () => void;
   prev: () => void;
   seek: (t: number) => void;
   setShowVideo: (v: boolean) => void;
@@ -110,23 +130,52 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     duration: 0,
     hasPrev: false,
     hasNext: false,
+    ...loadMode(),
     showVideo: true,
     volume: loadVolume(),
     muted: false,
     anchor: null,
   });
 
-  const step = useCallback((dir: 1 | -1) => {
+  const mode = useRef(loadMode());
+  /** シャッフル中に聴いた順（前の曲に戻るため） */
+  const history = useRef<number[]>([]);
+
+  /** 次（前）の曲へ。auto は曲が終わって自動で進むとき */
+  const step = useCallback((dir: 1 | -1, auto = false) => {
     const q = queue.current;
+    const { repeat, shuffle } = mode.current;
+    if (auto && repeat === "one" && idx.current >= 0) return start(idx.current, true);
+    if (shuffle) {
+      if (dir === -1) {
+        const back = history.current.pop();
+        if (back !== undefined) return start(back, true);
+        return;
+      }
+      const cand = q.map((_, i) => i).filter((i) => i !== idx.current && playable(q[i]));
+      if (cand.length) {
+        if (idx.current >= 0) history.current.push(idx.current);
+        return start(cand[Math.floor(Math.random() * cand.length)], true);
+      }
+      if (repeat === "all" && idx.current >= 0) return start(idx.current, true);
+      return setSt((s) => ({ ...s, playing: false }));
+    }
     for (let i = idx.current + dir; i >= 0 && i < q.length; i += dir) {
       if (playable(q[i])) return start(i);
+    }
+    // 最後まで行ったら、全曲リピートなら反対の端から
+    if (repeat === "all") {
+      for (let n = 0, i = dir === 1 ? 0 : q.length - 1; n < q.length; n++, i += dir) {
+        if (playable(q[i])) return start(i);
+      }
     }
     setSt((s) => ({ ...s, playing: false }));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const start = useCallback(
-    async (i: number) => {
+    async (i: number, keepHistory = false) => {
+      if (!keepHistory) history.current = [];
       idx.current = i;
       const song = queue.current[i];
       const nico = links[song.id]?.yt ? undefined : links[song.id]?.nico;
@@ -137,8 +186,9 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
         current: song,
         time: 0,
         duration: 0,
-        hasPrev: q.slice(0, i).some(playable),
-        hasNext: q.slice(i + 1).some(playable),
+        hasPrev: q.slice(0, i).some(playable) || history.current.length > 0,
+        hasNext:
+          q.slice(i + 1).some(playable) || mode.current.repeat !== "off" || mode.current.shuffle,
       }));
       if (nico) {
         // ニコニコ動画は埋め込みプレーヤーを postMessage で操作する
@@ -175,7 +225,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
                 player.current?.playVideo();
                 return;
               }
-              if (e.data === 0) step(1); // ended
+              if (e.data === 0) step(1, true); // ended
               setSt((s) => ({ ...s, playing: e.data === 1 || e.data === 3 }));
             },
             // 埋め込み不可・削除済みなどは飛ばす
@@ -204,7 +254,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       } else if (eventName === "playerStatusChange") {
         const st = data?.playerStatus;
         if (st === 2) errors.current = 0;
-        if (st === 4) step(1);
+        if (st === 4) step(1, true);
         setSt((s) => ({ ...s, playing: st === 2 || st === 1 }));
       } else if (eventName === "playerMetadataChange") {
         const t = (data?.currentTime ?? 0) / 1000;
@@ -240,6 +290,23 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     return () => clearInterval(t);
   }, []);
 
+  const setMode = (m: { repeat: Repeat; shuffle: boolean }) => {
+    mode.current = m;
+    history.current = [];
+    try {
+      localStorage.setItem(MODE_KEY, JSON.stringify(m));
+    } catch {
+      /* 保存できなくても動く */
+    }
+    const q = queue.current;
+    const i = idx.current;
+    setSt((s) => ({
+      ...s,
+      ...m,
+      hasNext: (i >= 0 && q.slice(i + 1).some(playable)) || m.repeat !== "off" || m.shuffle,
+    }));
+  };
+
   hidden.current = !st.showVideo && !st.anchor;
   volRef.current = { volume: st.volume, muted: st.muted };
   const api: Api = {
@@ -263,6 +330,11 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       else player.current.playVideo();
     },
     next: () => step(1),
+    cycleRepeat: () => {
+      const r: Repeat = st.repeat === "off" ? "all" : st.repeat === "all" ? "one" : "off";
+      setMode({ repeat: r, shuffle: st.shuffle });
+    },
+    toggleShuffle: () => setMode({ repeat: st.repeat, shuffle: !st.shuffle }),
     prev: () => {
       if (st.time > 5)
         return kind.current === "nico"

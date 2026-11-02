@@ -10,6 +10,9 @@ import {
   VolumeX,
   VideoOff,
   Minimize2,
+  Repeat,
+  Repeat1,
+  Shuffle,
 } from "lucide-react";
 import { type Song, artworkOf } from "../lib/songs";
 import { usePlayer } from "../lib/player";
@@ -48,6 +51,8 @@ function useShortcuts(p: ReturnType<typeof usePlayer>) {
       else if (k === "N" && e.shiftKey) p.next();
       else if (k === "P" && e.shiftKey) p.prev();
       else if (k === "Home") p.seek(0);
+      else if (k === "r" || k === "R") p.cycleRepeat();
+      else if (k === "s" || k === "S") p.toggleShuffle();
       else if (/^[0-9]$/.test(k) && p.duration) p.seek((p.duration * Number(k)) / 10);
       else return;
       e.preventDefault();
@@ -123,6 +128,15 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
               {mmss(p.time)} / {mmss(p.duration)}
             </span>
             <button
+              onClick={p.toggleShuffle}
+              className={`rounded-full p-2 max-sm:hidden ${p.shuffle ? "text-accent" : "text-muted hover:text-white"}`}
+              aria-label={p.shuffle ? "シャッフルをオフ" : "シャッフル"}
+              aria-pressed={p.shuffle}
+              title={p.shuffle ? "シャッフル: オン (S)" : "シャッフル: オフ (S)"}
+            >
+              <Shuffle className="size-4" />
+            </button>
+            <button
               onClick={p.prev}
               className="rounded-full p-2 text-muted hover:text-white"
               aria-label="前の曲"
@@ -150,6 +164,26 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
               title="次の曲 (Shift+N)"
             >
               <SkipForward className="size-4" />
+            </button>
+            <button
+              onClick={p.cycleRepeat}
+              className={`rounded-full p-2 ${p.repeat !== "off" ? "text-accent" : "text-muted hover:text-white"}`}
+              aria-label={
+                p.repeat === "off"
+                  ? "リピート: オフ"
+                  : p.repeat === "all"
+                    ? "リピート: すべて"
+                    : "リピート: 1曲"
+              }
+              title={
+                (p.repeat === "off"
+                  ? "リピート: オフ"
+                  : p.repeat === "all"
+                    ? "リピート: すべて"
+                    : "リピート: 1曲") + " (R)"
+              }
+            >
+              {p.repeat === "one" ? <Repeat1 className="size-4" /> : <Repeat className="size-4" />}
             </button>
             <div
               ref={wheel}
