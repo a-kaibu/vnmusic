@@ -533,11 +533,10 @@ async function stageSpotify() {
   ).json()) as { access_token: string };
   const odesli = load<Record<number, OdesliOut>>("odesli.json", {});
   const out = load<Record<number, { url: string; artwork?: string } | null>>("spotify.json", {});
-  const targets = songs.filter(
-    (s) => s.stream.spotify > 0 && !odesli[s.id]?.spotify && !(s.id in out),
-  );
+  // CSV の配信情報は古いので全曲探す（配信○△の曲は曲名一致だけで、それ以外は歌手も一致したものだけ採用）
+  const targets = songs.filter((s) => !odesli[s.id]?.spotify && !(s.id in out));
   console.log(`Spotify API: ${targets.length} 曲`);
-  for (const s of targets) {
+  for (const [i, s] of targets.entries()) {
     const q = `track:${s.title}${firstArtist(s) ? ` artist:${firstArtist(s)}` : ""}`;
     const r = await get(
       `https://api.spotify.com/v1/search?${new URLSearchParams({ q, type: "track", market: "JP", limit: "10" })}`,
@@ -545,13 +544,35 @@ async function stageSpotify() {
         headers: { authorization: `Bearer ${tok.access_token}` },
       },
     );
-    const j = (await r.json()) as { tracks?: { items: any[] } };
-    const hit = j.tracks?.items.find(
-      (t) => norm(t.name) === norm(s.title) || norm(t.name).startsWith(norm(s.title)),
-    );
+    let j = (await r.json()) as { tracks?: { items: any[] } };
+    if (!j.tracks?.items.length && firstArtist(s)) {
+      await sleep(300);
+      const r2 = await get(
+        `https://api.spotify.com/v1/search?${new URLSearchParams({ q: `track:${s.title}`, type: "track", market: "JP", limit: "20" })}`,
+        { headers: { authorization: `Bearer ${tok.access_token}` } },
+      );
+      j = (await r2.json()) as { tracks?: { items: any[] } };
+    }
+    const t = norm(s.title);
+    const a = norm(firstArtist(s));
+    const titleOk = (x: any) =>
+      (norm(x.name) === t || norm(x.name.replace(/\s*[-(（].*$/, "")) === t) &&
+      !/(off ?vocal|instrumental|karaoke|カラオケ)/i.test(x.name);
+    const artistOk = (x: any) =>
+      a.length > 0 &&
+      x.artists?.some((ar: any) => norm(ar.name).includes(a) || a.includes(norm(ar.name)));
+    const hit =
+      j.tracks?.items.find((x) => titleOk(x) && artistOk(x)) ??
+      (s.stream.spotify > 0 ? j.tracks?.items.find(titleOk) : undefined);
     out[s.id] = hit
       ? { url: hit.external_urls.spotify, artwork: hit.album?.images?.[0]?.url }
       : null;
+    if (i % 50 === 49) {
+      save("spotify.json", out);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
+    }
     await sleep(300);
   }
   save("spotify.json", out);
