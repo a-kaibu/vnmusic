@@ -1,7 +1,16 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { X, ExternalLink, Disc, Mic, Globe, Search, Play, Link2, Check } from "lucide-react";
 import { usePlayer } from "../lib/player";
-import { type Song, services, searchQuery, links, games, artworkOf, flagOf, cds } from "../lib/songs";
+import {
+  type Song,
+  services,
+  searchQuery,
+  links,
+  games,
+  artworkOf,
+  flagOf,
+  cds,
+} from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
 import { ScopeLink } from "./ScopeLink";
@@ -159,21 +168,6 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           </div>
         </div>
 
-        {l.apple && (
-          <section className="mt-4">
-            <iframe
-              title="Apple Music"
-              src={l.apple.replace("https://music.apple.com/", "https://embed.music.apple.com/")}
-              allow="autoplay *; encrypted-media *; clipboard-write"
-              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-              className="h-[175px] w-full overflow-hidden rounded-xl"
-            />
-            <p className="mt-1 text-[11px] text-muted/80">
-              Apple Music にサインインしていればフル再生、それ以外は試聴です。
-            </p>
-          </section>
-        )}
-
         {/* 配信 */}
         <section className="mt-5">
           <h3 className="mb-2 flex items-center gap-2 text-sm font-bold">
@@ -243,6 +237,9 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
                   ))}
                 </span>
               )}
+            </Row>
+            <Row label="Vo">
+              {s.vocal && <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />}
             </Row>
             <Row label="作詞">
               {s.lyrics && <ScopeLink kind="lyrics" value={s.lyrics} onScope={onScope} split />}
