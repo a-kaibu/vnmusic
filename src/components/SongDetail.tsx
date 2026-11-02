@@ -195,26 +195,6 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
               );
             })}
           </div>
-          <details className="mt-2 text-xs text-muted">
-            <summary className="cursor-pointer select-none hover:text-white">
-              ほかのサービスで検索
-            </summary>
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {services
-                .filter((sv) => !l[sv.key] && sv.key !== "youtube" && !flagOf(s, sv.key))
-                .map((sv) => (
-                  <a
-                    key={sv.key}
-                    href={sv.url(q) ?? "#"}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-full border border-line px-2.5 py-1 hover:bg-elev hover:text-white"
-                  >
-                    {sv.name}
-                  </a>
-                ))}
-            </div>
-          </details>
           <p className="mt-2 text-[11px] leading-relaxed text-muted/80">
             <ExternalLink className="inline size-3" /> は曲ページへの直リンク、
             <Search className="inline size-3" /> は検索結果を開きます。
