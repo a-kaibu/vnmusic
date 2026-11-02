@@ -1,6 +1,6 @@
 import { type RefObject, useLayoutEffect, useRef, useState } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { Clock3, Play, AudioLines } from "lucide-react";
+import { Play, AudioLines } from "lucide-react";
 import { playable } from "../lib/player";
 import { type Song, year, artworkOf } from "../lib/songs";
 import type { Scope } from "../App";
@@ -21,7 +21,7 @@ type Props = {
 const ROW = 60;
 const vo = (s: Song) => s.vocal || (/BGM/.test(s.category) ? "（インスト）" : "歌手不明");
 const grid =
-  "grid grid-cols-[minmax(0,1fr)] md:grid-cols-[minmax(0,1.3fr)_minmax(0,.8fr)_minmax(0,1fr)_minmax(0,.7fr)_3.5rem_4rem] items-center gap-3";
+  "grid grid-cols-[minmax(0,1fr)] md:grid-cols-[minmax(0,1.3fr)_minmax(0,.8fr)_minmax(0,1fr)_minmax(0,.7fr)_4.5rem_4rem] items-center gap-3";
 
 export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, playingId }: Props) {
   // ヘッダー等の分だけリストの開始位置がずれるので補正
@@ -51,9 +51,7 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
         <span className="max-md:hidden">歌</span>
         <span className="max-md:hidden">ゲーム</span>
         <span className="max-md:hidden">ブランド</span>
-        <span className="max-md:hidden">
-          <Clock3 className="size-3.5" />
-        </span>
+        <span className="max-md:hidden">リリース年</span>
         <span className="text-right max-md:hidden">区分</span>
       </div>
       <div ref={listRef} style={{ height: v.getTotalSize(), position: "relative" }}>
