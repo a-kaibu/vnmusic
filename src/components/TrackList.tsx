@@ -5,6 +5,8 @@ import { playable } from "../lib/player";
 import { type Song, year, artworkOf } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
+import { FavButton } from "./FavButton";
+import { useFavorites } from "../lib/favorites";
 
 type Props = {
   songs: Song[];
@@ -24,6 +26,7 @@ const grid =
 export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, playingId }: Props) {
   // ヘッダー等の分だけリストの開始位置がずれるので補正
   const listRef = useRef<HTMLDivElement>(null);
+  const fav = useFavorites();
   const [margin, setMargin] = useState(0);
   useLayoutEffect(() => {
     setMargin(listRef.current?.offsetTop ?? 0);
@@ -96,7 +99,7 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
                     )
                   )}
                 </div>
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p
                     className={`truncate text-sm font-semibold ${active ? "text-accent" : "text-white"}`}
                   >
@@ -106,6 +109,14 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
                     {vo(s)} ・ {s.game}
                   </p>
                 </div>
+                <FavButton
+                  id={s.id}
+                  className={
+                    fav.has(s.id)
+                      ? ""
+                      : "opacity-0 group-hover:opacity-100 focus:opacity-100 max-md:opacity-100"
+                  }
+                />
               </div>
               <span className="truncate text-sm text-muted max-md:hidden">{vo(s)}</span>
               <span className="truncate text-sm text-muted max-md:hidden">{s.game}</span>

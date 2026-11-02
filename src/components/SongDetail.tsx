@@ -1,17 +1,10 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { X, ExternalLink, Disc, Mic, Globe, Search, Play, Link2, Check } from "lucide-react";
 import { usePlayer } from "../lib/player";
-import {
-  type Song,
-  services,
-  searchQuery,
-  links,
-  games,
-  artworkOf,
-  cds,
-} from "../lib/songs";
+import { type Song, services, searchQuery, links, games, artworkOf, cds } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
+import { FavButton } from "./FavButton";
 import { ScopeLink } from "./ScopeLink";
 
 type Props = {
@@ -158,7 +151,10 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
                 <ScopeLink kind="category" value={s.category} onScope={onScope} />
               </p>
             )}
-            <h2 className="mt-1 text-2xl font-extrabold break-words">{s.title}</h2>
+            <div className="mt-1 flex items-start gap-1">
+              <h2 className="min-w-0 flex-1 text-2xl font-extrabold break-words">{s.title}</h2>
+              <FavButton id={s.id} className="mt-1 shrink-0" />
+            </div>
             {s.vocal && (
               <p className="mt-1 text-sm text-muted">
                 <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />

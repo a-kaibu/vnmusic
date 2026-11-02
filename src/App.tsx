@@ -10,7 +10,9 @@ import {
   Music2,
   Play,
   Headphones,
+  Heart,
 } from "lucide-react";
+import { useFavorites } from "./lib/favorites";
 import {
   songs,
   matchScope,
@@ -29,7 +31,7 @@ import { SongDetail } from "./components/SongDetail";
 import { NowBar, VideoBox } from "./components/NowBar";
 import { usePlayer, playable } from "./lib/player";
 
-export type View = "tracks" | "games" | "brands" | "artists";
+export type View = "tracks" | "favorites" | "games" | "brands" | "artists";
 export type Scope = { kind: ScopeKind; name: string } | null;
 type Sort = "random" | "new" | "old" | "title";
 
@@ -44,11 +46,12 @@ const nav: { key: View; label: string; icon: typeof Disc3 }[] = [
   { key: "games", label: "ゲーム", icon: Gamepad2 },
   { key: "brands", label: "ブランド", icon: Building2 },
   { key: "artists", label: "アーティスト", icon: Mic2 },
+  { key: "favorites", label: "お気に入り", icon: Heart },
 ];
 
 const firstArtist = (s: Song) => s.vocal.split(" / ")[0] ?? "";
 const songById = new Map(songs.map((s) => [s.id, s]));
-const views: View[] = ["tracks", "games", "brands", "artists"];
+const views: View[] = ["tracks", "favorites", "games", "brands", "artists"];
 const sorts: Sort[] = ["random", "new", "old", "title"];
 /** ページを開くたびに変わるランダム順（絞り込んでも並びは保つ） */
 const shuffleKey = new Map(songs.map((s) => [s.id, Math.random()]));
@@ -171,14 +174,23 @@ export default function App() {
     return songs.filter((_, i) => terms.every((t) => index[i].includes(t)));
   }, [q]);
 
+  const favs = useFavorites().list;
+  const isList = view === "tracks" || view === "favorites";
   const tracks = useMemo(() => {
+    const favView = view === "favorites" && !scope;
     let list = searched;
+    if (favView) {
+      // お気に入りは追加した新しい順（並び替えを選んだらそちら）
+      const rank = new Map(favs.map((id, i) => [id, i]));
+      list = list.filter((s) => rank.has(s.id));
+      if (sort === "random") return list.sort((a, b) => rank.get(a.id)! - rank.get(b.id)!);
+    }
     if (scope) {
       list = list.filter((s) => matchScope(s, scope.kind, scope.name));
     }
     if (cats.length) list = list.filter((s) => cats.includes(categoryGroup(s.category)));
-    if (onlyStream) list = list.filter((s) => streamCount(s) > 0);
-    if (onlyPlayable) list = list.filter(playable);
+    if (onlyStream && !favView) list = list.filter((s) => streamCount(s) > 0);
+    if (onlyPlayable && !favView) list = list.filter(playable);
     list = [...list].sort((a, b) =>
       sort === "random"
         ? shuffleKey.get(a.id)! - shuffleKey.get(b.id)!
@@ -189,7 +201,7 @@ export default function App() {
             : a.release.localeCompare(b.release) || a.game.localeCompare(b.game, "ja"),
     );
     return list;
-  }, [searched, scope, cats, onlyStream, onlyPlayable, sort]);
+  }, [searched, scope, cats, onlyStream, onlyPlayable, sort, view, favs]);
 
   const groups = useMemo(() => {
     if (view === "games") return groupBy(searched, (s) => s.game);
@@ -234,7 +246,9 @@ export default function App() {
       }
     : view === "tracks"
       ? { label: "プレイリスト", title: "ギャルゲソング 全曲" }
-      : { label: "ライブラリ", title: nav.find((n) => n.key === view)!.label };
+      : view === "favorites"
+        ? { label: "プレイリスト", title: "お気に入り" }
+        : { label: "ライブラリ", title: nav.find((n) => n.key === view)!.label };
 
   return (
     <div className="flex h-full flex-col">
@@ -303,10 +317,10 @@ export default function App() {
               {heading.title}
             </h1>
             <p className="mt-2 text-sm text-muted">
-              {view === "tracks"
+              {isList
                 ? `${tracks.length.toLocaleString()} 曲`
                 : `${groups.length.toLocaleString()} 件`}
-              {view === "tracks" && tracks.some(playable) && (
+              {isList && tracks.some(playable) && (
                 <button
                   onClick={() => player.play(tracks.find(playable)!, tracks)}
                   className="ml-3 inline-flex items-center gap-1 rounded-full bg-accent px-4 py-1 text-xs font-bold text-black hover:brightness-110"
@@ -326,7 +340,7 @@ export default function App() {
             </p>
           </section>
 
-          {view === "tracks" ? (
+          {isList ? (
             <>
               <div className="flex flex-wrap items-center gap-2 px-4 pb-3 md:px-6">
                 {categoryGroups.map((c) => {
@@ -341,24 +355,28 @@ export default function App() {
                     </button>
                   );
                 })}
-                <button
-                  onClick={() => setOnlyStream(!onlyStream)}
-                  className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold transition ${
-                    onlyStream ? "bg-accent text-black" : "bg-elev text-white hover:bg-line"
-                  }`}
-                >
-                  <Music2 className="size-3" />
-                  配信あり
-                </button>
-                <button
-                  onClick={() => setOnlyPlayable(!onlyPlayable)}
-                  className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold transition ${
-                    onlyPlayable ? "bg-accent text-black" : "bg-elev text-white hover:bg-line"
-                  }`}
-                >
-                  <Headphones className="size-3" />
-                  ここで聴ける
-                </button>
+                {view !== "favorites" && (
+                  <>
+                    <button
+                      onClick={() => setOnlyStream(!onlyStream)}
+                      className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold transition ${
+                        onlyStream ? "bg-accent text-black" : "bg-elev text-white hover:bg-line"
+                      }`}
+                    >
+                      <Music2 className="size-3" />
+                      配信あり
+                    </button>
+                    <button
+                      onClick={() => setOnlyPlayable(!onlyPlayable)}
+                      className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold transition ${
+                        onlyPlayable ? "bg-accent text-black" : "bg-elev text-white hover:bg-line"
+                      }`}
+                    >
+                      <Headphones className="size-3" />
+                      ここで聴ける
+                    </button>
+                  </>
+                )}
                 <select
                   value={scope?.kind === "brand" ? scope.name : ""}
                   onChange={(e) =>
@@ -427,6 +445,11 @@ export default function App() {
           onOpen={() => {
             if (player.current) setSelected(player.current);
             setDetailOpen(true);
+          }}
+          detailOpen={detailOpen}
+          onToggleDetail={() => {
+            if (!detailOpen && player.current) setSelected(player.current);
+            setDetailOpen(!detailOpen);
           }}
         />
       </div>

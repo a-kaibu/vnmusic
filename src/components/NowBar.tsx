@@ -13,10 +13,13 @@ import {
   Repeat,
   Repeat1,
   Shuffle,
+  PanelRightOpen,
+  PanelRightClose,
 } from "lucide-react";
 import { type Song, artworkOf } from "../lib/songs";
 import { usePlayer } from "../lib/player";
 import { Cover } from "./Cover";
+import { FavButton } from "./FavButton";
 
 const mmss = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
 
@@ -82,7 +85,17 @@ function useWheelVolume(p: ReturnType<typeof usePlayer>) {
   return el;
 }
 
-export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: () => void }) {
+export function NowBar({
+  song: selected,
+  onOpen,
+  detailOpen,
+  onToggleDetail,
+}: {
+  song: Song | null;
+  onOpen: () => void;
+  detailOpen: boolean;
+  onToggleDetail: () => void;
+}) {
   const p = usePlayer();
   useShortcuts(p);
   const wheel = useWheelVolume(p);
@@ -121,6 +134,7 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
             </p>
           </div>
         </button>
+        <FavButton id={s.id} className="shrink-0" />
 
         {active && (
           <div className="flex shrink-0 items-center gap-1">
@@ -226,6 +240,19 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
             </button>
           </div>
         )}
+        <button
+          onClick={onToggleDetail}
+          className={`shrink-0 rounded-full p-2 ${detailOpen ? "text-white" : "text-muted hover:text-white"}`}
+          aria-label={detailOpen ? "詳細を閉じる" : "詳細を開く"}
+          aria-pressed={detailOpen}
+          title={detailOpen ? "詳細を閉じる" : "詳細を開く"}
+        >
+          {detailOpen ? (
+            <PanelRightClose className="size-4" />
+          ) : (
+            <PanelRightOpen className="size-4" />
+          )}
+        </button>
       </div>
     </div>
   );
