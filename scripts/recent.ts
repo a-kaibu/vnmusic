@@ -10,7 +10,6 @@
 // Apple Music のリンクは data/cache/apple.json、ゲームの公式サイト・ジャケットは data/cache/games.json にも書き込むので、
 // このあと `node scripts/convert.ts` → `node scripts/enrich.ts alive` → `node scripts/enrich.ts youtube` を実行する。
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
-import Papa from "papaparse";
 
 const root = new URL("../", import.meta.url);
 const cacheDir = new URL("data/cache/", root);
@@ -74,8 +73,7 @@ type Store = Record<string, RecentGame>;
 
 // CSV に既にあるゲームは対象外にする（2023年1〜9月発売分の重複を避ける）
 function csvGames() {
-  const csv = readFileSync(new URL("data/votes.csv", root), "utf8");
-  const { data } = Papa.parse<string[]>(csv);
+  const data: string[][] = JSON.parse(readFileSync(new URL("data/votes.json", root), "utf8"));
   return new Set(
     data
       .slice(2)
@@ -86,8 +84,7 @@ function csvGames() {
 
 // CSV に出てくる歌手（ギャルゲソングの歌い手）。略称で当たったときの裏付けに使う
 const singers = (() => {
-  const csv = readFileSync(new URL("data/votes.csv", root), "utf8");
-  const { data } = Papa.parse<string[]>(csv);
+  const data: string[][] = JSON.parse(readFileSync(new URL("data/votes.json", root), "utf8"));
   return new Set(
     data
       .slice(2)

@@ -1,10 +1,11 @@
-// CSV (data/votes.csv) → src/data/songs.json
+// 投票結果 (data/votes.json) → src/data/songs.json
 // 実行: node scripts/convert.ts
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
-import Papa from "papaparse";
 
-const csv = readFileSync(new URL("../data/votes.csv", import.meta.url), "utf8");
-const { data: rows } = Papa.parse<string[]>(csv, { skipEmptyLines: false });
+// 投票結果（元は CSV。1行=1配列のまま JSON にしたもの）
+const rows: string[][] = JSON.parse(
+  readFileSync(new URL("../data/votes.json", import.meta.url), "utf8"),
+);
 
 // 1行目・2行目はヘッダー
 const C = {

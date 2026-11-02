@@ -1,6 +1,6 @@
 # vnmusic — ギャルゲソング一覧
 
-ギャルゲ・エロゲソング投票結果（`data/votes.csv`、全2321曲）と批評空間の楽曲データ（全年代・約1.8万曲）を、音楽ストリーミングサービス風に一覧できるサイトです。Vite+ (`vp`) + React + Tailwind CSS。
+ギャルゲ・エロゲソング投票結果（`data/votes.json`、全2321曲。元は CSV）と批評空間の楽曲データ（全年代・約1.8万曲）を、音楽ストリーミングサービス風に一覧できるサイトです。Vite+ (`vp`) + React + Tailwind CSS。
 
 ## できること
 
@@ -25,7 +25,7 @@ vp check        # lint + format + 型チェック
 ```sh
 node scripts/recent.ts           # 2023年以降のゲームの曲を集める（要ネットワーク）
 node scripts/enrich.ts egsmusic  # 批評空間の楽曲データを取得（要ネットワーク、SQLを6回投げるだけ）
-node scripts/convert.ts          # data/votes.csv + 2023年以降の曲 → src/data/songs.json
+node scripts/convert.ts          # data/votes.json + 2023年以降の曲 → src/data/songs.json
 node scripts/enrich.ts all       # 直リンク・ジャケット・公式サイトを収集（要ネットワーク）
 ```
 
