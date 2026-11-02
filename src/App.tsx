@@ -112,6 +112,16 @@ export default function App() {
   const [detailOpen, setDetailOpen] = useState(Boolean(initial.song));
 
   // 状態を URL に書き出す。ページ（一覧・絞り込み・曲）が変わったら履歴に積み、検索語などは置き換え
+  const dock = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = dock.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() =>
+      document.documentElement.style.setProperty("--dock-h", `${el.offsetHeight}px`),
+    );
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
   const navKey = useRef("");
   const fromPop = useRef(false);
   useEffect(() => {
@@ -417,27 +427,30 @@ export default function App() {
       </div>
 
       <VideoBox />
-      <NowBar
-        song={selected}
-        onOpen={() => {
-          if (player.current) setSelected(player.current);
-          setDetailOpen(true);
-        }}
-      />
+      {/* 下のバー（プレーヤー＋スマホ用ナビ）。詳細画面はこの高さを空けて重ねる */}
+      <div ref={dock}>
+        <NowBar
+          song={selected}
+          onOpen={() => {
+            if (player.current) setSelected(player.current);
+            setDetailOpen(true);
+          }}
+        />
 
-      {/* Mobile nav */}
-      <nav className="grid grid-cols-4 border-t border-line bg-bg md:hidden">
-        {nav.map((n) => (
-          <button
-            key={n.key}
-            onClick={() => go(n.key)}
-            className={`flex flex-col items-center gap-1 py-2 text-[10px] ${view === n.key && !scope ? "text-white" : "text-muted"}`}
-          >
-            <n.icon className="size-5" />
-            {n.label}
-          </button>
-        ))}
-      </nav>
+        {/* Mobile nav */}
+        <nav className="grid grid-cols-4 border-t border-line bg-bg md:hidden">
+          {nav.map((n) => (
+            <button
+              key={n.key}
+              onClick={() => go(n.key)}
+              className={`flex flex-col items-center gap-1 py-2 text-[10px] ${view === n.key && !scope ? "text-white" : "text-muted"}`}
+            >
+              <n.icon className="size-5" />
+              {n.label}
+            </button>
+          ))}
+        </nav>
+      </div>
     </div>
   );
 }

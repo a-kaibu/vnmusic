@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { type Group, games, artworkOf, year } from "../lib/songs";
+import { type Group, games, artworkOf, year, artistImage, brandImage } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
 
@@ -22,7 +22,11 @@ export function GroupGrid({ groups, kind, onOpen }: Props) {
         {groups.slice(0, n).map((g) => {
           const first = g.songs[0];
           const art =
-            kind === "game" ? (games[first.gameKey]?.cover ?? artworkOf(first)) : undefined;
+            kind === "game"
+              ? (games[first.gameKey]?.cover ?? artworkOf(first))
+              : kind === "brand"
+                ? brandImage(g.name, g.songs)
+                : artistImage(g.name, g.songs);
           const sub =
             kind === "game"
               ? `${first.brand} ・ ${year(first)}`
@@ -40,7 +44,13 @@ export function GroupGrid({ groups, kind, onOpen }: Props) {
                   src={art}
                   alt=""
                   loading="lazy"
-                  className="aspect-square w-full rounded-md bg-elev object-cover object-top shadow-lg"
+                  className={`aspect-square w-full bg-elev shadow-lg ${
+                    kind === "artist"
+                      ? "rounded-full object-cover object-top"
+                      : kind === "brand" && art.includes("img/brand/")
+                        ? "rounded-md object-contain"
+                        : "rounded-md object-cover object-top"
+                  }`}
                 />
               ) : (
                 <Cover

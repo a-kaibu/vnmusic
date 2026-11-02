@@ -1,6 +1,7 @@
 import raw from "../data/songs.json";
 import rawLinks from "../data/links.json";
 import rawGames from "../data/games.json";
+import rawImages from "../data/images.json";
 
 export type Flag = 0 | 1 | 2;
 export type Song = {
@@ -209,3 +210,11 @@ export const matchScope = (s: Song, kind: ScopeKind, name: string) => {
       return s.album === name;
   }
 };
+
+/** scripts/images.ts が保存したブランド・アーティスト画像（public/img/ 以下） */
+const images = rawImages as { artist: Record<string, string>; brand: Record<string, string> };
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p}`;
+export const artistImage = (name: string, list: Song[]) =>
+  images.artist[name] ? asset(images.artist[name]) : list.map(artworkOf).find(Boolean);
+export const brandImage = (name: string, list: Song[]) =>
+  images.brand[name] ? asset(images.brand[name]) : list.map(artworkOf).find(Boolean);
