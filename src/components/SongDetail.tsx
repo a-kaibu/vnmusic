@@ -68,7 +68,10 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
   const anyKaraoke = Object.values(s.karaoke).some(Boolean);
 
   return (
-    <aside className="flex w-[380px] shrink-0 flex-col overflow-y-auto rounded-xl bg-panel max-lg:fixed max-lg:inset-x-0 max-lg:top-0 max-lg:bottom-[var(--dock-h,0px)] max-lg:z-50 max-lg:w-auto max-lg:rounded-none">
+    <aside
+      aria-label={`曲の詳細: ${s.title}`}
+      className="flex w-[380px] shrink-0 flex-col overflow-y-auto rounded-xl bg-panel max-lg:fixed max-lg:inset-x-0 max-lg:top-0 max-lg:bottom-[var(--dock-h,0px)] max-lg:z-50 max-lg:w-auto max-lg:rounded-none"
+    >
       <div className="sticky top-0 z-10 flex items-center justify-between bg-panel/90 px-4 py-3 backdrop-blur">
         <p className="truncate text-sm font-bold">{s.game}</p>
         <div className="flex shrink-0 items-center gap-1">

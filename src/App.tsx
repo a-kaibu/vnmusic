@@ -255,6 +255,9 @@ export default function App() {
 
   return (
     <div className="flex h-full flex-col">
+      <a href="#main" className="skip-link">
+        メインへ移動
+      </a>
       <header className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2.5 md:px-5">
         <button
           onClick={() => {
@@ -269,13 +272,14 @@ export default function App() {
           <Disc3 className="size-6 text-accent" />
           vnmusic
         </button>
-        <nav className="flex items-center gap-1">
+        <nav className="flex items-center gap-1" aria-label="ライブラリ">
           {nav
             .filter((n) => n.key !== "tracks")
             .map((n) => (
               <button
                 key={n.key}
                 onClick={() => go(n.key)}
+                aria-current={view === n.key && !scope ? "page" : undefined}
                 className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold transition ${
                   view === n.key && !scope
                     ? "bg-white text-black"
@@ -293,6 +297,8 @@ export default function App() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="曲名・ゲーム・ブランド・歌手・作曲者で検索"
+            aria-label="曲名・ゲーム・ブランド・歌手・作曲者で検索"
+            type="search"
             className="w-full bg-transparent text-sm outline-none placeholder:text-muted"
           />
           {query && (
@@ -305,6 +311,9 @@ export default function App() {
       <div className="flex min-h-0 flex-1 gap-2 px-2 pb-2 max-md:p-0">
         {/* Main */}
         <main
+          id="main"
+          tabIndex={-1}
+          aria-label={heading.title}
           ref={scrollRef}
           className="relative min-w-0 flex-1 overflow-y-auto rounded-xl bg-panel max-md:rounded-none"
         >
@@ -352,6 +361,7 @@ export default function App() {
                     <button
                       key={c}
                       onClick={() => setCats(on ? cats.filter((x) => x !== c) : [...cats, c])}
+                      aria-pressed={on}
                       className={`rounded-full px-3 py-1 text-xs font-semibold transition ${on ? "bg-white text-black" : "bg-elev text-white hover:bg-line"}`}
                     >
                       {c}
@@ -362,6 +372,7 @@ export default function App() {
                   <>
                     <button
                       onClick={() => setOnlyStream(!onlyStream)}
+                      aria-pressed={onlyStream}
                       className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold transition ${
                         onlyStream ? "bg-accent text-black" : "bg-elev text-white hover:bg-line"
                       }`}
@@ -371,6 +382,7 @@ export default function App() {
                     </button>
                     <button
                       onClick={() => setOnlyPlayable(!onlyPlayable)}
+                      aria-pressed={onlyPlayable}
                       className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold transition ${
                         onlyPlayable ? "bg-accent text-black" : "bg-elev text-white hover:bg-line"
                       }`}

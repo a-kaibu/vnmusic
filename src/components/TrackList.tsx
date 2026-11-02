@@ -68,7 +68,15 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
               role="button"
               tabIndex={0}
               onClick={() => onSelect(s)}
-              onKeyDown={(e) => e.key === "Enter" && onSelect(s)}
+              onKeyDown={(e) => {
+                if (e.target !== e.currentTarget) return;
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  onSelect(s);
+                }
+              }}
+              aria-label={`${s.title} ・ ${vo(s)} ・ ${s.game}${ok ? "" : "（サイト内では再生できません）"}`}
+              aria-current={active ? "true" : undefined}
               title={ok ? undefined : "サイト内では再生できません（クリックで配信リンクを表示）"}
               className={`${grid} group absolute inset-x-0 cursor-pointer rounded-md px-2 md:px-3 ${active ? "bg-white/10" : "hover:bg-white/5"} ${ok ? "" : "opacity-40 grayscale"}`}
               style={{ height: ROW, transform: `translateY(${item.start - margin}px)` }}

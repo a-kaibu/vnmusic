@@ -38,7 +38,9 @@ function useShortcuts(p: ReturnType<typeof usePlayer>) {
         t?.tagName === "TEXTAREA" ||
         t?.tagName === "SELECT" ||
         (t?.tagName === "INPUT" && (t as HTMLInputElement).type !== "range");
-      if (typing) return;
+      if (typing || e.defaultPrevented) return;
+      // ボタンやリンクにフォーカスがあるときのスペースは、そのボタンを押す操作にする
+      if (e.key === " " && t?.closest("button, a, [role=button], [role=option], summary")) return;
       const vol = (d: number) =>
         p.setVolume(Math.max(0, Math.min(100, (p.muted ? 0 : p.volume) + d)));
       const seek = (d: number) => p.seek(Math.max(0, Math.min(p.duration || 0, p.time + d)));
@@ -104,7 +106,7 @@ export function NowBar({
   const art = artworkOf(s);
   const active = Boolean(p.current);
   return (
-    <div className="border-t border-line bg-bg">
+    <section className="border-t border-line bg-bg" aria-label="プレーヤー">
       {active && (
         <input
           type="range"
@@ -114,6 +116,7 @@ export function NowBar({
           value={p.time}
           onChange={(e) => p.seek(Number(e.target.value))}
           className="seek block w-full"
+          aria-valuetext={`${mmss(p.time)} / ${mmss(p.duration)}`}
           style={
             { "--pct": `${p.duration ? (p.time / p.duration) * 100 : 0}%` } as React.CSSProperties
           }
@@ -128,7 +131,9 @@ export function NowBar({
             <Cover seed={s.game} className="size-12 rounded text-lg" />
           )}
           <div className="min-w-0">
-            <p className="truncate text-sm font-semibold">{s.title}</p>
+            <p className="truncate text-sm font-semibold" aria-live="polite">
+              {s.title}
+            </p>
             <p className="truncate text-xs text-muted">
               {s.vocal || (/BGM/.test(s.category) ? "（インスト）" : "歌手不明")} ・ {s.game}
             </p>
@@ -228,6 +233,7 @@ export function NowBar({
                 className="seek w-24"
                 style={{ "--pct": `${p.muted ? 0 : p.volume}%` } as React.CSSProperties}
                 aria-label="音量"
+                aria-valuetext={`音量 ${p.muted ? 0 : p.volume}`}
                 title={`音量 ${p.muted ? 0 : p.volume}`}
               />
             </div>
@@ -254,7 +260,7 @@ export function NowBar({
           )}
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 

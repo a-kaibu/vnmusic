@@ -86,3 +86,41 @@ label[for],
 input[type="range"] {
   cursor: pointer;
 }
+
+/* キーボード操作中だけ、どこにフォーカスがあるか分かる輪郭を出す */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+input:focus-visible {
+  outline-offset: 0;
+}
+
+/* 「メインへ移動」リンク（フォーカスしたときだけ表示） */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -48px;
+  z-index: 100;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  color: #000;
+  font-weight: 700;
+}
+.skip-link:focus {
+  top: 8px;
+}
+
+/* 動きを減らす設定の人にはアニメーションを止める */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
