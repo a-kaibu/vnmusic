@@ -669,9 +669,7 @@ async function stageYtFix() {
   const only = process.env.ONLY_IDS?.split(",").map(Number);
   const targets = songs.filter(
     (s) =>
-      (only ? only.includes(s.id) : !(s.id in out)) &&
-      !ok(s, ytTopic[s.id]) &&
-      !ok(s, yt[s.id]),
+      (only ? only.includes(s.id) : !(s.id in out)) && !ok(s, ytTopic[s.id]) && !ok(s, yt[s.id]),
   );
   console.log(`YouTube 探し直し: ${targets.length} 曲`);
   for (const [i, s] of targets.entries()) {
@@ -682,7 +680,9 @@ async function stageYtFix() {
         res
           .slice(0, 15)
           .filter((v) => norm(v.title).includes(t) && ytTrusted(s, v, apple[s.id], kkbox[s.id]))
-          .sort((x, y) => Number(/ - topic$/i.test(y.channel)) - Number(/ - topic$/i.test(x.channel)))[0];
+          .sort(
+            (x, y) => Number(/ - topic$/i.test(y.channel)) - Number(/ - topic$/i.test(x.channel)),
+          )[0];
       // 動画タイトルがローマ字表記のこともある（例: 「Nayuta - Hoshi to Koisuru Concerto」）
       const roma = (await romaji(s.title)).split(/\s+/).filter(Boolean);
       const a = norm(firstArtist(s));
@@ -691,7 +691,10 @@ async function stageYtFix() {
           if (roma.length < 2 || a.length < 2) return false;
           if (!(norm(v.title).includes(a) || norm(v.channel).includes(a))) return false;
           if (!ytTrusted(s, v, apple[s.id], kkbox[s.id])) return false;
-          const words = v.title.toLowerCase().normalize("NFKD").replace(/[^a-z ]/g, " ");
+          const words = v.title
+            .toLowerCase()
+            .normalize("NFKD")
+            .replace(/[^a-z ]/g, " ");
           const hits = roma.filter((w) => words.includes(w)).length;
           return hits / roma.length >= 0.6;
         });
@@ -707,7 +710,9 @@ async function stageYtFix() {
     }
     if (i % 25 === 24) {
       save("youtube-fix.json", out);
-      console.log(`  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
     }
     await sleep(2000);
   }
@@ -792,7 +797,11 @@ function ytTrusted(
   const a = norm(firstArtist(s));
   const g = norm(s.game.replace(/\s*[(（][^)）]*[)）]\s*$/, "")).slice(0, 6);
   const b = norm(s.brand);
-  if (/(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu|piano|ピアノ|アレンジ|arrange|演奏|dtx|太鼓|ヲタ芸|踊って|叩いて|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|反応)/i.test(y.title))
+  if (
+    /(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu|piano|ピアノ|アレンジ|arrange|演奏|dtx|太鼓|ヲタ芸|踊って|叩いて|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|反応)/i.test(
+      y.title,
+    )
+  )
     return false;
   if (a.length >= 2 && (nt.includes(a) || nc.includes(a))) return true;
   if (g.length >= 2 && nt.includes(g)) return true;
