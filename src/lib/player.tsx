@@ -131,7 +131,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     hasPrev: false,
     hasNext: false,
     ...loadMode(),
-    showVideo: true,
+    showVideo: false,
     volume: loadVolume(),
     muted: false,
     anchor: null,

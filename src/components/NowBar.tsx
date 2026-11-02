@@ -4,12 +4,9 @@ import {
   Play,
   SkipBack,
   SkipForward,
-  Video,
   Volume1,
   Volume2,
   VolumeX,
-  VideoOff,
-  Minimize2,
   Repeat,
   Repeat1,
   Shuffle,
@@ -237,13 +234,6 @@ export function NowBar({
                 title={`音量 ${p.muted ? 0 : p.volume}`}
               />
             </div>
-            <button
-              onClick={() => p.setShowVideo(!p.showVideo)}
-              className="rounded-full p-2 text-muted hover:text-white"
-              aria-label={p.showVideo ? "動画を隠す" : "動画を表示"}
-            >
-              {p.showVideo ? <Video className="size-4" /> : <VideoOff className="size-4" />}
-            </button>
           </div>
         )}
         <button
@@ -269,7 +259,8 @@ export function VideoBox() {
   const p = usePlayer();
   const box = useRef<HTMLDivElement>(null);
   const anchored = Boolean(p.current && p.anchor);
-  const visible = Boolean(p.current) && (anchored || p.showVideo);
+  // 動画は詳細パネルの中でだけ見せる。パネルを閉じたら隠して音だけ続ける
+  const visible = anchored;
 
   // iframe を DOM 上で動かすと読み込み直しになるので、位置だけ枠に合わせて追従させる
   useEffect(() => {
@@ -313,16 +304,6 @@ export function VideoBox() {
         } ${visible ? "" : "pointer-events-none opacity-0"}`}
       >
         <div ref={p.mount} className="size-full [&_iframe]:size-full" />
-        {visible && !anchored && (
-          <button
-            onClick={() => p.setShowVideo(false)}
-            className="absolute top-1 right-1 rounded-full bg-black/60 p-1 text-white hover:bg-black"
-            aria-label="プレーヤーをしまう（再生は続きます）"
-            title="しまう（再生は続きます）"
-          >
-            <Minimize2 className="size-3.5" />
-          </button>
-        )}
       </div>
     </>
   );
