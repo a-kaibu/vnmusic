@@ -134,7 +134,9 @@ export const services: Service[] = [
   },
 ];
 
-export const streamCount = (s: Song) => Object.values(s.stream).filter((v) => v > 0).length;
+/** 配信サービスへの直リンク（集めたもの）の数 */
+const streamKeys = ["spotify", "apple", "ytmusic", "amazon", "mora", "kkbox", "fanza"] as const;
+export const streamCount = (s: Song) => streamKeys.filter((k) => links[s.id]?.[k]).length;
 
 export const year = (s: Song) => s.release.slice(0, 4);
 

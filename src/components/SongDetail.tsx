@@ -8,7 +8,6 @@ import {
   links,
   games,
   artworkOf,
-  flagOf,
   cds,
 } from "../lib/songs";
 import type { Scope } from "../App";
@@ -176,7 +175,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           <div className="flex flex-col gap-1.5">
             {services.map((sv) => {
               const direct = l[sv.key];
-              if (!direct && !flagOf(s, sv.key) && sv.key !== "youtube") return null;
+              if (!direct && sv.key !== "youtube") return null;
               return (
                 <a
                   key={sv.key}
