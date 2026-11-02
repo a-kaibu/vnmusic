@@ -643,6 +643,21 @@ async function stageKkbox() {
   save("kkbox.json", out);
 }
 
+let kuroshiro: { convert: (t: string, o: object) => Promise<string> } | undefined;
+async function romaji(t: string) {
+  if (!kuroshiro) {
+    const K = (await import("kuroshiro")).default as any;
+    const A = (await import("kuroshiro-analyzer-kuromoji")).default as any;
+    const k = new (K.default ?? K)();
+    await k.init(new (A.default ?? A)());
+    kuroshiro = k;
+  }
+  return (await kuroshiro!.convert(t, { to: "romaji", mode: "spaced", romajiSystem: "passport" }))
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[^a-z ]/g, " ");
+}
+
 // ---------- ytfix: 信用できる動画がない曲を、ゲーム名入りで探し直す ----------
 async function stageYtFix() {
   const apple = load<Record<number, AppleOut>>("apple.json", {});
@@ -651,8 +666,12 @@ async function stageYtFix() {
   const ytTopic = load<Record<number, YtOut>>("youtube-topic.json", {});
   const out = load<Record<number, YtOut>>("youtube-fix.json", {});
   const ok = (s: Song, v: YtOut) => v && ytTrusted(s, v, apple[s.id], kkbox[s.id]);
+  const only = process.env.ONLY_IDS?.split(",").map(Number);
   const targets = songs.filter(
-    (s) => !(s.id in out) && !ok(s, ytTopic[s.id]) && !ok(s, yt[s.id]),
+    (s) =>
+      (only ? only.includes(s.id) : !(s.id in out)) &&
+      !ok(s, ytTopic[s.id]) &&
+      !ok(s, yt[s.id]),
   );
   console.log(`YouTube 探し直し: ${targets.length} 曲`);
   for (const [i, s] of targets.entries()) {
@@ -664,10 +683,23 @@ async function stageYtFix() {
           .slice(0, 15)
           .filter((v) => norm(v.title).includes(t) && ytTrusted(s, v, apple[s.id], kkbox[s.id]))
           .sort((x, y) => Number(/ - topic$/i.test(y.channel)) - Number(/ - topic$/i.test(x.channel)))[0];
-      let hit = pick(await ytSearch(`${s.title} ${game}`));
+      // 動画タイトルがローマ字表記のこともある（例: 「Nayuta - Hoshi to Koisuru Concerto」）
+      const roma = (await romaji(s.title)).split(/\s+/).filter(Boolean);
+      const a = norm(firstArtist(s));
+      const romaPick = (res: Awaited<ReturnType<typeof ytSearch>>) =>
+        res.slice(0, 15).find((v) => {
+          if (roma.length < 2 || a.length < 2) return false;
+          if (!(norm(v.title).includes(a) || norm(v.channel).includes(a))) return false;
+          if (!ytTrusted(s, v, apple[s.id], kkbox[s.id])) return false;
+          const words = v.title.toLowerCase().normalize("NFKD").replace(/[^a-z ]/g, " ");
+          const hits = roma.filter((w) => words.includes(w)).length;
+          return hits / roma.length >= 0.6;
+        });
+      const both = (res: Awaited<ReturnType<typeof ytSearch>>) => pick(res) ?? romaPick(res);
+      let hit = both(await ytSearch(`${s.title} ${game}`));
       if (!hit && firstArtist(s)) {
         await sleep(2000);
-        hit = pick(await ytSearch(`${s.title} ${firstArtist(s)} ${game.slice(0, 10)}`));
+        hit = both(await ytSearch(`${s.title} ${firstArtist(s)} ${game.slice(0, 10)}`));
       }
       out[s.id] = hit ?? null;
     } catch (e) {
@@ -760,7 +792,7 @@ function ytTrusted(
   const a = norm(firstArtist(s));
   const g = norm(s.game.replace(/\s*[(（][^)）]*[)）]\s*$/, "")).slice(0, 6);
   const b = norm(s.brand);
-  if (/(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu)/i.test(y.title))
+  if (/(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu|piano|ピアノ|アレンジ|arrange|演奏|dtx|太鼓|ヲタ芸|踊って|叩いて|nightcore|8bit|オルゴール|music ?box|remix|作業用|メドレー|medley|反応)/i.test(y.title))
     return false;
   if (a.length >= 2 && (nt.includes(a) || nc.includes(a))) return true;
   if (g.length >= 2 && nt.includes(g)) return true;
