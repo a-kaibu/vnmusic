@@ -1,4 +1,4 @@
-import { useDeferredValue, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   Disc3,
   Gamepad2,
@@ -47,19 +47,107 @@ const nav: { key: View; label: string; icon: typeof Disc3 }[] = [
 ];
 
 const firstArtist = (s: Song) => s.vocal.split(" / ")[0] ?? "";
+const songById = new Map(songs.map((s) => [s.id, s]));
+const views: View[] = ["tracks", "games", "brands", "artists"];
+const sorts: Sort[] = ["new", "old", "title"];
+
+/** URL ⇔ 画面の状態。?view=games / ?by=composer&name=… / &song=12 / &q=… / &cat=OP,ED / &sort=old / &stream=1 / &play=1 */
+type UrlState = {
+  view: View;
+  scope: Scope;
+  song: Song | null;
+  query: string;
+  cats: string[];
+  sort: Sort;
+  onlyStream: boolean;
+  onlyPlayable: boolean;
+};
+function readUrl(): UrlState {
+  const p = new URLSearchParams(location.search);
+  const by = p.get("by") as ScopeKind | null;
+  const name = p.get("name");
+  const view = p.get("view") as View | null;
+  const sort = p.get("sort") as Sort | null;
+  return {
+    view: view && views.includes(view) ? view : "tracks",
+    scope: by && by in scopeLabel && name ? { kind: by, name } : null,
+    song: songById.get(Number(p.get("song"))) ?? null,
+    query: p.get("q") ?? "",
+    cats: p.get("cat")?.split(",").filter(Boolean) ?? [],
+    sort: sort && sorts.includes(sort) ? sort : "new",
+    onlyStream: p.get("stream") === "1",
+    onlyPlayable: p.get("play") === "1",
+  };
+}
+function toUrl(st: UrlState) {
+  const p = new URLSearchParams();
+  if (st.scope) {
+    p.set("by", st.scope.kind);
+    p.set("name", st.scope.name);
+  } else if (st.view !== "tracks") p.set("view", st.view);
+  if (st.query) p.set("q", st.query);
+  if (st.cats.length) p.set("cat", st.cats.join(","));
+  if (st.sort !== "new") p.set("sort", st.sort);
+  if (st.onlyStream) p.set("stream", "1");
+  if (st.onlyPlayable) p.set("play", "1");
+  if (st.song) p.set("song", String(st.song.id));
+  const qs = p.toString();
+  return location.pathname + (qs ? `?${qs}` : "");
+}
+const initial = readUrl();
 const brandOptions = groupBy(songs, (s) => s.brand);
 
 export default function App() {
-  const [view, setView] = useState<View>("tracks");
-  const [scope, setScope] = useState<Scope>(null);
-  const [query, setQuery] = useState("");
-  const [cats, setCats] = useState<string[]>([]);
-  const [onlyStream, setOnlyStream] = useState(false);
-  const [onlyPlayable, setOnlyPlayable] = useState(false);
+  const [view, setView] = useState<View>(initial.view);
+  const [scope, setScope] = useState<Scope>(initial.scope);
+  const [query, setQuery] = useState(initial.query);
+  const [cats, setCats] = useState<string[]>(initial.cats);
+  const [onlyStream, setOnlyStream] = useState(initial.onlyStream);
+  const [onlyPlayable, setOnlyPlayable] = useState(initial.onlyPlayable);
   const player = usePlayer();
-  const [sort, setSort] = useState<Sort>("new");
-  const [selected, setSelected] = useState<Song | null>(null);
-  const [detailOpen, setDetailOpen] = useState(false);
+  const [sort, setSort] = useState<Sort>(initial.sort);
+  const [selected, setSelected] = useState<Song | null>(initial.song);
+  const [detailOpen, setDetailOpen] = useState(Boolean(initial.song));
+
+  // 状態を URL に書き出す。ページ（一覧・絞り込み・曲）が変わったら履歴に積み、検索語などは置き換え
+  const navKey = useRef("");
+  const fromPop = useRef(false);
+  useEffect(() => {
+    const song = detailOpen ? selected : null;
+    const url = toUrl({ view, scope, song, query, cats, sort, onlyStream, onlyPlayable });
+    const key = `${view}|${scope?.kind}|${scope?.name}|${song?.id}`;
+    if (url !== location.pathname + location.search) {
+      if (fromPop.current || !navKey.current || key === navKey.current)
+        history.replaceState(null, "", url);
+      else history.pushState(null, "", url);
+    }
+    navKey.current = key;
+    fromPop.current = false;
+    document.title = [
+      song?.title,
+      scope?.name ?? (view !== "tracks" ? nav.find((n) => n.key === view)?.label : ""),
+      "vnmusic",
+    ]
+      .filter(Boolean)
+      .join(" - ");
+  }, [view, scope, selected, detailOpen, query, cats, sort, onlyStream, onlyPlayable]);
+  useEffect(() => {
+    const onPop = () => {
+      const st = readUrl();
+      fromPop.current = true;
+      setView(st.view);
+      setScope(st.scope);
+      setQuery(st.query);
+      setCats(st.cats);
+      setSort(st.sort);
+      setOnlyStream(st.onlyStream);
+      setOnlyPlayable(st.onlyPlayable);
+      if (st.song) setSelected(st.song);
+      setDetailOpen(Boolean(st.song));
+    };
+    addEventListener("popstate", onPop);
+    return () => removeEventListener("popstate", onPop);
+  }, []);
   const scrollRef = useRef<HTMLDivElement>(null);
   const q = useDeferredValue(normalize(query.trim()));
 
@@ -101,6 +189,8 @@ export default function App() {
   };
   const openScope = (sc: NonNullable<Scope>) => {
     setScope(sc);
+    // 狭い画面では詳細が一覧を覆っているので閉じて結果を見せる
+    if (matchMedia("(max-width: 1023px)").matches) setDetailOpen(false);
     setView("tracks");
     setQuery("");
     setCats([]);

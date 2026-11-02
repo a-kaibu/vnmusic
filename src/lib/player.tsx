@@ -46,6 +46,8 @@ type State = {
   hasPrev: boolean;
   hasNext: boolean;
   showVideo: boolean;
+  /** 詳細画面の動画枠。あればプレーヤーをそこに重ねて表示する */
+  anchor: HTMLElement | null;
 };
 type Api = State & {
   /** list の中の song から再生。list は「次の曲」に使う */
@@ -56,6 +58,7 @@ type Api = State & {
   seek: (t: number) => void;
   setShowVideo: (v: boolean) => void;
   mount: (el: HTMLDivElement | null) => void;
+  setAnchor: (el: HTMLElement | null) => void;
 };
 
 const Ctx = createContext<Api | null>(null);
@@ -66,6 +69,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const host = useRef<HTMLDivElement | null>(null);
   const queue = useRef<Song[]>([]);
   const idx = useRef(-1);
+  const errors = useRef(0);
   const [st, setSt] = useState<State>({
     current: null,
     playing: false,
@@ -74,6 +78,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     hasPrev: false,
     hasNext: false,
     showVideo: true,
+    anchor: null,
   });
 
   const step = useCallback((dir: 1 | -1) => {
@@ -107,14 +112,19 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
           width: "100%",
           height: "100%",
           videoId: id,
-          playerVars: { autoplay: 1, playsinline: 1, rel: 0 },
+          playerVars: { autoplay: 1, playsinline: 1, rel: 0, origin: location.origin },
           events: {
             onStateChange: (e: { data: number }) => {
+              if (e.data === 1) errors.current = 0;
               if (e.data === 0) step(1); // ended
               setSt((s) => ({ ...s, playing: e.data === 1 || e.data === 3 }));
             },
             // 埋め込み不可・削除済みなどは飛ばす
-            onError: () => step(1),
+            // 3曲続けて失敗したら止める（環境の問題で全部飛ばし続けないように）
+            onError: () => {
+              if (++errors.current < 3) step(1);
+              else setSt((s) => ({ ...s, playing: false }));
+            },
           },
         });
       } else player.current.loadVideoById(id);
@@ -136,6 +146,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     play: (song, list) => {
       const l = list.includes(song) ? list : [song];
       queue.current = l;
+      errors.current = 0;
       void start(l.indexOf(song));
     },
     toggle: () => {
@@ -150,6 +161,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     },
     seek: (t) => player.current?.seekTo(t, true),
     setShowVideo: (v) => setSt((s) => ({ ...s, showVideo: v })),
+    setAnchor: (el) => setSt((s) => (s.anchor === el ? s : { ...s, anchor: el })),
     mount: (el) => {
       host.current = el;
     },

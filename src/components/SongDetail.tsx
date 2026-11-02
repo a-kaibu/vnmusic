@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import { X, ExternalLink, Disc, Mic, Globe, Search, Play } from "lucide-react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
+import { X, ExternalLink, Disc, Mic, Globe, Search, Play, Link2, Check } from "lucide-react";
 import { playable, usePlayer } from "../lib/player";
 import { type Song, services, searchQuery, links, games, artworkOf, type Flag } from "../lib/songs";
 import type { Scope } from "../App";
@@ -44,6 +44,17 @@ function Row({ label, children }: { label: string; children: ReactNode }) {
 export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
   const player = usePlayer();
   const isCurrent = player.current?.id === s.id;
+  const [copied, setCopied] = useState(false);
+  const yt = links[s.id]?.yt;
+  const frame = useRef<HTMLDivElement>(null);
+  const { setAnchor } = player;
+  useEffect(() => {
+    if (!isCurrent) return;
+    setAnchor(frame.current);
+    return () => setAnchor(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isCurrent, s.id]);
+  useEffect(() => setCopied(false), [s.id]);
   const q = searchQuery(s);
   const l = links[s.id] ?? {};
   const g = games[s.game] ?? {};
@@ -54,13 +65,56 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
     <aside className="flex w-[380px] shrink-0 flex-col overflow-y-auto rounded-xl bg-panel max-lg:fixed max-lg:inset-0 max-lg:z-50 max-lg:w-auto max-lg:rounded-none">
       <div className="sticky top-0 z-10 flex items-center justify-between bg-panel/90 px-4 py-3 backdrop-blur">
         <p className="truncate text-sm font-bold">{s.game}</p>
-        <button onClick={onClose} className="rounded-full p-1.5 hover:bg-elev" aria-label="閉じる">
-          <X className="size-5" />
-        </button>
+        <div className="flex shrink-0 items-center gap-1">
+          <button
+            onClick={() => {
+              const url = location.href;
+              if (navigator.share) void navigator.share({ title: s.title, url }).catch(() => {});
+              else void navigator.clipboard?.writeText(url).then(() => setCopied(true));
+            }}
+            className="flex items-center gap-1 rounded-full px-2.5 py-1.5 text-xs text-muted hover:bg-elev hover:text-white"
+            title="この曲のURLをコピー"
+          >
+            {copied ? <Check className="size-4" /> : <Link2 className="size-4" />}
+            {copied ? "コピーしました" : "URL"}
+          </button>
+          <button
+            onClick={onClose}
+            className="rounded-full p-1.5 hover:bg-elev"
+            aria-label="閉じる"
+          >
+            <X className="size-5" />
+          </button>
+        </div>
       </div>
 
       <div className="px-4 pb-6">
-        {art ? (
+        {yt ? (
+          // 再生中はここに YouTube プレーヤーが重なる（VideoBox）
+          <div
+            ref={frame}
+            className="relative aspect-video w-full overflow-hidden rounded-xl bg-black shadow-2xl"
+          >
+            {!isCurrent && (
+              <button
+                onClick={() => onPlay(s)}
+                className="group absolute inset-0"
+                aria-label={`${s.title}を再生`}
+              >
+                <img
+                  src={`https://i.ytimg.com/vi/${yt}/hqdefault.jpg`}
+                  alt=""
+                  className="size-full object-cover opacity-80 transition group-hover:opacity-100"
+                />
+                <span className="absolute inset-0 grid place-items-center">
+                  <span className="grid size-16 place-items-center rounded-full bg-accent text-black shadow-xl transition group-hover:scale-110">
+                    <Play className="size-7 translate-x-0.5 fill-current" />
+                  </span>
+                </span>
+              </button>
+            )}
+          </div>
+        ) : art ? (
           <img
             src={art}
             alt={`${s.album || s.game} ジャケット`}
@@ -74,18 +128,30 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           />
         )}
 
-        <div className="mt-4">
-          {s.category && (
-            <p className="text-xs font-bold text-accent">
-              <ScopeLink kind="category" value={s.category} onScope={onScope} />
-            </p>
-          )}
-          <h2 className="mt-1 text-2xl font-extrabold break-words">{s.title}</h2>
-          {s.vocal && (
-            <p className="mt-1 text-sm text-muted">
-              <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />
-            </p>
-          )}
+        <div className={`mt-4 ${yt ? "flex items-start gap-3" : ""}`}>
+          {yt &&
+            (art ? (
+              <img
+                src={art}
+                alt={`${s.album || s.game} ジャケット`}
+                className="size-20 shrink-0 rounded-lg object-cover shadow-lg"
+              />
+            ) : (
+              <Cover seed={s.game} className="size-20 shrink-0 rounded-lg text-2xl" />
+            ))}
+          <div className="min-w-0">
+            {s.category && (
+              <p className="text-xs font-bold text-accent">
+                <ScopeLink kind="category" value={s.category} onScope={onScope} />
+              </p>
+            )}
+            <h2 className="mt-1 text-2xl font-extrabold break-words">{s.title}</h2>
+            {s.vocal && (
+              <p className="mt-1 text-sm text-muted">
+                <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />
+              </p>
+            )}
+          </div>
         </div>
 
         {playable(s) && (
@@ -207,20 +273,10 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
               {s.category && <ScopeLink kind="category" value={s.category} onScope={onScope} />}
             </Row>
             <Row label="ゲーム">
-              <button
-                onClick={() => onScope({ kind: "game", name: s.game })}
-                className="text-left hover:underline"
-              >
-                {s.game}
-              </button>
+              <ScopeLink kind="game" value={s.game} onScope={onScope} />
             </Row>
             <Row label="ブランド">
-              <button
-                onClick={() => onScope({ kind: "brand", name: s.brand })}
-                className="text-left hover:underline"
-              >
-                {s.brand}
-              </button>
+              <ScopeLink kind="brand" value={s.brand} onScope={onScope} />
             </Row>
             <Row label="発売日">
               {s.release && (

@@ -1,4 +1,14 @@
-import { ExternalLink, Pause, Play, SkipBack, SkipForward, Video, VideoOff, X } from "lucide-react";
+import { useEffect, useRef } from "react";
+import {
+  ExternalLink,
+  Pause,
+  Play,
+  SkipBack,
+  SkipForward,
+  Video,
+  VideoOff,
+  Minimize2,
+} from "lucide-react";
 import { type Song, services, searchQuery, links, artworkOf } from "../lib/songs";
 import { usePlayer } from "../lib/player";
 import { Cover } from "./Cover";
@@ -104,26 +114,74 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
   );
 }
 
-/** YouTube プレーヤー本体。再生中は右下に小さく出す（隠しても再生は続く） */
+/** YouTube プレーヤー本体。詳細画面の動画枠があればそこに重ね、なければ右下に小さく出す */
 export function VideoBox() {
   const p = usePlayer();
-  const visible = Boolean(p.current) && p.showVideo;
+  const box = useRef<HTMLDivElement>(null);
+  const anchored = Boolean(p.current && p.anchor);
+  const visible = Boolean(p.current) && (anchored || p.showVideo);
+
+  // iframe を DOM 上で動かすと読み込み直しになるので、位置だけ枠に合わせて追従させる
+  useEffect(() => {
+    const el = box.current;
+    if (!el) return;
+    if (!anchored || !p.anchor) {
+      el.removeAttribute("style");
+      return;
+    }
+    const anchor = p.anchor;
+    let raf = 0;
+    const tick = () => {
+      const r = anchor.getBoundingClientRect();
+      const clip = anchor.closest("aside")?.getBoundingClientRect();
+      const top = clip ? Math.max(0, clip.top - r.top) : 0;
+      const bottom = clip ? Math.max(0, r.bottom - clip.bottom) : 0;
+      Object.assign(el.style, {
+        left: `${r.left}px`,
+        top: `${r.top}px`,
+        width: `${r.width}px`,
+        height: `${r.height}px`,
+        right: "auto",
+        bottom: "auto",
+        clipPath: `inset(${top}px 0 ${bottom}px 0 round 12px)`,
+      });
+      raf = requestAnimationFrame(tick);
+    };
+    tick();
+    return () => cancelAnimationFrame(raf);
+  }, [anchored, p.anchor]);
+
   return (
-    <div
-      className={`fixed right-3 bottom-24 z-40 aspect-video w-[320px] overflow-hidden rounded-lg bg-black shadow-2xl ring-1 ring-line max-md:right-2 max-md:bottom-36 max-md:w-[240px] ${
-        visible ? "" : "pointer-events-none invisible"
-      }`}
-    >
-      <div ref={p.mount} className="size-full [&>iframe]:size-full" />
-      {visible && (
+    <>
+      {p.current && !visible && (
         <button
-          onClick={() => p.setShowVideo(false)}
-          className="absolute top-1 right-1 rounded-full bg-black/60 p-1 text-white hover:bg-black"
-          aria-label="動画を隠す"
+          onClick={() => p.setShowVideo(true)}
+          className="fixed right-3 bottom-24 z-40 flex items-center gap-1.5 rounded-full bg-elev px-3 py-2 text-xs font-bold text-white shadow-2xl ring-1 ring-line hover:bg-line max-md:right-2 max-md:bottom-36"
         >
-          <X className="size-3.5" />
+          <Video className="size-4" />
+          プレーヤーを表示
         </button>
       )}
-    </div>
+      <div
+        ref={box}
+        className={`fixed overflow-hidden bg-black ${
+          anchored
+            ? "z-[60] rounded-xl"
+            : "right-3 bottom-24 z-40 aspect-video w-[320px] rounded-lg shadow-2xl ring-1 ring-line max-md:right-2 max-md:bottom-36 max-md:w-[240px]"
+        } ${visible ? "" : "pointer-events-none invisible"}`}
+      >
+        <div ref={p.mount} className="size-full [&>iframe]:size-full" />
+        {visible && !anchored && (
+          <button
+            onClick={() => p.setShowVideo(false)}
+            className="absolute top-1 right-1 rounded-full bg-black/60 p-1 text-white hover:bg-black"
+            aria-label="プレーヤーをしまう（再生は続きます）"
+            title="しまう（再生は続きます）"
+          >
+            <Minimize2 className="size-3.5" />
+          </button>
+        )}
+      </div>
+    </>
   );
 }

@@ -112,7 +112,7 @@ export function TrackList({
                   </p>
                   <p className="truncate text-xs text-muted">
                     {s.vocal ? (
-                      <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />
+                      <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split subtle />
                     ) : (
                       "（インスト）"
                     )}
@@ -139,10 +139,10 @@ export function TrackList({
                 {s.brand}
               </button>
               <span className="text-xs text-muted tabular-nums max-md:hidden">
-                <ScopeLink kind="year" value={year(s)} onScope={onScope} />
+                <ScopeLink kind="year" value={year(s)} onScope={onScope} subtle />
               </span>
               <span className="truncate text-right text-xs text-muted max-md:hidden">
-                <ScopeLink kind="category" value={s.category} onScope={onScope} />
+                <ScopeLink kind="category" value={s.category} onScope={onScope} subtle />
               </span>
               <div className="max-md:justify-self-end">
                 <StreamDots song={s} />

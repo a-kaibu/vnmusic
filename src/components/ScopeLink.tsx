@@ -8,11 +8,12 @@ type Props = {
   onScope: (s: NonNullable<Scope>) => void;
   /** "A / B" を名義ごとに分けてリンクにする */
   split?: boolean;
-  className?: string;
+  /** 一覧用: 下線をホバー時だけにする */
+  subtle?: boolean;
 };
 
 /** クリックするとその値で一覧を絞り込むテキスト */
-export function ScopeLink({ kind, value, onScope, split, className = "" }: Props) {
+export function ScopeLink({ kind, value, onScope, split, subtle }: Props) {
   if (!value) return null;
   const names = split ? people(value) : [value];
   return (
@@ -25,8 +26,12 @@ export function ScopeLink({ kind, value, onScope, split, className = "" }: Props
               e.stopPropagation();
               onScope({ kind, name: n });
             }}
-            className={`text-left hover:text-white hover:underline ${className}`}
-            title={`この${kind === "year" ? "年" : ""}で絞り込む`}
+            className={
+              subtle
+                ? "text-left hover:text-white hover:underline"
+                : "text-left underline decoration-dotted decoration-1 underline-offset-4 hover:text-accent hover:decoration-solid"
+            }
+            title={`「${n}」で絞り込む`}
           >
             {n}
           </button>
