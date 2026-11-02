@@ -515,6 +515,173 @@ async function stageYoutube() {
   console.log(`  見つかった曲: ${Object.values(out).filter(Boolean).length}`);
 }
 
+// ---------- yttopic: レーベル公式の「- Topic」音源を探す（YouTube Music の直リンク・サイト内再生に使う） ----------
+async function stageYtTopic() {
+  const out = load<Record<number, YtOut>>("youtube-topic.json", {});
+  const targets = songs.filter((s) => !(s.id in out));
+  console.log(`YouTube 公式音源検索: ${targets.length} 曲 (2 秒間隔)`);
+  for (const [i, s] of targets.entries()) {
+    try {
+      const res = await ytSearch(`${s.title} ${firstArtist(s)} topic`.trim());
+      const t = norm(s.title);
+      const a = norm(firstArtist(s));
+      const ok = res.slice(0, 15).filter((v) => {
+        const nt = norm(v.title.replace(/\s*[(（\[［][^)）\]］]*[)）\]］]\s*$/, ""));
+        return (
+          (nt === t || norm(v.title) === t) &&
+          !/(off ?vocal|instrumental|karaoke|カラオケ|short|remix|cover)/i.test(v.title)
+        );
+      });
+      const topic = (v: (typeof ok)[number]) => / - topic$/i.test(v.channel);
+      const artistCh = (v: (typeof ok)[number]) => {
+        const ch = norm(v.channel.replace(/ - topic$/i, ""));
+        return a.length >= 2 && (ch.includes(a) || (ch.length >= 2 && a.includes(ch)));
+      };
+      // 公式音源（Topic）で歌手名も合うもの → 歌手の公式チャンネル → 曲名が一致する Topic
+      const hit = ok.find((v) => topic(v) && artistCh(v)) ?? ok.find(artistCh) ?? ok.find(topic);
+      out[s.id] = hit ?? null;
+    } catch (e) {
+      console.warn(`  ! ${s.title}: ${(e as Error).message}`);
+    }
+    if (i % 25 === 24) {
+      save("youtube-topic.json", out);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
+    }
+    await sleep(2000);
+  }
+  save("youtube-topic.json", out);
+}
+
+// ---------- kkbox: KKBOX Open API（KKBOX_CLIENT_ID / KKBOX_CLIENT_SECRET） ----------
+type KkOut = {
+  url: string;
+  isrc?: string;
+  artwork?: string;
+  name: string;
+  artist: string;
+  album: string;
+} | null;
+
+async function stageKkbox() {
+  const id = process.env.KKBOX_CLIENT_ID;
+  const secret = process.env.KKBOX_CLIENT_SECRET;
+  if (!id || !secret) return console.log("KKBOX_CLIENT_ID / SECRET がないので KKBOX はスキップ");
+  const tok = (await (
+    await get("https://account.kkbox.com/oauth2/token", {
+      method: "POST",
+      headers: { "content-type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        grant_type: "client_credentials",
+        client_id: id,
+        client_secret: secret,
+      }).toString(),
+    })
+  ).json()) as { access_token: string };
+  const out = load<Record<number, KkOut>>("kkbox.json", {});
+  const targets = songs.filter((s) => !(s.id in out));
+  console.log(`KKBOX: ${targets.length} 曲`);
+  const search = async (q: string) => {
+    const r = await get(
+      `https://api.kkbox.com/v1.1/search?${new URLSearchParams({ q, type: "track", territory: "JP", limit: "30" })}`,
+      { headers: { authorization: `Bearer ${tok.access_token}` } },
+    );
+    return (((await r.json()) as any).tracks?.data ?? []) as any[];
+  };
+  for (const [i, s] of targets.entries()) {
+    try {
+      const t = norm(s.title);
+      const a = norm(firstArtist(s));
+      const g = norm(s.game.replace(/\s*[(（][^)）]*[)）]\s*$/, "")).slice(0, 6);
+      const b = norm(s.brand);
+      const titleOk = (x: any) => {
+        const n = norm(x.name);
+        const bare = norm(x.name.replace(/\s*[(（\[［~～〜-].*$/, ""));
+        return (
+          (n === t || bare === t) &&
+          !/(off ?vocal|instrumental|karaoke|カラオケ|inst\b|tv ?size|short)/i.test(x.name)
+        );
+      };
+      const score = (x: any) => {
+        const ar = norm(x.album?.artist?.name ?? "");
+        const al = norm(x.album?.name ?? "");
+        return (
+          (a.length >= 2 && (ar.includes(a) || al.includes(a)) ? 4 : 0) +
+          (g.length >= 2 && al.includes(g) ? 3 : 0) +
+          (b.length >= 2 && (ar.includes(b) || al.includes(b)) ? 2 : 0)
+        );
+      };
+      let res = (await search(`${s.title} ${firstArtist(s)}`.trim())).filter(titleOk);
+      if (!res.length) {
+        await sleep(250);
+        res = (await search(s.title)).filter(titleOk);
+      }
+      const best = res.map((x) => [score(x), x] as const).sort((x, y) => y[0] - x[0])[0];
+      out[s.id] =
+        best && (best[0] > 0 || s.stream.awa + s.stream.spotify + s.stream.apple > 0)
+          ? {
+              url: best[1].url,
+              isrc: best[1].isrc,
+              artwork: best[1].album?.images?.find((im: any) => im.width === 500)?.url,
+              name: best[1].name,
+              artist: best[1].album?.artist?.name ?? "",
+              album: best[1].album?.name ?? "",
+            }
+          : null;
+    } catch (e) {
+      console.warn(`  ! ${s.title}: ${(e as Error).message}`);
+    }
+    if (i % 50 === 49) {
+      save("kkbox.json", out);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
+    }
+    await sleep(250);
+  }
+  save("kkbox.json", out);
+}
+
+// ---------- ytfix: 信用できる動画がない曲を、ゲーム名入りで探し直す ----------
+async function stageYtFix() {
+  const apple = load<Record<number, AppleOut>>("apple.json", {});
+  const kkbox = load<Record<number, KkOut>>("kkbox.json", {});
+  const yt = load<Record<number, YtOut>>("youtube.json", {});
+  const ytTopic = load<Record<number, YtOut>>("youtube-topic.json", {});
+  const out = load<Record<number, YtOut>>("youtube-fix.json", {});
+  const ok = (s: Song, v: YtOut) => v && ytTrusted(s, v, apple[s.id], kkbox[s.id]);
+  const targets = songs.filter(
+    (s) => !(s.id in out) && !ok(s, ytTopic[s.id]) && !ok(s, yt[s.id]),
+  );
+  console.log(`YouTube 探し直し: ${targets.length} 曲`);
+  for (const [i, s] of targets.entries()) {
+    try {
+      const game = s.game.replace(/\s*[(（][^)）]*[)）]\s*$/, "");
+      const t = norm(s.title);
+      const pick = (res: Awaited<ReturnType<typeof ytSearch>>) =>
+        res
+          .slice(0, 15)
+          .filter((v) => norm(v.title).includes(t) && ytTrusted(s, v, apple[s.id], kkbox[s.id]))
+          .sort((x, y) => Number(/ - topic$/i.test(y.channel)) - Number(/ - topic$/i.test(x.channel)))[0];
+      let hit = pick(await ytSearch(`${s.title} ${game}`));
+      if (!hit && firstArtist(s)) {
+        await sleep(2000);
+        hit = pick(await ytSearch(`${s.title} ${firstArtist(s)} ${game.slice(0, 10)}`));
+      }
+      out[s.id] = hit ?? null;
+    } catch (e) {
+      console.warn(`  ! ${s.title}: ${(e as Error).message}`);
+    }
+    if (i % 25 === 24) {
+      save("youtube-fix.json", out);
+      console.log(`  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`);
+    }
+    await sleep(2000);
+  }
+  save("youtube-fix.json", out);
+}
+
 // ---------- spotify (任意) ----------
 async function stageSpotify() {
   const id = process.env.SPOTIFY_CLIENT_ID;
@@ -578,6 +745,33 @@ async function stageSpotify() {
   save("spotify.json", out);
 }
 
+// ---------- YouTube 動画が本当にその曲か ----------
+// 曲名だけ一致する別の曲・カバーを避けるため、歌手名・ゲーム名・ブランド名のどれかが
+// 動画タイトルかチャンネル名に入っていることを求める。Topic チャンネルは歌手がローマ字表記なので、
+// Apple Music / KKBOX で分かった歌手名とも照らし合わせる。
+function ytTrusted(
+  s: Song,
+  y: NonNullable<YtOut>,
+  apple?: AppleOut,
+  kk?: { artist: string } | null,
+) {
+  const nt = norm(y.title);
+  const nc = norm(y.channel.replace(/ - topic$/i, ""));
+  const a = norm(firstArtist(s));
+  const g = norm(s.game.replace(/\s*[(（][^)）]*[)）]\s*$/, "")).slice(0, 6);
+  const b = norm(s.brand);
+  if (/(off ?vocal|instrumental|karaoke|カラオケ|歌ってみた|cover|弾いてみた|ゆっくり|ピッチ|stepmania|譜面|maimai|osu)/i.test(y.title))
+    return false;
+  if (a.length >= 2 && (nt.includes(a) || nc.includes(a))) return true;
+  if (g.length >= 2 && nt.includes(g)) return true;
+  if (b.length >= 2 && (nc.includes(b) || nt.includes(b))) return true;
+  const known = [apple?.artistName, kk?.artist].filter(Boolean).map((x) => norm(x!));
+  if (nc.length >= 2 && known.some((k) => k.includes(nc) || nc.includes(k))) return true;
+  // レーベル配信の「Release - Topic」は、配信があると分かっている曲だけ信用する
+  if (/^release - topic$/i.test(y.channel) && (apple || kk)) return true;
+  return false;
+}
+
 // ---------- write ----------
 function stageWrite() {
   const apple = load<Record<number, AppleOut>>("apple.json", {});
@@ -588,6 +782,9 @@ function stageWrite() {
   );
   const games = load<Record<string, GameOut>>("games.json", {});
   const yt = load<Record<number, YtOut>>("youtube.json", {});
+  const ytTopic = load<Record<number, YtOut>>("youtube-topic.json", {});
+  const kkbox = load<Record<number, KkOut>>("kkbox.json", {});
+  const ytFix = load<Record<number, YtOut>>("youtube-fix.json", {});
   const links: Record<number, Record<string, string>> = {};
   for (const s of songs) {
     const l: Record<string, string> = {};
@@ -597,13 +794,24 @@ function stageWrite() {
     if (a?.artwork) l.artwork = a.artwork;
     Object.assign(l, odesli[s.id] ?? {});
     if (a?.track) l.apple = a.track; // jp ストアの URL を優先
+    const kk = kkbox[s.id];
+    if (kk) {
+      l.kkbox = kk.url;
+      if (!l.artwork && kk.artwork) l.artwork = kk.artwork;
+    }
     const sp = spotify[s.id];
     if (sp && !l.spotify) l.spotify = sp.url;
     if (sp?.artwork && !l.artwork) l.artwork = sp.artwork;
-    const y = yt[s.id];
+    // 公式音源が見つかっていればそちらを優先（サイト内再生・YouTube Music の直リンク）
+    const y = [ytTopic[s.id], yt[s.id], ytFix[s.id]].find(
+      (v) => v && ytTrusted(s, v, apple[s.id], kkbox[s.id]),
+    );
     if (y) {
       l.yt = y.id; // サイト内再生用の動画ID
       l.youtube ??= `https://www.youtube.com/watch?v=${y.id}`;
+      // 「- Topic」チャンネルはレーベルの公式音源なので YouTube Music でもそのまま聴ける
+      if (ytTopic[s.id] || / - topic$|トピック$/i.test(y.channel))
+        l.ytmusic ??= `https://music.youtube.com/watch?v=${y.id}`;
     }
     if (Object.keys(l).length) links[s.id] = l;
   }
@@ -633,4 +841,7 @@ if (stage === "apple" || stage === "all") await stageApple(allSongs);
 if (stage === "odesli" || stage === "all") await stageOdesli();
 if (stage === "spotify" || stage === "all") await stageSpotify();
 if (stage === "youtube" || stage === "all") await stageYoutube();
+if (stage === "yttopic" || stage === "all") await stageYtTopic();
+if (stage === "kkbox" || stage === "all") await stageKkbox();
+if (stage === "ytfix" || stage === "all") await stageYtFix();
 stageWrite();

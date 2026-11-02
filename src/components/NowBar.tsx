@@ -12,7 +12,7 @@ import {
   VideoOff,
   Minimize2,
 } from "lucide-react";
-import { type Song, services, searchQuery, links, artworkOf } from "../lib/songs";
+import { type Song, flagOf, services, searchQuery, links, artworkOf } from "../lib/songs";
 import { usePlayer } from "../lib/player";
 import { Cover } from "./Cover";
 
@@ -27,7 +27,7 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
   const q = searchQuery(s);
   // YouTube はサイト内で再生するので外部リンクは出さない
   const avail = services.filter(
-    (sv) => sv.key !== "youtube" && (l[sv.key] || s.stream[sv.key] > 0),
+    (sv) => sv.key !== "youtube" && (l[sv.key] || flagOf(s, sv.key) > 0),
   );
   const art = artworkOf(s);
   const active = Boolean(p.current);

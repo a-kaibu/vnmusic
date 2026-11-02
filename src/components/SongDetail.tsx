@@ -1,7 +1,16 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { X, ExternalLink, Disc, Mic, Globe, Search, Play, Link2, Check } from "lucide-react";
 import { playable, usePlayer } from "../lib/player";
-import { type Song, services, searchQuery, links, games, artworkOf, type Flag } from "../lib/songs";
+import {
+  type Song,
+  services,
+  searchQuery,
+  links,
+  games,
+  artworkOf,
+  flagOf,
+  type Flag,
+} from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
 import { ScopeLink } from "./ScopeLink";
@@ -187,7 +196,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           <div className="flex flex-col gap-1.5">
             {services.map((sv) => {
               const direct = l[sv.key];
-              const f = sv.key === "youtube" ? 0 : s.stream[sv.key];
+              const f = flagOf(s, sv.key);
               const label = flagLabel(f as Flag);
               if (!direct && !label && sv.key !== "youtube") return null;
               return (
@@ -216,7 +225,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
             </summary>
             <div className="mt-2 flex flex-wrap gap-1.5">
               {services
-                .filter((sv) => !l[sv.key] && (sv.key === "youtube" ? false : !s.stream[sv.key]))
+                .filter((sv) => !l[sv.key] && sv.key !== "youtube" && !flagOf(s, sv.key))
                 .map((sv) => (
                   <a
                     key={sv.key}

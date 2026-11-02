@@ -40,7 +40,7 @@ export const songs = (raw as Omit<Song, "gameKey">[]).map((s) => ({
 })) as Song[];
 
 /** scripts/enrich.ts が収集した直リンク (曲ID → サービス → URL) */
-export type SongLinks = Partial<Record<ServiceKey | "youtube", string>> & {
+export type SongLinks = Partial<Record<ServiceKey | "youtube" | "kkbox", string>> & {
   artwork?: string;
   album?: string;
   /** サイト内再生用の YouTube 動画ID */
@@ -63,8 +63,8 @@ export const searchQuery = (s: Song) => {
   return [s.title, artist].filter(Boolean).join(" ");
 };
 
-type Service = {
-  key: ServiceKey | "youtube";
+export type Service = {
+  key: ServiceKey | "youtube" | "kkbox";
   name: string;
   color: string;
   url: (q: string) => string | null;
@@ -101,6 +101,12 @@ export const services: Service[] = [
     name: "mora",
     color: "#4aa3ff",
     url: (q) => `https://mora.jp/search/top?keyWord=${e(q)}`,
+  },
+  {
+    key: "kkbox",
+    name: "KKBOX",
+    color: "#09cef6",
+    url: (q) => `https://www.kkbox.com/jp/ja/search?q=${e(q)}`,
   },
   { key: "awa", name: "AWA", color: "#f5a524", url: (q) => `https://s.awa.fm/search/${e(q)}` },
   {
@@ -220,3 +226,7 @@ export const brandImage = (name: string, list: Song[]) =>
   images.brand[name]
     ? asset(images.brand[name])
     : (list.map((s) => games[s.gameKey]?.cover).find(Boolean) ?? list.map(artworkOf).find(Boolean));
+
+/** CSV の配信フラグ（CSV にないサービスは 0） */
+export const flagOf = (s: Song, key: Service["key"]): Flag =>
+  (s.stream as Record<string, Flag>)[key] ?? 0;
