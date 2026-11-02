@@ -168,7 +168,7 @@ export function VideoBox() {
           anchored
             ? "z-[60] rounded-xl"
             : "right-3 bottom-24 z-40 aspect-video w-[320px] rounded-lg shadow-2xl ring-1 ring-line max-md:right-2 max-md:bottom-36 max-md:w-[240px]"
-        } ${visible ? "" : "pointer-events-none invisible"}`}
+        } ${visible ? "" : "pointer-events-none opacity-0"}`}
       >
         <div ref={p.mount} className="size-full [&>iframe]:size-full" />
         {visible && !anchored && (

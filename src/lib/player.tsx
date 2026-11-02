@@ -71,6 +71,9 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const queue = useRef<Song[]>([]);
   const idx = useRef(-1);
   const errors = useRef(0);
+  /** 自分で一時停止したか。動画を隠している間にブラウザ側で止められたら再開するため */
+  const userPaused = useRef(false);
+  const hidden = useRef(false);
   const [st, setSt] = useState<State>({
     current: null,
     playing: false,
@@ -117,6 +120,10 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
           events: {
             onStateChange: (e: { data: number }) => {
               if (e.data === 1) errors.current = 0;
+              if (e.data === 2 && hidden.current && !userPaused.current) {
+                player.current?.playVideo();
+                return;
+              }
               if (e.data === 0) step(1); // ended
               setSt((s) => ({ ...s, playing: e.data === 1 || e.data === 3 }));
             },
@@ -149,18 +156,21 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     return () => clearInterval(t);
   }, []);
 
+  hidden.current = !st.showVideo && !st.anchor;
   const api: Api = {
     ...st,
     play: (song, list) => {
       const l = list.includes(song) ? list : [song];
       queue.current = l;
       errors.current = 0;
+      userPaused.current = false;
       void start(l.indexOf(song));
     },
     toggle: () => {
       if (!player.current) return;
       const state = player.current.getPlayerState?.();
-      if (state === 1 || state === 3) player.current.pauseVideo();
+      userPaused.current = state === 1 || state === 3;
+      if (userPaused.current) player.current.pauseVideo();
       else player.current.playVideo();
     },
     next: () => step(1),
