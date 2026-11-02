@@ -26,6 +26,7 @@ vp check        # lint + format + 型チェック
 node scripts/recent.ts           # 2023年以降のゲームの曲を集める（要ネットワーク）
 node scripts/enrich.ts egsmusic  # 批評空間の楽曲データを取得（要ネットワーク、SQLを6回投げるだけ）
 node scripts/convert.ts          # data/votes.json + 2023年以降の曲 → src/data/songs.json
+node scripts/sitemap.ts          # public/sitemap.xml（再生できる曲・ゲーム・ブランドのURL）
 node scripts/enrich.ts all       # 直リンク・ジャケット・公式サイトを収集（要ネットワーク）
 ```
 

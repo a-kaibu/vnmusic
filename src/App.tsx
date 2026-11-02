@@ -25,6 +25,7 @@ import {
   type Song,
 } from "./lib/songs";
 import { normalize } from "./lib/search";
+import { updateSeo } from "./lib/seo";
 import { TrackList } from "./components/TrackList";
 import { GroupGrid } from "./components/GroupGrid";
 import { BrandPicker } from "./components/BrandPicker";
@@ -141,13 +142,14 @@ export default function App() {
     }
     navKey.current = key;
     fromPop.current = false;
-    document.title = [
+    const title = [
       song?.title,
       scope?.name ?? (view !== "tracks" ? nav.find((n) => n.key === view)?.label : ""),
       "vnmusic",
     ]
       .filter(Boolean)
       .join(" - ");
+    updateSeo({ title, search: url.slice(location.pathname.length), song });
   }, [view, scope, selected, detailOpen, query, cats, sort, onlyStream, onlyPlayable]);
   useEffect(() => {
     const onPop = () => {

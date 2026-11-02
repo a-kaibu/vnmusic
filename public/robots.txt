@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a-kaibu.github.io/vnmusic/sitemap.xml
