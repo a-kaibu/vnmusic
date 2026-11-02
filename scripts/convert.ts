@@ -465,10 +465,68 @@ const recent = recentGames.flatMap((g) => {
   }));
 });
 
+// 残りの批評空間の曲（全年代・BGM も含む）。CSV や上で足したゲームの曲は、そのゲーム名・ブランドにまとめる
+const today = new Date().toISOString().slice(0, 10);
+const placed = new Map<string, { game: string; brand: string; release: string }>();
+for (const s of [...songs, ...recent]) {
+  const gid = egsGameId(s.game, s.release, s.brand);
+  if (gid && !placed.has(gid)) placed.set(gid, { game: s.game, brand: s.brand, release: s.release });
+}
+for (const g of recentGames) {
+  const gid = g.egs ?? egsByVndb.get(g.vndb) ?? egsGameId(g.game, g.release, g.brand);
+  if (gid && !placed.has(gid)) placed.set(gid, g);
+}
+const usedIds = new Set([...songs, ...recent].map((s) => s.id));
+const rest = Object.entries(egsGames)
+  .filter(([, g]) => g.sellday && g.sellday <= today)
+  .sort(([, a], [, b]) => a.sellday.localeCompare(b.sellday))
+  .flatMap(([gid, eg]) => {
+    const g = placed.get(gid) ?? {
+      game: eg.name,
+      brand: eg.brand,
+      release: eg.sellday.replace(/-/g, "/"),
+    };
+    return (egsByGame.get(gid) ?? []).flatMap((e) => {
+      const k = `${key(g.game).slice(0, 4)}|${key(e.m.name)}`;
+      if (seen.has(k)) return [];
+      seen.add(k);
+      // 同じ曲が別のゲームにも入っているときは ID が重ならないようにゲームIDも混ぜる
+      let id = hash(`egs|${e.id}`);
+      if (usedIds.has(id)) id = hash(`egs|${e.id}|${gid}`);
+      usedIds.add(id);
+      const f = egsFields(e);
+      return [
+        {
+          id,
+          rank: null,
+          title: f.title,
+          votes: 0,
+          points: 0,
+          vocal: f.artist,
+          lyrics: f.lyrics,
+          composer: f.composer,
+          arranger: f.arranger,
+          game: g.game,
+          brand: g.brand,
+          release: g.release,
+          category: f.category,
+          album: f.album ? `『${f.album}』` : "",
+          stream: { ...off },
+          karaoke: { dam: 0, joysound: 0, karatetsu: 0, pasela: 0 },
+          note: "",
+          aggNote: "",
+          prev: { y2021: null, y2020: null, y2019: null },
+        },
+      ];
+    });
+  });
+
 mkdirSync(new URL("../src/data/", import.meta.url), { recursive: true });
 writeFileSync(
   new URL("../src/data/songs.json", import.meta.url),
-  JSON.stringify([...songs, ...recent], null, 2) + "\n",
+  JSON.stringify([...songs, ...recent, ...rest], null, 2) + "\n",
 );
-console.log(`${songs.length} songs + ${recent.length} recent songs written`);
+console.log(
+  `${songs.length} songs + ${recent.length} recent songs + ${rest.length} songs from 批評空間 written`,
+);
 console.log(`批評空間: CSV の ${filled} 曲のクレジットを補完 / 2023年以降 ${recent.filter((s) => s.lyrics || s.composer).length} 曲に作詞作曲`);

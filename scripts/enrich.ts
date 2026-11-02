@@ -226,14 +226,31 @@ type EgsMusic = {
   lyrics: string[];
   composer: string[];
   arranger: string[];
+  /** 最初に出た収録CD */
   album: string;
+  /** 収録CD（発売順）。track は 0 なら不明 */
+  items: { name: string; release: string; disc: number; track: number }[];
+  /** 再生時間 (h:mm:ss) */
+  playtime: string;
+  /** 試聴などの公式ページ */
+  ohp: string;
 };
 type EgsMusicCache = {
   fetched: string;
   music: Record<string, EgsMusic>;
   games: Record<
     string,
-    { name: string; brand: string; brandKind: string; model: string; sellday: string; erogame: boolean; vndb: string }
+    {
+      name: string;
+      brand: string;
+      brandKind: string;
+      model: string;
+      sellday: string;
+      erogame: boolean;
+      vndb: string;
+      official: string;
+      dmm: string;
+    }
   >;
   /** [曲ID, ゲームID, 区分] */
   gameMusic: [string, string, string][];
@@ -249,10 +266,12 @@ async function stageEgsMusic() {
   console.log("批評空間から楽曲データを取得中…");
   const base = await q(
     "game_music",
-    "SELECT m.id, m.name, COALESCE(m.furigana,''), m.vocal, COALESCE(m.releasedate::text,''), gm.category, g.id, g.gamename, b.brandname, COALESCE(b.kind,''), COALESCE(g.model,''), COALESCE(g.sellday::text,''), COALESCE(g.erogame::text,''), COALESCE(g.vndb,'') FROM game_music gm JOIN musiclist m ON m.id = gm.music JOIN gamelist g ON g.id = gm.game JOIN brandlist b ON b.id = g.brandname ORDER BY m.id, g.id",
+    "SELECT m.id, m.name, COALESCE(m.furigana,''), m.vocal, COALESCE(m.releasedate::text,''), gm.category, g.id, g.gamename, b.brandname, COALESCE(b.kind,''), COALESCE(g.model,''), COALESCE(g.sellday::text,''), COALESCE(g.erogame::text,''), COALESCE(g.vndb,''), COALESCE(g.shoukai,''), COALESCE(g.dmm,''), COALESCE(m.playtime::text,''), COALESCE(m.ohp,'') FROM game_music gm JOIN musiclist m ON m.id = gm.music JOIN gamelist g ON g.id = gm.game JOIN brandlist b ON b.id = g.brandname ORDER BY m.id, g.id",
   );
   const out: EgsMusicCache = { fetched: new Date().toISOString().slice(0, 10), music: {}, games: {}, gameMusic: [] };
-  for (const [mid, name, furigana, vocal, release, category, gid, game, brand, brandKind, model, sellday, erogame, vndb] of base) {
+  for (const r of base) {
+    const [mid, name, furigana, vocal, release, category, gid, game, brand, brandKind, model] = r;
+    const [sellday, erogame, vndb, official, dmm, playtime, ohp] = r.slice(11);
     out.music[mid] ??= {
       name,
       furigana,
@@ -264,8 +283,21 @@ async function stageEgsMusic() {
       composer: [],
       arranger: [],
       album: "",
+      items: [],
+      playtime,
+      ohp,
     };
-    out.games[gid] ??= { name: game, brand, brandKind, model, sellday, erogame: erogame === "true", vndb };
+    out.games[gid] ??= {
+      name: game,
+      brand,
+      brandKind,
+      model,
+      sellday,
+      erogame: erogame === "true",
+      vndb,
+      official,
+      dmm,
+    };
     out.gameMusic.push([mid, gid, category]);
   }
   for (const [table, key] of [
@@ -285,10 +317,20 @@ async function stageEgsMusic() {
   }
   const items = await q(
     "musicitem_music",
-    "SELECT mi.music, i.name FROM musicitem_music mi JOIN musicitemlist i ON i.id = mi.musicitem ORDER BY mi.music, i.releasedate NULLS LAST",
+    "SELECT mi.music, i.name, COALESCE(i.releasedate::text,''), COALESCE(mi.disk_number,0), COALESCE(mi.track_number,0) FROM musicitem_music mi JOIN musicitemlist i ON i.id = mi.musicitem ORDER BY mi.music, i.releasedate NULLS LAST, i.id",
   );
-  for (const [mid, name] of items) if (out.music[mid] && !out.music[mid].album) out.music[mid].album = name;
-  save("egs-music.json", out);
+  for (const [mid, name, release, disc, track] of items) {
+    const m = out.music[mid];
+    if (!m) continue;
+    m.items.push({ name, release: release.startsWith("0001") ? "" : release, disc: Number(disc), track: Number(track) });
+  }
+  // 発売日不明 (0001-01-01) のCDは後ろに回してから、最初に出たCDを album にする
+  for (const m of Object.values(out.music)) {
+    m.items.sort((a, b) => (a.release || "9999").localeCompare(b.release || "9999"));
+    m.album = m.items[0]?.name ?? "";
+  }
+  // 1万曲以上あるので整形せずに保存する
+  writeFileSync(new URL("egs-music.json", cacheDir), JSON.stringify(out));
   console.log(`  ${Object.keys(out.music).length} 曲 / ${Object.keys(out.games).length} 作品`);
 }
 
