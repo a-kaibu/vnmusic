@@ -111,6 +111,10 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const nicoFrame = useRef<HTMLIFrameElement | null>(null);
   /** いま鳴らしているのが YouTube かニコニコか */
   const kind = useRef<"yt" | "nico">("yt");
+  const seq = useRef(0);
+  const ready = useRef(false);
+  /** YouTube プレーヤーの準備中に選ばれた動画 */
+  const pendingId = useRef<string | null>(null);
   const nicoPost = (eventName: string, data?: unknown) =>
     nicoFrame.current?.contentWindow?.postMessage(
       { eventName, data, sourceConnectorType: 1, playerId: "1" },
@@ -175,6 +179,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
   const start = useCallback(
     async (i: number, keepHistory = false) => {
+      // 素早く曲を切り替えたとき、古い呼び出しが後から動いて二重に鳴らないようにする
+      const token = ++seq.current;
       if (!keepHistory) history.current = [];
       idx.current = i;
       const song = queue.current[i];
@@ -206,6 +212,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
         ytBox.current!.style.display = "";
       }
       await loadApi();
+      if (token !== seq.current) return;
       if (!player.current) {
         const el = document.createElement("div");
         ytBox.current!.appendChild(el);
@@ -216,10 +223,19 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
           playerVars: { autoplay: 1, playsinline: 1, rel: 0, origin: location.origin },
           events: {
             onReady: () => {
+              ready.current = true;
               player.current?.setVolume(volRef.current.volume);
               if (volRef.current.muted) player.current?.mute();
+              // 準備中にニコニコの曲へ切り替わっていたら鳴らさない、別の YouTube 曲なら差し替える
+              if (kind.current !== "yt") player.current?.pauseVideo();
+              else if (pendingId.current && pendingId.current !== id)
+                player.current?.loadVideoById(pendingId.current);
             },
             onStateChange: (e: { data: number }) => {
+              if (kind.current !== "yt") {
+                if (e.data === 1 || e.data === 3) player.current?.pauseVideo();
+                return;
+              }
               if (e.data === 1) errors.current = 0;
               if (e.data === 2 && hidden.current && !userPaused.current) {
                 player.current?.playVideo();
@@ -231,12 +247,15 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
             // 埋め込み不可・削除済みなどは飛ばす
             // 3曲続けて失敗したら止める（環境の問題で全部飛ばし続けないように）
             onError: () => {
+              if (kind.current !== "yt") return;
               if (++errors.current < 3) step(1);
               else setSt((s) => ({ ...s, playing: false }));
             },
           },
         });
-      } else player.current.loadVideoById(id!);
+      } else if (ready.current) player.current.loadVideoById(id!);
+      // まだ準備中なら onReady で読み込む
+      pendingId.current = id!;
     },
     [step],
   );
