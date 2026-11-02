@@ -33,14 +33,14 @@ export function GroupGrid({ groups, kind, onOpen }: Props) {
             <button
               key={g.name}
               onClick={() => onOpen({ kind, name: g.name })}
-              className="group rounded-lg p-2.5 text-left transition hover:bg-elev"
+              className="group flex flex-col justify-start self-start rounded-lg p-2.5 text-left transition hover:bg-elev"
             >
               {art ? (
                 <img
                   src={art}
                   alt=""
                   loading="lazy"
-                  className="aspect-square w-full rounded-md object-cover shadow-lg"
+                  className="aspect-square w-full rounded-md bg-elev object-cover object-top shadow-lg"
                 />
               ) : (
                 <Cover
