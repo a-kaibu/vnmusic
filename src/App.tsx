@@ -269,9 +269,6 @@ export default function App() {
                 {songs.filter((s) => streamCount(s) > 0).length}
               </dd>
             </dl>
-            <p className="mt-4 text-xs leading-relaxed">
-              投票結果CSVをもとに作成。配信状況は2023年7月時点の調査値です。見つかった曲は配信ページへ直接、それ以外は各サービスの検索結果を開きます。
-            </p>
           </div>
         </aside>
 

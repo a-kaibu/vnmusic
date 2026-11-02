@@ -77,16 +77,15 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
             </button>
             <button
               onClick={p.toggle}
-              className={`flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-bold text-black hover:brightness-110 ${p.playing ? "bg-white" : "bg-accent"}`}
+              className="rounded-full p-2 text-white hover:bg-elev"
               aria-label={p.playing ? "一時停止" : "再生"}
               title={p.playing ? "一時停止" : "再生"}
             >
               {p.playing ? (
-                <Pause className="size-4 fill-current" />
+                <Pause className="size-5 fill-current" />
               ) : (
-                <Play className="size-4 fill-current" />
+                <Play className="size-5 fill-current" />
               )}
-              <span className="max-sm:hidden">{p.playing ? "一時停止" : "再生"}</span>
             </button>
             <button
               onClick={p.next}
@@ -199,7 +198,7 @@ export function VideoBox() {
         className={`fixed overflow-hidden bg-black ${
           anchored
             ? "z-[60] rounded-xl"
-            : "right-3 bottom-24 z-40 aspect-video w-[320px] rounded-lg shadow-2xl ring-1 ring-line max-md:right-2 max-md:bottom-36 max-md:w-[240px]"
+            : "right-3 bottom-[calc(var(--dock-h,80px)+12px)] z-[55] aspect-video w-[320px] rounded-lg shadow-2xl ring-1 ring-line max-md:right-2 max-md:w-[240px]"
         } ${visible ? "" : "pointer-events-none opacity-0"}`}
       >
         <div ref={p.mount} className="size-full [&>iframe]:size-full" />
