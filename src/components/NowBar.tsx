@@ -6,6 +6,9 @@ import {
   SkipBack,
   SkipForward,
   Video,
+  Volume1,
+  Volume2,
+  VolumeX,
   VideoOff,
   Minimize2,
 } from "lucide-react";
@@ -92,6 +95,34 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
             >
               <SkipForward className="size-4" />
             </button>
+            <div className="ml-1 flex items-center gap-1 max-md:hidden">
+              <button
+                onClick={p.toggleMute}
+                className="rounded-full p-2 text-muted hover:text-white"
+                aria-label={p.muted ? "ミュート解除" : "ミュート"}
+                title={p.muted ? "ミュート解除" : "ミュート"}
+              >
+                {p.muted || p.volume === 0 ? (
+                  <VolumeX className="size-4" />
+                ) : p.volume < 50 ? (
+                  <Volume1 className="size-4" />
+                ) : (
+                  <Volume2 className="size-4" />
+                )}
+              </button>
+              <input
+                type="range"
+                min={0}
+                max={100}
+                step={1}
+                value={p.muted ? 0 : p.volume}
+                onChange={(e) => p.setVolume(Number(e.target.value))}
+                className="seek w-24"
+                style={{ "--pct": `${p.muted ? 0 : p.volume}%` } as React.CSSProperties}
+                aria-label="音量"
+                title={`音量 ${p.muted ? 0 : p.volume}`}
+              />
+            </div>
             <button
               onClick={() => p.setShowVideo(!p.showVideo)}
               className="rounded-full p-2 text-muted hover:text-white"

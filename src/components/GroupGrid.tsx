@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { type Group, games, artworkOf, year, artistImage, brandImage } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
@@ -8,10 +8,22 @@ type Props = {
   kind: NonNullable<Scope>["kind"];
   onOpen: (s: NonNullable<Scope>) => void;
 };
-const PAGE = 120;
+const PAGE = 60;
 
 export function GroupGrid({ groups, kind, onOpen }: Props) {
   const [n, setN] = useState(PAGE);
+  // 一番下が見えてきたら続きを読み込む（無限スクロール）
+  const sentinel = useRef<HTMLDivElement>(null);
+  const more = n < groups.length;
+  useEffect(() => {
+    const el = sentinel.current;
+    if (!el || !more) return;
+    const io = new IntersectionObserver((es) => es[0]?.isIntersecting && setN((x) => x + PAGE), {
+      rootMargin: "800px 0px",
+    });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [more, n]);
 
   if (!groups.length)
     return <p className="px-6 py-16 text-center text-muted">該当するものがありません</p>;
@@ -66,16 +78,7 @@ export function GroupGrid({ groups, kind, onOpen }: Props) {
           );
         })}
       </div>
-      {n < groups.length && (
-        <div className="mt-6 text-center">
-          <button
-            onClick={() => setN(n + PAGE)}
-            className="rounded-full border border-line px-5 py-2 text-sm font-semibold hover:bg-elev"
-          >
-            さらに表示（残り {groups.length - n}）
-          </button>
-        </div>
-      )}
+      {more && <div ref={sentinel} className="h-10" aria-hidden />}
     </div>
   );
 }

@@ -21,6 +21,18 @@ type YTPlayer = {
   getDuration: () => number;
   getPlayerState: () => number;
   setVolume: (v: number) => void;
+  mute: () => void;
+  unMute: () => void;
+};
+
+const VOL_KEY = "vnmusic:volume";
+const loadVolume = () => {
+  try {
+    const v = Number(localStorage.getItem(VOL_KEY));
+    return localStorage.getItem(VOL_KEY) !== null && v >= 0 && v <= 100 ? v : 80;
+  } catch {
+    return 80;
+  }
 };
 declare global {
   interface Window {
@@ -47,6 +59,9 @@ type State = {
   hasPrev: boolean;
   hasNext: boolean;
   showVideo: boolean;
+  /** 0〜100 */
+  volume: number;
+  muted: boolean;
   /** 詳細画面の動画枠。あればプレーヤーをそこに重ねて表示する */
   anchor: HTMLElement | null;
 };
@@ -58,6 +73,8 @@ type Api = State & {
   prev: () => void;
   seek: (t: number) => void;
   setShowVideo: (v: boolean) => void;
+  setVolume: (v: number) => void;
+  toggleMute: () => void;
   mount: (el: HTMLDivElement | null) => void;
   setAnchor: (el: HTMLElement | null) => void;
 };
@@ -74,6 +91,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   /** 自分で一時停止したか。動画を隠している間にブラウザ側で止められたら再開するため */
   const userPaused = useRef(false);
   const hidden = useRef(false);
+  const volRef = useRef({ volume: 80, muted: false });
   const [st, setSt] = useState<State>({
     current: null,
     playing: false,
@@ -82,6 +100,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     hasPrev: false,
     hasNext: false,
     showVideo: true,
+    volume: loadVolume(),
+    muted: false,
     anchor: null,
   });
 
@@ -118,6 +138,10 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
           videoId: id,
           playerVars: { autoplay: 1, playsinline: 1, rel: 0, origin: location.origin },
           events: {
+            onReady: () => {
+              player.current?.setVolume(volRef.current.volume);
+              if (volRef.current.muted) player.current?.mute();
+            },
             onStateChange: (e: { data: number }) => {
               if (e.data === 1) errors.current = 0;
               if (e.data === 2 && hidden.current && !userPaused.current) {
@@ -157,6 +181,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, []);
 
   hidden.current = !st.showVideo && !st.anchor;
+  volRef.current = { volume: st.volume, muted: st.muted };
   const api: Api = {
     ...st,
     play: (song, list) => {
@@ -180,6 +205,21 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     },
     seek: (t) => player.current?.seekTo(t, true),
     setShowVideo: (v) => setSt((s) => ({ ...s, showVideo: v })),
+    setVolume: (v) => {
+      player.current?.setVolume?.(v);
+      if (v > 0) player.current?.unMute?.();
+      try {
+        localStorage.setItem(VOL_KEY, String(v));
+      } catch {
+        /* 保存できなくても動く */
+      }
+      setSt((s) => ({ ...s, volume: v, muted: v === 0 ? s.muted : false }));
+    },
+    toggleMute: () => {
+      if (st.muted) player.current?.unMute?.();
+      else player.current?.mute?.();
+      setSt((s) => ({ ...s, muted: !s.muted }));
+    },
     setAnchor: (el) => setSt((s) => (s.anchor === el ? s : { ...s, anchor: el })),
     mount: (el) => {
       host.current = el;
