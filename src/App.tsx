@@ -70,6 +70,8 @@ function readUrl(): UrlState {
   const name = p.get("name");
   const view = p.get("view") as View | null;
   const sort = p.get("sort") as Sort | null;
+  // クエリなしで開いたときは「配信あり」「ここで聴ける」を ON にした状態から始める
+  const fresh = !location.search;
   return {
     view: view && views.includes(view) ? view : "tracks",
     scope: by && by in scopeLabel && name ? { kind: by, name } : null,
@@ -77,8 +79,8 @@ function readUrl(): UrlState {
     query: p.get("q") ?? "",
     cats: p.get("cat")?.split(",").filter(Boolean) ?? [],
     sort: sort && sorts.includes(sort) ? sort : "random",
-    onlyStream: p.get("stream") === "1",
-    onlyPlayable: p.get("play") === "1",
+    onlyStream: fresh || p.get("stream") === "1",
+    onlyPlayable: fresh || p.get("play") === "1",
   };
 }
 function toUrl(st: UrlState) {
@@ -241,6 +243,8 @@ export default function App() {
           onClick={() => {
             go("tracks");
             setQuery("");
+            setOnlyStream(true);
+            setOnlyPlayable(true);
           }}
           className="flex shrink-0 items-center gap-2 text-lg font-bold"
           title="全曲"
