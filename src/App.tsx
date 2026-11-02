@@ -220,7 +220,8 @@ export default function App() {
   // 一覧で曲を押したら再生。再生できない曲と広い画面では詳細も開く
   const select = (s: Song) => {
     setSelected(s);
-    if (playable(s)) player.play(s, tracks);
+    // 再生中の曲をもう一度選んだときは頭に戻さない
+    if (playable(s) && player.current?.id !== s.id) player.play(s, tracks);
     if (!playable(s) || matchMedia("(min-width: 1024px)").matches) setDetailOpen(true);
   };
 
