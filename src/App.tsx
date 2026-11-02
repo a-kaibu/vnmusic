@@ -31,7 +31,7 @@ import { usePlayer, playable } from "./lib/player";
 
 export type View = "tracks" | "games" | "brands" | "artists";
 export type Scope = { kind: ScopeKind; name: string } | null;
-type Sort = "new" | "old" | "title";
+type Sort = "random" | "new" | "old" | "title";
 
 const index = songs.map((s) =>
   normalize(
@@ -49,7 +49,9 @@ const nav: { key: View; label: string; icon: typeof Disc3 }[] = [
 const firstArtist = (s: Song) => s.vocal.split(" / ")[0] ?? "";
 const songById = new Map(songs.map((s) => [s.id, s]));
 const views: View[] = ["tracks", "games", "brands", "artists"];
-const sorts: Sort[] = ["new", "old", "title"];
+const sorts: Sort[] = ["random", "new", "old", "title"];
+/** ページを開くたびに変わるランダム順（絞り込んでも並びは保つ） */
+const shuffleKey = new Map(songs.map((s) => [s.id, Math.random()]));
 
 /** URL ⇔ 画面の状態。?view=games / ?by=composer&name=… / &song=12 / &q=… / &cat=OP,ED / &sort=old / &stream=1 / &play=1 */
 type UrlState = {
@@ -74,7 +76,7 @@ function readUrl(): UrlState {
     song: songById.get(Number(p.get("song"))) ?? null,
     query: p.get("q") ?? "",
     cats: p.get("cat")?.split(",").filter(Boolean) ?? [],
-    sort: sort && sorts.includes(sort) ? sort : "new",
+    sort: sort && sorts.includes(sort) ? sort : "random",
     onlyStream: p.get("stream") === "1",
     onlyPlayable: p.get("play") === "1",
   };
@@ -87,7 +89,7 @@ function toUrl(st: UrlState) {
   } else if (st.view !== "tracks") p.set("view", st.view);
   if (st.query) p.set("q", st.query);
   if (st.cats.length) p.set("cat", st.cats.join(","));
-  if (st.sort !== "new") p.set("sort", st.sort);
+  if (st.sort !== "random") p.set("sort", st.sort);
   if (st.onlyStream) p.set("stream", "1");
   if (st.onlyPlayable) p.set("play", "1");
   if (st.song) p.set("song", String(st.song.id));
@@ -166,11 +168,13 @@ export default function App() {
     if (onlyStream) list = list.filter((s) => streamCount(s) > 0);
     if (onlyPlayable) list = list.filter(playable);
     list = [...list].sort((a, b) =>
-      sort === "title"
-        ? a.title.localeCompare(b.title, "ja")
-        : sort === "new"
-          ? b.release.localeCompare(a.release) || a.game.localeCompare(b.game, "ja")
-          : a.release.localeCompare(b.release) || a.game.localeCompare(b.game, "ja"),
+      sort === "random"
+        ? shuffleKey.get(a.id)! - shuffleKey.get(b.id)!
+        : sort === "title"
+          ? a.title.localeCompare(b.title, "ja")
+          : sort === "new"
+            ? b.release.localeCompare(a.release) || a.game.localeCompare(b.game, "ja")
+            : a.release.localeCompare(b.release) || a.game.localeCompare(b.game, "ja"),
     );
     return list;
   }, [searched, scope, cats, onlyStream, onlyPlayable, sort]);
@@ -374,6 +378,7 @@ export default function App() {
                   onChange={(e) => setSort(e.target.value as Sort)}
                   className="rounded-full bg-elev px-3 py-1 text-xs font-semibold outline-none"
                 >
+                  <option value="random">ランダム</option>
                   <option value="new">発売日が新しい順</option>
                   <option value="old">発売日が古い順</option>
                   <option value="title">曲名順</option>
