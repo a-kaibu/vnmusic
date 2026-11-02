@@ -343,6 +343,17 @@ const recentEgs = new Set(
 );
 const recentVndb = new Set(recentGames.map((g) => g.vndb));
 const csvGames = new Set(songs.map((s) => egsGameId(s.game, s.release, s.brand)));
+// 批評空間のブランド名（「ALICESOFT」「Liar-soft(ビジネスパートナー)」など）は、
+// CSV・VNDB で同じブランドのゲームがあればその表記にそろえ、なければ末尾の括弧を外す
+const brandNames = new Map<string, string>();
+const addBrand = (gid: string | undefined, brand: string) => {
+  const b = gid && egsGames[gid]?.brand;
+  if (b && !brandNames.has(b)) brandNames.set(b, brand);
+};
+for (const s of songs) addBrand(egsGameId(s.game, s.release, s.brand), s.brand);
+for (const g of recentGames)
+  addBrand(egsByVndb.get(g.vndb) ?? egsGameId(g.game, g.release, g.brand), g.brand);
+const brandOf = (b: string) => brandNames.get(b) ?? (b.replace(/\s*[(（][^)）]*[)）]\s*$/, "") || b);
 for (const [gid, g] of Object.entries(egsGames)) {
   if (g.sellday < "2023-01-01" || g.sellday > new Date().toISOString().slice(0, 10)) continue;
   if (g.brandKind !== "CORPORATION" || g.model !== "PC" || !g.erogame) continue;
@@ -351,7 +362,7 @@ for (const [gid, g] of Object.entries(egsGames)) {
     vndb: `egs${gid}`,
     egs: gid,
     game: g.name,
-    brand: g.brand,
+    brand: brandOf(g.brand),
     release: g.sellday.replace(/-/g, "/"),
   });
 }
@@ -483,7 +494,7 @@ const rest = Object.entries(egsGames)
   .flatMap(([gid, eg]) => {
     const g = placed.get(gid) ?? {
       game: eg.name,
-      brand: eg.brand,
+      brand: brandOf(eg.brand),
       release: eg.sellday.replace(/-/g, "/"),
     };
     return (egsByGame.get(gid) ?? []).flatMap((e) => {
