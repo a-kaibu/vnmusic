@@ -76,3 +76,13 @@ input.seek::-moz-range-thumb {
   background: #fff;
   border: 0;
 }
+
+/* 押せるものはホバーで指カーソルに（Tailwind v4 はボタンの既定が default のため） */
+button:not(:disabled),
+[role="button"],
+select,
+summary,
+label[for],
+input[type="range"] {
+  cursor: pointer;
+}

@@ -210,6 +210,13 @@ export default function App() {
     setCats([]);
     scrollRef.current?.scrollTo({ top: 0 });
   };
+  // 次の曲に進んだら、開いている詳細もその曲に切り替える
+  const currentId = player.current?.id;
+  useEffect(() => {
+    if (player.current && detailOpen) setSelected(player.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentId]);
+
   // 一覧で曲を押したら再生。再生できない曲と広い画面では詳細も開く
   const select = (s: Song) => {
     setSelected(s);
