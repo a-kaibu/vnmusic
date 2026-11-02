@@ -5,8 +5,6 @@ import { playable } from "../lib/player";
 import { type Song, year, artworkOf } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
-import { ScopeLink } from "./ScopeLink";
-import { StreamDots } from "./StreamDots";
 
 type Props = {
   songs: Song[];
@@ -15,22 +13,15 @@ type Props = {
   onSelect: (s: Song) => void;
   onPlay: (s: Song) => void;
   playingId?: number;
-  onScope: (s: NonNullable<Scope>) => void;
+  onScope?: (s: NonNullable<Scope>) => void;
 };
 
 const ROW = 60;
+const vo = (s: Song) => s.vocal || (/BGM/.test(s.category) ? "（インスト）" : "歌手不明");
 const grid =
-  "grid grid-cols-[minmax(0,1fr)_auto] md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,.7fr)_3.5rem_4rem_5.5rem] items-center gap-3";
+  "grid grid-cols-[minmax(0,1fr)] md:grid-cols-[minmax(0,1.3fr)_minmax(0,.8fr)_minmax(0,1fr)_minmax(0,.7fr)_3.5rem_4rem] items-center gap-3";
 
-export function TrackList({
-  songs,
-  scrollRef,
-  selectedId,
-  onSelect,
-  onPlay,
-  playingId,
-  onScope,
-}: Props) {
+export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, playingId }: Props) {
   // ヘッダー等の分だけリストの開始位置がずれるので補正
   const listRef = useRef<HTMLDivElement>(null);
   const [margin, setMargin] = useState(0);
@@ -54,13 +45,13 @@ export function TrackList({
         className={`${grid} sticky top-16 z-10 border-b border-line bg-panel px-2 py-2 text-xs text-muted md:px-3`}
       >
         <span>タイトル</span>
+        <span className="max-md:hidden">Vo</span>
         <span className="max-md:hidden">ゲーム</span>
         <span className="max-md:hidden">ブランド</span>
         <span className="max-md:hidden">
           <Clock3 className="size-3.5" />
         </span>
         <span className="text-right max-md:hidden">区分</span>
-        <span className="max-md:text-right">配信</span>
       </div>
       <div ref={listRef} style={{ height: v.getTotalSize(), position: "relative" }}>
         {v.getVirtualItems().map((item) => {
@@ -109,45 +100,18 @@ export function TrackList({
                   >
                     {s.title}
                   </p>
-                  <p className="truncate text-xs text-muted">
-                    {s.vocal ? (
-                      <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split subtle />
-                    ) : /BGM/.test(s.category) ? (
-                      "（インスト）"
-                    ) : (
-                      "歌手不明"
-                    )}
-                    <span className="md:hidden"> ・ {s.game}</span>
+                  <p className="truncate text-xs text-muted md:hidden">
+                    {vo(s)} ・ {s.game}
                   </p>
                 </div>
               </div>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onScope({ kind: "game", name: s.game });
-                }}
-                className="truncate text-left text-sm text-muted hover:text-white hover:underline max-md:hidden"
-              >
-                {s.game}
-              </button>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onScope({ kind: "brand", name: s.brand });
-                }}
-                className="truncate text-left text-sm text-muted hover:text-white hover:underline max-md:hidden"
-              >
-                {s.brand}
-              </button>
-              <span className="text-xs text-muted tabular-nums max-md:hidden">
-                <ScopeLink kind="year" value={year(s)} onScope={onScope} subtle />
-              </span>
+              <span className="truncate text-sm text-muted max-md:hidden">{vo(s)}</span>
+              <span className="truncate text-sm text-muted max-md:hidden">{s.game}</span>
+              <span className="truncate text-sm text-muted max-md:hidden">{s.brand}</span>
+              <span className="text-xs text-muted tabular-nums max-md:hidden">{year(s)}</span>
               <span className="truncate text-right text-xs text-muted max-md:hidden">
-                <ScopeLink kind="category" value={s.category} onScope={onScope} subtle />
+                {s.category}
               </span>
-              <div className="max-md:justify-self-end">
-                <StreamDots song={s} />
-              </div>
             </div>
           );
         })}
