@@ -113,8 +113,10 @@ export function TrackList({
                   <p className="truncate text-xs text-muted">
                     {s.vocal ? (
                       <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split subtle />
-                    ) : (
+                    ) : /BGM/.test(s.category) ? (
                       "（インスト）"
+                    ) : (
+                      "歌手不明"
                     )}
                     <span className="md:hidden"> ・ {s.game}</span>
                   </p>

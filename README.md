@@ -23,9 +23,21 @@ vp check        # lint + format + 型チェック
 ## データの更新
 
 ```sh
-node scripts/convert.ts          # data/votes.csv → src/data/songs.json
+node scripts/recent.ts           # 2023年以降のゲームの曲を集める（要ネットワーク）
+node scripts/convert.ts          # data/votes.csv + 2023年以降の曲 → src/data/songs.json
 node scripts/enrich.ts all       # 直リンク・ジャケット・公式サイトを収集（要ネットワーク）
 ```
+
+### 2023年以降の曲（`scripts/recent.ts`）
+
+投票CSVは2023年9月発売分までなので、それ以降（と CSV にない2023年の作品）の曲を別に集めます。
+
+1. `vndb` — VNDB から 2023年1月以降に発売された成人向けPCゲーム（企業ブランド）の一覧・ブランド・発売日・公式サイト・ジャケットを取得 → `data/cache/recent.json`
+2. `itunes` — ゲーム名で iTunes Search API を検索し、サントラ・主題歌シングルからボーカル曲を拾う（BGM・インスト・別バージョンは除く）
+3. `youtube` — 「ゲーム名 主題歌」「ゲーム名 OP ED」で YouTube を検索し、OPムービーや試聴動画のタイトル・説明文にある「OPテーマ『曲名』」などから曲名・歌手を拾う → `data/cache/recent-yt.json`
+
+絞り込み条件を変えたときは `node scripts/recent.ts pick`（iTunes）/ `pick-yt`（YouTube）で保存済みの検索結果から選び直せます。
+作詞・作曲・カラオケ情報はありません。CSV と同じ曲は追加しません。
 
 `enrich.ts` の流れ:
 

@@ -1,6 +1,6 @@
 // CSV (data/votes.csv) → src/data/songs.json
 // 実行: node scripts/convert.ts
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import Papa from "papaparse";
 
 const csv = readFileSync(new URL("../data/votes.csv", import.meta.url), "utf8");
@@ -98,6 +98,80 @@ const songs = rows
     prev: { y2021: prev(r[C.prev2021]), y2020: prev(r[C.prev2020]), y2019: prev(r[C.prev2019]) },
   }));
 
+// 2023年以降のゲームの曲（scripts/recent.ts が集めたもの）を後ろに足す。
+// iTunes で見つかった曲は ID = trackId、YouTube の動画タイトルから拾った曲は ID = ゲームと曲名のハッシュ
+const cache = (name: string) => {
+  const f = new URL(`../data/cache/${name}`, import.meta.url);
+  return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : {};
+};
+type RecentGame = {
+  vndb: string;
+  game: string;
+  brand: string;
+  release: string;
+  tracks?: { trackId: number; title: string; artist: string; album: string; category: string }[];
+};
+type YtSong = { title: string; artist: string; category: string };
+const recentGames = Object.values(cache("recent.json") as Record<string, RecentGame>).sort((a, b) =>
+  a.release.localeCompare(b.release),
+);
+const ytSongs = cache("recent-yt.json") as Record<string, YtSong[]>;
+const key = (s: string) =>
+  s
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[\s・\-‐―ー~〜～!！?？、。,.'"『』「」()（）☆★♪]/g, "");
+const hash = (s: string) => {
+  let h = 0xcbf29ce484222325n;
+  for (const c of new TextEncoder().encode(s))
+    h = ((h ^ BigInt(c)) * 0x100000001b3n) & 0xffffffffffn;
+  return 1e12 + Number(h);
+};
+const seen = new Set(songs.map((s) => `${key(s.game).slice(0, 4)}|${key(s.title)}`));
+const off = { spotify: 0, apple: 0, ytmusic: 0, amazon: 0, mora: 0, awa: 0, fanza: 0 } as const;
+const recent = recentGames.flatMap((g) => {
+  const items = [
+    ...(g.tracks ?? []).map((t) => ({ ...t, id: t.trackId, apple: true })),
+    ...(ytSongs[g.vndb] ?? []).map((t) => ({
+      ...t,
+      id: hash(`${g.vndb}|${key(t.title)}`),
+      album: "",
+      apple: false,
+    })),
+  ];
+  return items.flatMap((t) => {
+    const k = `${key(g.game).slice(0, 4)}|${key(t.title)}`;
+    if (seen.has(k)) return [];
+    seen.add(k);
+    return [
+      {
+        id: t.id,
+        rank: null,
+        title: t.title,
+        votes: 0,
+        points: 0,
+        vocal: t.artist.replace(/\s*[&、,]\s*/g, " / "),
+        lyrics: "",
+        composer: "",
+        arranger: "",
+        game: g.game,
+        brand: g.brand,
+        release: g.release,
+        category: t.category,
+        album: t.album ? `『${t.album}』` : "",
+        stream: { ...off, apple: t.apple ? (2 as const) : (0 as const) },
+        karaoke: { dam: 0, joysound: 0, karatetsu: 0, pasela: 0 },
+        note: "",
+        aggNote: "",
+        prev: { y2021: null, y2020: null, y2019: null },
+      },
+    ];
+  });
+});
+
 mkdirSync(new URL("../src/data/", import.meta.url), { recursive: true });
-writeFileSync(new URL("../src/data/songs.json", import.meta.url), JSON.stringify(songs));
-console.log(`${songs.length} songs written`);
+writeFileSync(
+  new URL("../src/data/songs.json", import.meta.url),
+  JSON.stringify([...songs, ...recent]),
+);
+console.log(`${songs.length} songs + ${recent.length} recent songs written`);

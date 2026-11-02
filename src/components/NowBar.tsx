@@ -58,7 +58,7 @@ export function NowBar({ song: selected, onOpen }: { song: Song | null; onOpen: 
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold">{s.title}</p>
             <p className="truncate text-xs text-muted">
-              {s.vocal || "（インスト）"} ・ {s.game}
+              {s.vocal || (/BGM/.test(s.category) ? "（インスト）" : "歌手不明")} ・ {s.game}
             </p>
           </div>
         </button>

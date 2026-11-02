@@ -9375,5 +9375,513 @@
   "TVアニメ「マブラヴオルタネイティブ」１期再放送": {
     "vndb": "",
     "egs": ""
+  },
+  "１／１彼氏彼女 Mini Fandisc": {
+    "vndb": "v39928",
+    "egs": "",
+    "official": "https://www.hook-net.jp/smee/1kanofd/",
+    "cover": "https://t.vndb.org/cv/89/61589.jpg",
+    "officialAlive": true
+  },
+  "忍野路加は癒やしてあげたい": {
+    "vndb": "v35646",
+    "egs": "",
+    "official": "https://argonauts-soft.com/products/ms29/",
+    "cover": "https://t.vndb.org/cv/34/93434.jpg",
+    "officialAlive": true
+  },
+  "SACRIFICE VILLAINS": {
+    "vndb": "v37172",
+    "egs": "",
+    "official": "http://clockup.net/sv/download.html",
+    "cover": "https://t.vndb.org/cv/31/90731.jpg",
+    "officialAlive": true
+  },
+  "高嶺の花と魔法の壺": {
+    "vndb": "v39828",
+    "egs": "",
+    "official": "http://northbox.net/products/mahotsubo/index.html",
+    "officialAlive": false
+  },
+  "放課後シンデレラ２ ミニファンディスク ～君と踊る初めてのハッピーハロウィン～": {
+    "vndb": "v44190",
+    "egs": "",
+    "official": "http://www.hook-net.jp/hc2fd/",
+    "cover": "https://t.vndb.org/cv/47/113847.jpg",
+    "officialAlive": true
+  },
+  "乙女の剣と秘めごとコンチェルト": {
+    "vndb": "v43312",
+    "egs": "",
+    "official": "http://www.ensemble-game.com/29.otohime/#download",
+    "cover": "https://t.vndb.org/cv/82/113882.jpg",
+    "officialAlive": false
+  },
+  "遥か碧の花嫁に": {
+    "vndb": "v44173",
+    "egs": "",
+    "official": "https://lumpofsugar.co.jp/product/haruyome/trial.html",
+    "cover": "https://t.vndb.org/cv/88/86788.jpg",
+    "officialAlive": true
+  },
+  "あざとカワイイ綾瀬ちゃん！": {
+    "vndb": "v44198",
+    "egs": "",
+    "official": "http://www.confiture-soft.com/products/ayasechan/index.html",
+    "cover": "https://t.vndb.org/cv/22/66822.jpg",
+    "officialAlive": false
+  },
+  "コイバナ恋愛": {
+    "vndb": "v44195",
+    "egs": "",
+    "official": "https://www.asa-pro.com/koibana/download/",
+    "cover": "https://t.vndb.org/cv/17/89017.jpg",
+    "officialAlive": true
+  },
+  "猫忍えくすはーとSPIN!": {
+    "vndb": "v45381",
+    "egs": "",
+    "official": "https://whirlpool.co.jp/nekonin-spin/",
+    "cover": "https://t.vndb.org/cv/90/86790.jpg",
+    "officialAlive": true
+  },
+  "VenusBlood DarkChronicle Episode:5 その花は漆黒に堕ちゆく": {
+    "vndb": "v47065",
+    "egs": "",
+    "official": "https://ninetail.info/tld14/VenusBlood_DarkChronicle_Episode5.html",
+    "cover": "https://t.vndb.org/cv/24/89724.jpg",
+    "officialAlive": true
+  },
+  "アイコトバ-Silver Snow Sister-": {
+    "vndb": "v45247",
+    "egs": "",
+    "official": "http://azarashi-soft-plusone.nexton-net.jp/aikotoba-sss/",
+    "cover": "https://t.vndb.org/cv/82/116182.jpg",
+    "officialAlive": true
+  },
+  "彼方の人魚姫": {
+    "vndb": "v45561",
+    "egs": "",
+    "official": "http://wonder-fool.jp/ningyohime/#trial",
+    "cover": "https://t.vndb.org/cv/56/105356.jpg",
+    "officialAlive": false
+  },
+  "あまいろショコラータ 3": {
+    "vndb": "v41339",
+    "egs": "",
+    "official": "https://cabbage-soft.com/products/amachoco3/download/#trial",
+    "cover": "https://t.vndb.org/cv/25/92125.jpg",
+    "officialAlive": true
+  },
+  "真・恋姫†英雄譚 外伝 白月の灯火": {
+    "vndb": "v31817",
+    "egs": "",
+    "official": "https://baseson.nexton-net.jp/koihaku/",
+    "cover": "https://t.vndb.org/cv/44/97944.jpg",
+    "officialAlive": true
+  },
+  "天瀬島は色恋ざかり": {
+    "vndb": "v45092",
+    "egs": "",
+    "official": "https://liaison.product.co.jp/works/amakoi/%e5%a4%a9%e7%80%ac%e5%b3%b6%e3%81%af%e8%89%b2%e6%81%8b%e3%81%96%e3%81%8b%e3%82%8a%e2%94%82liaison-trial.html",
+    "cover": "https://t.vndb.org/cv/39/95639.jpg",
+    "officialAlive": true
+  },
+  "ははむす外伝 ～水晶の女王デルフィーナ～": {
+    "vndb": "v46287",
+    "egs": "",
+    "official": "https://www.bootup.jp/products/hahamusu_ss/index.html",
+    "officialAlive": true
+  },
+  "モラトリアム ～ブルーアワー幸せの時間～": {
+    "vndb": "v47177",
+    "egs": "",
+    "official": "http://www.cyberworks.jp/wendybell/moratorium/download.html",
+    "officialAlive": true
+  },
+  "神聖昂燐エストランジェ": {
+    "vndb": "v47188",
+    "egs": "",
+    "official": "http://www.chaos-r.com/chr021/index.php",
+    "officialAlive": true
+  },
+  "八剱伝": {
+    "vndb": "v31076",
+    "egs": "",
+    "official": "http://www.irodori-soft.com/8kenden/",
+    "cover": "https://t.vndb.org/cv/02/97202.jpg",
+    "officialAlive": true
+  },
+  "恋にはあまえが必要です ～もっとあまえてもらうだけミニファンディスク": {
+    "vndb": "v47956",
+    "egs": "",
+    "official": "https://www.hook-net.jp/kafd/",
+    "cover": "https://t.vndb.org/cv/51/73951.jpg",
+    "officialAlive": true
+  },
+  "恋にはあまえが必要です ～もっとあまえるだけミニファンディスク": {
+    "vndb": "v49478",
+    "egs": "",
+    "official": "https://www.hook-net.jp/kafd/",
+    "cover": "https://t.vndb.org/cv/52/73952.jpg",
+    "officialAlive": true
+  },
+  "アンラベル・トリガー": {
+    "vndb": "v47547",
+    "egs": "",
+    "official": "https://archive.nexton-net.jp/untri/trial/",
+    "cover": "https://t.vndb.org/cv/61/112961.jpg",
+    "officialAlive": true
+  },
+  "コイバナ恋愛 ミニファンディスク アフターフェスティバル": {
+    "vndb": "v49227",
+    "egs": "",
+    "official": "https://www.asa-pro.com/koibana/af/",
+    "cover": "https://t.vndb.org/cv/45/73545.jpg",
+    "officialAlive": true
+  },
+  "メイドさんのいる暮らしS": {
+    "vndb": "v47555",
+    "egs": "",
+    "official": "https://azarashi-soft.nexton-net.jp/meikura_s/special.html",
+    "cover": "https://t.vndb.org/cv/01/102801.jpg",
+    "officialAlive": true
+  },
+  "死に逝く騎士、異世界に響く断末魔": {
+    "vndb": "v49274",
+    "egs": "",
+    "official": "http://bug-system.com/product/05_nknk/",
+    "cover": "https://t.vndb.org/cv/05/74505.jpg",
+    "officialAlive": false
+  },
+  "ルミナ プログノシス": {
+    "vndb": "v59946",
+    "egs": "",
+    "official": "https://games.dmm.com/detail/luminaprognosis",
+    "cover": "https://t.vndb.org/cv/61/118261.jpg",
+    "officialAlive": true
+  },
+  "スカイコード": {
+    "vndb": "v48650",
+    "egs": "",
+    "official": "http://mellow-soft.com/skychord/special/#trial_content",
+    "cover": "https://t.vndb.org/cv/17/86217.jpg",
+    "officialAlive": true
+  },
+  "鏖呪ノ嶼": {
+    "vndb": "v48959",
+    "egs": "",
+    "official": "http://clockup.net/oju/",
+    "cover": "https://t.vndb.org/cv/32/73632.jpg",
+    "officialAlive": true
+  },
+  "セレクトオブリージュ": {
+    "vndb": "v47175",
+    "egs": "",
+    "official": "https://selectoblige.com/trial",
+    "cover": "https://t.vndb.org/cv/64/96064.jpg",
+    "officialAlive": true
+  },
+  "シークレットラブ（仮）": {
+    "vndb": "v50153",
+    "egs": "",
+    "official": "https://www.hook-net.jp/sl/trial.html",
+    "cover": "https://t.vndb.org/cv/54/86354.jpg",
+    "officialAlive": true
+  },
+  "旭光のマリアージュ": {
+    "vndb": "v49512",
+    "egs": "",
+    "official": "https://www.ensemble-game.com/30.kyokumari/special_trial.html",
+    "cover": "https://t.vndb.org/cv/75/95975.jpg",
+    "officialAlive": true
+  },
+  "百千の定にかわたれし剋": {
+    "vndb": "v49567",
+    "egs": "",
+    "official": "https://www.eukleia.co.jp/eushully/eu22/eu22_dl.html",
+    "cover": "https://t.vndb.org/cv/20/116220.jpg",
+    "officialAlive": false
+  },
+  "Inari": {
+    "vndb": "v52754",
+    "egs": "",
+    "cover": "https://t.vndb.org/cv/28/93528.jpg"
+  },
+  "蛟の巫女": {
+    "vndb": "v47191",
+    "egs": "",
+    "official": "https://liar.co.jp/mizuti/index.html",
+    "cover": "https://t.vndb.org/cv/01/86701.jpg",
+    "officialAlive": true
+  },
+  "双天†恋姫‐至源の王‐": {
+    "vndb": "v50113",
+    "egs": "",
+    "official": "https://baseson.nexton-net.jp/souten/trial/",
+    "cover": "https://t.vndb.org/cv/73/74973.jpg",
+    "officialAlive": true
+  },
+  "オトメ世界の歩き方": {
+    "vndb": "v48125",
+    "egs": "",
+    "official": "https://orthrossoft.jp/special/trial.html",
+    "cover": "https://t.vndb.org/cv/88/75488.jpg",
+    "officialAlive": true
+  },
+  "遥かなるニライカナイ": {
+    "vndb": "v51452",
+    "egs": "",
+    "official": "https://project-navel.com/niraikanai/download.html",
+    "cover": "https://t.vndb.org/cv/58/94258.jpg",
+    "officialAlive": true
+  },
+  "ムーン・ゴースト": {
+    "vndb": "v51923",
+    "egs": "",
+    "official": "https://www.purplesoftware.jp/products/mg/index.html#trial",
+    "cover": "https://t.vndb.org/cv/25/105225.jpg",
+    "officialAlive": true
+  },
+  "猫忍えくすはーとSPIN! LOVE+PLUS": {
+    "vndb": "v53385",
+    "egs": "",
+    "official": "https://whirlpool.co.jp/nekonin-spin-loveplus/",
+    "cover": "https://t.vndb.org/cv/96/97996.jpg",
+    "officialAlive": true
+  },
+  "年上彼女": {
+    "vndb": "v47553",
+    "egs": "",
+    "official": "https://azarashi-soft.nexton-net.jp/o-kanojo/special.html",
+    "cover": "https://t.vndb.org/cv/22/95722.jpg",
+    "officialAlive": true
+  },
+  "ドラ・コンカフェ": {
+    "vndb": "v51010",
+    "egs": "",
+    "official": "https://cuteuphoria.suki.jp/doraconcafe/",
+    "cover": "https://t.vndb.org/cv/43/87943.jpg",
+    "officialAlive": true
+  },
+  "リップリップルズ": {
+    "vndb": "v51922",
+    "egs": "",
+    "official": "https://www.purplesoftware.jp/products/lipm/#trial",
+    "cover": "https://t.vndb.org/cv/69/93169.jpg",
+    "officialAlive": true
+  },
+  "廃村少女 外伝 ～嬌絡夢現～": {
+    "vndb": "v53485",
+    "egs": "",
+    "official": "https://escude.co.jp/product/haison_fd/",
+    "cover": "https://t.vndb.org/cv/41/97641.jpg",
+    "officialAlive": true
+  },
+  "恋愛、はじめまして": {
+    "vndb": "v52702",
+    "egs": "",
+    "official": "https://www.asa-pro.com/koihaji/trial/",
+    "cover": "https://t.vndb.org/cv/31/99831.jpg",
+    "officialAlive": true
+  },
+  "ハミダシクリエイティブRe:Re:call": {
+    "vndb": "v53590",
+    "egs": "",
+    "official": "https://madosoft.net/rerecall/",
+    "cover": "https://t.vndb.org/cv/85/101085.jpg",
+    "officialAlive": true
+  },
+  "すれ違う兄妹の壊れる倫理観": {
+    "vndb": "v54776",
+    "egs": "",
+    "official": "https://www.cuffs.co.jp/products/rinri/",
+    "cover": "https://t.vndb.org/cv/35/122635.jpg",
+    "officialAlive": true
+  },
+  "初恋マスターアップ": {
+    "vndb": "v47552",
+    "egs": "",
+    "official": "https://azarashi-soft.nexton-net.jp/koimasu/trial.html",
+    "cover": "https://t.vndb.org/cv/99/110099.jpg",
+    "officialAlive": true
+  },
+  "ハッピーウィークエンド": {
+    "vndb": "v55002",
+    "egs": "",
+    "official": "https://www.hook-net.jp/weekend/trial/",
+    "cover": "https://t.vndb.org/cv/11/111811.jpg",
+    "officialAlive": true
+  },
+  "VenusBlood VALKYRIE": {
+    "vndb": "v55101",
+    "egs": "",
+    "official": "https://ninetail.info/td17/index.html",
+    "officialAlive": true
+  },
+  "ギャルズフィクション": {
+    "vndb": "v55797",
+    "egs": "",
+    "official": "https://gals-fiction.j-studio.net/",
+    "cover": "https://t.vndb.org/cv/40/120040.jpg",
+    "officialAlive": true
+  },
+  "天翔炎華エンブレイズ": {
+    "vndb": "v58310",
+    "egs": "",
+    "official": "http://www.chaos-r.com/chr034/index.php",
+    "officialAlive": true
+  },
+  "アマカノ３": {
+    "vndb": "v50215",
+    "egs": "",
+    "official": "https://azarashi-soft.nexton-net.jp/amakano3/trial.html",
+    "cover": "https://t.vndb.org/cv/22/109522.jpg",
+    "officialAlive": true
+  },
+  "ライムライト・レモネードジャム": {
+    "vndb": "v56650",
+    "egs": "",
+    "official": "https://www.yuzu-soft.com/products/lllj/trial.html",
+    "cover": "https://t.vndb.org/cv/06/109906.jpg",
+    "officialAlive": true
+  },
+  "何度目かのはじめまして": {
+    "vndb": "v57252",
+    "egs": "",
+    "official": "https://www.purplesoftware.jp/products/nh/#trial",
+    "cover": "https://t.vndb.org/cv/01/111701.jpg",
+    "officialAlive": true
+  },
+  "CRACK≡TRICK!": {
+    "vndb": "v57740",
+    "egs": "",
+    "official": "https://crystalia.amusecraft.com/cratri/#Special",
+    "cover": "https://t.vndb.org/cv/06/113706.jpg",
+    "officialAlive": true
+  },
+  "バカップル・サプリメント": {
+    "vndb": "v52031",
+    "egs": "",
+    "official": "http://www.web-marmalade.com/products/b-couple/index.html#download-page",
+    "cover": "https://t.vndb.org/cv/12/100112.jpg",
+    "officialAlive": true
+  },
+  "猫忍えくすはーとSPIN! 2": {
+    "vndb": "v58009",
+    "egs": "",
+    "official": "https://whirlpool.co.jp/nekonin-spin2/trial/",
+    "cover": "https://t.vndb.org/cv/58/128758.jpg",
+    "officialAlive": true
+  },
+  "ドラ・コンカフェ2": {
+    "vndb": "v58020",
+    "egs": "",
+    "official": "https://cuteuphoria.suki.jp/doraconcafe2/",
+    "cover": "https://t.vndb.org/cv/33/113733.jpg",
+    "officialAlive": true
+  },
+  "タユタマ零": {
+    "vndb": "v59406",
+    "egs": "",
+    "official": "https://www.lumpofsugar.co.jp/product/tayutama0/trial.html",
+    "cover": "https://t.vndb.org/cv/49/122549.jpg",
+    "officialAlive": true
+  },
+  "流星ワールドアクター Gaslight Bullet": {
+    "vndb": "v60196",
+    "egs": "",
+    "official": "https://www.fanzagames-digination.com/heliodor/world-actor-gb/",
+    "cover": "https://t.vndb.org/cv/59/128359.jpg",
+    "officialAlive": false
+  },
+  "VenusBlood AfterDays Episode:12 黄金の聖母": {
+    "vndb": "v63212",
+    "egs": "",
+    "official": "https://ninetail.info/tld19/VenusBlood_AfterDays_Episode12.html",
+    "cover": "https://t.vndb.org/cv/56/130056.jpg",
+    "officialAlive": true
+  },
+  "誰ソ彼のシェイプシフター": {
+    "vndb": "v61178",
+    "egs": "",
+    "official": "https://www.liar.co.jp/tasogare/index.html#trial",
+    "officialAlive": true
+  },
+  "ディメンション凸ラバース！！": {
+    "vndb": "v60663",
+    "egs": "",
+    "official": "https://crystalia.amusecraft.com/totsulover/index.html#Trial",
+    "cover": "https://t.vndb.org/cv/90/126490.jpg",
+    "officialAlive": true
+  },
+  "VenusBlood DarkChronicle Episode:7 辺獄の悪夢": {
+    "vndb": "v62281",
+    "egs": "",
+    "official": "https://jaststore.com/games/ninetail002_fan_dc7/venus-blood-hollow-fan-disc-dark-chronicle-episode-7-nightmare-of-limbo/",
+    "cover": "https://t.vndb.org/cv/08/125108.jpg",
+    "officialAlive": true
+  },
+  "年上彼女２": {
+    "vndb": "v61216",
+    "egs": "",
+    "official": "https://azarashi-soft.nexton-net.jp/o-kanojo2/special.html#special_04",
+    "cover": "https://t.vndb.org/cv/54/126454.jpg",
+    "officialAlive": true
+  },
+  "マガルミナ": {
+    "vndb": "v62721",
+    "egs": "",
+    "official": "https://www.purplesoftware.jp/products/mglmn/index.html",
+    "cover": "https://t.vndb.org/cv/09/128609.jpg",
+    "officialAlive": true
+  },
+  "モザイクの天使": {
+    "vndb": "v63318",
+    "egs": "",
+    "official": "https://frill.product.co.jp/mozaten/#trial",
+    "officialAlive": true
+  },
+  "魔法戦士シンフォニックナイツ2 ～乙女と女神の交響曲～": {
+    "vndb": "v63750",
+    "egs": "",
+    "official": "https://www.route2.co.jp/Triangle/Products/symphonic2/index.html",
+    "cover": "https://t.vndb.org/cv/58/130058.jpg",
+    "officialAlive": true
+  },
+  "ぼっちな魔王と俺の塔": {
+    "vndb": "v61224",
+    "egs": "",
+    "official": "https://nexton-net.jp/KarinProject/bocchi/index.html",
+    "cover": "https://t.vndb.org/cv/14/122314.jpg",
+    "officialAlive": true
+  },
+  "戦国†恋姫BRAVE弐 ～戦乱の九州、島津編～": {
+    "vndb": "v55449",
+    "egs": "",
+    "official": "https://baseson.nexton-net.jp/senkoi-br2",
+    "cover": "https://t.vndb.org/cv/72/131072.jpg",
+    "officialAlive": true
+  },
+  "王様恋愛": {
+    "vndb": "v63828",
+    "egs": "",
+    "official": "https://www.asa-pro.com/ousama/trial/",
+    "cover": "https://t.vndb.org/cv/06/131606.jpg",
+    "officialAlive": true
+  },
+  "さくらぶトライアングル": {
+    "vndb": "v61215",
+    "egs": "",
+    "official": "https://azarashi-soft-plusone.nexton-net.jp/sakulove/trial.html",
+    "cover": "https://t.vndb.org/cv/21/141521.jpg",
+    "officialAlive": true
+  },
+  "トリプルペアリング ミニファンディスク": {
+    "vndb": "v68200",
+    "egs": "",
+    "official": "https://www.hook-net.jp/tpfd/",
+    "cover": "https://t.vndb.org/cv/84/143184.jpg",
+    "officialAlive": true
   }
 }
