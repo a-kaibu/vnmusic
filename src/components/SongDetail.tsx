@@ -1,16 +1,7 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { X, ExternalLink, Disc, Mic, Globe, Search, Play, Link2, Check } from "lucide-react";
-import { playable, usePlayer } from "../lib/player";
-import {
-  type Song,
-  services,
-  searchQuery,
-  links,
-  games,
-  artworkOf,
-  flagOf,
-  type Flag,
-} from "../lib/songs";
+import { usePlayer } from "../lib/player";
+import { type Song, services, searchQuery, links, games, artworkOf, flagOf } from "../lib/songs";
 import type { Scope } from "../App";
 import { Cover } from "./Cover";
 import { ScopeLink } from "./ScopeLink";
@@ -37,8 +28,6 @@ const karaoke = [
   { key: "karatetsu", name: "カラオケの鉄人", url: null },
   { key: "pasela", name: "パセラ", url: null },
 ] as const;
-
-const flagLabel = (f: Flag) => (f === 2 ? "配信あり" : f === 1 ? "一部配信" : null);
 
 function Row({ label, children }: { label: string; children: ReactNode }) {
   if (!children) return null;
@@ -163,16 +152,6 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           </div>
         </div>
 
-        {playable(s) && (
-          <button
-            onClick={() => (isCurrent ? player.toggle() : onPlay(s))}
-            className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-accent py-2.5 text-sm font-bold text-black hover:brightness-110"
-          >
-            <Play className="size-4 fill-current" />
-            {isCurrent ? (player.playing ? "一時停止" : "再開") : "このサイトで再生"}
-          </button>
-        )}
-
         {l.apple && (
           <section className="mt-4">
             <iframe
@@ -196,9 +175,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           <div className="flex flex-col gap-1.5">
             {services.map((sv) => {
               const direct = l[sv.key];
-              const f = flagOf(s, sv.key);
-              const label = flagLabel(f as Flag);
-              if (!direct && !label && sv.key !== "youtube") return null;
+              if (!direct && !flagOf(s, sv.key) && sv.key !== "youtube") return null;
               return (
                 <a
                   key={sv.key}
@@ -209,7 +186,6 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
                 >
                   <span className="size-3 shrink-0 rounded-full" style={{ background: sv.color }} />
                   <span className="flex-1 font-semibold">{sv.name}</span>
-                  {label && <span className="text-xs text-muted">{label}</span>}
                   {direct ? (
                     <ExternalLink className="size-4 text-muted" />
                   ) : (
@@ -241,8 +217,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
           </details>
           <p className="mt-2 text-[11px] leading-relaxed text-muted/80">
             <ExternalLink className="inline size-3" /> は曲ページへの直リンク、
-            <Search className="inline size-3" />{" "}
-            は検索結果を開きます。配信状況は2023年7月時点の調査です。
+            <Search className="inline size-3" /> は検索結果を開きます。
           </p>
         </section>
 

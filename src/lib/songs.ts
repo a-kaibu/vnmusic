@@ -108,7 +108,6 @@ export const services: Service[] = [
     color: "#09cef6",
     url: (q) => `https://www.kkbox.com/jp/ja/search?q=${e(q)}`,
   },
-  { key: "awa", name: "AWA", color: "#f5a524", url: (q) => `https://s.awa.fm/search/${e(q)}` },
   {
     key: "fanza",
     name: "FANZA",
