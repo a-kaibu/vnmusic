@@ -238,7 +238,7 @@ export function SongDetail({ song: s, onClose, onScope, onPlay }: Props) {
                 </span>
               )}
             </Row>
-            <Row label="Vo">
+            <Row label="歌">
               {s.vocal && <ScopeLink kind="artist" value={s.vocal} onScope={onScope} split />}
             </Row>
             <Row label="作詞">

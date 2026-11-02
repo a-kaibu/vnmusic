@@ -94,7 +94,9 @@ const decodeHtml = (s: string) =>
     .replace(/<[^>]+>/g, "")
     .replace(/&(#x[0-9a-f]+|#\d+|[a-z0-9]+);/gi, (m, e: string) =>
       e[0] === "#"
-        ? String.fromCodePoint(e[1] === "x" || e[1] === "X" ? parseInt(e.slice(2), 16) : Number(e.slice(1)))
+        ? String.fromCodePoint(
+            e[1] === "x" || e[1] === "X" ? parseInt(e.slice(2), 16) : Number(e.slice(1)),
+          )
         : ["lrm", "rlm", "shy", "zwj", "zwnj"].includes(e)
           ? ""
           : (entities[e] ?? m),
@@ -926,6 +928,33 @@ async function stageSpotify() {
 // 曲名だけ一致する別の曲・カバーを避けるため、歌手名・ゲーム名・ブランド名のどれかが
 // 動画タイトルかチャンネル名に入っていることを求める。Topic チャンネルは歌手がローマ字表記なので、
 // Apple Music / KKBOX で分かった歌手名とも照らし合わせる。
+/**
+ * チャンネル名が歌手名を指しているか。
+ * 「- Topic」は歌手名そのものなので語単位で一致したときだけ（"Yumi Chen - Topic" は "YUMI" ではない）。
+ * それ以外は部分一致でよいが、英字の名前は前後が英字で続かないこと。
+ */
+function chMatch(channel: string, name: string) {
+  if (!name) return false;
+  const topic = / - topic$/i.test(channel);
+  const raw = channel.replace(/ - topic$/i, "");
+  const c = norm(raw);
+  if (topic) {
+    // 「A & B - Topic」のような連名だけ分けて見る
+    return raw.split(/\s*[&＆×,，、/()（）]\s*/).some((p) => norm(p) === name);
+  }
+  if (!c.includes(name)) return false;
+  if (!/^[a-z0-9]+$/.test(name)) return true;
+  // 英字の名前は語の並びで一致すること（"jam project official" は "jamproject" に一致）
+  const w = raw
+    .normalize("NFKC")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean);
+  for (let i = 0; i < w.length; i++)
+    for (let j = i + 1; j <= w.length; j++) if (w.slice(i, j).join("") === name) return true;
+  return false;
+}
+
 function ytTrusted(
   s: Song,
   y: NonNullable<YtOut>,
@@ -943,11 +972,18 @@ function ytTrusted(
     )
   )
     return false;
-  if (a.length >= 2 && (nt.includes(a) || nc.includes(a))) return true;
+  if (a.length >= 2 && (nt.includes(a) || chMatch(y.channel, a))) return true;
   if (g.length >= 2 && nt.includes(g)) return true;
   if (b.length >= 2 && (nc.includes(b) || nt.includes(b))) return true;
-  const known = [apple?.artistName, kk?.artist].filter(Boolean).map((x) => norm(x!));
-  if (nc.length >= 2 && known.some((k) => k.includes(nc) || nc.includes(k))) return true;
+  const known = [apple?.artistName, kk?.artist]
+    .filter(Boolean)
+    .flatMap((x) => [x!, ...x!.split(/\s*[&＆、,]\s*/)])
+    .map((x) => norm(x));
+  if (
+    nc.length >= 2 &&
+    known.some((k) => chMatch(y.channel, k) || (!/ - topic$/i.test(y.channel) && k.includes(nc)))
+  )
+    return true;
   // レーベル配信の「Release - Topic」は、配信があると分かっている曲だけ信用する
   if (/^release - topic$/i.test(y.channel) && (apple || kk)) return true;
   return false;
@@ -1011,9 +1047,11 @@ async function stageNico() {
   save("nico.json", out);
 }
 
-
 // ---------- mb: MusicBrainz（収録CDの VGMdb・通販ページ） ----------
-type MbOut = { recording: string; releases: { id: string; title: string; urls: string[] }[] } | null;
+type MbOut = {
+  recording: string;
+  releases: { id: string; title: string; urls: string[] }[];
+} | null;
 async function stageMb() {
   const out = load<Record<number, MbOut>>("mb.json", {});
   const targets = songs.filter((s) => !(s.id in out));
@@ -1027,12 +1065,17 @@ async function stageMb() {
   for (const [i, s] of targets.entries()) {
     try {
       const a = firstArtist(s);
-      const q = `recording:"${s.title.replace(/"/g, "")}"` + (a ? ` AND artist:"${a.replace(/"/g, "")}"` : "");
+      const q =
+        `recording:"${s.title.replace(/"/g, "")}"` +
+        (a ? ` AND artist:"${a.replace(/"/g, "")}"` : "");
       const j = await mb(`recording?fmt=json&limit=5&query=${encodeURIComponent(q)}`);
       const rec = (j.recordings ?? []).find(
         (r: any) =>
           norm(r.title) === norm(s.title) &&
-          (!a || r["artist-credit"]?.some((c: any) => norm(c.name).includes(norm(a)) || norm(a).includes(norm(c.name)))),
+          (!a ||
+            r["artist-credit"]?.some(
+              (c: any) => norm(c.name).includes(norm(a)) || norm(a).includes(norm(c.name)),
+            )),
       );
       if (!rec) out[s.id] = null;
       else {
@@ -1052,7 +1095,9 @@ async function stageMb() {
     }
     if (i % 25 === 24) {
       save("mb.json", out);
-      console.log(`  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
     }
   }
   save("mb.json", out);

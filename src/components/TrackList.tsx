@@ -45,7 +45,7 @@ export function TrackList({ songs, scrollRef, selectedId, onSelect, onPlay, play
         className={`${grid} sticky top-16 z-10 border-b border-line bg-panel px-2 py-2 text-xs text-muted md:px-3`}
       >
         <span>タイトル</span>
-        <span className="max-md:hidden">Vo</span>
+        <span className="max-md:hidden">歌</span>
         <span className="max-md:hidden">ゲーム</span>
         <span className="max-md:hidden">ブランド</span>
         <span className="max-md:hidden">
