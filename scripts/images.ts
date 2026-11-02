@@ -65,7 +65,7 @@ async function saveImage(url: string, dir: string, key: string, square: boolean)
     execFileSync("convert", [
       `${tmp.pathname}[0]`,
       "-background",
-      "#1c1c27",
+      "white",
       "-flatten",
       ...(square
         ? ["-resize", "400x400^", "-gravity", "north", "-extent", "400x400"]
