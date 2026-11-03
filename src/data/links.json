@@ -14672,6 +14672,7 @@
     "nico": "sm36323547",
     "niconico": "https://www.nicovideo.jp/watch/sm36323547"
   },
+  "1669482508432": { "nico": "sm114328", "niconico": "https://www.nicovideo.jp/watch/sm114328" },
   "1684363677342": {
     "apple": "https://music.apple.com/jp/album/%E6%81%8B%E3%81%97%E3%81%A6%E3%82%8B/378286847?i=378286863",
     "album": "https://music.apple.com/jp/album/%E6%81%8B%E3%81%97%E3%81%A6%E3%82%8B/378286847?i=378286863",
@@ -14691,10 +14692,12 @@
     "yt": "PI1NefQzT8s",
     "youtube": "https://www.youtube.com/watch?v=PI1NefQzT8s"
   },
+  "1489895302312": { "nico": "sm5860240", "niconico": "https://www.nicovideo.jp/watch/sm5860240" },
   "1489895498497": {
     "yt": "mwBh7jf5Wx8",
     "youtube": "https://www.youtube.com/watch?v=mwBh7jf5Wx8"
   },
+  "1489895642047": { "nico": "sm4833301", "niconico": "https://www.nicovideo.jp/watch/sm4833301" },
   "1902410673312": {
     "yt": "7rdn0aMXoK8",
     "youtube": "https://www.youtube.com/watch?v=7rdn0aMXoK8",
@@ -14707,6 +14710,14 @@
   "1603144724377": {
     "yt": "XfFgPqpNWXI",
     "youtube": "https://www.youtube.com/watch?v=XfFgPqpNWXI"
+  },
+  "1723214032377": {
+    "nico": "sm30287741",
+    "niconico": "https://www.nicovideo.jp/watch/sm30287741"
+  },
+  "1723214581782": {
+    "nico": "sm16886192",
+    "niconico": "https://www.nicovideo.jp/watch/sm16886192"
   },
   "1084797769621": {
     "apple": "https://music.apple.com/jp/album/%E8%81%96-%E3%81%B2%E3%81%98%E3%82%8A/1410027305?i=1410027613",
@@ -14726,7 +14737,9 @@
   "1669572766147": {
     "apple": "https://music.apple.com/jp/album/first-season-%E3%81%84%E3%81%91%E3%81%AA%E3%81%84-%E3%82%B7%E3%83%A3%E3%83%83%E3%82%BF%E3%83%BC%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9/982905717?i=982905865",
     "album": "https://music.apple.com/jp/album/first-season-%E3%81%84%E3%81%91%E3%81%AA%E3%81%84-%E3%82%B7%E3%83%A3%E3%83%83%E3%82%BF%E3%83%BC%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9/982905717?i=982905865",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/37/35/12/373512cd-9e41-24ed-4182-45df5e0e3d05/11034100.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/37/35/12/373512cd-9e41-24ed-4182-45df5e0e3d05/11034100.jpg/600x600bb.jpg",
+    "nico": "sm7423135",
+    "niconico": "https://www.nicovideo.jp/watch/sm7423135"
   },
   "1311844409182": {
     "apple": "https://music.apple.com/jp/album/%E6%81%8B%E3%81%AEblink-%E3%81%84%E3%81%91%E3%81%AA%E3%81%84-%E3%82%B7%E3%83%A3%E3%83%83%E3%82%BF%E3%83%BC%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9/982905717?i=982905858",
@@ -14820,6 +14833,11 @@
     "yt": "xv1ilocUQs4",
     "youtube": "https://www.youtube.com/watch?v=xv1ilocUQs4"
   },
+  "1283119835812": {
+    "nico": "nm13909532",
+    "niconico": "https://www.nicovideo.jp/watch/nm13909532"
+  },
+  "1284357390367": { "nico": "sm3892885", "niconico": "https://www.nicovideo.jp/watch/sm3892885" },
   "1684687062432": {
     "apple": "https://music.apple.com/jp/album/%E3%83%8F%E3%83%BC%E3%83%88%E3%83%95%E3%83%AB%E3%83%87%E3%82%A4%E3%82%BA/1779032929?i=1779032930",
     "album": "https://music.apple.com/jp/album/%E3%83%8F%E3%83%BC%E3%83%88%E3%83%95%E3%83%AB%E3%83%87%E3%82%A4%E3%82%BA/1779032929?i=1779032930",
@@ -14828,6 +14846,10 @@
     "youtube": "https://www.youtube.com/watch?v=1gdqMm11kUA",
     "ytmusic": "https://music.youtube.com/watch?v=1gdqMm11kUA"
   },
+  "1284358732777": {
+    "nico": "sm27807383",
+    "niconico": "https://www.nicovideo.jp/watch/sm27807383"
+  },
   "1760739781092": {
     "yt": "dk_X8Zqixkg",
     "youtube": "https://www.youtube.com/watch?v=dk_X8Zqixkg"
@@ -14835,6 +14857,10 @@
   "1939699351812": {
     "yt": "BDoi-n9DBfo",
     "youtube": "https://www.youtube.com/watch?v=BDoi-n9DBfo"
+  },
+  "1490958370972": {
+    "nico": "nm21904747",
+    "niconico": "https://www.nicovideo.jp/watch/nm21904747"
   },
   "1761085698747": {
     "yt": "wxN-IJ8A6wg",
@@ -14856,6 +14882,8 @@
     "yt": "sS7ayPm7jIc",
     "youtube": "https://www.youtube.com/watch?v=sS7ayPm7jIc"
   },
+  "1723298614212": { "nico": "sm7085493", "niconico": "https://www.nicovideo.jp/watch/sm7085493" },
+  "1723298613777": { "nico": "nm4273120", "niconico": "https://www.nicovideo.jp/watch/nm4273120" },
   "1723214789277": {
     "yt": "dX-OzYGdYr4",
     "youtube": "https://www.youtube.com/watch?v=dX-OzYGdYr4"
@@ -14872,6 +14900,11 @@
     "yt": "1KeAju9L_D8",
     "youtube": "https://www.youtube.com/watch?v=1KeAju9L_D8"
   },
+  "1642319027827": {
+    "nico": "nm11916934",
+    "niconico": "https://www.nicovideo.jp/watch/nm11916934"
+  },
+  "1283269892542": { "nico": "sm1415048", "niconico": "https://www.nicovideo.jp/watch/sm1415048" },
   "1707921267337": {
     "yt": "wewz6wvigtI",
     "youtube": "https://www.youtube.com/watch?v=wewz6wvigtI"
@@ -14887,6 +14920,9 @@
     "yt": "iiWvrC7_O6E",
     "youtube": "https://www.youtube.com/watch?v=iiWvrC7_O6E"
   },
+  "1707921272122": { "nico": "sm6359037", "niconico": "https://www.nicovideo.jp/watch/sm6359037" },
+  "1707921272557": { "nico": "sm6362874", "niconico": "https://www.nicovideo.jp/watch/sm6362874" },
+  "1708334522557": { "nico": "sm6363718", "niconico": "https://www.nicovideo.jp/watch/sm6363718" },
   "1708334520817": {
     "yt": "2uHMTtEnbzc",
     "youtube": "https://www.youtube.com/watch?v=2uHMTtEnbzc"
@@ -14902,6 +14938,10 @@
   "1861028075381": {
     "yt": "hzviuc9oqlE",
     "youtube": "https://www.youtube.com/watch?v=hzviuc9oqlE"
+  },
+  "1789311448482": {
+    "nico": "sm39628072",
+    "niconico": "https://www.nicovideo.jp/watch/sm39628072"
   },
   "1827575782392": {
     "yt": "kXTab-XUHC4",
@@ -14927,6 +14967,10 @@
     "yt": "vRQe1p41sSM",
     "youtube": "https://www.youtube.com/watch?v=vRQe1p41sSM"
   },
+  "1669482508867": {
+    "nico": "nm13433059",
+    "niconico": "https://www.nicovideo.jp/watch/nm13433059"
+  },
   "1669482509302": {
     "yt": "3FU4MUeGoVo",
     "youtube": "https://www.youtube.com/watch?v=3FU4MUeGoVo"
@@ -14934,6 +14978,10 @@
   "1603561424797": {
     "yt": "jFVkAwuSc4k",
     "youtube": "https://www.youtube.com/watch?v=jFVkAwuSc4k"
+  },
+  "1760739633627": {
+    "nico": "sm26851693",
+    "niconico": "https://www.nicovideo.jp/watch/sm26851693"
   },
   "1603144723072": {
     "yt": "d8J-yAxEE6Y",
@@ -14947,6 +14995,7 @@
     "yt": "vshKWCe12aA",
     "youtube": "https://www.youtube.com/watch?v=vshKWCe12aA"
   },
+  "1722388036107": { "nico": "sm3405214", "niconico": "https://www.nicovideo.jp/watch/sm3405214" },
   "1722388035672": {
     "yt": "z-FYzaMmqPI",
     "youtube": "https://www.youtube.com/watch?v=z-FYzaMmqPI"
@@ -14963,9 +15012,14 @@
     "yt": "56drDjbKj04",
     "youtube": "https://www.youtube.com/watch?v=56drDjbKj04"
   },
+  "1603234440082": { "nico": "sm5634838", "niconico": "https://www.nicovideo.jp/watch/sm5634838" },
   "1760826838512": {
     "yt": "QvIAlnRXI7Y",
     "youtube": "https://www.youtube.com/watch?v=QvIAlnRXI7Y"
+  },
+  "1865122953987": {
+    "nico": "sm10925029",
+    "niconico": "https://www.nicovideo.jp/watch/sm10925029"
   },
   "1669572566047": {
     "yt": "Yw3gvu7cUxY",
@@ -14982,6 +15036,7 @@
     "yt": "96BUJwnOcds",
     "youtube": "https://www.youtube.com/watch?v=96BUJwnOcds"
   },
+  "1865275807767": { "nico": "sm2578697", "niconico": "https://www.nicovideo.jp/watch/sm2578697" },
   "1311844202992": {
     "yt": "uh4CA1NWjlg",
     "youtube": "https://www.youtube.com/watch?v=uh4CA1NWjlg"
@@ -14993,6 +15048,10 @@
   "1283207446117": {
     "yt": "bPndYQNkNCM",
     "youtube": "https://www.youtube.com/watch?v=bPndYQNkNCM"
+  },
+  "1723297659387": {
+    "nico": "sm17575901",
+    "niconico": "https://www.nicovideo.jp/watch/sm17575901"
   },
   "1723298209227": {
     "apple": "https://music.apple.com/jp/album/%E3%82%B3%E3%83%A2%E3%83%AA%E3%82%A6%E3%82%BF/1732315925?i=1732316183",
@@ -15032,6 +15091,7 @@
     "yt": "4DmxjX7AV6E",
     "youtube": "https://www.youtube.com/watch?v=4DmxjX7AV6E"
   },
+  "1901998718742": { "nico": "sm2372490", "niconico": "https://www.nicovideo.jp/watch/sm2372490" },
   "1760739782397": {
     "yt": "kmsvk5OEe6A",
     "youtube": "https://www.youtube.com/watch?v=kmsvk5OEe6A"
@@ -15063,14 +15123,26 @@
     "yt": "F5mc5IPPJEc",
     "youtube": "https://www.youtube.com/watch?v=F5mc5IPPJEc"
   },
+  "1760739781527": {
+    "nico": "nm16034443",
+    "niconico": "https://www.nicovideo.jp/watch/nm16034443"
+  },
   "1760826296067": {
     "yt": "6_CxKzHeg7U",
     "youtube": "https://www.youtube.com/watch?v=6_CxKzHeg7U"
+  },
+  "1641345321652": {
+    "nico": "sm35981039",
+    "niconico": "https://www.nicovideo.jp/watch/sm35981039"
   },
   "1669399033237": {
     "yt": "yhE7cXdpShY",
     "youtube": "https://www.youtube.com/watch?v=yhE7cXdpShY",
     "ytmusic": "https://music.youtube.com/watch?v=yhE7cXdpShY"
+  },
+  "1669399032802": {
+    "nico": "sm23395691",
+    "niconico": "https://www.nicovideo.jp/watch/sm23395691"
   },
   "1670224038577": {
     "yt": "Zmq9OjudNa8",
@@ -15096,6 +15168,7 @@
     "yt": "mU_RbeIU-ec",
     "youtube": "https://www.youtube.com/watch?v=mU_RbeIU-ec"
   },
+  "1642319978302": { "nico": "sm2717593", "niconico": "https://www.nicovideo.jp/watch/sm2717593" },
   "1528746008827": {
     "yt": "BP9wYU2TR-4",
     "youtube": "https://www.youtube.com/watch?v=BP9wYU2TR-4"
@@ -15112,6 +15185,10 @@
     "yt": "Xaq0sxZI-CE",
     "youtube": "https://www.youtube.com/watch?v=Xaq0sxZI-CE"
   },
+  "1283534278147": {
+    "nico": "sm27244831",
+    "niconico": "https://www.nicovideo.jp/watch/sm27244831"
+  },
   "1283272538212": {
     "yt": "2oF1S1fpkDM",
     "youtube": "https://www.youtube.com/watch?v=2oF1S1fpkDM"
@@ -15124,17 +15201,38 @@
     "yt": "JtU06uuPcBY",
     "youtube": "https://www.youtube.com/watch?v=JtU06uuPcBY"
   },
+  "1283206350787": {
+    "nico": "sm36846068",
+    "niconico": "https://www.nicovideo.jp/watch/sm36846068"
+  },
   "1669483058707": {
     "yt": "1as3D-QGByg",
     "youtube": "https://www.youtube.com/watch?v=1as3D-QGByg"
+  },
+  "1684686861027": {
+    "nico": "nm14245599",
+    "niconico": "https://www.nicovideo.jp/watch/nm14245599"
+  },
+  "1723299157527": {
+    "nico": "sm13690955",
+    "niconico": "https://www.nicovideo.jp/watch/sm13690955"
   },
   "1490782349092": {
     "yt": "P8eUSgCJ0sI",
     "youtube": "https://www.youtube.com/watch?v=P8eUSgCJ0sI"
   },
+  "1669572566917": { "nico": "nm5899480", "niconico": "https://www.nicovideo.jp/watch/nm5899480" },
+  "1641761004172": {
+    "nico": "sm14313730",
+    "niconico": "https://www.nicovideo.jp/watch/sm14313730"
+  },
   "1642320176227": {
     "yt": "-rf_NFa3UPw",
     "youtube": "https://www.youtube.com/watch?v=-rf_NFa3UPw"
+  },
+  "1788312512307": {
+    "nico": "nm14169248",
+    "niconico": "https://www.nicovideo.jp/watch/nm14169248"
   },
   "1528746009262": {
     "yt": "ZhyIE2iTW_s",
@@ -15163,7 +15261,13 @@
   "1284271124212": {
     "apple": "https://music.apple.com/jp/album/%E3%82%AD%E3%83%9F%E3%81%ABjump-%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0days/982905717?i=982905866",
     "album": "https://music.apple.com/jp/album/%E3%82%AD%E3%83%9F%E3%81%ABjump-%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0days/982905717?i=982905866",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/37/35/12/373512cd-9e41-24ed-4182-45df5e0e3d05/11034100.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/37/35/12/373512cd-9e41-24ed-4182-45df5e0e3d05/11034100.jpg/600x600bb.jpg",
+    "nico": "sm35535175",
+    "niconico": "https://www.nicovideo.jp/watch/sm35535175"
+  },
+  "1641671903557": {
+    "nico": "nm11620304",
+    "niconico": "https://www.nicovideo.jp/watch/nm11620304"
   },
   "1708334173687": {
     "yt": "wwK0SZ8su78",
@@ -15227,13 +15331,22 @@
     "yt": "9DP9Tp0zH5o",
     "youtube": "https://www.youtube.com/watch?v=9DP9Tp0zH5o"
   },
+  "1722627404427": {
+    "nico": "nm12487985",
+    "niconico": "https://www.nicovideo.jp/watch/nm12487985"
+  },
   "2006688949002": {
     "yt": "ySAFtA_1kKg",
     "youtube": "https://www.youtube.com/watch?v=ySAFtA_1kKg"
   },
+  "1641343966627": { "nico": "sm5486075", "niconico": "https://www.nicovideo.jp/watch/sm5486075" },
   "1529159114842": {
     "yt": "QCctVYxysK8",
     "youtube": "https://www.youtube.com/watch?v=QCctVYxysK8"
+  },
+  "1529159112667": {
+    "nico": "sm12779659",
+    "niconico": "https://www.nicovideo.jp/watch/sm12779659"
   },
   "1529159112232": {
     "yt": "nui-wFdIjvY",
@@ -15251,6 +15364,10 @@
     "yt": "3N-1d0z0XwA",
     "youtube": "https://www.youtube.com/watch?v=3N-1d0z0XwA"
   },
+  "1669483058272": {
+    "nico": "nm13446778",
+    "niconico": "https://www.nicovideo.jp/watch/nm13446778"
+  },
   "1827101033397": {
     "yt": "XZyLGZh6BOM",
     "youtube": "https://www.youtube.com/watch?v=XZyLGZh6BOM"
@@ -15259,14 +15376,24 @@
     "yt": "ZKcFQoqfIQU",
     "youtube": "https://www.youtube.com/watch?v=ZKcFQoqfIQU"
   },
+  "1490870353942": {
+    "nico": "sm44989952",
+    "niconico": "https://www.nicovideo.jp/watch/sm44989952"
+  },
   "1284357389932": {
     "yt": "lfApwklad84",
     "youtube": "https://www.youtube.com/watch?v=lfApwklad84"
   },
+  "1669482856867": {
+    "nico": "sm12669875",
+    "niconico": "https://www.nicovideo.jp/watch/sm12669875"
+  },
+  "1669482862957": { "nico": "sm2678239", "niconico": "https://www.nicovideo.jp/watch/sm2678239" },
   "1722628001247": {
     "yt": "G2OcdfUie8o",
     "youtube": "https://www.youtube.com/watch?v=G2OcdfUie8o"
   },
+  "1789401905862": { "nico": "sm1660454", "niconico": "https://www.nicovideo.jp/watch/sm1660454" },
   "1641672646102": {
     "yt": "_Wm_8hPqSi8",
     "youtube": "https://www.youtube.com/watch?v=_Wm_8hPqSi8"
@@ -15279,6 +15406,10 @@
     "yt": "-NYMYp6J2YI",
     "youtube": "https://www.youtube.com/watch?v=-NYMYp6J2YI"
   },
+  "1723297658517": {
+    "nico": "sm14257679",
+    "niconico": "https://www.nicovideo.jp/watch/sm14257679"
+  },
   "1491046738177": {
     "apple": "https://music.apple.com/jp/album/%E6%84%9B%E3%81%AF%E9%9D%99%E3%81%8B%E3%81%AA%E5%A4%A2%E3%81%AB%E9%99%8D%E3%82%8B/1780539026?i=1780539372",
     "album": "https://music.apple.com/jp/album/%E6%84%9B%E3%81%AF%E9%9D%99%E3%81%8B%E3%81%AA%E5%A4%A2%E3%81%AB%E9%99%8D%E3%82%8B/1780539026?i=1780539372",
@@ -15289,6 +15420,15 @@
   "1283535035917": {
     "yt": "0PhXQ1QHOoA",
     "youtube": "https://www.youtube.com/watch?v=0PhXQ1QHOoA"
+  },
+  "1641585631747": { "nico": "sm4288757", "niconico": "https://www.nicovideo.jp/watch/sm4288757" },
+  "1641585631312": {
+    "nico": "sm28062111",
+    "niconico": "https://www.nicovideo.jp/watch/sm28062111"
+  },
+  "1669399032367": {
+    "nico": "sm32970909",
+    "niconico": "https://www.nicovideo.jp/watch/sm32970909"
   },
   "1490698920007": {
     "yt": "EGcOocOd220",
@@ -15306,6 +15446,7 @@
     "yt": "HsJwm_RYYks",
     "youtube": "https://www.youtube.com/watch?v=HsJwm_RYYks"
   },
+  "1722628001682": { "nico": "sm5550875", "niconico": "https://www.nicovideo.jp/watch/sm5550875" },
   "1491046736872": {
     "yt": "FVm2VxqbvoM",
     "youtube": "https://www.youtube.com/watch?v=FVm2VxqbvoM"
@@ -15314,12 +15455,21 @@
     "yt": "ktdsl_ZI7XU",
     "youtube": "https://www.youtube.com/watch?v=ktdsl_ZI7XU"
   },
+  "1283534425177": {
+    "nico": "sm14940962",
+    "niconico": "https://www.nicovideo.jp/watch/sm14940962"
+  },
+  "1528897564567": { "nico": "sm1471146", "niconico": "https://www.nicovideo.jp/watch/sm1471146" },
   "1528897565002": {
     "apple": "https://music.apple.com/jp/album/sky/1895712440?i=6764275067",
     "album": "https://music.apple.com/jp/album/sky/1895712440?i=6764275067",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/8d/c4/7a8dc4fe-e9b2-4cbf-e659-b124c136e1fb/4571614697550.jpg/600x600bb.jpg",
     "yt": "xs2k6EeZymA",
     "youtube": "https://www.youtube.com/watch?v=xs2k6EeZymA"
+  },
+  "1311586103572": {
+    "nico": "sm17165849",
+    "niconico": "https://www.nicovideo.jp/watch/sm17165849"
   },
   "1865451629547": {
     "yt": "R7AywArwUls",
@@ -15339,10 +15489,17 @@
     "youtube": "https://www.youtube.com/watch?v=drgNzrsKixc",
     "ytmusic": "https://music.youtube.com/watch?v=drgNzrsKixc"
   },
+  "1084539269566": { "nico": "sm2678558", "niconico": "https://www.nicovideo.jp/watch/sm2678558" },
+  "1084539268696": { "nico": "nm3284541", "niconico": "https://www.nicovideo.jp/watch/nm3284541" },
   "1283207299957": {
     "yt": "ssjx6F_YbnQ",
     "youtube": "https://www.youtube.com/watch?v=ssjx6F_YbnQ"
   },
+  "1642319229232": {
+    "nico": "sm33283491",
+    "niconico": "https://www.nicovideo.jp/watch/sm33283491"
+  },
+  "1641343967497": { "nico": "sm2219706", "niconico": "https://www.nicovideo.jp/watch/sm2219706" },
   "1603562167342": {
     "apple": "https://music.apple.com/jp/album/%E3%83%AC%E3%83%83%E3%82%B4%E3%83%BC%E3%83%A9%E3%83%B4%E3%83%AA%E3%82%A3%E5%A4%89%E8%BA%AB%E3%82%BF%E3%82%A4%E3%83%A0/1596703572?i=1596703574",
     "album": "https://music.apple.com/jp/album/%E3%83%AC%E3%83%83%E3%82%B4%E3%83%BC%E3%83%A9%E3%83%B4%E3%83%AA%E3%82%A3%E5%A4%89%E8%BA%AB%E3%82%BF%E3%82%A4%E3%83%A0/1596703572?i=1596703574",
@@ -15408,8 +15565,11 @@
   "1283118890122": {
     "apple": "https://music.apple.com/jp/album/miss-twilight/368165802?i=368165832",
     "album": "https://music.apple.com/jp/album/miss-twilight/368165802?i=368165832",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/30/22/a7/mzi.bfpkirna.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/30/22/a7/mzi.bfpkirna.jpg/600x600bb.jpg",
+    "nico": "sm15759335",
+    "niconico": "https://www.nicovideo.jp/watch/sm15759335"
   },
+  "1283118884467": { "nico": "sm7674929", "niconico": "https://www.nicovideo.jp/watch/sm7674929" },
   "1760737540842": {
     "yt": "WExnMExkwhs",
     "youtube": "https://www.youtube.com/watch?v=WExnMExkwhs",
@@ -15423,6 +15583,7 @@
     "yt": "amOF-cZH3n4",
     "youtube": "https://www.youtube.com/watch?v=amOF-cZH3n4"
   },
+  "1641585432082": { "nico": "sm7393342", "niconico": "https://www.nicovideo.jp/watch/sm7393342" },
   "1641844289707": {
     "yt": "kzkvEzjM8tQ",
     "youtube": "https://www.youtube.com/watch?v=kzkvEzjM8tQ"
@@ -15442,6 +15603,14 @@
     "yt": "E3HBwtJNplQ",
     "youtube": "https://www.youtube.com/watch?v=E3HBwtJNplQ",
     "ytmusic": "https://music.youtube.com/watch?v=E3HBwtJNplQ"
+  },
+  "1684363868742": {
+    "nico": "sm26222972",
+    "niconico": "https://www.nicovideo.jp/watch/sm26222972"
+  },
+  "1603562168647": {
+    "nico": "nm13768042",
+    "niconico": "https://www.nicovideo.jp/watch/nm13768042"
   },
   "1603562166907": {
     "yt": "ybdkEVABVq8",
@@ -15491,7 +15660,9 @@
   "1939850155437": {
     "apple": "https://music.apple.com/jp/album/silent-rhyme/973840030?i=973840525",
     "album": "https://music.apple.com/jp/album/silent-rhyme/973840030?i=973840525",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/4e/9f/59/4e9f59c6-a80a-cea7-6cb5-686ccc593d6f/Jak_KDSD10001_2.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/4e/9f/59/4e9f59c6-a80a-cea7-6cb5-686ccc593d6f/Jak_KDSD10001_2.jpg/600x600bb.jpg",
+    "nico": "sm33246828",
+    "niconico": "https://www.nicovideo.jp/watch/sm33246828"
   },
   "1603145480407": {
     "yt": "qUg1-14iGxk",
@@ -15508,6 +15679,10 @@
   "1603320906772": {
     "yt": "gXZMlFgOzq8",
     "youtube": "https://www.youtube.com/watch?v=gXZMlFgOzq8"
+  },
+  "1788313662012": {
+    "nico": "sm46641747",
+    "niconico": "https://www.nicovideo.jp/watch/sm46641747"
   },
   "1669571223202": {
     "yt": "nRnCKF_CnJI",
@@ -15538,6 +15713,10 @@
     "yt": "v3fZXmm-lDM",
     "youtube": "https://www.youtube.com/watch?v=v3fZXmm-lDM"
   },
+  "1865980787276": {
+    "nico": "sm29113812",
+    "niconico": "https://www.nicovideo.jp/watch/sm29113812"
+  },
   "1463488213787": {
     "yt": "RbpYa91XOUQ",
     "youtube": "https://www.youtube.com/watch?v=RbpYa91XOUQ"
@@ -15561,6 +15740,8 @@
     "yt": "1V7pi56aJZM",
     "youtube": "https://www.youtube.com/watch?v=1V7pi56aJZM"
   },
+  "1603562169517": { "nico": "sm26379", "niconico": "https://www.nicovideo.jp/watch/sm26379" },
+  "1826752278237": { "nico": "nm3782353", "niconico": "https://www.nicovideo.jp/watch/nm3782353" },
   "1641583335382": {
     "yt": "rtw4IRXoHKk",
     "youtube": "https://www.youtube.com/watch?v=rtw4IRXoHKk"
@@ -15590,6 +15771,10 @@
     "yt": "26EyiAR0_hU",
     "youtube": "https://www.youtube.com/watch?v=26EyiAR0_hU"
   },
+  "1827422878587": {
+    "nico": "sm33718633",
+    "niconico": "https://www.nicovideo.jp/watch/sm33718633"
+  },
   "1283534629192": {
     "yt": "LkAhL_mGpT4",
     "youtube": "https://www.youtube.com/watch?v=LkAhL_mGpT4"
@@ -15610,14 +15795,24 @@
     "yt": "B2wZixEqWDw",
     "youtube": "https://www.youtube.com/watch?v=B2wZixEqWDw"
   },
+  "1642321122787": {
+    "nico": "sm13008859",
+    "niconico": "https://www.nicovideo.jp/watch/sm13008859"
+  },
   "1310781878617": {
     "apple": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8%E3%81%A0%E3%81%91%E3%81%AE%E5%8B%87%E6%B0%97/281756511?i=281756530",
     "album": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8%E3%81%A0%E3%81%91%E3%81%AE%E5%8B%87%E6%B0%97/281756511?i=281756530",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/aa/da/40/mzi.rqwfexfa.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/aa/da/40/mzi.rqwfexfa.jpg/600x600bb.jpg",
+    "nico": "sm21648772",
+    "niconico": "https://www.nicovideo.jp/watch/sm21648772"
   },
   "1684187501037": {
     "yt": "66hIQGJlNu4",
     "youtube": "https://www.youtube.com/watch?v=66hIQGJlNu4"
+  },
+  "1684187700267": {
+    "nico": "sm21656848",
+    "niconico": "https://www.nicovideo.jp/watch/sm21656848"
   },
   "1641345466072": {
     "yt": "MsiXhxmPFrQ",
@@ -15669,6 +15864,7 @@
     "yt": "k9F_PSym27k",
     "youtube": "https://www.youtube.com/watch?v=k9F_PSym27k"
   },
+  "1865274104742": { "nico": "nm5280830", "niconico": "https://www.nicovideo.jp/watch/nm5280830" },
   "1528808450467": {
     "apple": "https://music.apple.com/jp/album/%E3%81%AD%E3%81%87-%E3%81%97%E3%82%88%E3%81%86%E3%82%88-%E3%82%8A%E3%81%A7%E3%81%93%E3%82%8C%E3%81%84%E3%81%A8%E3%81%B0%E3%83%BC%E3%81%98%E3%82%87%E3%82%93/1801476667?i=1801477019",
     "album": "https://music.apple.com/jp/album/%E3%81%AD%E3%81%87-%E3%81%97%E3%82%88%E3%81%86%E3%82%88-%E3%82%8A%E3%81%A7%E3%81%93%E3%82%8C%E3%81%84%E3%81%A8%E3%81%B0%E3%83%BC%E3%81%98%E3%82%87%E3%82%93/1801476667?i=1801477019",
@@ -15679,7 +15875,9 @@
   "1490547708787": {
     "apple": "https://music.apple.com/jp/album/shadow-in-the-dark/1568871862?i=1568875437",
     "album": "https://music.apple.com/jp/album/shadow-in-the-dark/1568871862?i=1568875437",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/1a/66/851a6686-8fe9-8ac3-dcc4-9818324442c8/PA00087776_0_137168_jacket.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/1a/66/851a6686-8fe9-8ac3-dcc4-9818324442c8/PA00087776_0_137168_jacket.jpg/600x600bb.jpg",
+    "nico": "nm3705789",
+    "niconico": "https://www.nicovideo.jp/watch/nm3705789"
   },
   "1490545266262": {
     "apple": "https://music.apple.com/jp/album/%E6%A9%9F%E7%A5%9E%E5%92%86%E5%90%BC%E3%83%83-%E3%83%87%E3%83%A2%E3%83%B3%E3%83%99%E3%82%A4%E3%83%B3-short-ver/1568871862?i=1568873824",
@@ -15691,11 +15889,25 @@
   "1490545266697": {
     "apple": "https://music.apple.com/jp/album/evil-shine/1568871862?i=1568875441",
     "album": "https://music.apple.com/jp/album/evil-shine/1568871862?i=1568875441",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/1a/66/851a6686-8fe9-8ac3-dcc4-9818324442c8/PA00087776_0_137168_jacket.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/1a/66/851a6686-8fe9-8ac3-dcc4-9818324442c8/PA00087776_0_137168_jacket.jpg/600x600bb.jpg",
+    "nico": "sm17580473",
+    "niconico": "https://www.nicovideo.jp/watch/sm17580473"
+  },
+  "1722474352287": {
+    "nico": "sm15290520",
+    "niconico": "https://www.nicovideo.jp/watch/sm15290520"
   },
   "1827423833847": {
     "yt": "jbL89nN3LVY",
     "youtube": "https://www.youtube.com/watch?v=jbL89nN3LVY"
+  },
+  "1642319975257": {
+    "nico": "nm13799466",
+    "niconico": "https://www.nicovideo.jp/watch/nm13799466"
+  },
+  "1865622671547": {
+    "nico": "nm13728902",
+    "niconico": "https://www.nicovideo.jp/watch/nm13728902"
   },
   "1708182221662": {
     "yt": "PxFEZ1ZHjMM",
@@ -15709,6 +15921,19 @@
     "yt": "q60RuIs4svc",
     "youtube": "https://www.youtube.com/watch?v=q60RuIs4svc"
   },
+  "1901999677482": {
+    "nico": "sm13819106",
+    "niconico": "https://www.nicovideo.jp/watch/sm13819106"
+  },
+  "1901999677047": {
+    "nico": "sm13819117",
+    "niconico": "https://www.nicovideo.jp/watch/sm13819117"
+  },
+  "1283207108557": {
+    "nico": "sm11814269",
+    "niconico": "https://www.nicovideo.jp/watch/sm11814269"
+  },
+  "1641585637837": { "nico": "nm6329410", "niconico": "https://www.nicovideo.jp/watch/nm6329410" },
   "1528981786657": {
     "yt": "x5o19kqQxUY",
     "youtube": "https://www.youtube.com/watch?v=x5o19kqQxUY"
@@ -15745,6 +15970,11 @@
     "yt": "JzmppyndCHQ",
     "youtube": "https://www.youtube.com/watch?v=JzmppyndCHQ"
   },
+  "1788312921642": { "nico": "sm9474915", "niconico": "https://www.nicovideo.jp/watch/sm9474915" },
+  "1669572566482": {
+    "nico": "sm14836461",
+    "niconico": "https://www.nicovideo.jp/watch/sm14836461"
+  },
   "1865622465792": {
     "yt": "hsZkHotU-b0",
     "youtube": "https://www.youtube.com/watch?v=hsZkHotU-b0"
@@ -15765,6 +15995,7 @@
     "yt": "aM_TQaBDRvs",
     "youtube": "https://www.youtube.com/watch?v=aM_TQaBDRvs"
   },
+  "1283534828857": { "nico": "sm3075974", "niconico": "https://www.nicovideo.jp/watch/sm3075974" },
   "1283681643097": {
     "yt": "rZdldVFwwXs",
     "youtube": "https://www.youtube.com/watch?v=rZdldVFwwXs"
@@ -15772,6 +16003,10 @@
   "1865275806897": {
     "yt": "hQ6RWzt82ko",
     "youtube": "https://www.youtube.com/watch?v=hQ6RWzt82ko"
+  },
+  "1707922959487": {
+    "nico": "sm29063926",
+    "niconico": "https://www.nicovideo.jp/watch/sm29063926"
   },
   "1283534632237": {
     "yt": "TCrfWwWXObI",
@@ -15793,10 +16028,16 @@
     "yt": "-1bc0rciWc0",
     "youtube": "https://www.youtube.com/watch?v=-1bc0rciWc0"
   },
+  "1528746953212": {
+    "nico": "sm13177453",
+    "niconico": "https://www.nicovideo.jp/watch/sm13177453"
+  },
+  "1939699350507": { "nico": "nm5798693", "niconico": "https://www.nicovideo.jp/watch/nm5798693" },
   "1760737335087": {
     "yt": "cIUDB8t_wQA",
     "youtube": "https://www.youtube.com/watch?v=cIUDB8t_wQA"
   },
+  "1722625556112": { "nico": "sm240536", "niconico": "https://www.nicovideo.jp/watch/sm240536" },
   "1865686807077": {
     "apple": "https://music.apple.com/jp/album/angelic-symphony/1511407326?i=1511407327",
     "album": "https://music.apple.com/jp/album/angelic-symphony/1511407326?i=1511407327",
@@ -15815,6 +16056,10 @@
     "yt": "ZRtICeGdkH0",
     "youtube": "https://www.youtube.com/watch?v=ZRtICeGdkH0"
   },
+  "1284359284792": {
+    "nico": "sm15455361",
+    "niconico": "https://www.nicovideo.jp/watch/sm15455361"
+  },
   "1284359285227": {
     "yt": "DoAuRYHr2O8",
     "youtube": "https://www.youtube.com/watch?v=DoAuRYHr2O8"
@@ -15831,6 +16076,9 @@
     "yt": "ey54-ns44SM",
     "youtube": "https://www.youtube.com/watch?v=ey54-ns44SM"
   },
+  "1684363274097": { "nico": "nm6276727", "niconico": "https://www.nicovideo.jp/watch/nm6276727" },
+  "1528982336932": { "nico": "nm3332515", "niconico": "https://www.nicovideo.jp/watch/nm3332515" },
+  "1865534710197": { "nico": "nm3977099", "niconico": "https://www.nicovideo.jp/watch/nm3977099" },
   "1489895496322": {
     "apple": "https://music.apple.com/jp/album/%E3%81%9D%E3%82%89%E3%81%86%E3%81%9F/1576151089?i=1576151091",
     "album": "https://music.apple.com/jp/album/%E3%81%9D%E3%82%89%E3%81%86%E3%81%9F/1576151089?i=1576151091",
@@ -15838,6 +16086,11 @@
     "yt": "iazXtjUxSNo",
     "youtube": "https://www.youtube.com/watch?v=iazXtjUxSNo"
   },
+  "1528897563262": {
+    "nico": "sm29113766",
+    "niconico": "https://www.nicovideo.jp/watch/sm29113766"
+  },
+  "1528897562827": { "nico": "sm2608231", "niconico": "https://www.nicovideo.jp/watch/sm2608231" },
   "1528897562392": {
     "yt": "sIBNlBgE9x4",
     "youtube": "https://www.youtube.com/watch?v=sIBNlBgE9x4"
@@ -15892,6 +16145,14 @@
     "yt": "_IMXnSXFybc",
     "youtube": "https://www.youtube.com/watch?v=_IMXnSXFybc"
   },
+  "1684188239667": {
+    "nico": "sm14648912",
+    "niconico": "https://www.nicovideo.jp/watch/sm14648912"
+  },
+  "1528897560217": {
+    "nico": "sm11085000",
+    "niconico": "https://www.nicovideo.jp/watch/sm11085000"
+  },
   "1528897559782": {
     "apple": "https://music.apple.com/jp/album/%E3%82%AB%E3%82%AB%E3%82%B7-orchestra-version/6791136675?i=6791137439",
     "album": "https://music.apple.com/jp/album/%E3%82%AB%E3%82%AB%E3%82%B7-orchestra-version/6791136675?i=6791137439",
@@ -15904,13 +16165,23 @@
     "youtube": "https://www.youtube.com/watch?v=27AaKifXW5g",
     "ytmusic": "https://music.youtube.com/watch?v=27AaKifXW5g"
   },
+  "1490959869547": { "nico": "sm677785", "niconico": "https://www.nicovideo.jp/watch/sm677785" },
   "1529068451272": {
     "yt": "tvWdLzK7d-g",
     "youtube": "https://www.youtube.com/watch?v=tvWdLzK7d-g"
   },
+  "1669399030192": {
+    "nico": "sm17912033",
+    "niconico": "https://www.nicovideo.jp/watch/sm17912033"
+  },
+  "1669399031497": { "nico": "nm4957118", "niconico": "https://www.nicovideo.jp/watch/nm4957118" },
   "1284271118992": {
     "yt": "eL7w2AYL3EI",
     "youtube": "https://www.youtube.com/watch?v=eL7w2AYL3EI"
+  },
+  "1761087242562": {
+    "nico": "sm34832736",
+    "niconico": "https://www.nicovideo.jp/watch/sm34832736"
   },
   "1722628349247": {
     "yt": "aZQAyVh7j3k",
@@ -15966,7 +16237,9 @@
   "1084797767881": {
     "apple": "https://music.apple.com/jp/album/vampire/1410027305?i=1410027386",
     "album": "https://music.apple.com/jp/album/vampire/1410027305?i=1410027386",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d1/a2/9a/d1a29ad4-6734-ca60-3d51-aa2b9ef1e5e3/859754210483_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d1/a2/9a/d1a29ad4-6734-ca60-3d51-aa2b9ef1e5e3/859754210483_cover.png/600x600bb.jpg",
+    "nico": "sm624655",
+    "niconico": "https://www.nicovideo.jp/watch/sm624655"
   },
   "1670469285151": {
     "apple": "https://music.apple.com/jp/album/%E3%82%B5%E3%82%AF%E3%83%A9%E3%83%81%E3%83%AB/1410027305?i=1410027730",
@@ -15976,7 +16249,9 @@
   "1746034387852": {
     "apple": "https://music.apple.com/jp/album/reminiscence-blue/1690721490?i=1690721491",
     "album": "https://music.apple.com/jp/album/reminiscence-blue/1690721490?i=1690721491",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f3/db/a8/f3dba854-e61b-bc9e-3120-1e19a1afecd5/artwork.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f3/db/a8/f3dba854-e61b-bc9e-3120-1e19a1afecd5/artwork.jpg/600x600bb.jpg",
+    "nico": "sm2430900",
+    "niconico": "https://www.nicovideo.jp/watch/sm2430900"
   },
   "1746034389157": {
     "apple": "https://music.apple.com/jp/album/nostalgia/1801482321?i=1801482328",
@@ -15993,6 +16268,10 @@
     "yt": "yY4xEtOI-3Q",
     "youtube": "https://www.youtube.com/watch?v=yY4xEtOI-3Q"
   },
+  "1669336046542": {
+    "nico": "sm29364520",
+    "niconico": "https://www.nicovideo.jp/watch/sm29364520"
+  },
   "1669336045672": {
     "yt": "2Wnc3xReTmQ",
     "youtube": "https://www.youtube.com/watch?v=2Wnc3xReTmQ"
@@ -16004,6 +16283,10 @@
   "1283206152427": {
     "yt": "bn5GAJ6C-98",
     "youtube": "https://www.youtube.com/watch?v=bn5GAJ6C-98"
+  },
+  "1642319434552": {
+    "nico": "sm14773854",
+    "niconico": "https://www.nicovideo.jp/watch/sm14773854"
   },
   "1283207301697": {
     "yt": "z22Q5QKIj0A",
@@ -16037,10 +16320,15 @@
     "yt": "C7GTDT4XAvg",
     "youtube": "https://www.youtube.com/watch?v=C7GTDT4XAvg"
   },
+  "1827511444152": {
+    "nico": "nm15326547",
+    "niconico": "https://www.nicovideo.jp/watch/nm15326547"
+  },
   "1490957423542": {
     "yt": "fMm8Y-08JRA",
     "youtube": "https://www.youtube.com/watch?v=fMm8Y-08JRA"
   },
+  "1641343969237": { "nico": "sm2779144", "niconico": "https://www.nicovideo.jp/watch/sm2779144" },
   "1642409490427": {
     "yt": "DrhOZ1_JTE4",
     "youtube": "https://www.youtube.com/watch?v=DrhOZ1_JTE4"
@@ -16049,10 +16337,12 @@
     "yt": "zSDvaTp7WPk",
     "youtube": "https://www.youtube.com/watch?v=zSDvaTp7WPk"
   },
+  "1865534853312": { "nico": "sm4261911", "niconico": "https://www.nicovideo.jp/watch/sm4261911" },
   "1865534709762": {
     "yt": "ycO9ONoOwvg",
     "youtube": "https://www.youtube.com/watch?v=ycO9ONoOwvg"
   },
+  "1684775230842": { "nico": "nm7769776", "niconico": "https://www.nicovideo.jp/watch/nm7769776" },
   "1528809598867": {
     "yt": "HVoj8v5jn9o",
     "youtube": "https://www.youtube.com/watch?v=HVoj8v5jn9o"
@@ -16069,6 +16359,7 @@
     "yt": "695zI3iIcfA",
     "youtube": "https://www.youtube.com/watch?v=695zI3iIcfA"
   },
+  "1529156611417": { "nico": "sm7096794", "niconico": "https://www.nicovideo.jp/watch/sm7096794" },
   "1642319235322": {
     "yt": "nupImmjphhM",
     "youtube": "https://www.youtube.com/watch?v=nupImmjphhM"
@@ -16081,6 +16372,7 @@
     "yt": "C1CmOKPvimw",
     "youtube": "https://www.youtube.com/watch?v=C1CmOKPvimw"
   },
+  "1490957223007": { "nico": "sm2771160", "niconico": "https://www.nicovideo.jp/watch/sm2771160" },
   "1490957222572": {
     "yt": "OmSU2S1pGys",
     "youtube": "https://www.youtube.com/watch?v=OmSU2S1pGys"
@@ -16108,7 +16400,13 @@
   "1283119687477": {
     "apple": "https://music.apple.com/jp/album/%E3%82%B3%E3%83%8E%E3%82%BD%E3%83%A9%E3%83%8E%E3%82%B7%E3%82%BF/368165802?i=368165844",
     "album": "https://music.apple.com/jp/album/%E3%82%B3%E3%83%8E%E3%82%BD%E3%83%A9%E3%83%8E%E3%82%B7%E3%82%BF/368165802?i=368165844",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/30/22/a7/mzi.bfpkirna.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/30/22/a7/mzi.bfpkirna.jpg/600x600bb.jpg",
+    "nico": "sm19688878",
+    "niconico": "https://www.nicovideo.jp/watch/sm19688878"
+  },
+  "1283208052942": {
+    "nico": "nm11974016",
+    "niconico": "https://www.nicovideo.jp/watch/nm11974016"
   },
   "1283208053377": {
     "yt": "bCKE8O4ZS_g",
@@ -16117,6 +16415,14 @@
   "1283208051202": {
     "yt": "vxdEA9dP2jQ",
     "youtube": "https://www.youtube.com/watch?v=vxdEA9dP2jQ"
+  },
+  "1865363418507": {
+    "nico": "nm11974211",
+    "niconico": "https://www.nicovideo.jp/watch/nm11974211"
+  },
+  "1865363418072": {
+    "nico": "nm13639213",
+    "niconico": "https://www.nicovideo.jp/watch/nm13639213"
   },
   "1283270498497": {
     "yt": "ez5KeCoGAvE",
@@ -16142,6 +16448,7 @@
     "yt": "lt6PRS6g1Ho",
     "youtube": "https://www.youtube.com/watch?v=lt6PRS6g1Ho"
   },
+  "1528810899517": { "nico": "sm1907506", "niconico": "https://www.nicovideo.jp/watch/sm1907506" },
   "1284270724882": {
     "yt": "pzUc_6tuWio",
     "youtube": "https://www.youtube.com/watch?v=pzUc_6tuWio"
@@ -16153,18 +16460,25 @@
   "1489957939267": {
     "apple": "https://music.apple.com/jp/album/%E9%AD%94%E6%B3%95%E3%81%A8%E6%81%8B%E3%81%AE%E3%82%AB%E3%83%B3%E3%82%B1%E3%82%A4/1069066541?i=1069068616",
     "album": "https://music.apple.com/jp/album/%E9%AD%94%E6%B3%95%E3%81%A8%E6%81%8B%E3%81%AE%E3%82%AB%E3%83%B3%E3%82%B1%E3%82%A4/1069066541?i=1069068616",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg",
+    "nico": "sm45803700",
+    "niconico": "https://www.nicovideo.jp/watch/sm45803700"
   },
   "1489957939702": {
     "apple": "https://music.apple.com/jp/album/%E5%87%BA%E4%BC%9A%E3%81%84%E3%81%AE%E9%AD%94%E6%B3%95/1069066541?i=1069068617",
     "album": "https://music.apple.com/jp/album/%E5%87%BA%E4%BC%9A%E3%81%84%E3%81%AE%E9%AD%94%E6%B3%95/1069066541?i=1069068617",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg",
+    "nico": "sm5637923",
+    "niconico": "https://www.nicovideo.jp/watch/sm5637923"
   },
   "1283118536032": {
     "apple": "https://music.apple.com/jp/album/%E6%9C%88%E5%85%89%E8%AD%9A%E6%AD%8C/368165802?i=368165843",
     "album": "https://music.apple.com/jp/album/%E6%9C%88%E5%85%89%E8%AD%9A%E6%AD%8C/368165802?i=368165843",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/30/22/a7/mzi.bfpkirna.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/30/22/a7/mzi.bfpkirna.jpg/600x600bb.jpg",
+    "nico": "nm14040136",
+    "niconico": "https://www.nicovideo.jp/watch/nm14040136"
   },
+  "1284271470472": { "nico": "sm4773433", "niconico": "https://www.nicovideo.jp/watch/sm4773433" },
   "1283534279887": {
     "yt": "F_IR3zbcP6s",
     "youtube": "https://www.youtube.com/watch?v=F_IR3zbcP6s"
@@ -16209,9 +16523,17 @@
     "yt": "XgCqGBzjgUc",
     "youtube": "https://www.youtube.com/watch?v=XgCqGBzjgUc"
   },
+  "1642319973952": {
+    "nico": "so21949226",
+    "niconico": "https://www.nicovideo.jp/watch/so21949226"
+  },
   "1684775621472": {
     "yt": "o2ZJc_ZzVKM",
     "youtube": "https://www.youtube.com/watch?v=o2ZJc_ZzVKM"
+  },
+  "1283206496512": {
+    "nico": "nm14191097",
+    "niconico": "https://www.nicovideo.jp/watch/nm14191097"
   },
   "1283206496947": {
     "yt": "QIIrzbaV9fM",
@@ -16233,10 +16555,13 @@
     "yt": "88MZ560EMQI",
     "youtube": "https://www.youtube.com/watch?v=88MZ560EMQI"
   },
+  "1311586098787": { "nico": "sm1337126", "niconico": "https://www.nicovideo.jp/watch/sm1337126" },
   "1722627598002": {
     "apple": "https://music.apple.com/jp/album/sweet-sweet-harmony-sweet-and-sweet/982905717?i=982906057",
     "album": "https://music.apple.com/jp/album/sweet-sweet-harmony-sweet-and-sweet/982905717?i=982906057",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/37/35/12/373512cd-9e41-24ed-4182-45df5e0e3d05/11034100.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/37/35/12/373512cd-9e41-24ed-4182-45df5e0e3d05/11034100.jpg/600x600bb.jpg",
+    "nico": "sm35535175",
+    "niconico": "https://www.nicovideo.jp/watch/sm35535175"
   },
   "1722627598872": {
     "apple": "https://music.apple.com/jp/album/%E3%83%A9%E3%83%96%E6%96%B9%E7%A8%8B%E5%BC%8F-sweet-and-sweet/982905717?i=982906059",
@@ -16261,9 +16586,17 @@
     "yt": "sdBkU1M74hM",
     "youtube": "https://www.youtube.com/watch?v=sdBkU1M74hM"
   },
+  "1284358137697": {
+    "nico": "sm16940722",
+    "niconico": "https://www.nicovideo.jp/watch/sm16940722"
+  },
   "1490782348222": {
     "yt": "J3_VrCHHXWg",
     "youtube": "https://www.youtube.com/watch?v=J3_VrCHHXWg"
+  },
+  "1490782347787": {
+    "nico": "sm29451895",
+    "niconico": "https://www.nicovideo.jp/watch/sm29451895"
   },
   "1684363870482": {
     "yt": "jWN0MVzZXs0",
@@ -16276,6 +16609,11 @@
     "yt": "uwwZZsKnxrQ",
     "youtube": "https://www.youtube.com/watch?v=uwwZZsKnxrQ"
   },
+  "1669248772492": {
+    "nico": "sm27117665",
+    "niconico": "https://www.nicovideo.jp/watch/sm27117665"
+  },
+  "1283447409952": { "nico": "sm5688267", "niconico": "https://www.nicovideo.jp/watch/sm5688267" },
   "1084539866821": {
     "yt": "vwiPTtP7iUs",
     "youtube": "https://www.youtube.com/watch?v=vwiPTtP7iUs",
@@ -16286,6 +16624,11 @@
     "youtube": "https://www.youtube.com/watch?v=dWdvtw4Upwg",
     "ytmusic": "https://music.youtube.com/watch?v=dWdvtw4Upwg"
   },
+  "1085125504276": {
+    "nico": "sm10391338",
+    "niconico": "https://www.nicovideo.jp/watch/sm10391338"
+  },
+  "1528809598432": { "nico": "sm7115200", "niconico": "https://www.nicovideo.jp/watch/sm7115200" },
   "1528747358632": {
     "yt": "4DbVvycbqXw",
     "youtube": "https://www.youtube.com/watch?v=4DbVvycbqXw"
@@ -16317,6 +16660,7 @@
     "yt": "FAmzyaYkOQ4",
     "youtube": "https://www.youtube.com/watch?v=FAmzyaYkOQ4"
   },
+  "1684363124022": { "nico": "sm2339276", "niconico": "https://www.nicovideo.jp/watch/sm2339276" },
   "1641761409592": {
     "yt": "pr1bX0pN1bM",
     "youtube": "https://www.youtube.com/watch?v=pr1bX0pN1bM"
@@ -16329,6 +16673,7 @@
     "yt": "MloZq2uPGGU",
     "youtube": "https://www.youtube.com/watch?v=MloZq2uPGGU"
   },
+  "1529308572577": { "nico": "sm3598968", "niconico": "https://www.nicovideo.jp/watch/sm3598968" },
   "1529308572142": {
     "apple": "https://music.apple.com/jp/album/%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86/541918196?i=541918572",
     "album": "https://music.apple.com/jp/album/%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86/541918196?i=541918572",
@@ -16369,14 +16714,20 @@
     "yt": "5joUhNq0YL0",
     "youtube": "https://www.youtube.com/watch?v=5joUhNq0YL0"
   },
+  "1723215532692": {
+    "nico": "sm11224782",
+    "niconico": "https://www.nicovideo.jp/watch/sm11224782"
+  },
   "1489894898632": {
     "yt": "Zd2IWKtu4sI",
     "youtube": "https://www.youtube.com/watch?v=Zd2IWKtu4sI"
   },
+  "1865211513462": { "nico": "sm2346038", "niconico": "https://www.nicovideo.jp/watch/sm2346038" },
   "1669572569092": {
     "yt": "NnxHjeu_Y5M",
     "youtube": "https://www.youtube.com/watch?v=NnxHjeu_Y5M"
   },
+  "1283206149817": { "nico": "nm4957009", "niconico": "https://www.nicovideo.jp/watch/nm4957009" },
   "1603233494827": {
     "yt": "kiGVFXlX760",
     "youtube": "https://www.youtube.com/watch?v=kiGVFXlX760"
@@ -16425,6 +16776,12 @@
     "yt": "xKk-jfjaAYk",
     "youtube": "https://www.youtube.com/watch?v=xKk-jfjaAYk"
   },
+  "1283120038522": { "nico": "sm3679070", "niconico": "https://www.nicovideo.jp/watch/sm3679070" },
+  "1283120038087": { "nico": "sm4006053", "niconico": "https://www.nicovideo.jp/watch/sm4006053" },
+  "1722886108062": {
+    "nico": "sm18756795",
+    "niconico": "https://www.nicovideo.jp/watch/sm18756795"
+  },
   "1669336239682": {
     "yt": "hgBdEVlVItU",
     "youtube": "https://www.youtube.com/watch?v=hgBdEVlVItU"
@@ -16444,9 +16801,17 @@
     "yt": "b-3XacNxoa0",
     "youtube": "https://www.youtube.com/watch?v=b-3XacNxoa0"
   },
+  "1490699468107": {
+    "nico": "sm13963574",
+    "niconico": "https://www.nicovideo.jp/watch/sm13963574"
+  },
   "1311756792352": {
     "yt": "XmR7BKS_5TQ",
     "youtube": "https://www.youtube.com/watch?v=XmR7BKS_5TQ"
+  },
+  "1311756798442": {
+    "nico": "sm30296914",
+    "niconico": "https://www.nicovideo.jp/watch/sm30296914"
   },
   "1084886730601": {
     "yt": "cdJ2-wq6bJY",
@@ -16463,7 +16828,9 @@
   "1865686806207": {
     "apple": "https://music.apple.com/jp/album/%E7%B5%82%E3%82%8F%E3%82%8A%E3%81%AA%E3%81%8Dprelude/1511278861?i=1511278862",
     "album": "https://music.apple.com/jp/album/%E7%B5%82%E3%82%8F%E3%82%8A%E3%81%AA%E3%81%8Dprelude/1511278861?i=1511278862",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/1f/8f/28/1f8f28dd-021a-cdfe-9e77-362a35cc7808/084738_J.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/1f/8f/28/1f8f28dd-021a-cdfe-9e77-362a35cc7808/084738_J.jpg/600x600bb.jpg",
+    "nico": "sm18017134",
+    "niconico": "https://www.nicovideo.jp/watch/sm18017134"
   },
   "1684688010732": {
     "yt": "Z13ijbWKSnA",
@@ -16476,7 +16843,9 @@
   "1490548116382": {
     "apple": "https://music.apple.com/jp/album/still/1547584607?i=1547584784",
     "album": "https://music.apple.com/jp/album/still/1547584607?i=1547584784",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/68/ee/6e/68ee6edf-6fa1-cac9-4a4f-9cddd089455e/094665_J.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/68/ee/6e/68ee6edf-6fa1-cac9-4a4f-9cddd089455e/094665_J.jpg/600x600bb.jpg",
+    "nico": "sm36498715",
+    "niconico": "https://www.nicovideo.jp/watch/sm36498715"
   },
   "1642407596437": {
     "apple": "https://music.apple.com/jp/album/curriculumachine/1547584607?i=1547584782",
@@ -16501,17 +16870,30 @@
     "yt": "-4GHWSwBPVo",
     "youtube": "https://www.youtube.com/watch?v=-4GHWSwBPVo"
   },
+  "1529068853212": { "nico": "sm2743612", "niconico": "https://www.nicovideo.jp/watch/sm2743612" },
   "1283534834077": {
     "yt": "nZ4z3ijys28",
     "youtube": "https://www.youtube.com/watch?v=nZ4z3ijys28"
+  },
+  "1789223634597": {
+    "nico": "sm16694543",
+    "niconico": "https://www.nicovideo.jp/watch/sm16694543"
   },
   "1788314215332": {
     "yt": "YxSFCpmHhLY",
     "youtube": "https://www.youtube.com/watch?v=YxSFCpmHhLY"
   },
+  "1865124645702": {
+    "nico": "sm12281880",
+    "niconico": "https://www.nicovideo.jp/watch/sm12281880"
+  },
   "2006214602382": {
     "yt": "ixvduTi4yX0",
     "youtube": "https://www.youtube.com/watch?v=ixvduTi4yX0"
+  },
+  "1669570876507": {
+    "nico": "nm12757876",
+    "niconico": "https://www.nicovideo.jp/watch/nm12757876"
   },
   "1528898157472": {
     "yt": "W75QpHMFyBo",
@@ -16541,6 +16923,14 @@
     "yt": "2BDCqPmtjH0",
     "youtube": "https://www.youtube.com/watch?v=2BDCqPmtjH0"
   },
+  "1722627598437": {
+    "nico": "sm35356805",
+    "niconico": "https://www.nicovideo.jp/watch/sm35356805"
+  },
+  "1722476051832": {
+    "nico": "sm12076117",
+    "niconico": "https://www.nicovideo.jp/watch/sm12076117"
+  },
   "1722476052267": {
     "apple": "https://music.apple.com/jp/album/%E7%A5%88%E3%82%8A%E3%81%AE%E8%A8%80%E8%91%89/1518849291?i=1518849609",
     "album": "https://music.apple.com/jp/album/%E7%A5%88%E3%82%8A%E3%81%AE%E8%A8%80%E8%91%89/1518849291?i=1518849609",
@@ -16557,6 +16947,10 @@
     "yt": "wMNZPA8VOWM",
     "youtube": "https://www.youtube.com/watch?v=wMNZPA8VOWM"
   },
+  "1788312919032": {
+    "nico": "sm15313864",
+    "niconico": "https://www.nicovideo.jp/watch/sm15313864"
+  },
   "1788313462782": {
     "yt": "wEX7_t095FQ",
     "youtube": "https://www.youtube.com/watch?v=wEX7_t095FQ"
@@ -16568,6 +16962,10 @@
   "1788313120872": {
     "yt": "uRVNmuQ5464",
     "youtube": "https://www.youtube.com/watch?v=uRVNmuQ5464"
+  },
+  "1722387483222": {
+    "nico": "sm29107616",
+    "niconico": "https://www.nicovideo.jp/watch/sm29107616"
   },
   "1283357501542": {
     "yt": "f2Jy4G45htI",
@@ -16601,6 +16999,10 @@
     "yt": "H2Rv9SMbQLs",
     "youtube": "https://www.youtube.com/watch?v=H2Rv9SMbQLs"
   },
+  "1669158923242": {
+    "nico": "sm15769857",
+    "niconico": "https://www.nicovideo.jp/watch/sm15769857"
+  },
   "1684687068957": {
     "yt": "Z7xbaUg-n7Q",
     "youtube": "https://www.youtube.com/watch?v=Z7xbaUg-n7Q"
@@ -16608,11 +17010,17 @@
   "1603233687967": {
     "apple": "https://music.apple.com/jp/album/little-my-star/1522607439?i=1522607445",
     "album": "https://music.apple.com/jp/album/little-my-star/1522607439?i=1522607445",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/91/9d/2d/919d2d82-8838-8c80-23f7-04c796d4c55b/4538182893067_cov.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/91/9d/2d/919d2d82-8838-8c80-23f7-04c796d4c55b/4538182893067_cov.jpg/600x600bb.jpg",
+    "nico": "sm1607042",
+    "niconico": "https://www.nicovideo.jp/watch/sm1607042"
   },
   "1669008863467": {
     "yt": "_kSDm-IZDGQ",
     "youtube": "https://www.youtube.com/watch?v=_kSDm-IZDGQ"
+  },
+  "1745798263327": {
+    "nico": "sm11806189",
+    "niconico": "https://www.nicovideo.jp/watch/sm11806189"
   },
   "1284270921067": {
     "yt": "EQgQ-sB3iWU",
@@ -16663,6 +17071,7 @@
     "yt": "5pOyKSkwGxE",
     "youtube": "https://www.youtube.com/watch?v=5pOyKSkwGxE"
   },
+  "1708094409082": { "nico": "sm631679", "niconico": "https://www.nicovideo.jp/watch/sm631679" },
   "1529308371172": {
     "apple": "https://music.apple.com/jp/album/tears-to-tiara-%E5%87%B1%E6%AD%8C/543834535?i=543834655",
     "album": "https://music.apple.com/jp/album/tears-to-tiara-%E5%87%B1%E6%AD%8C/543834535?i=543834655",
@@ -16688,6 +17097,8 @@
     "yt": "TrlyJjIZml0",
     "youtube": "https://www.youtube.com/watch?v=TrlyJjIZml0"
   },
+  "1641673593097": { "nico": "sm5634929", "niconico": "https://www.nicovideo.jp/watch/sm5634929" },
+  "1641673800157": { "nico": "sm5635040", "niconico": "https://www.nicovideo.jp/watch/sm5635040" },
   "1669008863902": {
     "yt": "7vOKefEBejw",
     "youtube": "https://www.youtube.com/watch?v=7vOKefEBejw"
@@ -16703,6 +17114,10 @@
   "1827425317632": {
     "yt": "Q4pFaEhUp4k",
     "youtube": "https://www.youtube.com/watch?v=Q4pFaEhUp4k"
+  },
+  "1284271120297": {
+    "nico": "sm45529702",
+    "niconico": "https://www.nicovideo.jp/watch/sm45529702"
   },
   "1761085901457": {
     "yt": "ITeiaYFQOLk",
@@ -16767,6 +17182,11 @@
     "yt": "W734icbkk7I",
     "youtube": "https://www.youtube.com/watch?v=W734icbkk7I"
   },
+  "1723215181212": { "nico": "sm8175536", "niconico": "https://www.nicovideo.jp/watch/sm8175536" },
+  "1490870353072": {
+    "nico": "sm27155489",
+    "niconico": "https://www.nicovideo.jp/watch/sm27155489"
+  },
   "1603233493957": {
     "yt": "gQ7jclx5QJo",
     "youtube": "https://www.youtube.com/watch?v=gQ7jclx5QJo"
@@ -16779,8 +17199,19 @@
   "1529157020317": {
     "apple": "https://music.apple.com/jp/album/ill-try-my-best/1252910131?i=1252910504",
     "album": "https://music.apple.com/jp/album/ill-try-my-best/1252910131?i=1252910504",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/ef/ea/df/efeadf9c-4e9f-e9a1-61f5-5cc1f788ab29/859753666229_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/ef/ea/df/efeadf9c-4e9f-e9a1-61f5-5cc1f788ab29/859753666229_cover.png/600x600bb.jpg",
+    "nico": "sm23352719",
+    "niconico": "https://www.nicovideo.jp/watch/sm23352719"
   },
+  "1490869206412": {
+    "nico": "sm14430208",
+    "niconico": "https://www.nicovideo.jp/watch/sm14430208"
+  },
+  "1491046535467": {
+    "nico": "sm17049341",
+    "niconico": "https://www.nicovideo.jp/watch/sm17049341"
+  },
+  "1491047482897": { "nico": "sm7551030", "niconico": "https://www.nicovideo.jp/watch/sm7551030" },
   "1491047282362": {
     "apple": "https://music.apple.com/jp/album/%E7%B5%86%E3%81%AF%E9%8A%80%E3%81%AE%E7%B3%B8-%E6%9C%A8%E4%B9%8B%E5%9D%82%E9%9C%A7%E4%B9%83%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%B3%E3%82%B0/1112480104?i=1112480545",
     "album": "https://music.apple.com/jp/album/%E7%B5%86%E3%81%AF%E9%8A%80%E3%81%AE%E7%B3%B8-%E6%9C%A8%E4%B9%8B%E5%9D%82%E9%9C%A7%E4%B9%83%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%B3%E3%82%B0/1112480104?i=1112480545",
@@ -16795,6 +17226,10 @@
   "1641583336687": {
     "yt": "gDPix-6-5so",
     "youtube": "https://www.youtube.com/watch?v=gDPix-6-5so"
+  },
+  "1746034050727": {
+    "nico": "sm29224161",
+    "niconico": "https://www.nicovideo.jp/watch/sm29224161"
   },
   "1865211122397": {
     "yt": "JlapbED5QQ0",
@@ -16849,6 +17284,7 @@
     "yt": "rc1TbMU0xCA",
     "youtube": "https://www.youtube.com/watch?v=rc1TbMU0xCA"
   },
+  "1684452630492": { "nico": "sm2272933", "niconico": "https://www.nicovideo.jp/watch/sm2272933" },
   "1865210366367": {
     "yt": "DjPsaVgoagc",
     "youtube": "https://www.youtube.com/watch?v=DjPsaVgoagc"
@@ -16868,6 +17304,10 @@
   "1603472661742": {
     "yt": "OxaOceOHkJo",
     "youtube": "https://www.youtube.com/watch?v=OxaOceOHkJo"
+  },
+  "1827513337272": {
+    "nico": "sm12652437",
+    "niconico": "https://www.nicovideo.jp/watch/sm12652437"
   },
   "1722976159152": {
     "yt": "OEHdzM77nsE",
@@ -16891,16 +17331,23 @@
   "1490548118557": {
     "apple": "https://music.apple.com/jp/album/%E9%99%BD%E7%82%8E-album-arrange-version/1577530747?i=1577530811",
     "album": "https://music.apple.com/jp/album/%E9%99%BD%E7%82%8E-album-arrange-version/1577530747?i=1577530811",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ff/4a/66/ff4a66c3-957f-fec9-8366-706db5f6d887/PA00089557_0_139483_jacket.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ff/4a/66/ff4a66c3-957f-fec9-8366-706db5f6d887/PA00089557_0_139483_jacket.jpg/600x600bb.jpg",
+    "nico": "nm18823972",
+    "niconico": "https://www.nicovideo.jp/watch/nm18823972"
   },
   "1490545265392": {
     "apple": "https://music.apple.com/jp/album/%E3%82%B5%E3%82%A4%E3%83%B3-game-arrange-version/1577530747?i=1577530809",
     "album": "https://music.apple.com/jp/album/%E3%82%B5%E3%82%A4%E3%83%B3-game-arrange-version/1577530747?i=1577530809",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ff/4a/66/ff4a66c3-957f-fec9-8366-706db5f6d887/PA00089557_0_139483_jacket.jpg/600x600bb.jpg"
   },
+  "1669570268812": { "nico": "sm3839420", "niconico": "https://www.nicovideo.jp/watch/sm3839420" },
   "1788313123047": {
     "yt": "3qC1lnYOYDg",
     "youtube": "https://www.youtube.com/watch?v=3qC1lnYOYDg"
+  },
+  "1788313123482": {
+    "nico": "sm15274351",
+    "niconico": "https://www.nicovideo.jp/watch/sm15274351"
   },
   "1865275997862": {
     "apple": "https://music.apple.com/jp/album/a-view-of-the-end/1740160591?i=1740160596",
@@ -16914,6 +17361,10 @@
     "yt": "E5TAx_ZhMW0",
     "youtube": "https://www.youtube.com/watch?v=E5TAx_ZhMW0"
   },
+  "1641583334512": {
+    "nico": "sm12313050",
+    "niconico": "https://www.nicovideo.jp/watch/sm12313050"
+  },
   "1797474131593": {
     "yt": "-LFpOuyc3qE",
     "youtube": "https://www.youtube.com/watch?v=-LFpOuyc3qE"
@@ -16921,7 +17372,9 @@
   "1528809803752": {
     "apple": "https://music.apple.com/jp/album/silent-wing/1543340931?i=1543340934",
     "album": "https://music.apple.com/jp/album/silent-wing/1543340931?i=1543340934",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/99/08/48/9908486d-9618-a803-0ee7-2f24340fb2dd/195497694952.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/99/08/48/9908486d-9618-a803-0ee7-2f24340fb2dd/195497694952.jpg/600x600bb.jpg",
+    "nico": "sm11070740",
+    "niconico": "https://www.nicovideo.jp/watch/sm11070740"
   },
   "1669159269502": {
     "apple": "https://music.apple.com/jp/album/%E9%98%BF%E4%BF%AE%E7%BE%85%E5%A7%AB/1589200571?i=1589200572",
@@ -16971,6 +17424,11 @@
     "yt": "0n1dSTt1Z1k",
     "youtube": "https://www.youtube.com/watch?v=0n1dSTt1Z1k"
   },
+  "1284270918022": {
+    "nico": "sm26375535",
+    "niconico": "https://www.nicovideo.jp/watch/sm26375535"
+  },
+  "1746210217027": { "nico": "sm4725779", "niconico": "https://www.nicovideo.jp/watch/sm4725779" },
   "1789399814382": {
     "apple": "https://music.apple.com/jp/album/%E5%90%91%E6%97%A5%E8%91%B5/207343338?i=207343342",
     "album": "https://music.apple.com/jp/album/%E5%90%91%E6%97%A5%E8%91%B5/207343338?i=207343342",
@@ -16985,6 +17443,10 @@
     "yt": "X0uc20OOWnc",
     "youtube": "https://www.youtube.com/watch?v=X0uc20OOWnc"
   },
+  "1722562716012": {
+    "nico": "sm26929786",
+    "niconico": "https://www.nicovideo.jp/watch/sm26929786"
+  },
   "1722562716447": {
     "yt": "K4qp0vZdgj8",
     "youtube": "https://www.youtube.com/watch?v=K4qp0vZdgj8"
@@ -16992,6 +17454,10 @@
   "1084539122536": {
     "yt": "w39LpuzWa84",
     "youtube": "https://www.youtube.com/watch?v=w39LpuzWa84"
+  },
+  "1528897957372": {
+    "nico": "sm41427667",
+    "niconico": "https://www.nicovideo.jp/watch/sm41427667"
   },
   "1723298065677": {
     "yt": "7SYs_PRfUeo",
@@ -17005,6 +17471,10 @@
     "yt": "z8JHWmP5JTo",
     "youtube": "https://www.youtube.com/watch?v=z8JHWmP5JTo"
   },
+  "1684188046962": {
+    "nico": "nm12272504",
+    "niconico": "https://www.nicovideo.jp/watch/nm12272504"
+  },
   "1529156466562": {
     "yt": "4xmyk_DHo_4",
     "youtube": "https://www.youtube.com/watch?v=4xmyk_DHo_4"
@@ -17012,6 +17482,10 @@
   "1760737539972": {
     "yt": "x1jOUZr_UMk",
     "youtube": "https://www.youtube.com/watch?v=x1jOUZr_UMk"
+  },
+  "1283272538647": {
+    "nico": "sm14719123",
+    "niconico": "https://www.nicovideo.jp/watch/sm14719123"
   },
   "1528744512427": {
     "yt": "S0H-Sq32XfA",
@@ -17021,10 +17495,20 @@
     "yt": "brhVhT-aTag",
     "youtube": "https://www.youtube.com/watch?v=brhVhT-aTag"
   },
+  "1684686660927": { "nico": "nm3138242", "niconico": "https://www.nicovideo.jp/watch/nm3138242" },
   "1827423628092": {
     "yt": "0f875jhuoN4",
     "youtube": "https://www.youtube.com/watch?v=0f875jhuoN4"
   },
+  "1827423834717": {
+    "nico": "sm26685934",
+    "niconico": "https://www.nicovideo.jp/watch/sm26685934"
+  },
+  "1827423834282": {
+    "nico": "sm26685945",
+    "niconico": "https://www.nicovideo.jp/watch/sm26685945"
+  },
+  "1746034196452": { "nico": "sm7715775", "niconico": "https://www.nicovideo.jp/watch/sm7715775" },
   "1746034194277": {
     "yt": "IpEkQYpXroc",
     "youtube": "https://www.youtube.com/watch?v=IpEkQYpXroc"
@@ -17066,6 +17550,14 @@
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/18/c8/88/18c88836-6153-e6de-2b01-5afd3d2ea082/007108_4580204259566.jpg/600x600bb.jpg",
     "yt": "kfghy84eReU",
     "youtube": "https://www.youtube.com/watch?v=kfghy84eReU"
+  },
+  "1684686662232": {
+    "nico": "nm12272643",
+    "niconico": "https://www.nicovideo.jp/watch/nm12272643"
+  },
+  "1684686662667": {
+    "nico": "sm30472174",
+    "niconico": "https://www.nicovideo.jp/watch/sm30472174"
   },
   "2006276847402": {
     "yt": "17rGFjqqcHw",
@@ -17119,6 +17611,7 @@
     "yt": "fTqYtmCcuNw",
     "youtube": "https://www.youtube.com/watch?v=fTqYtmCcuNw"
   },
+  "1491046737307": { "nico": "sm471717", "niconico": "https://www.nicovideo.jp/watch/sm471717" },
   "1283535032872": {
     "yt": "RQj61zsgd58",
     "youtube": "https://www.youtube.com/watch?v=RQj61zsgd58"
@@ -17139,6 +17632,7 @@
     "yt": "C9GMniaRNfQ",
     "youtube": "https://www.youtube.com/watch?v=C9GMniaRNfQ"
   },
+  "1670159554612": { "nico": "sm870018", "niconico": "https://www.nicovideo.jp/watch/sm870018" },
   "1746210365362": {
     "yt": "18JkXhOCnEE",
     "youtube": "https://www.youtube.com/watch?v=18JkXhOCnEE"
@@ -17168,6 +17662,7 @@
     "yt": "XUnaLhUUtEc",
     "youtube": "https://www.youtube.com/watch?v=XUnaLhUUtEc"
   },
+  "1669398829657": { "nico": "sm2231553", "niconico": "https://www.nicovideo.jp/watch/sm2231553" },
   "1722628351422": {
     "yt": "UhGCpo_E_PA",
     "youtube": "https://www.youtube.com/watch?v=UhGCpo_E_PA"
@@ -17187,6 +17682,10 @@
   "1490782347352": {
     "yt": "rjPIwtGZ2Is",
     "youtube": "https://www.youtube.com/watch?v=rjPIwtGZ2Is"
+  },
+  "1490782346917": {
+    "nico": "sm25471402",
+    "niconico": "https://www.nicovideo.jp/watch/sm25471402"
   },
   "1283272539517": {
     "yt": "XHavF6FYd_8",
@@ -17237,6 +17736,14 @@
     "yt": "Ib1oB3yyMDw",
     "youtube": "https://www.youtube.com/watch?v=Ib1oB3yyMDw"
   },
+  "1311934466362": {
+    "nico": "sm13839590",
+    "niconico": "https://www.nicovideo.jp/watch/sm13839590"
+  },
+  "1283534832772": {
+    "nico": "sm38004443",
+    "niconico": "https://www.nicovideo.jp/watch/sm38004443"
+  },
   "1827425318067": {
     "yt": "TnKusYEapss",
     "youtube": "https://www.youtube.com/watch?v=TnKusYEapss"
@@ -17244,6 +17751,10 @@
   "1827513540417": {
     "yt": "xLa-MZ-UZuo",
     "youtube": "https://www.youtube.com/watch?v=xLa-MZ-UZuo"
+  },
+  "1490699468542": {
+    "nico": "nm13843953",
+    "niconico": "https://www.nicovideo.jp/watch/nm13843953"
   },
   "1490546964502": {
     "yt": "pU2mBn_hJ08",
@@ -17285,7 +17796,9 @@
   "1529309911072": {
     "apple": "https://music.apple.com/jp/album/catch-your-dreams/1069066541?i=1069068630",
     "album": "https://music.apple.com/jp/album/catch-your-dreams/1069066541?i=1069068630",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg",
+    "nico": "sm11440240",
+    "niconico": "https://www.nicovideo.jp/watch/sm11440240"
   },
   "1529309911507": {
     "apple": "https://music.apple.com/jp/album/its-my-%E3%83%9F%E3%83%A9%E3%82%AF%E3%83%AB/1069066541?i=1069068636",
@@ -17297,7 +17810,9 @@
   "1529309911942": {
     "apple": "https://music.apple.com/jp/album/%E9%9B%AA%E3%81%AE%E8%A8%98%E6%86%B6/1069066541?i=1069068645",
     "album": "https://music.apple.com/jp/album/%E9%9B%AA%E3%81%AE%E8%A8%98%E6%86%B6/1069066541?i=1069068645",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg",
+    "nico": "sm2706737",
+    "niconico": "https://www.nicovideo.jp/watch/sm2706737"
   },
   "1529309912377": {
     "apple": "https://music.apple.com/jp/album/%E6%98%8E%E6%97%A5%E3%81%AE%E3%82%AD%E3%83%A2%E3%83%81/1069066541?i=1069068652",
@@ -17313,6 +17828,8 @@
     "yt": "xwbCAa4Xzlk",
     "youtube": "https://www.youtube.com/watch?v=xwbCAa4Xzlk"
   },
+  "1789465504602": { "nico": "sm2100328", "niconico": "https://www.nicovideo.jp/watch/sm2100328" },
+  "1641585431647": { "nico": "sm2633990", "niconico": "https://www.nicovideo.jp/watch/sm2633990" },
   "1283535774982": {
     "apple": "https://music.apple.com/jp/album/orange/1896214162?i=6766149439",
     "album": "https://music.apple.com/jp/album/orange/1896214162?i=6766149439",
@@ -17343,7 +17860,9 @@
   "1684688011602": {
     "apple": "https://music.apple.com/jp/album/strawberry-jump-shoot/380277346?i=380277351",
     "album": "https://music.apple.com/jp/album/strawberry-jump-shoot/380277346?i=380277351",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/56/8b/74/mzi.xrlmxfph.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/56/8b/74/mzi.xrlmxfph.jpg/600x600bb.jpg",
+    "nico": "sm34832277",
+    "niconico": "https://www.nicovideo.jp/watch/sm34832277"
   },
   "1641761004607": {
     "yt": "CGgljQkXigg",
@@ -17357,13 +17876,24 @@
     "yt": "J7bEm-QPCXc",
     "youtube": "https://www.youtube.com/watch?v=J7bEm-QPCXc"
   },
+  "1603384092697": { "nico": "sm5604175", "niconico": "https://www.nicovideo.jp/watch/sm5604175" },
+  "1603384092262": { "nico": "sm5604218", "niconico": "https://www.nicovideo.jp/watch/sm5604218" },
   "1708182413932": {
     "yt": "DpQwOUWSdSU",
     "youtube": "https://www.youtube.com/watch?v=DpQwOUWSdSU"
   },
+  "1084949321881": { "nico": "sm5839783", "niconico": "https://www.nicovideo.jp/watch/sm5839783" },
+  "1528808655352": {
+    "nico": "sm22273384",
+    "niconico": "https://www.nicovideo.jp/watch/sm22273384"
+  },
   "1528808656657": {
     "yt": "Z445OK2lStQ",
     "youtube": "https://www.youtube.com/watch?v=Z445OK2lStQ"
+  },
+  "1283534833207": {
+    "nico": "sm11885713",
+    "niconico": "https://www.nicovideo.jp/watch/sm11885713"
   },
   "1311998405707": {
     "apple": "https://music.apple.com/jp/album/heavens-cage/1748408844?i=1748408851",
@@ -17376,6 +17906,11 @@
     "yt": "X-Uvq3yD5Rk",
     "youtube": "https://www.youtube.com/watch?v=X-Uvq3yD5Rk"
   },
+  "1529068652242": {
+    "nico": "sm15908438",
+    "niconico": "https://www.nicovideo.jp/watch/sm15908438"
+  },
+  "1641345322087": { "nico": "sm5065863", "niconico": "https://www.nicovideo.jp/watch/sm5065863" },
   "1641583336252": {
     "yt": "nk_Pxivf7X0",
     "youtube": "https://www.youtube.com/watch?v=nk_Pxivf7X0"
@@ -17398,6 +17933,7 @@
     "yt": "Kz27mXbHhOM",
     "youtube": "https://www.youtube.com/watch?v=Kz27mXbHhOM"
   },
+  "1283534631367": { "nico": "sm5440514", "niconico": "https://www.nicovideo.jp/watch/sm5440514" },
   "1490957774152": {
     "apple": "https://music.apple.com/jp/album/%E6%9C%88%E3%81%A8%E5%A4%9C%E7%A9%BA%E3%81%A8%E3%83%9B%E3%82%A6%E3%82%AD%E6%98%9F/380277346?i=380277512",
     "album": "https://music.apple.com/jp/album/%E6%9C%88%E3%81%A8%E5%A4%9C%E7%A9%BA%E3%81%A8%E3%83%9B%E3%82%A6%E3%82%AD%E6%98%9F/380277346?i=380277512",
@@ -17410,6 +17946,7 @@
     "album": "https://music.apple.com/jp/album/%E9%9B%AB/419288945?i=419288960",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/37/4b/87/mzi.guzigsqp.jpg/600x600bb.jpg"
   },
+  "1684188047397": { "nico": "sm6960599", "niconico": "https://www.nicovideo.jp/watch/sm6960599" },
   "1761087240822": {
     "apple": "https://music.apple.com/jp/album/rune-pride/380277346?i=380277355",
     "album": "https://music.apple.com/jp/album/rune-pride/380277346?i=380277355",
@@ -17421,6 +17958,7 @@
     "yt": "CsIq1m-dmXg",
     "youtube": "https://www.youtube.com/watch?v=CsIq1m-dmXg"
   },
+  "1902411622047": { "nico": "sm2751601", "niconico": "https://www.nicovideo.jp/watch/sm2751601" },
   "1603797400987": {
     "apple": "https://music.apple.com/jp/album/light-colors-short-ver/828841767?i=828843903",
     "album": "https://music.apple.com/jp/album/light-colors-short-ver/828841767?i=828843903",
@@ -17435,9 +17973,14 @@
     "yt": "63M7dilm788",
     "youtube": "https://www.youtube.com/watch?v=63M7dilm788"
   },
+  "1669570269682": { "nico": "sm2729244", "niconico": "https://www.nicovideo.jp/watch/sm2729244" },
   "1084538917216": {
     "yt": "rvy2NXwcNSQ",
     "youtube": "https://www.youtube.com/watch?v=rvy2NXwcNSQ"
+  },
+  "1641345466507": {
+    "nico": "sm11814284",
+    "niconico": "https://www.nicovideo.jp/watch/sm11814284"
   },
   "1827423831237": {
     "yt": "mPHcSEZUW3g",
@@ -17479,6 +18022,7 @@
     "yt": "m3osoTF0rK0",
     "youtube": "https://www.youtube.com/watch?v=m3osoTF0rK0"
   },
+  "1722627404862": { "nico": "sm8713231", "niconico": "https://www.nicovideo.jp/watch/sm8713231" },
   "1084538917651": {
     "yt": "ZRssQOQHx0A",
     "youtube": "https://www.youtube.com/watch?v=ZRssQOQHx0A"
@@ -17493,6 +18037,10 @@
   "1723298065242": {
     "yt": "CBoASuTc6CQ",
     "youtube": "https://www.youtube.com/watch?v=CBoASuTc6CQ"
+  },
+  "1311845553667": {
+    "nico": "sm27320448",
+    "niconico": "https://www.nicovideo.jp/watch/sm27320448"
   },
   "1528747159837": {
     "apple": "https://music.apple.com/jp/album/hello-future/283578036?i=283578254",
@@ -17539,6 +18087,7 @@
     "yt": "p6JbhMsTObE",
     "youtube": "https://www.youtube.com/watch?v=p6JbhMsTObE"
   },
+  "1491047277577": { "nico": "sm5377716", "niconico": "https://www.nicovideo.jp/watch/sm5377716" },
   "1491047277142": {
     "yt": "rX-p7s2i3V0",
     "youtube": "https://www.youtube.com/watch?v=rX-p7s2i3V0"
@@ -17550,10 +18099,13 @@
     "yt": "pjJcPgaaDmI",
     "youtube": "https://www.youtube.com/watch?v=pjJcPgaaDmI"
   },
+  "1723215731487": { "nico": "nm5056156", "niconico": "https://www.nicovideo.jp/watch/nm5056156" },
   "1084538922871": {
     "yt": "Blj_4hav7Ws",
     "youtube": "https://www.youtube.com/watch?v=Blj_4hav7Ws"
   },
+  "1684452030192": { "nico": "sm3020050", "niconico": "https://www.nicovideo.jp/watch/sm3020050" },
+  "1528897417537": { "nico": "sm3350564", "niconico": "https://www.nicovideo.jp/watch/sm3350564" },
   "1491109182427": {
     "yt": "kKag-SY2A-Y",
     "youtube": "https://www.youtube.com/watch?v=kKag-SY2A-Y"
@@ -17654,10 +18206,13 @@
     "yt": "Qg5ZU8zl1EU",
     "youtube": "https://www.youtube.com/watch?v=Qg5ZU8zl1EU"
   },
+  "1865451975807": { "nico": "sm2324715", "niconico": "https://www.nicovideo.jp/watch/sm2324715" },
   "1788314214897": {
     "apple": "https://music.apple.com/jp/album/%E5%A4%A2%E3%81%AB%E3%81%BF%E3%81%9F%E6%A5%BD%E5%9C%92/266716472?i=266716495",
     "album": "https://music.apple.com/jp/album/%E5%A4%A2%E3%81%AB%E3%81%BF%E3%81%9F%E6%A5%BD%E5%9C%92/266716472?i=266716495",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/a6/15/8f/mzi.rbnivszu.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/a6/15/8f/mzi.rbnivszu.jpg/600x600bb.jpg",
+    "nico": "sm4909774",
+    "niconico": "https://www.nicovideo.jp/watch/sm4909774"
   },
   "1722975959922": {
     "yt": "NTiUof3qtVg",
@@ -17682,6 +18237,10 @@
     "yt": "4zj4sXY4FMI",
     "youtube": "https://www.youtube.com/watch?v=4zj4sXY4FMI"
   },
+  "1761149642877": {
+    "nico": "sm15274391",
+    "niconico": "https://www.nicovideo.jp/watch/sm15274391"
+  },
   "1761149642442": {
     "apple": "https://music.apple.com/jp/album/fragment-feat-%E4%B8%89%E6%BE%A4-%E7%A7%8B/1776111215?i=1776112640",
     "album": "https://music.apple.com/jp/album/fragment-feat-%E4%B8%89%E6%BE%A4-%E7%A7%8B/1776111215?i=1776112640",
@@ -17693,6 +18252,7 @@
     "yt": "qmLzq9GsX9o",
     "youtube": "https://www.youtube.com/watch?v=qmLzq9GsX9o"
   },
+  "1939698796752": { "nico": "sm1443445", "niconico": "https://www.nicovideo.jp/watch/sm1443445" },
   "1283534280757": {
     "yt": "PcuRgLrHq4A",
     "youtube": "https://www.youtube.com/watch?v=PcuRgLrHq4A"
@@ -17716,12 +18276,16 @@
   "1827663000762": {
     "apple": "https://music.apple.com/jp/album/exec-chronicle-key/919930576?i=919930610",
     "album": "https://music.apple.com/jp/album/exec-chronicle-key/919930576?i=919930610",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/0e/1e/ff/0e1eff9b-7bdb-ac49-889b-d6c0b83d6fbb/Jak_HUCD10013.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/0e/1e/ff/0e1eff9b-7bdb-ac49-889b-d6c0b83d6fbb/Jak_HUCD10013.jpg/600x600bb.jpg",
+    "nico": "sm7937965",
+    "niconico": "https://www.nicovideo.jp/watch/sm7937965"
   },
   "1827663000327": {
     "apple": "https://music.apple.com/jp/album/exec-suspend/919929871?i=919932889",
     "album": "https://music.apple.com/jp/album/exec-suspend/919929871?i=919932889",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/82/5b/05/825b05e2-ef48-868d-bbae-ea388c88f366/Jak_KDSD10014.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/82/5b/05/825b05e2-ef48-868d-bbae-ea388c88f366/Jak_KDSD10014.jpg/600x600bb.jpg",
+    "nico": "sm6259667",
+    "niconico": "https://www.nicovideo.jp/watch/sm6259667"
   },
   "1827662999892": {
     "apple": "https://music.apple.com/jp/album/exec-harmonius/919930576?i=919930617",
@@ -17792,6 +18356,7 @@
     "yt": "uek_l2u-4n8",
     "youtube": "https://www.youtube.com/watch?v=uek_l2u-4n8"
   },
+  "1529068650067": { "nico": "sm9297629", "niconico": "https://www.nicovideo.jp/watch/sm9297629" },
   "1491047276272": {
     "yt": "1pgTnsvOO4Y",
     "youtube": "https://www.youtube.com/watch?v=1pgTnsvOO4Y"
@@ -17800,6 +18365,7 @@
     "yt": "hRi3brDvFS0",
     "youtube": "https://www.youtube.com/watch?v=hRi3brDvFS0"
   },
+  "1865211513897": { "nico": "sm4114267", "niconico": "https://www.nicovideo.jp/watch/sm4114267" },
   "1490547171127": {
     "yt": "ZODbyvBBWpM",
     "youtube": "https://www.youtube.com/watch?v=ZODbyvBBWpM"
@@ -17812,9 +18378,17 @@
     "yt": "x_YiZuakc9k",
     "youtube": "https://www.youtube.com/watch?v=x_YiZuakc9k"
   },
+  "1789224240552": {
+    "nico": "sm15798934",
+    "niconico": "https://www.nicovideo.jp/watch/sm15798934"
+  },
   "1641761206012": {
     "yt": "3Rzhxqfvw_s",
     "youtube": "https://www.youtube.com/watch?v=3Rzhxqfvw_s"
+  },
+  "1722387889512": {
+    "nico": "sm15869297",
+    "niconico": "https://www.nicovideo.jp/watch/sm15869297"
   },
   "1490959869112": {
     "yt": "QjQsc0NpQCk",
@@ -17828,6 +18402,7 @@
     "yt": "pHbNdr-AUOU",
     "youtube": "https://www.youtube.com/watch?v=pHbNdr-AUOU"
   },
+  "1603885014337": { "nico": "sm2535840", "niconico": "https://www.nicovideo.jp/watch/sm2535840" },
   "1528744510687": {
     "yt": "FbAEh7t36k8",
     "youtube": "https://www.youtube.com/watch?v=FbAEh7t36k8"
@@ -17877,15 +18452,25 @@
     "yt": "GhhCEfeuObY",
     "youtube": "https://www.youtube.com/watch?v=GhhCEfeuObY"
   },
+  "1708182413497": {
+    "nico": "sm34178098",
+    "niconico": "https://www.nicovideo.jp/watch/sm34178098"
+  },
   "1491046736002": {
     "apple": "https://music.apple.com/jp/album/%E3%81%82%E3%81%97%E3%81%9F%E3%82%92%E8%A8%B1%E3%81%97%E3%81%A6/1502352035?i=1502352396",
     "album": "https://music.apple.com/jp/album/%E3%81%82%E3%81%97%E3%81%9F%E3%82%92%E8%A8%B1%E3%81%97%E3%81%A6/1502352035?i=1502352396",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/48/8a/55/488a55fc-1541-4ec7-58c0-a35c10fdeeba/LACM-4250.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/48/8a/55/488a55fc-1541-4ec7-58c0-a35c10fdeeba/LACM-4250.jpg/600x600bb.jpg",
+    "nico": "nm5057653",
+    "niconico": "https://www.nicovideo.jp/watch/nm5057653"
   },
   "1669336792567": {
     "apple": "https://music.apple.com/jp/album/vermilion-tiara/1502352035?i=1502352397",
     "album": "https://music.apple.com/jp/album/vermilion-tiara/1502352035?i=1502352397",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/48/8a/55/488a55fc-1541-4ec7-58c0-a35c10fdeeba/LACM-4250.jpg/600x600bb.jpg"
+  },
+  "1669398828787": {
+    "nico": "sm23981119",
+    "niconico": "https://www.nicovideo.jp/watch/sm23981119"
   },
   "1603797738112": {
     "apple": "https://music.apple.com/jp/album/%E9%9B%9B%E9%B3%A5/1518849291?i=1518849627",
@@ -17903,6 +18488,10 @@
     "yt": "FzuEzNUBOis",
     "youtube": "https://www.youtube.com/watch?v=FzuEzNUBOis"
   },
+  "1865362327092": {
+    "nico": "sm35924487",
+    "niconico": "https://www.nicovideo.jp/watch/sm35924487"
+  },
   "1283118888382": {
     "apple": "https://music.apple.com/jp/album/%E3%82%88%E3%82%8D%E3%81%97%E3%81%8F-%E3%83%9E%E3%82%A4%E3%83%80%E3%83%BC%E3%83%AA%E3%83%B3/362459641?i=362459661",
     "album": "https://music.apple.com/jp/album/%E3%82%88%E3%82%8D%E3%81%97%E3%81%8F-%E3%83%9E%E3%82%A4%E3%83%80%E3%83%BC%E3%83%AA%E3%83%B3/362459641?i=362459661",
@@ -17916,10 +18505,12 @@
     "youtube": "https://www.youtube.com/watch?v=Fh2U0qA-hnI",
     "ytmusic": "https://music.youtube.com/watch?v=Fh2U0qA-hnI"
   },
+  "1684452034542": { "nico": "sm5595207", "niconico": "https://www.nicovideo.jp/watch/sm5595207" },
   "1684452034977": {
     "yt": "KRWhImjRP0Q",
     "youtube": "https://www.youtube.com/watch?v=KRWhImjRP0Q"
   },
+  "1684452036282": { "nico": "sm5595299", "niconico": "https://www.nicovideo.jp/watch/sm5595299" },
   "1708269426112": {
     "yt": "095qhc8jkRc",
     "youtube": "https://www.youtube.com/watch?v=095qhc8jkRc"
@@ -17927,7 +18518,13 @@
   "1084797769186": {
     "apple": "https://music.apple.com/jp/album/%E3%81%BE%E3%81%98%E3%81%92%E3%81%A3%E3%81%A1%E3%82%85%E3%83%BC/1410027305?i=1410027396",
     "album": "https://music.apple.com/jp/album/%E3%81%BE%E3%81%98%E3%81%92%E3%81%A3%E3%81%A1%E3%82%85%E3%83%BC/1410027305?i=1410027396",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d1/a2/9a/d1a29ad4-6734-ca60-3d51-aa2b9ef1e5e3/859754210483_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d1/a2/9a/d1a29ad4-6734-ca60-3d51-aa2b9ef1e5e3/859754210483_cover.png/600x600bb.jpg",
+    "nico": "sm3372208",
+    "niconico": "https://www.nicovideo.jp/watch/sm3372208"
+  },
+  "1670223892417": {
+    "nico": "sm17670989",
+    "niconico": "https://www.nicovideo.jp/watch/sm17670989"
   },
   "1603732862647": {
     "yt": "3bunrDcOXyA",
@@ -17937,6 +18534,12 @@
     "yt": "xlVDkc89hy4",
     "youtube": "https://www.youtube.com/watch?v=xlVDkc89hy4"
   },
+  "1603646195422": {
+    "nico": "sm14369531",
+    "niconico": "https://www.nicovideo.jp/watch/sm14369531"
+  },
+  "1722975959052": { "nico": "sm7601474", "niconico": "https://www.nicovideo.jp/watch/sm7601474" },
+  "1722887804997": { "nico": "sm3478981", "niconico": "https://www.nicovideo.jp/watch/sm3478981" },
   "1789399813512": {
     "apple": "https://music.apple.com/jp/album/%E7%A5%9E%E6%A7%98%E3%81%8A%E9%A1%98%E3%81%84/207499696?i=207499700",
     "album": "https://music.apple.com/jp/album/%E7%A5%9E%E6%A7%98%E3%81%8A%E9%A1%98%E3%81%84/207499696?i=207499700",
@@ -17983,6 +18586,7 @@
     "yt": "EAAfaUtzhfw",
     "youtube": "https://www.youtube.com/watch?v=EAAfaUtzhfw"
   },
+  "1642407044422": { "nico": "sm1631040", "niconico": "https://www.nicovideo.jp/watch/sm1631040" },
   "1642407044857": {
     "yt": "HDgprw1T5ls",
     "youtube": "https://www.youtube.com/watch?v=HDgprw1T5ls"
@@ -18038,7 +18642,9 @@
   "1684363123152": {
     "apple": "https://music.apple.com/jp/album/%E8%8A%B1%E7%AC%91%E3%81%BF%E3%81%A8%E3%81%8B%E3%81%99%E3%81%BF%E8%8D%89/266715518?i=266717119",
     "album": "https://music.apple.com/jp/album/%E8%8A%B1%E7%AC%91%E3%81%BF%E3%81%A8%E3%81%8B%E3%81%99%E3%81%BF%E8%8D%89/266715518?i=266717119",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/1c/9d/b1/mzi.xkjszwec.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/1c/9d/b1/mzi.xkjszwec.jpg/600x600bb.jpg",
+    "nico": "nm7105324",
+    "niconico": "https://www.nicovideo.jp/watch/nm7105324"
   },
   "1490634982402": {
     "yt": "S1IUaJTwJj4",
@@ -18052,14 +18658,36 @@
     "yt": "AEavNZoPT4Q",
     "youtube": "https://www.youtube.com/watch?v=AEavNZoPT4Q"
   },
+  "1284357394282": {
+    "nico": "nm13729102",
+    "niconico": "https://www.nicovideo.jp/watch/nm13729102"
+  },
   "1284270919327": {
     "yt": "LQtcD8bdj_g",
     "youtube": "https://www.youtube.com/watch?v=LQtcD8bdj_g"
+  },
+  "1642407791317": {
+    "nico": "sm15495136",
+    "niconico": "https://www.nicovideo.jp/watch/sm15495136"
+  },
+  "1684275109167": {
+    "nico": "sm15625275",
+    "niconico": "https://www.nicovideo.jp/watch/sm15625275"
   },
   "1284270917152": {
     "yt": "rQOMqLl8qe4",
     "youtube": "https://www.youtube.com/watch?v=rQOMqLl8qe4"
   },
+  "1284270918457": {
+    "nico": "sm45601628",
+    "niconico": "https://www.nicovideo.jp/watch/sm45601628"
+  },
+  "1490869813672": {
+    "nico": "sm10043162",
+    "niconico": "https://www.nicovideo.jp/watch/sm10043162"
+  },
+  "1707922959052": { "nico": "sm986619", "niconico": "https://www.nicovideo.jp/watch/sm986619" },
+  "1707922961227": { "nico": "nm2726439", "niconico": "https://www.nicovideo.jp/watch/nm2726439" },
   "1603798493272": {
     "yt": "fXrykaGp8Eg",
     "youtube": "https://www.youtube.com/watch?v=fXrykaGp8Eg"
@@ -18067,6 +18695,10 @@
   "1722887806737": {
     "yt": "nkS2byjMXuU",
     "youtube": "https://www.youtube.com/watch?v=nkS2byjMXuU"
+  },
+  "1529068652677": {
+    "nico": "sm15908445",
+    "niconico": "https://www.nicovideo.jp/watch/sm15908445"
   },
   "1283119089352": {
     "apple": "https://music.apple.com/jp/album/%E3%81%AF%E3%81%A3%E3%81%B4%E3%81%83-love-%E3%81%8F%E3%82%8A-%E3%81%AB%E3%82%93%E3%81%90-%E6%B4%97%E6%BF%AF%E5%B1%8B%E3%81%97%E3%82%93%E3%81%A1%E3%82%83%E3%82%93/982905717?i=982906063",
@@ -18102,6 +18734,15 @@
     "yt": "97JqN2N17D0",
     "youtube": "https://www.youtube.com/watch?v=97JqN2N17D0"
   },
+  "1603145481277": { "nico": "sm1445453", "niconico": "https://www.nicovideo.jp/watch/sm1445453" },
+  "1746621376852": {
+    "nico": "sm13667773",
+    "niconico": "https://www.nicovideo.jp/watch/sm13667773"
+  },
+  "1746621372937": {
+    "nico": "sm13636085",
+    "niconico": "https://www.nicovideo.jp/watch/sm13636085"
+  },
   "1603320908077": {
     "yt": "CGcd0pZIhoU",
     "youtube": "https://www.youtube.com/watch?v=CGcd0pZIhoU"
@@ -18110,9 +18751,14 @@
     "yt": "BI9wLKEtLLc",
     "youtube": "https://www.youtube.com/watch?v=BI9wLKEtLLc"
   },
+  "1603320901987": { "nico": "sm5187162", "niconico": "https://www.nicovideo.jp/watch/sm5187162" },
   "1310845472137": {
     "yt": "4GcOzlrKSQs",
     "youtube": "https://www.youtube.com/watch?v=4GcOzlrKSQs"
+  },
+  "1669398830962": {
+    "nico": "sm24481657",
+    "niconico": "https://www.nicovideo.jp/watch/sm24481657"
   },
   "1528808651872": {
     "yt": "deA6iKC4ELg",
@@ -18138,11 +18784,21 @@
     "yt": "hbL9L5gJJEQ",
     "youtube": "https://www.youtube.com/watch?v=hbL9L5gJJEQ"
   },
+  "1722625704447": {
+    "nico": "nm13663046",
+    "niconico": "https://www.nicovideo.jp/watch/nm13663046"
+  },
+  "1826841384507": { "nico": "sm2136150", "niconico": "https://www.nicovideo.jp/watch/sm2136150" },
   "1827422875542": {
     "apple": "https://music.apple.com/jp/album/believe-me/1385522021?i=1385522150",
     "album": "https://music.apple.com/jp/album/believe-me/1385522021?i=1385522150",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/91/3e/2b/913e2b3a-258c-bde0-1e00-42b91985820b/LACA-9629.jpg/600x600bb.jpg"
   },
+  "1723215327372": {
+    "nico": "sm28819816",
+    "niconico": "https://www.nicovideo.jp/watch/sm28819816"
+  },
+  "1723215325632": { "nico": "sm8575596", "niconico": "https://www.nicovideo.jp/watch/sm8575596" },
   "2098089845421": {
     "yt": "jVl6aMpNapc",
     "youtube": "https://www.youtube.com/watch?v=jVl6aMpNapc"
@@ -18158,12 +18814,16 @@
   "1490547709222": {
     "apple": "https://music.apple.com/jp/album/angels-ladder/1597886486?i=1597886908",
     "album": "https://music.apple.com/jp/album/angels-ladder/1597886486?i=1597886908",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/ec/42/e6ec42f6-1e9f-c471-64f9-bd42eaf13ab4/PA00093495_0_144149_jacket.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e6/ec/42/e6ec42f6-1e9f-c471-64f9-bd42eaf13ab4/PA00093495_0_144149_jacket.jpg/600x600bb.jpg",
+    "nico": "sm5652378",
+    "niconico": "https://www.nicovideo.jp/watch/sm5652378"
   },
   "1007292595495": {
     "apple": "https://music.apple.com/jp/album/shadow-in-the-dark/433071995?i=433072003",
     "album": "https://music.apple.com/jp/album/shadow-in-the-dark/433071995?i=433072003",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/26/69/5a/mzi.xsgqlixr.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/26/69/5a/mzi.xsgqlixr.jpg/600x600bb.jpg",
+    "nico": "sm12525259",
+    "niconico": "https://www.nicovideo.jp/watch/sm12525259"
   },
   "1347709609652": {
     "apple": "https://music.apple.com/jp/album/%E6%A9%9F%E7%A5%9E%E5%92%86%E5%90%BC%E3%83%83-%E3%83%87%E3%83%A2%E3%83%B3%E3%83%99%E3%82%A4%E3%83%B3-%E6%A9%9F%E7%A5%9E%E5%92%86%E5%90%BCvocal-version/1568861897?i=1568862825",
@@ -18175,7 +18835,9 @@
   "1866698690501": {
     "apple": "https://music.apple.com/jp/album/evil-shine/1568871862?i=1568875441",
     "album": "https://music.apple.com/jp/album/evil-shine/1568871862?i=1568875441",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/1a/66/851a6686-8fe9-8ac3-dcc4-9818324442c8/PA00087776_0_137168_jacket.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/1a/66/851a6686-8fe9-8ac3-dcc4-9818324442c8/PA00087776_0_137168_jacket.jpg/600x600bb.jpg",
+    "nico": "sm31742372",
+    "niconico": "https://www.nicovideo.jp/watch/sm31742372"
   },
   "1669399979797": {
     "apple": "https://music.apple.com/jp/album/roar/1597886486?i=1597886909",
@@ -18238,7 +18900,9 @@
   "1827575986842": {
     "apple": "https://music.apple.com/jp/album/%E5%88%9D%E6%81%8B%E3%82%B7%E3%83%A5%E3%83%97%E3%83%BC%E3%83%AB/266711429?i=266712686",
     "album": "https://music.apple.com/jp/album/%E5%88%9D%E6%81%8B%E3%82%B7%E3%83%A5%E3%83%97%E3%83%BC%E3%83%AB/266711429?i=266712686",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/e4/f4/91/mzi.vusfylip.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/e4/f4/91/mzi.vusfylip.jpg/600x600bb.jpg",
+    "nico": "sm14374999",
+    "niconico": "https://www.nicovideo.jp/watch/sm14374999"
   },
   "1827575986407": {
     "apple": "https://music.apple.com/jp/album/%E6%84%9B%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9days/266711429?i=266712847",
@@ -18251,6 +18915,7 @@
     "yt": "7kMWcXrKDMw",
     "youtube": "https://www.youtube.com/watch?v=7kMWcXrKDMw"
   },
+  "1529068852342": { "nico": "nm6472301", "niconico": "https://www.nicovideo.jp/watch/nm6472301" },
   "1603474001542": {
     "apple": "https://music.apple.com/jp/album/sunny-day-sunny-place/1446373105?i=1446373109",
     "album": "https://music.apple.com/jp/album/sunny-day-sunny-place/1446373105?i=1446373109",
@@ -18263,10 +18928,12 @@
     "album": "https://music.apple.com/jp/album/%E8%8A%B1%E8%89%B2%E6%98%A5%E9%A2%A8/1446373105?i=1446373110",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d0/b5/64/d0b56451-3a22-e319-0b81-5a052fd85cd3/Fullthrottle.jpg/600x600bb.jpg"
   },
+  "1865123103192": { "nico": "sm8516661", "niconico": "https://www.nicovideo.jp/watch/sm8516661" },
   "1670223489607": {
     "yt": "OYud_1NyMbE",
     "youtube": "https://www.youtube.com/watch?v=OYud_1NyMbE"
   },
+  "1722887998572": { "nico": "sm9306642", "niconico": "https://www.nicovideo.jp/watch/sm9306642" },
   "1684687811502": {
     "yt": "pq2mmEtGVmg",
     "youtube": "https://www.youtube.com/watch?v=pq2mmEtGVmg"
@@ -18275,6 +18942,14 @@
     "yt": "ez9QCaj7qbQ",
     "youtube": "https://www.youtube.com/watch?v=ez9QCaj7qbQ"
   },
+  "1722625702272": { "nico": "sm2728461", "niconico": "https://www.nicovideo.jp/watch/sm2728461" },
+  "1722387290082": {
+    "nico": "sm15758311",
+    "niconico": "https://www.nicovideo.jp/watch/sm15758311"
+  },
+  "1490698916527": { "nico": "sm5285361", "niconico": "https://www.nicovideo.jp/watch/sm5285361" },
+  "1641344171077": { "nico": "sm5275829", "niconico": "https://www.nicovideo.jp/watch/sm5275829" },
+  "1641344170642": { "nico": "sm5285553", "niconico": "https://www.nicovideo.jp/watch/sm5285553" },
   "1865535456657": {
     "apple": "https://music.apple.com/jp/album/memento/273988761?i=273988847",
     "album": "https://music.apple.com/jp/album/memento/273988761?i=273988847",
@@ -18339,15 +19014,25 @@
     "yt": "wUvNfKXmwpg",
     "youtube": "https://www.youtube.com/watch?v=wUvNfKXmwpg"
   },
+  "1722387290952": {
+    "nico": "sm15560084",
+    "niconico": "https://www.nicovideo.jp/watch/sm15560084"
+  },
+  "1722387290517": { "nico": "sm6880923", "niconico": "https://www.nicovideo.jp/watch/sm6880923" },
   "1789399614717": {
     "apple": "https://music.apple.com/jp/album/lets-go-%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0-%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0/207500717?i=207500718",
     "album": "https://music.apple.com/jp/album/lets-go-%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0-%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0/207500717?i=207500718",
     "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/6d/34/f5/mzi.zpmnijvx.jpg/600x600bb.jpg"
   },
+  "1939698802842": { "nico": "sm1561", "niconico": "https://www.nicovideo.jp/watch/sm1561" },
+  "1684363477242": { "nico": "nm6967680", "niconico": "https://www.nicovideo.jp/watch/nm6967680" },
+  "1684363477677": { "nico": "sm3693418", "niconico": "https://www.nicovideo.jp/watch/sm3693418" },
   "1827422878152": {
     "apple": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AA%E3%81%9F%E3%82%92%E5%AE%88%E3%82%8A%E3%81%9F%E3%81%84/269744796?i=269745817",
     "album": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AA%E3%81%9F%E3%82%92%E5%AE%88%E3%82%8A%E3%81%9F%E3%81%84/269744796?i=269745817",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/60/8f/1a/608f1adf-dcca-3e71-0ebe-fac3824a3fa5/mzi.oabepjtb.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/60/8f/1a/608f1adf-dcca-3e71-0ebe-fac3824a3fa5/mzi.oabepjtb.jpg/600x600bb.jpg",
+    "nico": "sm26758928",
+    "niconico": "https://www.nicovideo.jp/watch/sm26758928"
   },
   "1084886336491": {
     "apple": "https://music.apple.com/jp/album/%E9%AD%82%E9%9F%BF-jakazids-akabei-hard5-remix/1008704630?i=1008704631",
@@ -18392,12 +19077,16 @@
   "1827424230132": {
     "apple": "https://music.apple.com/jp/album/flowers-in-the-rain/974588726?i=974589493",
     "album": "https://music.apple.com/jp/album/flowers-in-the-rain/974588726?i=974589493",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/9c/a3/98/9ca398c6-b67c-143a-d935-7eda4c775660/Jak_KDSD10015_16.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/9c/a3/98/9ca398c6-b67c-143a-d935-7eda4c775660/Jak_KDSD10015_16.jpg/600x600bb.jpg",
+    "nico": "sm10216046",
+    "niconico": "https://www.nicovideo.jp/watch/sm10216046"
   },
   "1084797770056": {
     "apple": "https://music.apple.com/jp/album/sweet-trap/1410027305?i=1410027699",
     "album": "https://music.apple.com/jp/album/sweet-trap/1410027305?i=1410027699",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d1/a2/9a/d1a29ad4-6734-ca60-3d51-aa2b9ef1e5e3/859754210483_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d1/a2/9a/d1a29ad4-6734-ca60-3d51-aa2b9ef1e5e3/859754210483_cover.png/600x600bb.jpg",
+    "nico": "sm1919944",
+    "niconico": "https://www.nicovideo.jp/watch/sm1919944"
   },
   "1827423281397": {
     "apple": "https://music.apple.com/jp/album/mebius-ring/173337428?i=173339388",
@@ -18421,6 +19110,15 @@
   "1669161364462": {
     "yt": "iI63ixcZq_k",
     "youtube": "https://www.youtube.com/watch?v=iI63ixcZq_k"
+  },
+  "1789223632857": {
+    "nico": "sm10739679",
+    "niconico": "https://www.nicovideo.jp/watch/sm10739679"
+  },
+  "1669399583947": { "nico": "sm5225318", "niconico": "https://www.nicovideo.jp/watch/sm5225318" },
+  "1827422876847": {
+    "nico": "sm23145346",
+    "niconico": "https://www.nicovideo.jp/watch/sm23145346"
   },
   "1528808657527": {
     "yt": "ThPUVqJeFXs",
@@ -18454,7 +19152,9 @@
   "1669483266202": {
     "apple": "https://music.apple.com/jp/album/%E6%96%AC%E6%92%83%E3%82%88-%E5%94%B8%E3%82%8C-%E5%92%86%E5%93%AE%E3%81%AE%E5%A6%82%E3%81%8F/1409586724?i=1409588135",
     "album": "https://music.apple.com/jp/album/%E6%96%AC%E6%92%83%E3%82%88-%E5%94%B8%E3%82%8C-%E5%92%86%E5%93%AE%E3%81%AE%E5%A6%82%E3%81%8F/1409586724?i=1409588135",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/68/bc/5368bc74-2303-357f-d40e-879547905e35/4562221831024_cover.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/68/bc/5368bc74-2303-357f-d40e-879547905e35/4562221831024_cover.jpg/600x600bb.jpg",
+    "nico": "sm4747978",
+    "niconico": "https://www.nicovideo.jp/watch/sm4747978"
   },
   "1490957976862": {
     "yt": "x_JUycd7N00",
@@ -18473,6 +19173,7 @@
     "youtube": "https://www.youtube.com/watch?v=UuSOl-lf_XA",
     "ytmusic": "https://music.youtube.com/watch?v=UuSOl-lf_XA"
   },
+  "1283534282062": { "nico": "sm2449387", "niconico": "https://www.nicovideo.jp/watch/sm2449387" },
   "1708094407777": {
     "yt": "BEb5_GWj59o",
     "youtube": "https://www.youtube.com/watch?v=BEb5_GWj59o"
@@ -18499,7 +19200,9 @@
   "1529309916727": {
     "apple": "https://music.apple.com/jp/album/with-you/1069066541?i=1069068744",
     "album": "https://music.apple.com/jp/album/with-you/1069066541?i=1069068744",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/01/f1/32/01f13223-7d0f-de85-a2be-fb3f884aae23/859752693776_cover.png/600x600bb.jpg",
+    "nico": "sm4827899",
+    "niconico": "https://www.nicovideo.jp/watch/sm4827899"
   },
   "1528897418842": {
     "apple": "https://music.apple.com/jp/album/beautiful-harmony-game-size/852193947?i=852194041",
@@ -18520,7 +19223,9 @@
   "1490958374452": {
     "apple": "https://music.apple.com/jp/album/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8-feat-riryka/1740104798?i=1740104800",
     "album": "https://music.apple.com/jp/album/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8-feat-riryka/1740104798?i=1740104800",
-    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/12/09/30120936-9904-ed52-8178-b75d5ef83b03/bigup13805740.jpg/600x600bb.jpg"
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/12/09/30120936-9904-ed52-8178-b75d5ef83b03/bigup13805740.jpg/600x600bb.jpg",
+    "nico": "sm11944565",
+    "niconico": "https://www.nicovideo.jp/watch/sm11944565"
   },
   "1490547170257": {
     "yt": "hWPbY6IA4_M",
