@@ -29,6 +29,15 @@ const songs: Song[] = JSON.parse(readFileSync(new URL("src/data/songs.json", roo
 /** 検索系ステージの対象。NO_BGM=1 なら BGM を後回しにする */
 const searchSongs = process.env.NO_BGM ? songs.filter((s) => !/BGM/.test(s.category)) : songs;
 const cacheDir = new URL("data/cache/", root);
+/** 公式チャンネルの設定。ng: 使わないチャンネル / priority: ブランドごとの優先チャンネル（表示名） */
+const channelCfg: {
+  ng: string[];
+  priority: { channel: string; brands: string[] }[];
+} = JSON.parse(readFileSync(new URL("data/channels.json", root), "utf8"));
+const isNgChannel = (name: string) => channelCfg.ng.includes(name);
+const priorityOf = new Map<string, string>(
+  channelCfg.priority.flatMap((p) => p.brands.map((b) => [b, p.channel] as const)),
+);
 mkdirSync(cacheDir, { recursive: true });
 
 const load = <T>(name: string, fallback: T): T => {
@@ -644,6 +653,7 @@ async function stageYoutube() {
       const pick = (res: Awaited<ReturnType<typeof ytSearch>>) =>
         res
           .slice(0, 12)
+          .filter((v) => !isNgChannel(v.channel))
           .map((v) => [score(v), v] as const)
           .sort((x, y) => y[0] - x[0])[0];
       let best = pick(await ytSearch(`${s.title} ${firstArtist(s)}`.trim()));
@@ -973,6 +983,7 @@ function ytTrusted(
   apple?: AppleOut,
   kk?: { artist: string } | null,
 ) {
+  if (isNgChannel(y.channel)) return false;
   const nt = norm(y.title);
   const nc = norm(y.channel.replace(/ - topic$/i, ""));
   const a = norm(firstArtist(s));
@@ -1122,6 +1133,33 @@ async function stageMb() {
   save("mb.json", out);
 }
 
+// ---------- official: ブランドの公式チャンネルを優先して探す（channels.json の priority） ----------
+type OfficialOut = { id: string; title: string; channel: string; length?: string } | null;
+async function stageOfficial() {
+  const out = load<Record<number, OfficialOut>>("official.json", {});
+  const targets = searchSongs.filter((s) => priorityOf.has(s.brand) && !(s.id in out));
+  console.log(`公式チャンネル検索: ${targets.length} 曲 (2 秒間隔)`);
+  for (const [i, s] of targets.entries()) {
+    try {
+      const ch = priorityOf.get(s.brand)!;
+      const t = norm(s.title);
+      const res = await ytSearch(`${s.title} ${ch}`);
+      const hit = res.find((v) => v.channel === ch && norm(v.title).includes(t));
+      out[s.id] = hit ?? null;
+    } catch (e) {
+      console.warn(`  ! ${s.title}: ${(e as Error).message}`);
+    }
+    if (i % 25 === 24) {
+      save("official.json", out);
+      console.log(
+        `  ${i + 1}/${targets.length} (見つかった: ${Object.values(out).filter(Boolean).length})`,
+      );
+    }
+    await sleep(2000);
+  }
+  save("official.json", out);
+}
+
 // ---------- write ----------
 function stageWrite() {
   const apple = load<Record<number, AppleOut>>("apple.json", {});
@@ -1136,6 +1174,7 @@ function stageWrite() {
   const kkbox = load<Record<number, KkOut>>("kkbox.json", {});
   const ytFix = load<Record<number, YtOut>>("youtube-fix.json", {});
   const nico = load<Record<number, NicoOut>>("nico.json", {});
+  const official = load<Record<number, OfficialOut>>("official.json", {});
   const links: Record<number, Record<string, string>> = {};
   for (const s of songs) {
     const l: Record<string, string> = {};
@@ -1157,7 +1196,7 @@ function stageWrite() {
     // 手で確認したニコニコ動画があれば、YouTube の自動検索結果より優先する
     const y = nico[s.id]?.manual
       ? undefined
-      : [ytTopic[s.id], yt[s.id], ytFix[s.id]].find(
+      : [official[s.id], ytTopic[s.id], yt[s.id], ytFix[s.id]].find(
           (v) => v && ytTrusted(s, v, apple[s.id], kkbox[s.id]),
         );
     if (y) {
@@ -1232,4 +1271,5 @@ if (stage === "kkbox" || stage === "all") await stageKkbox();
 if (stage === "ytfix" || stage === "all") await stageYtFix();
 if (stage === "nico") await stageNico();
 if (stage === "mb") await stageMb();
+if (stage === "official") await stageOfficial();
 stageWrite();
