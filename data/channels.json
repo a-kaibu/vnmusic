@@ -1,43 +1,256 @@
 {
-  "ng": ["ユアルシ"],
+  "ng": [
+    "ユアルシ"
+  ],
   "priority": [
-    { "channel": "パープルソフトウェア / Purple software", "brands": ["Purple software"] },
-    { "channel": "liarsoft", "brands": ["Liar-soft(ビジネスパートナー)"] },
-    { "channel": "minoriworks", "brands": ["minori"] },
-    { "channel": "Circus Official Channel", "brands": ["CIRCUS"] },
-    { "channel": "オトメイト", "brands": ["オトメイト"] },
-    { "channel": "MAGES. GAME CHANNEL", "brands": ["MAGES.(5pb.)"] },
-    { "channel": "NITRO PLUS Channel", "brands": ["NitroPlus"] },
-    { "channel": "AUGUST SOFT", "brands": ["AUGUST"] },
-    { "channel": "lumpofsugar公式チャンネル", "brands": ["Lump of Sugar"] },
-    { "channel": "ぱれっとチャンネル", "brands": ["ぱれっと"] },
-    { "channel": "KID PHENOMENON", "brands": ["KID"] },
-    { "channel": "hooksoftofficial", "brands": ["HOOKSOFT(HOOK)"] },
-    { "channel": "AQUAPLUS", "brands": ["AQUAPLUS"] },
-    { "channel": "LeaF", "brands": ["Leaf"] },
-    { "channel": "PULLTOPChannel", "brands": ["PULLTOP"] },
-    { "channel": "alicesoft Channel", "brands": ["ALICESOFT"] },
-    { "channel": "ALcotStaff", "brands": ["ALcot"] },
-    { "channel": "コンパイルハート", "brands": ["コンパイルハート"] },
-    { "channel": "Frontwing", "brands": ["FrontWing"] },
-    { "channel": "Tinkerbell公式チャンネル", "brands": ["TinkerBell"] },
-    { "channel": "BaseSon公式", "brands": ["BaseSon"] },
-    { "channel": "まどそふと公式チャンネル", "brands": ["まどそふと"] },
-    { "channel": "SAGA PLANETS チャンネル", "brands": ["SAGA PLANETS"] },
-    { "channel": "Favorite【公式】", "brands": ["FAVORITE"] },
-    { "channel": "ういんどみるチャンネル", "brands": ["ういんどみる"] },
-    { "channel": "みなとそふと公式チャンネル", "brands": ["みなとそふと"] },
-    { "channel": "工画堂スタジオソフトウェア開発部", "brands": ["工画堂スタジオ"] },
-    { "channel": "OverFlowers公式", "brands": ["Overflow"] },
-    { "channel": "ASA Project Official", "brands": ["ASa Project"] },
-    { "channel": "RUNE999", "brands": ["RUNE"] },
-    { "channel": "Harukaze official", "brands": ["HARUKAZE"] },
-    { "channel": "La'cryma Christi OFFICIAL  CHANNEL", "brands": ["La'cryma"] },
-    { "channel": "キャラメルBOX公式", "brands": ["キャラメルBOX"] },
-    { "channel": "すたじお緑茶", "brands": ["すたじお緑茶"] },
-    { "channel": "INTER EGO STUDIO", "brands": ["Studio e.go!"] },
-    { "channel": "アンモライト公式", "brands": ["アンモライト"] },
-    { "channel": "エンターグラム", "brands": ["エンターグラム/きゃべつそふと"] },
-    { "channel": "chuablesoft", "brands": ["Chuablesoft"] }
+    {
+      "channel": "パープルソフトウェア / Purple software",
+      "brands": [
+        "Purple software"
+      ]
+    },
+    {
+      "channel": "liarsoft",
+      "brands": [
+        "Liar-soft(ビジネスパートナー)"
+      ]
+    },
+    {
+      "channel": "minoriworks",
+      "brands": [
+        "minori"
+      ]
+    },
+    {
+      "channel": "Circus Official Channel",
+      "brands": [
+        "CIRCUS"
+      ]
+    },
+    {
+      "channel": "オトメイト",
+      "brands": [
+        "オトメイト"
+      ]
+    },
+    {
+      "channel": "MAGES. GAME CHANNEL",
+      "brands": [
+        "MAGES.(5pb.)"
+      ]
+    },
+    {
+      "channel": "NITRO PLUS Channel",
+      "brands": [
+        "NitroPlus"
+      ]
+    },
+    {
+      "channel": "AUGUST SOFT",
+      "brands": [
+        "AUGUST"
+      ]
+    },
+    {
+      "channel": "lumpofsugar公式チャンネル",
+      "brands": [
+        "Lump of Sugar"
+      ]
+    },
+    {
+      "channel": "ぱれっとチャンネル",
+      "brands": [
+        "ぱれっと"
+      ]
+    },
+    {
+      "channel": "KID PHENOMENON",
+      "brands": [
+        "KID"
+      ]
+    },
+    {
+      "channel": "hooksoftofficial",
+      "brands": [
+        "HOOKSOFT(HOOK)"
+      ]
+    },
+    {
+      "channel": "AQUAPLUS",
+      "brands": [
+        "AQUAPLUS"
+      ]
+    },
+    {
+      "channel": "LeaF",
+      "brands": [
+        "Leaf"
+      ]
+    },
+    {
+      "channel": "PULLTOPChannel",
+      "brands": [
+        "PULLTOP"
+      ]
+    },
+    {
+      "channel": "alicesoft Channel",
+      "brands": [
+        "ALICESOFT"
+      ]
+    },
+    {
+      "channel": "ALcotStaff",
+      "brands": [
+        "ALcot"
+      ]
+    },
+    {
+      "channel": "コンパイルハート",
+      "brands": [
+        "コンパイルハート"
+      ]
+    },
+    {
+      "channel": "Frontwing",
+      "brands": [
+        "FrontWing"
+      ]
+    },
+    {
+      "channel": "Tinkerbell公式チャンネル",
+      "brands": [
+        "TinkerBell"
+      ]
+    },
+    {
+      "channel": "BaseSon公式",
+      "brands": [
+        "BaseSon"
+      ]
+    },
+    {
+      "channel": "まどそふと公式チャンネル",
+      "brands": [
+        "まどそふと"
+      ]
+    },
+    {
+      "channel": "SAGA PLANETS チャンネル",
+      "brands": [
+        "SAGA PLANETS"
+      ]
+    },
+    {
+      "channel": "Favorite【公式】",
+      "brands": [
+        "FAVORITE"
+      ]
+    },
+    {
+      "channel": "ういんどみるチャンネル",
+      "brands": [
+        "ういんどみる"
+      ]
+    },
+    {
+      "channel": "みなとそふと公式チャンネル",
+      "brands": [
+        "みなとそふと"
+      ]
+    },
+    {
+      "channel": "工画堂スタジオソフトウェア開発部",
+      "brands": [
+        "工画堂スタジオ"
+      ]
+    },
+    {
+      "channel": "OverFlowers公式",
+      "brands": [
+        "Overflow"
+      ]
+    },
+    {
+      "channel": "ASA Project Official",
+      "brands": [
+        "ASa Project"
+      ]
+    },
+    {
+      "channel": "RUNE999",
+      "brands": [
+        "RUNE"
+      ]
+    },
+    {
+      "channel": "Harukaze official",
+      "brands": [
+        "HARUKAZE"
+      ]
+    },
+    {
+      "channel": "La'cryma Christi OFFICIAL  CHANNEL",
+      "brands": [
+        "La'cryma"
+      ]
+    },
+    {
+      "channel": "キャラメルBOX公式",
+      "brands": [
+        "キャラメルBOX"
+      ]
+    },
+    {
+      "channel": "すたじお緑茶",
+      "brands": [
+        "すたじお緑茶"
+      ]
+    },
+    {
+      "channel": "INTER EGO STUDIO",
+      "brands": [
+        "Studio e.go!"
+      ]
+    },
+    {
+      "channel": "アンモライト公式",
+      "brands": [
+        "アンモライト"
+      ]
+    },
+    {
+      "channel": "きゃべつそふと",
+      "brands": [
+        "エンターグラム/きゃべつそふと"
+      ]
+    },
+    {
+      "channel": "chuablesoft",
+      "brands": [
+        "Chuablesoft"
+      ]
+    },
+    {
+      "channel": "ビジュアルアーツ【公式】",
+      "brands": [
+        "Key"
+      ]
+    },
+    {
+      "channel": "エンターグラム",
+      "brands": [
+        "エンターグラム"
+      ]
+    },
+    {
+      "channel": "giga",
+      "brands": [
+        "戯画",
+        "EXA feat.戯画",
+        "daisy feat.戯画",
+        "Sky-High feat.戯画"
+      ]
+    }
   ]
 }
